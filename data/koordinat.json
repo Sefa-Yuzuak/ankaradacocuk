@@ -380,5 +380,190 @@
   "eslesme": "Delta Macera, Eymir Gölü, Yeşilkent Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06550, Türkiye",
   "tur": "bicycle"
  },
- "Powertec Cafe & Bistro": null
+ "Powertec Cafe & Bistro": null,
+ "Macera Adası – Kentpark AVM": null,
+ "JoyPort Eğlence Merkezi – Podium AVM": null,
+ "Joyland Oyun Parkı – Panora AVM": null,
+ "Cepa AVM Oyun Parkı (Fun Park / Jokerland)": null,
+ "Arckids Eğlence Merkezi – Arcadium AVM": {
+  "lat": 39.88177,
+  "lng": 32.68443,
+  "sorgu": "Arcadium AVM, Çayyolu/Ümitköy, Çankaya/Ankara",
+  "eslesme": "Arcadium AVM, Doğan Taşdelen Bulvarı, Çayyolu, Koru Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06810, Türki",
+  "tur": "bus_stop"
+ },
+ "Funnivarium – Forum Ankara AVM": null,
+ "Open Play Trampoline Park – Antares AVM": null,
+ "Arena Trambolin Park – Acity AVM": null,
+ "Kent Paten Buz Pisti – Oran": null,
+ "Ankara Karting (Mühye)": null,
+ "Hipodrom RS Arena Karting": null,
+ "Altınpark Go-kart / Akülü Araçlar": {
+  "lat": 39.96507,
+  "lng": 32.87656,
+  "sorgu": "Altınpark Go-kart Ankara",
+  "eslesme": "Altınpark Go Kart, Dik Sokak, Aydınlıkevler Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06130, Türkiye",
+  "tur": "sports_centre"
+ },
+ "Kısa Kaya Boulder Evi": null,
+ "Tragos Boulder": null,
+ "Rolling Ball Bowling – Armada AVM": null,
+ "Rollhouse Bowling – Cepa AVM": null,
+ "Waterpark Ankara (Keçiören)": null,
+ "Club Watercity Aquapark – Gölbaşı": {
+  "lat": 39.54167,
+  "lng": 32.63519,
+  "sorgu": "Haymana Yolu 6. Km, Gölbaşı/Ankara",
+  "eslesme": "Haymana - Ankara Yolu, Oyaca Yeşilçam Mahallesi, Oyaca, Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
+  "tur": "trunk"
+ },
+ "AnkTalya Aquapark – Batıkent": {
+  "lat": 39.96817,
+  "lng": 32.72674,
+  "sorgu": "Batıkent, Yenimahalle/Ankara",
+  "eslesme": "Batıkent, Başkent Bulvarı, Kentkoop Mahallesi, Yenimahalle, Ankara, İç Anadolu Bölgesi, 06370, Türkiye",
+  "tur": "station"
+ },
+ "Kartaltepe Aquapark – Keçiören": {
+  "lat": 40.01249,
+  "lng": 32.81199,
+  "sorgu": "Kartaltepe Aquapark Keçiören",
+  "eslesme": "Kartaltepe Aquapark, Çorum Caddesi, Yükseltepe Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 06220, Türkiye",
+  "tur": "bus_stop"
+ },
+ "Ankara Atlıspor Kulübü – Pony Okulu": null,
+ "Bricks 4 Kidz Ankara – LEGO S.T.E.M. Atölyesi": null,
+ "Neriseramik – Çocuklar İçin Seramik Workshop": null,
+ "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları": null,
+ "Anıt Eğitim – Çocuk Pastacılık Kursu": null,
+ "Çankaya Belediyesi Çocuk Atölyeleri ve Gelişimsel Oyunevleri": null,
+ "Cumhurbaşkanlığı Millet Kütüphanesi – Nasreddin Hoca Çocuk Kütüphanesi": {
+  "lat": 39.92464,
+  "lng": 32.80071,
+  "sorgu": "Cumhurbaşkanlığı Millet Kütüphanesi Beştepe",
+  "eslesme": "Cumhurbaşkanlığı Millet Kütüphanesi, Beştepe Caddesi, Beştepe Mahallesi, Yenimahalle, Ankara, İç Anadolu Bölgesi, 06560,",
+  "tur": "library"
+ },
+ "Adnan Ötüken İl Halk Kütüphanesi – Çocuk Bölümü": null,
+ "Ankara Ali Dayı Çocuk Kütüphanesi": null,
+ "Altındağ Bebek ve Çocuk Kütüphanesi": null,
+ "Escape Planet – Sherlock Holmes Odası (Bahçelievler)": null,
+ "Altınköy Açık Hava Müzesi": {
+  "lat": 39.97755,
+  "lng": 32.95695,
+  "sorgu": "Altınköy Açık Hava Müzesi Altındağ Ankara",
+  "eslesme": "Altınköy Açık Hava Müzesi, Ankara Çevre Yolu, Karapürçek, Beşikkaya Mahallesi, Kızılca Mahallesi, Altındağ, Ankara, İç A",
+  "tur": "museum"
+ },
+ "Keçiören Deniz Dünyası Akvaryumu": null,
+ "Üreğil Millet Bahçesi": {
+  "lat": 39.90667,
+  "lng": 32.94723,
+  "sorgu": "Üreğil Millet Bahçesi Mamak Ankara",
+  "eslesme": "Üreğil Millet Bahçesi, Şahap Gürler Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Max Level Aile ve Çocuk Oyun Eğlence Merkezi": null,
+ "Çamlıdere Macera Parkı": {
+  "lat": 40.44823,
+  "lng": 32.55987,
+  "sorgu": "Aluç Dağı, Çamlıdere, Ankara",
+  "eslesme": "Aluç Dağı, Çamlıdere, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "peak"
+ },
+ "Playland Optimum": null,
+ "Toru Entertainment (Taurus AVM)": null,
+ "Etimesgut Aile Yaşam Merkezi": {
+  "lat": 39.94913,
+  "lng": 32.66388,
+  "sorgu": "Etimesgut, Ankara",
+  "eslesme": "Etimesgut, İkinci Yüzyıl Cumhuriyet Caddesi, Etiler Mahallesi, Etimesgut, Ankara, İç Anadolu Bölgesi, 06796, Türkiye",
+  "tur": "stop"
+ },
+ "Sincan Belediyesi Bebek Kütüphanesi": {
+  "lat": 39.96399,
+  "lng": 32.58563,
+  "sorgu": "Sincan, Ankara",
+  "eslesme": "Sincan, Atatürk Caddesi, İstasyon Mahallesi, Sincan, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "stop"
+ },
+ "Ankara Üniversitesi Çocuk Üniversitesi": null,
+ "Neşeli Köy (Ters Ev ve Çiftlik)": {
+  "lat": 39.82071,
+  "lng": 32.57223,
+  "sorgu": "Neşeli Köy Etimesgut Ankara",
+  "eslesme": "Neşeli Köy Karavan Kamp Alanı, Dumlupınar Bulvarı, Turkuaz Mahallesi, Etimesgut, Ankara, İç Anadolu Bölgesi, 06815, Türk",
+  "tur": "caravan_site"
+ },
+ "Çufçuf Oyun ve Parti Evi": {
+  "lat": 39.95576,
+  "lng": 32.63029,
+  "sorgu": "Eryaman, Etimesgut, Ankara",
+  "eslesme": "Eryaman, İstasyon Caddesi, Emirler, Piyade Mahallesi, Etimesgut, Ankara, İç Anadolu Bölgesi, 06794, Türkiye",
+  "tur": "station"
+ },
+ "Kurtboğazı Barajı Piknik Alanı": {
+  "lat": 40.2698,
+  "lng": 32.7006,
+  "sorgu": "Kurtboğazı, Kahramankazan, Ankara",
+  "eslesme": "Kurtboğazı Barajı, Akçaören Mahallesi, Kahramankazan, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "dam"
+ },
+ "Çansera Kent Bahçesi": {
+  "lat": 39.90432,
+  "lng": 32.79256,
+  "sorgu": "Çansera Kent Bahçesi Çukurambar Ankara",
+  "eslesme": "Çansera Kent Bahçesi, Çukurambar Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Yuki Kids Oyunevi & Cafe": null,
+ "Candy Kids Park": null,
+ "CSO Ada Ankara Çocuk Atölyeleri": {
+  "lat": 39.93296,
+  "lng": 32.85057,
+  "sorgu": "CSO Ada Ankara Opera Ankara",
+  "eslesme": "CSO Ada Ankara, Altınsoy Caddesi, Opera, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06050, Türkiye",
+  "tur": "arts_centre"
+ },
+ "Da Vinci Board Game Cafe": null,
+ "Sincan Anne-Çocuk Oyun Evleri": {
+  "lat": 39.96399,
+  "lng": 32.58563,
+  "sorgu": "Sincan, Ankara",
+  "eslesme": "Sincan, Atatürk Caddesi, İstasyon Mahallesi, Sincan, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "stop"
+ },
+ "Eğrekkaya Barajı": {
+  "lat": 40.49496,
+  "lng": 32.66548,
+  "sorgu": "Eğrekkaya Barajı Kızılcahamam Ankara",
+  "eslesme": "Eğrekkaya Barajı, Ciğirler Mahallesi, Kızılcahamam, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "dam"
+ },
+ "Mini Sanat Çocukça Eğlenceler Atölyesi": null,
+ "Nomi Oyun Evi": {
+  "lat": 39.92078,
+  "lng": 32.85405,
+  "sorgu": "Çankaya, Ankara",
+  "eslesme": "Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06420, Türkiye",
+  "tur": "city"
+ },
+ "ABB Çocuk Etkinlik Merkezleri": null,
+ "ABB Başkent Oyun Dünyası (Demetevler Parkı)": null,
+ "ABB Çocuk Oyun Odaları": null,
+ "ABB Oyuncak Kütüphanesi": null,
+ "Keçiören Belediyesi Çocuk Eğitim Merkezi": {
+  "lat": 39.97898,
+  "lng": 32.84738,
+  "sorgu": "Yunus Emre Kültür Merkezi Keçiören",
+  "eslesme": "Yunus Emre Kültür ve Sanat Merkezi, Şener Sokak, Emrah Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 06010, Türkiye",
+  "tur": "arts_centre"
+ },
+ "Keçiören Belediyesi Çocuk Hizmet Merkezi": {
+  "lat": 39.97898,
+  "lng": 32.84738,
+  "sorgu": "Yunus Emre Kültür Merkezi Keçiören",
+  "eslesme": "Yunus Emre Kültür ve Sanat Merkezi, Şener Sokak, Emrah Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 06010, Türkiye",
+  "tur": "arts_centre"
+ }
 }
