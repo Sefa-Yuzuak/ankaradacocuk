@@ -57,6 +57,17 @@
       En uygun yaş grubu <strong>{{ m.en_iyi_yas }} yaş</strong>{% if m.indoor %}; kapalı alan olduğu için hava fark etmez{% else %}; açık hava mekânı, hava durumuna bakın{% endif %}.
       {% if m.price == 'ücretsiz' %}Giriş ücretsiz.{% elif m.price_note %}{{ m.price_note }}{% endif %}</p>
 
+    {% if m.aile_fiyat %}
+    <div class="aile-hesap" id="aile-hesap">
+      <h2>💸 3-4 kişilik aile için yaklaşık hesap</h2>
+      <div class="hesap-satir">
+        {% if m.aile_fiyat.aile_tl %}<div class="hesap-kutu"><span>Aile toplamı (2 yetişkin + 1-2 çocuk)</span><strong>{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[0]).replace(',', '.') }} – {{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[1]).replace(',', '.') }} ₺</strong></div>{% endif %}
+        {% if m.aile_fiyat.kisi_basi_tl %}<div class="hesap-kutu"><span>Kişi başı</span><strong>{{ '{:,.0f}'.format(m.aile_fiyat.kisi_basi_tl[0]).replace(',', '.') }} – {{ '{:,.0f}'.format(m.aile_fiyat.kisi_basi_tl[1]).replace(',', '.') }} ₺</strong></div>{% endif %}
+      </div>
+      <p class="kucuk">{{ m.aile_fiyat.kalem }}{% if m.aile_fiyat.cocuk_notu %} · {{ m.aile_fiyat.cocuk_notu }}{% endif %} · Kaynak tarihi: {{ m.aile_fiyat.kaynak_tarihi }} · Güven: {{ m.aile_fiyat.guven }}{% if m.aile_fiyat.kaynak %} · <a href="{{ m.aile_fiyat.kaynak }}" rel="nofollow noopener" target="_blank">kaynak</a>{% endif %}. Menü fiyatları ve ziyaretçi yorumlarından türetilmiş tahmindir; gitmeden önce mekânla teyit edin.</p>
+    </div>
+    {% endif %}
+
     {% if m.features %}
     <h2>Aileler için olanaklar</h2>
     <ul class="ozellikler">{% for f in m.features %}<li>✅ {{ f }}</li>{% endfor %}</ul>
@@ -71,7 +82,7 @@
     <table class="bilgi-tablo">
       <tr><th>Adres</th><td>{{ m.address or (m.district ~ ', Ankara') }}</td></tr>
       {% if m.hours %}<tr><th>Çalışma saatleri</th><td>{{ m.hours }}</td></tr>{% endif %}
-      <tr><th>Ücret</th><td>{{ m.fiyat_etiket or 'Bilgi yok' }}{% if m.price_note %} — {{ m.price_note }}{% endif %}</td></tr>
+      <tr><th>Ücret</th><td>{{ m.fiyat_etiket or 'Bilgi yok' }}{% if m.price_note %} — {{ m.price_note }}{% endif %}{% if m.aile_fiyat and m.aile_fiyat.aile_tl %}<br><a href="#aile-hesap">3-4 kişilik aile ≈ {{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[0]).replace(',', '.') }}–{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[1]).replace(',', '.') }} ₺</a>{% endif %}</td></tr>
       {% if m.transport %}<tr><th>Ulaşım</th><td>{{ m.transport }}</td></tr>{% endif %}
       {% if m.phone %}<tr><th>Telefon</th><td><a href="tel:{{ m.phone|replace(' ', '') }}">{{ m.phone }}</a></td></tr>{% endif %}
       {% if m.website %}<tr><th>Web</th><td><a href="{{ m.website }}" rel="noopener nofollow" target="_blank">{{ m.website|replace('https://','')|replace('http://','')|truncate(50) }}</a></td></tr>{% endif %}

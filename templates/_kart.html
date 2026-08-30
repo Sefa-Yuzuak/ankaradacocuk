@@ -11,7 +11,7 @@
     <p class="kart-aciklama">{{ (m.description or '')[:120] }}{% if (m.description or '')|length > 120 %}…{% endif %}</p>
     <div class="kart-alt">
       <span class="rozet">{{ '🏠 Kapalı alan' if m.indoor else '☀️ Açık hava' }}</span>
-      {% if m.fiyat_etiket %}<span class="rozet">{{ m.fiyat_etiket }}</span>{% endif %}
+      {% if m.aile_fiyat and m.aile_fiyat.aile_tl %}<span class="rozet" title="3-4 kişilik aile için yaklaşık hesap">👨‍👩‍👧 ≈{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[0]).replace(',', '.') }}–{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[1]).replace(',', '.') }} ₺</span>{% elif m.fiyat_etiket %}<span class="rozet">{{ m.fiyat_etiket }}</span>{% endif %}
       <span class="rozet" title="En uygun yaş grubu">👶 {{ m.en_iyi_yas }} yaş</span>
       {% if yas_alan %}<span class="rozet vurgu">Bu yaş için {{ m[yas_alan] }}/5</span>{% endif %}
     </div>

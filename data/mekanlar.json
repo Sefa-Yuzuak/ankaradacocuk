@@ -499,8 +499,8 @@
   "district": "Mamak",
   "distance_km": 12,
   "address": "Kayaş, Mamak, Ankara",
-  "lat": 39.91351,
-  "lng": 32.96568,
+  "lat": null,
+  "lng": null,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -543,8 +543,7 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5,
-  "koordinat_kaynak": "osm"
+  "score_fiyat_performans": 5
  },
  {
   "name": "Çamlıdere Fosil Ormanı (Pelitçik)",
@@ -1504,8 +1503,8 @@
   "district": "Gölbaşı",
   "distance_km": 35,
   "address": "Gölbaşı, Ankara",
-  "lat": 39.79253,
-  "lng": 32.80667,
+  "lat": null,
+  "lng": null,
   "age_min": 5,
   "age_max": 99,
   "indoor": false,
@@ -1541,8 +1540,7 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3,
-  "koordinat_kaynak": "osm"
+  "score_fiyat_performans": 3
  },
  {
   "name": "Feza Gürsey Bilim Merkezi",
@@ -1550,8 +1548,8 @@
   "subcategory": "bilim merkezi (interaktif deney üniteleri)",
   "district": "Altındağ",
   "address": "Altınpark, Şehit Astsubay Ömer Halisdemir Bulvarı No:154, Yıldıztepe Mah., 06140 Altındağ/Ankara",
-  "lat": 39.96838,
-  "lng": 32.87988,
+  "lat": 39.9656,
+  "lng": 32.8728,
   "age_min": 4,
   "age_max": 16,
   "indoor": true,
@@ -1581,7 +1579,9 @@
   "sources": [
    "https://okuldisiogrenme.eba.gov.tr/place-detail/feza-gursey-bilim-merkezi-549",
    "https://www.fgbm.com.tr/",
-   "https://bilimmerkezleri.tubitak.gov.tr/Icerik/diger-bilim-merkezleri-165"
+   "https://bilimmerkezleri.tubitak.gov.tr/Icerik/diger-bilim-merkezleri-165",
+   "https://tr.wikipedia.org/wiki/Feza_G%C3%BCrsey_Bilim_Merkezi",
+   "https://www.tripadvisor.com/Attraction_Review-g298656-d6580994-Reviews-Feza_Gursey_Bilim_Merkezi-Ankara.html"
   ],
   "score_bebek": 1,
   "score_okul_oncesi": 4,
@@ -1589,8 +1589,7 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5,
-  "koordinat_kaynak": "osm"
+  "score_fiyat_performans": 5
  },
  {
   "name": "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi",
@@ -2449,8 +2448,8 @@
   "subcategory": "hayvanat bahçesi (kapalı)",
   "district": "Yenimahalle",
   "address": "Atatürk Orman Çiftliği, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93665,
+  "lng": 32.80515,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -2478,7 +2477,8 @@
   "score_ergen": 0,
   "score_erisilebilirlik": 0,
   "score_guvenlik": 0,
-  "score_fiyat_performans": 0
+  "score_fiyat_performans": 0,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Keçiören Evcil Hayvanlar Parkı",
@@ -2486,8 +2486,8 @@
   "subcategory": "evcil hayvan parkı (ABB)",
   "district": "Keçiören",
   "address": "Uyanış Mah., Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.00771,
+  "lng": 32.86567,
   "age_min": 0,
   "age_max": 12,
   "indoor": false,
@@ -2524,7 +2524,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Aqua Vega Akvaryum (Nata Vega Outlet)",
@@ -2532,8 +2533,8 @@
   "subcategory": "akvaryum (98 m tünel)",
   "district": "Mamak",
   "address": "Nata Vega Outlet AVM -2. kat, Mamak Bulvarı, Mamak/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88769,
+  "lng": 32.93493,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -2575,7 +2576,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Ankara Devlet Tiyatrosu – Çocuk Oyunları",
@@ -2710,8 +2712,8 @@
   "subcategory": "pul ve haberleşme müzesi",
   "district": "Altındağ",
   "address": "Anafartalar Mah., Atatürk Bulvarı No:13, Ulus/Altındağ, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93816,
+  "lng": 32.85471,
   "age_min": 6,
   "age_max": 99,
   "indoor": true,
@@ -2747,7 +2749,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Meteoroloji Müzesi",
@@ -2755,8 +2758,8 @@
   "subcategory": "meteoroloji aletleri ve belgeler müzesi",
   "district": "Keçiören",
   "address": "Meteoroloji Genel Müdürlüğü, Kütükçü Alibey Cad. No:4, 06120 Kalaba/Keçiören, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96951,
+  "lng": 32.86213,
   "age_min": 8,
   "age_max": 99,
   "indoor": true,
@@ -2789,7 +2792,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Ankara Somut Olmayan Kültürel Miras Müzesi (SOKÜM)",
@@ -2797,8 +2801,8 @@
   "subcategory": "yaşayan kültür müzesi (Karagöz, masal, geleneksel çocuk oyunları)",
   "district": "Altındağ",
   "address": "Hamamönü, Talatpaşa Bulvarı Öz Sokak, Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93399,
+  "lng": 32.86407,
   "age_min": 3,
   "age_max": 12,
   "indoor": true,
@@ -2833,7 +2837,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Ankara Radyo ve İletişim Müzesi",
@@ -2929,8 +2934,8 @@
   "subcategory": "restore tarihi mahalle, sanat sokağı, ev müzeleri",
   "district": "Altındağ",
   "address": "Hacettepe Mah., Hamamönü, Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93347,
+  "lng": 32.86608,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -2967,7 +2972,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "TCDD Açık Hava Buharlı Lokomotif Müzesi",
@@ -3159,8 +3165,8 @@
   "subcategory": "şehir parkı",
   "district": "Çankaya",
   "address": "Güvenevler, Hilal Sk./Cinnah Cad. arası, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89602,
+  "lng": 32.86278,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3197,7 +3203,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Botanik Parkı",
@@ -3205,8 +3212,8 @@
   "subcategory": "şehir parkı",
   "district": "Çankaya",
   "address": "Atakule altı, Çankaya Cad., Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88798,
+  "lng": 32.85866,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3242,7 +3249,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Altınpark",
@@ -3250,8 +3258,8 @@
   "subcategory": "şehir parkı/bilim merkezi",
   "district": "Altındağ",
   "address": "Aydınlıkevler, İrfan Baştuğ Cad., Altındağ/Ankara",
-  "lat": 39.9656,
-  "lng": 32.8728,
+  "lat": 39.96634,
+  "lng": 32.87931,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3259,7 +3267,7 @@
   "price_note": "Parka giriş ücretsiz; Feza Gürsey Bilim Merkezi sembolik ücretli; gezi treni ve bazı aktiviteler ücretli",
   "hours": "Park gündüz açık; Feza Gürsey Bilim Merkezi 08:00–18:00 her gün (dönem tatillerinde randevu)",
   "website": "https://www.ankara.bel.tr/kadin-ve-aile-hizmetleri/cocuk-hizmetleri/feza-gursey-bilim-merkezi",
-  "phone": "0554 345 21 32",
+  "phone": null,
   "google_maps_query": "Altınpark Ankara",
   "features": [
    "gölet",
@@ -3285,10 +3293,7 @@
   "sources": [
    "https://www.ankara.bel.tr/kadin-ve-aile-hizmetleri/cocuk-hizmetleri/feza-gursey-bilim-merkezi",
    "https://www.ankaramasasi.com.tr/haber/2208836/ankara-da-cocuklar-bilime-dokunuyor-feza-gursey-bilim-merkezi-nasil-bir-yer",
-   "https://www.tripadvisor.com/Attraction_Review-g298656-d6580994-Reviews-Feza_Gursey_Bilim_Merkezi-Ankara.html",
-   "https://benefitsystems.com.tr/en/facilities/ankara-altinpark-go-kart/",
-   "https://okuldisiogrenme.eba.gov.tr/place-detail/feza-gursey-bilim-merkezi-549",
-   "https://tr.wikipedia.org/wiki/Feza_G%C3%BCrsey_Bilim_Merkezi"
+   "https://www.tripadvisor.com/Attraction_Review-g298656-d6580994-Reviews-Feza_Gursey_Bilim_Merkezi-Ankara.html"
   ],
   "score_bebek": 3,
   "score_okul_oncesi": 4,
@@ -3296,7 +3301,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Harikalar Diyarı",
@@ -3304,8 +3310,8 @@
   "subcategory": "tema/şehir parkı",
   "district": "Sincan",
   "address": "Yunus Emre Mah., Ayaş Yolu üzeri, Sincan/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.9805,
+  "lng": 32.59159,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3351,7 +3357,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Göksu Parkı",
@@ -3359,8 +3366,8 @@
   "subcategory": "göl/şehir parkı",
   "district": "Etimesgut",
   "address": "Eryaman, Göksu Mah., Etimesgut/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.99283,
+  "lng": 32.65065,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3407,7 +3414,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "50. Yıl Parkı",
@@ -3415,8 +3423,8 @@
   "subcategory": "tepe/seyir parkı",
   "district": "Çankaya",
   "address": "Dikmen, 50. Yıl Mah., Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.9239,
+  "lng": 32.87693,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3455,7 +3463,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Dikmen Vadisi",
@@ -3463,8 +3472,8 @@
   "subcategory": "vadi parkı",
   "district": "Çankaya",
   "address": "Dikmen Vadisi, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88543,
+  "lng": 32.84459,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3504,7 +3513,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Kurtuluş Parkı",
@@ -3512,8 +3522,8 @@
   "subcategory": "şehir parkı",
   "district": "Çankaya",
   "address": "Kurtuluş, Ziya Gökalp Cad., Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92665,
+  "lng": 32.86339,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3551,7 +3561,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Estergon Kalesi (Türk Kültür Merkezi)",
@@ -3559,8 +3570,8 @@
   "subcategory": "kültür merkezi/seyir alanı",
   "district": "Keçiören",
   "address": "Kalaba, Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.98077,
+  "lng": 32.86646,
   "age_min": 3,
   "age_max": 99,
   "indoor": false,
@@ -3597,7 +3608,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm"
  },
  {
   "name": "Kartaltepe Kent Ormanı",
@@ -3612,7 +3624,7 @@
   "indoor": false,
   "price": "ücretsiz",
   "price_note": "Giriş ücretsiz; dağ kızağı ve mini lunapark ücretli",
-  "hours": "10:00-18:00",
+  "hours": null,
   "website": "https://www.kecioren.bel.tr/kartaltepe_kent_ormani-4-park.html",
   "phone": null,
   "google_maps_query": "Kartaltepe Kent Ormanı Ovacık Keçiören",
@@ -3642,9 +3654,7 @@
   "sources": [
    "https://www.kecioren.bel.tr/kartaltepe_kent_ormani-4-park.html",
    "https://www.yeniankara.com.tr/ankara/kecioren/turkiyenin-en-uzun-dag-kizagi-pistine-sahip-olan-ankara-ovacik-kartaltepe-kent-ormaninda-neler-var-vatandaslar-ne-diyor-128230",
-   "https://www.piknikyerleri.com/sehirler/ankara/kartaltepe-kent-ormani",
-   "https://www.enuygun.com/bilgi/ankara-nin-en-guzel-5-aquaparki/",
-   "https://gezginsitesi.com/ankara-aquaparklari-fiyatlari/"
+   "https://www.piknikyerleri.com/sehirler/ankara/kartaltepe-kent-ormani"
   ],
   "score_bebek": 3,
   "score_okul_oncesi": 4,
@@ -4425,6 +4435,49 @@
   "score_fiyat_performans": 3
  },
  {
+  "name": "Altınpark Go-kart / Akülü Araçlar",
+  "category": "spor",
+  "subcategory": "go-kart (park içi)",
+  "district": "Altındağ",
+  "address": "Altınpark içi, Akülü Araçlar alanı, Altındağ/Ankara",
+  "lat": null,
+  "lng": null,
+  "age_min": 5,
+  "age_max": 99,
+  "indoor": false,
+  "price": "uygun",
+  "price_note": "MultiSport kartla 3 tur; nakit tarife yayımlanmıyor. Altınpark otoparkı araç başı 40 TL.",
+  "hours": "Her gün 11:00-18:00",
+  "website": "https://benefitsystems.com.tr/en/facilities/ankara-altinpark-go-kart/",
+  "phone": "0554 345 21 32",
+  "google_maps_query": "Altınpark Go-kart Ankara",
+  "features": [
+   "5.000 m² pist",
+   "park içi",
+   "Feza Gürsey Bilim Merkezi ile aynı park",
+   "otopark"
+  ],
+  "description": "Altınpark'ın içindeki go-kart/akülü araç pisti; Feza Gürsey Bilim Merkezi ve parkın oyun alanlarıyla aynı gün birleştirilebiliyor. Küçük çocuklar için akülü araç, büyükler için go-kart seçeneği var.",
+  "tips": [
+   "Bilim merkezi + go-kart + piknik ile tam gün program yapın.",
+   "Saatler 18:00'de bitiyor; öğleden sonra erken gidin."
+  ],
+  "best_season": "her mevsim",
+  "transport": "Altınpark; Ankara Büyükşehir otobüsleri, otopark 40 TL",
+  "status": "açık",
+  "sources": [
+   "https://benefitsystems.com.tr/en/facilities/ankara-altinpark-go-kart/",
+   "https://www.tripadvisor.com/Attraction_Review-g298656-d6580994-Reviews-Feza_Gursey_Bilim_Merkezi-Ankara.html"
+  ],
+  "score_bebek": 1,
+  "score_okul_oncesi": 3,
+  "score_ilkokul": 4,
+  "score_ergen": 4,
+  "score_erisilebilirlik": 4,
+  "score_guvenlik": 3,
+  "score_fiyat_performans": 4
+ },
+ {
   "name": "Kısa Kaya Boulder Evi",
   "category": "spor",
   "subcategory": "tırmanma / boulder salonu",
@@ -4790,6 +4843,51 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 3,
   "score_fiyat_performans": 3
+ },
+ {
+  "name": "Kartaltepe Aquapark – Keçiören",
+  "category": "spor",
+  "subcategory": "aquapark",
+  "district": "Keçiören",
+  "address": "Ovacık Mah., Forum Ankara AVM yakını, Keçiören/Ankara",
+  "lat": null,
+  "lng": null,
+  "age_min": 3,
+  "age_max": 99,
+  "indoor": false,
+  "price": "orta",
+  "price_note": "2025: hafta içi yetişkin 450 TL, çocuk (6-10) 250 TL; hafta sonu yetişkin 550 TL, çocuk 250 TL.",
+  "hours": "10:00-18:00",
+  "website": null,
+  "phone": null,
+  "google_maps_query": "Kartaltepe Aquapark Keçiören",
+  "features": [
+   "2 havuz",
+   "6 kaydırak",
+   "ısıtmalı çocuk havuzu",
+   "oyun parkı",
+   "kadınlara özel gün",
+   "ücretsiz servis (Keçiören Metro)"
+  ],
+  "description": "Keçiören Ovacık'taki orta ölçekli aquapark; ısıtmalı çocuk havuzu küçükler için avantaj, fiyatlar diğer aquaparklara göre daha düşük. Keçiören Metro'dan 10:00 ve 11:30'da ücretsiz servis var.",
+  "tips": [
+   "Isıtmalı çocuk havuzu sayesinde serin günlerde de küçükler için uygun.",
+   "18:00'de kapanıyor, erken gidin."
+  ],
+  "best_season": "yaz",
+  "transport": "M4 Keçiören istasyonundan ücretsiz servis 10:00 / 11:30, dönüş 17:00 / 19:00",
+  "status": "açık",
+  "sources": [
+   "https://www.enuygun.com/bilgi/ankara-nin-en-guzel-5-aquaparki/",
+   "https://gezginsitesi.com/ankara-aquaparklari-fiyatlari/"
+  ],
+  "score_bebek": 2,
+  "score_okul_oncesi": 4,
+  "score_ilkokul": 5,
+  "score_ergen": 4,
+  "score_erisilebilirlik": 4,
+  "score_guvenlik": 3,
+  "score_fiyat_performans": 4
  },
  {
   "name": "Ankara Atlıspor Kulübü – Pony Okulu",
@@ -5332,7 +5430,22 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    150,
+    250
+   ],
+   "aile_tl": [
+    400,
+    750
+   ],
+   "kalem": "kahvaltı/fırın ürünleri + içecek · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Yuba Cafe & Bistro",
@@ -5384,7 +5497,22 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    300,
+    500
+   ],
+   "aile_tl": [
+    750,
+    1500
+   ],
+   "kalem": "serpme kahvaltı; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "oyun alanı ücreti mekândan sorulmalı",
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "AOÇ Kaşıbeyaz Ankara",
@@ -5433,7 +5561,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "pazar açık büfe kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "mekân politikası: 0-6 yaş ücretsiz, 6-9 yaş indirimli (eski liste)",
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Deniz Kozanlı Kahvaltı & Mantı",
@@ -5479,7 +5622,22 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    200,
+    300
+   ],
+   "aile_tl": [
+    500,
+    900
+   ],
+   "kalem": "serpme köy kahvaltısı + sınırsız çay · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)",
@@ -5528,7 +5686,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "köy kahvaltısı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Fevzi Hoca Köfte-Balık Çayyolu",
@@ -5536,8 +5709,8 @@
   "subcategory": "restoran",
   "district": "Çankaya",
   "address": "Çayyolu Mah., 2679. Sk. No:4, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88606,
+  "lng": 32.70057,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5576,7 +5749,23 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    550,
+    700
+   ],
+   "aile_tl": [
+    1400,
+    2100
+   ],
+   "kalem": "serpme Karadeniz kahvaltısı (hafta sonu açık büfe) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://menufiyati.tr/fevzi-hoca-menu-fiyatlari/",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Otto Lounge Restoran & Cafe",
@@ -5584,8 +5773,8 @@
   "subcategory": "kahvaltı",
   "district": "Çankaya",
   "address": "Kızılırmak Mah., Muhsin Yazıcıoğlu Cd. Hayat Sebla Evleri No:25/A, Çukurambar, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90206,
+  "lng": 32.81016,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5624,7 +5813,23 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    425,
+    485
+   ],
+   "aile_tl": [
+    1050,
+    1450
+   ],
+   "kalem": "serpme kahvaltı + sınırsız çay/portakal suyu · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Masabaşı Kebapçısı Balgat",
@@ -5674,7 +5879,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    700,
+    900
+   ],
+   "aile_tl": [
+    1750,
+    2700
+   ],
+   "kalem": "kebap porsiyonu (680-780 ₺) + içecek; oyun kulübü hariç · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "alt kattaki oyun kulübü ve jetonlu oyunlar ayrıca ücretli",
+   "kaynak": "https://menufiyati.tr/masabasi-menu-fiyatlari-2026/",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Kukla Kebap Balgat",
@@ -5682,8 +5902,8 @@
   "subcategory": "restoran",
   "district": "Çankaya",
   "address": "Balgat Mah., Dr. Sadık Ahmet Cd. 21/A, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90982,
+  "lng": 32.81606,
   "age_min": 2,
   "age_max": 99,
   "indoor": true,
@@ -5719,7 +5939,23 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    500,
+    800
+   ],
+   "aile_tl": [
+    1250,
+    2400
+   ],
+   "kalem": "iskender/pide + içecek; Ankara 2026 kebap/balık restoranı genel bandı (500-800 ₺/kişi, ana yemek + içecek); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://menu-fiyatlari.com/uludag-kebap-menu-fiyat-listesi/",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Serüven Balık Restaurant",
@@ -5767,7 +6003,22 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    500,
+    800
+   ],
+   "aile_tl": [
+    1250,
+    2400
+   ],
+   "kalem": "ızgara balık + içecek; Ankara 2026 kebap/balık restoranı genel bandı (500-800 ₺/kişi, ana yemek + içecek); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://menu-fiyatlari.com/uludag-kebap-menu-fiyat-listesi/",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Marco Pascha Çukurambar",
@@ -5816,7 +6067,22 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    300,
+    500
+   ],
+   "aile_tl": [
+    750,
+    1500
+   ],
+   "kalem": "hafta sonu açık büfe brunch; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "0-3 yaş aileyle aynı masada ücretsiz",
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "ChronoStation Aile Yaşam Merkezi (ChronoCafe)",
@@ -5960,7 +6226,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    850,
+    900
+   ],
+   "aile_tl": [
+    2100,
+    2700
+   ],
+   "kalem": "serpme kahvaltı 885 ₺/kişi (09:30-15:00) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "0-4 yaş ücretsiz, 4-10 yaş yarım ücret",
+   "kaynak": "https://www.ankararestoranlari.com/restoran/calgan-saklikoy-cayyolu",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Cafemiz",
@@ -5968,8 +6249,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Gaziosmanpaşa Mah., Arjantin Cd. No:19/1, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89792,
+  "lng": 32.86578,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6007,7 +6288,23 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    200,
+    300
+   ],
+   "aile_tl": [
+    500,
+    900
+   ],
+   "kalem": "kahvaltı / açık büfe kahvaltı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Kirit Cafe",
@@ -6054,7 +6351,22 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    250,
+    290
+   ],
+   "aile_tl": [
+    600,
+    850
+   ],
+   "kalem": "kahvaltı tabağı (~270 ₺) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Karçiçeği Cafe & Restaurant (Mogan Gölü)",
@@ -6101,7 +6413,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    650,
+    900
+   ],
+   "aile_tl": [
+    1600,
+    2700
+   ],
+   "kalem": "serpme kahvaltı; 2023'te 650 ₺/kişi ölçüldü, 2026 üst sınır Gölbaşı göl kenarı bandına göre tahmin · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.kahvaltifiyatlari.com/karcicegi-cafe-restaurant-golbasi-ankara",
+   "kaynak_tarihi": "2023 (eski)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Köyüm Cafe (Mogan Parkı)",
@@ -6147,7 +6474,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    500,
+    800
+   ],
+   "aile_tl": [
+    1250,
+    2400
+   ],
+   "kalem": "serpme kahvaltı; 2023'te 500 ₺/kişi ölçüldü, 2026 üst sınır tahmin · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.kahvaltifiyatlari.com/koyum-cafe-golbasi-ankara",
+   "kaynak_tarihi": "2023 (eski)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Çağlar Restaurant (Mogan Gölü)",
@@ -6195,7 +6537,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    300,
+    500
+   ],
+   "aile_tl": [
+    750,
+    1500
+   ],
+   "kalem": "'ne yersen onu öde' seçme kahvaltı — serpmeden daha düşük çıkabilir; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Pars Garden (Eymir/Gölbaşı)",
@@ -6244,7 +6601,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "serpme kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": "çocuk menüsü var",
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Eğriçimen Kahvaltı & Et & Balık Restaurant",
@@ -6252,8 +6624,8 @@
   "subcategory": "restoran",
   "district": "Gölbaşı",
   "address": "İncek Mah., Turgut Özal Blv. No:73, Gölbaşı/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.79201,
+  "lng": 32.69052,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6292,7 +6664,23 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "serpme kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Esrarengiz Bahçe",
@@ -6340,7 +6728,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "serpme kahvaltı (kişi başı 400-600 ₺; yorumlarda 300-400 ₺) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://restaurantguru.com/Esrarengiz-Bahce-Cubuk",
+   "kaynak_tarihi": "2025-2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Botanik Kır Bahçesi & At Biniciliği",
@@ -6389,7 +6792,22 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "serpme kahvaltı, at binme hariç; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Yayla Karadeniz Kır Lokantası",
@@ -6435,7 +6853,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "Karadeniz kahvaltısı (mıhlama/kuymak); Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı",
@@ -6482,7 +6915,22 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 1,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "köy kahvaltısı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+   "kaynak_tarihi": "2026 (genel band)",
+   "guven": "düşük"
+  }
  },
  {
   "name": "ma&me&pa Family Club (Bilkent Center)",
@@ -6676,8 +7124,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Yeşilkent Mah., 555. Sk. No:1/A, Eymir Gölü, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.8265,
+  "lng": 32.84998,
   "age_min": 3,
   "age_max": 99,
   "indoor": false,
@@ -6716,7 +7164,23 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "osm",
+  "aile_fiyat": {
+   "kisi_basi_tl": [
+    400,
+    600
+   ],
+   "aile_tl": [
+    1000,
+    1800
+   ],
+   "kalem": "kahvaltı (kişi başı 400-600 ₺); bisiklet kiralama hariç · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+   "cocuk_notu": null,
+   "kaynak": "https://restaurantguru.com/Delta-Macera-Sport-and-Cafe-Ankara",
+   "kaynak_tarihi": "2025-2026",
+   "guven": "orta"
+  }
  },
  {
   "name": "Powertec Cafe & Bistro",

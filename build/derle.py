@@ -354,7 +354,7 @@ def main():
     hafif = [{k: m.get(k) for k in ("name", "slug", "url", "category", "district", "ilce_slug", "lat", "lng",
                                     "indoor", "price", "puan", "age_min", "age_max", "features", "best_season",
                                     "status", "score_bebek", "score_okul_oncesi", "score_ilkokul", "score_ergen",
-                                    "description", "subcategory")}
+                                    "description", "subcategory", "aile_fiyat")}
              | {"ikon": m["kategori"]["ikon"], "renk": m["kategori"]["renk"], "kat_ad": m["kategori"]["kisa"]}
              for m in mekanlar]
     (DIST / "static").mkdir(exist_ok=True)

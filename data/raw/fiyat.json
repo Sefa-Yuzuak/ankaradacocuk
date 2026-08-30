@@ -1,0 +1,362 @@
+{
+ "Kafes Fırın Söğütözü": {
+  "kisi_basi_tl": [
+   150,
+   250
+  ],
+  "aile_tl": [
+   400,
+   750
+  ],
+  "kalem": "kahvaltı/fırın ürünleri + içecek · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Yuba Cafe & Bistro": {
+  "kisi_basi_tl": [
+   300,
+   500
+  ],
+  "aile_tl": [
+   750,
+   1500
+  ],
+  "kalem": "serpme kahvaltı; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "oyun alanı ücreti mekândan sorulmalı",
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "AOÇ Kaşıbeyaz Ankara": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "pazar açık büfe kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "mekân politikası: 0-6 yaş ücretsiz, 6-9 yaş indirimli (eski liste)",
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Deniz Kozanlı Kahvaltı & Mantı": {
+  "kisi_basi_tl": [
+   200,
+   300
+  ],
+  "aile_tl": [
+   500,
+   900
+  ],
+  "kalem": "serpme köy kahvaltısı + sınırsız çay · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "köy kahvaltısı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Fevzi Hoca Köfte-Balık Çayyolu": {
+  "kisi_basi_tl": [
+   550,
+   700
+  ],
+  "aile_tl": [
+   1400,
+   2100
+  ],
+  "kalem": "serpme Karadeniz kahvaltısı (hafta sonu açık büfe) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://menufiyati.tr/fevzi-hoca-menu-fiyatlari/",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Otto Lounge Restoran & Cafe": {
+  "kisi_basi_tl": [
+   425,
+   485
+  ],
+  "aile_tl": [
+   1050,
+   1450
+  ],
+  "kalem": "serpme kahvaltı + sınırsız çay/portakal suyu · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Masabaşı Kebapçısı Balgat": {
+  "kisi_basi_tl": [
+   700,
+   900
+  ],
+  "aile_tl": [
+   1750,
+   2700
+  ],
+  "kalem": "kebap porsiyonu (680-780 ₺) + içecek; oyun kulübü hariç · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "alt kattaki oyun kulübü ve jetonlu oyunlar ayrıca ücretli",
+  "kaynak": "https://menufiyati.tr/masabasi-menu-fiyatlari-2026/",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Kukla Kebap Balgat": {
+  "kisi_basi_tl": [
+   500,
+   800
+  ],
+  "aile_tl": [
+   1250,
+   2400
+  ],
+  "kalem": "iskender/pide + içecek; Ankara 2026 kebap/balık restoranı genel bandı (500-800 ₺/kişi, ana yemek + içecek); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://menu-fiyatlari.com/uludag-kebap-menu-fiyat-listesi/",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Serüven Balık Restaurant": {
+  "kisi_basi_tl": [
+   500,
+   800
+  ],
+  "aile_tl": [
+   1250,
+   2400
+  ],
+  "kalem": "ızgara balık + içecek; Ankara 2026 kebap/balık restoranı genel bandı (500-800 ₺/kişi, ana yemek + içecek); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://menu-fiyatlari.com/uludag-kebap-menu-fiyat-listesi/",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Marco Pascha Çukurambar": {
+  "kisi_basi_tl": [
+   300,
+   500
+  ],
+  "aile_tl": [
+   750,
+   1500
+  ],
+  "kalem": "hafta sonu açık büfe brunch; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "0-3 yaş aileyle aynı masada ücretsiz",
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Çalgan Saklıköy (Çalgan Et Lokantası)": {
+  "kisi_basi_tl": [
+   850,
+   900
+  ],
+  "aile_tl": [
+   2100,
+   2700
+  ],
+  "kalem": "serpme kahvaltı 885 ₺/kişi (09:30-15:00) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "0-4 yaş ücretsiz, 4-10 yaş yarım ücret",
+  "kaynak": "https://www.ankararestoranlari.com/restoran/calgan-saklikoy-cayyolu",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Cafemiz": {
+  "kisi_basi_tl": [
+   200,
+   300
+  ],
+  "aile_tl": [
+   500,
+   900
+  ],
+  "kalem": "kahvaltı / açık büfe kahvaltı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Kirit Cafe": {
+  "kisi_basi_tl": [
+   250,
+   290
+  ],
+  "aile_tl": [
+   600,
+   850
+  ],
+  "kalem": "kahvaltı tabağı (~270 ₺) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026",
+  "guven": "orta"
+ },
+ "Karçiçeği Cafe & Restaurant (Mogan Gölü)": {
+  "kisi_basi_tl": [
+   650,
+   900
+  ],
+  "aile_tl": [
+   1600,
+   2700
+  ],
+  "kalem": "serpme kahvaltı; 2023'te 650 ₺/kişi ölçüldü, 2026 üst sınır Gölbaşı göl kenarı bandına göre tahmin · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.kahvaltifiyatlari.com/karcicegi-cafe-restaurant-golbasi-ankara",
+  "kaynak_tarihi": "2023 (eski)",
+  "guven": "düşük"
+ },
+ "Köyüm Cafe (Mogan Parkı)": {
+  "kisi_basi_tl": [
+   500,
+   800
+  ],
+  "aile_tl": [
+   1250,
+   2400
+  ],
+  "kalem": "serpme kahvaltı; 2023'te 500 ₺/kişi ölçüldü, 2026 üst sınır tahmin · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.kahvaltifiyatlari.com/koyum-cafe-golbasi-ankara",
+  "kaynak_tarihi": "2023 (eski)",
+  "guven": "düşük"
+ },
+ "Çağlar Restaurant (Mogan Gölü)": {
+  "kisi_basi_tl": [
+   300,
+   500
+  ],
+  "aile_tl": [
+   750,
+   1500
+  ],
+  "kalem": "'ne yersen onu öde' seçme kahvaltı — serpmeden daha düşük çıkabilir; Ankara 2026 serpme kahvaltı genel bandı (300-500 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Pars Garden (Eymir/Gölbaşı)": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "serpme kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": "çocuk menüsü var",
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Eğriçimen Kahvaltı & Et & Balık Restaurant": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "serpme kahvaltı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Esrarengiz Bahçe": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "serpme kahvaltı (kişi başı 400-600 ₺; yorumlarda 300-400 ₺) · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://restaurantguru.com/Esrarengiz-Bahce-Cubuk",
+  "kaynak_tarihi": "2025-2026",
+  "guven": "orta"
+ },
+ "Botanik Kır Bahçesi & At Biniciliği": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "serpme kahvaltı, at binme hariç; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Yayla Karadeniz Kır Lokantası": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "Karadeniz kahvaltısı (mıhlama/kuymak); Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "köy kahvaltısı; Ankara 2026 kır bahçesi serpme kahvaltı genel bandı (400-600 ₺/kişi); mekâna özel güncel fiyat bulunamadı · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
+  "kaynak_tarihi": "2026 (genel band)",
+  "guven": "düşük"
+ },
+ "Delta Macera Sport & Cafe (Eymir Gölü)": {
+  "kisi_basi_tl": [
+   400,
+   600
+  ],
+  "aile_tl": [
+   1000,
+   1800
+  ],
+  "kalem": "kahvaltı (kişi başı 400-600 ₺); bisiklet kiralama hariç · hesap: 2 yetişkin tam + 1-2 çocuk yarım/tam porsiyon",
+  "cocuk_notu": null,
+  "kaynak": "https://restaurantguru.com/Delta-Macera-Sport-and-Cafe-Ankara",
+  "kaynak_tarihi": "2025-2026",
+  "guven": "orta"
+ }
+}

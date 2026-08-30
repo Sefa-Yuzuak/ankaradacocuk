@@ -17,9 +17,9 @@ RAW = KOK / "data" / "raw"
 ZORUNLU = ["name", "category", "district", "description", "score_bebek", "score_okul_oncesi",
            "score_ilkokul", "score_ergen", "score_erisilebilirlik", "score_guvenlik", "score_fiyat_performans"]
 SIRA = ["gezi", "muze", "park", "oyun", "yemek"]  # öncelik: önce gelen dosya kazanır
-KOKLER = ["gordion", "mogan", "eymir", "beynam", "soguksu", "karagol", "camkoru", "mavigol", "elmadag",
-          "ataturkcocuklari", "harikalardiyari", "genclikparki", "altinpark", "fezagursey", "aquavega",
-          "ankarakalesi", "hamamonu", "anitkabir", "kartaltepe", "ahlatlibel", "tulumtas", "kizilcahamamtermal"]
+KOKLER = ["fezagursey", "gordion", "mogan", "eymir", "beynam", "soguksu", "karagol", "camkoru", "mavigol",
+          "elmadag", "ataturkcocuklari", "harikalardiyari", "genclikparki", "aquavega", "ankarakalesi",
+          "hamamonu", "anitkabir", "kartaltepekentormani", "ahlatlibel", "tulumtas", "kizilcahamamtermal"]
 TR = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
 
 
@@ -57,7 +57,7 @@ def yeniden_kategorile(m):
     return m
 
 
-dosyalar = sorted(RAW.glob("*.json"), key=lambda p: SIRA.index(p.stem) if p.stem in SIRA else 99)
+dosyalar = sorted([d for d in RAW.glob("*.json") if d.stem != "fiyat"], key=lambda p: SIRA.index(p.stem) if p.stem in SIRA else 99)
 hepsi, indeks, uyarilar = [], {}, []
 for dosya in dosyalar:
     for m in json.loads(dosya.read_text(encoding="utf-8")):
@@ -94,6 +94,14 @@ if KOORD.exists():
         k = cache.get(m["name"])
         if k and not (m.get("lat") and m.get("lng")):
             m["lat"], m["lng"], m["koordinat_kaynak"] = k["lat"], k["lng"], "osm"
+
+FIYAT = RAW / "fiyat.json"
+if FIYAT.exists():
+    fiyatlar = json.loads(FIYAT.read_text(encoding="utf-8"))
+    for m in hepsi:
+        f = fiyatlar.get(m["name"])
+        if f and (f.get("aile_tl") or f.get("kisi_basi_tl")):
+            m["aile_fiyat"] = f
 
 (KOK / "data" / "mekanlar.json").write_text(json.dumps(hepsi, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(hepsi)} mekân yazıldı; {sum(1 for m in hepsi if m.get('lat'))} koordinatlı; "

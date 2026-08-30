@@ -32,13 +32,7 @@
   "eslesme": "Kesikköprü Barajı, Kesikköprü, Kesikköprü Mahallesi, Balâ, Ankara, İç Anadolu Bölgesi, Türkiye",
   "tur": "dam"
  },
- "Mavi Göl (Bayındır Barajı)": {
-  "lat": 39.91351,
-  "lng": 32.96568,
-  "sorgu": "Kayaş, Mamak, Ankara",
-  "eslesme": "Kayaş, Kayaş Caddesi, Kayaş, Kayaş Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06270, Türkiye",
-  "tur": "station"
- },
+ "Mavi Göl (Bayındır Barajı)": null,
  "Çamlıdere Fosil Ormanı (Pelitçik)": null,
  "Çamkoru Tabiat Parkı": {
   "lat": 40.58291,
@@ -107,13 +101,7 @@
  "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": null,
  "ABB Yarıyıl Çocuk Festivali (Altınpark)": null,
  "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": null,
- "Tuğram At Çiftliği": {
-  "lat": 39.79253,
-  "lng": 32.80667,
-  "sorgu": "Gölbaşı, Ankara",
-  "eslesme": "Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
-  "tur": "administrative"
- },
+ "Tuğram At Çiftliği": null,
  "Feza Gürsey Bilim Merkezi": {
   "lat": 39.96838,
   "lng": 32.87988,
@@ -202,5 +190,195 @@
   "eslesme": "Ali Kuşçu Gökbilim Merkezi, 627. Caddesi, Misket Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06260, Türkiye",
   "tur": "planetarium"
  },
- "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": null
+ "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": null,
+ "Atatürk Çocukları Doğal Yaşam Parkı ve Hayvanat Bahçesi (AOÇ)": null,
+ "Atatürk Orman Çiftliği Hayvanat Bahçesi (eski)": {
+  "lat": 39.93665,
+  "lng": 32.80515,
+  "sorgu": "Atatürk Orman Çiftliği, Yenimahalle/Ankara",
+  "eslesme": "Atatürk Orman Çiftliği, Emniyet Mahallesi, Yenimahalle, Ankara, İç Anadolu Bölgesi, 06560, Türkiye",
+  "tur": "forest"
+ },
+ "Keçiören Evcil Hayvanlar Parkı": {
+  "lat": 40.00771,
+  "lng": 32.86567,
+  "sorgu": "Keçiören Evcil Hayvanlar Parkı",
+  "eslesme": "Evcil Hayvanlar Parkı, Uyanış Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Aqua Vega Akvaryum (Nata Vega Outlet)": {
+  "lat": 39.88769,
+  "lng": 32.93493,
+  "sorgu": "Aqua Vega Akvaryum Nata Vega Ankara",
+  "eslesme": "Aqua Vega Akvaryum, 2308. Sokak, Akşemsettin Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06270, Türkiye",
+  "tur": "aquarium"
+ },
+ "Ankara Devlet Tiyatrosu – Çocuk Oyunları": null,
+ "ABB Başkent Tiyatroları – Çocuk Tiyatrosu (Gençlik Parkı)": null,
+ "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)": null,
+ "PTT Pul Müzesi": {
+  "lat": 39.93816,
+  "lng": 32.85471,
+  "sorgu": "PTT Pul Müzesi Ulus Ankara",
+  "eslesme": "PTT Pul Müzesi, 13, Atatürk Bulvarı, Ulus, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06050, Türkiye",
+  "tur": "museum"
+ },
+ "Meteoroloji Müzesi": {
+  "lat": 39.96951,
+  "lng": 32.86213,
+  "sorgu": "Meteoroloji Müzesi Kalaba Ankara",
+  "eslesme": "Meteoroloji Müzesi, 4/4, Kütükçü Alibey Caddesi, Kalaba Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 06120, Türkiye",
+  "tur": "museum"
+ },
+ "Ankara Somut Olmayan Kültürel Miras Müzesi (SOKÜM)": {
+  "lat": 39.93399,
+  "lng": 32.86407,
+  "sorgu": "Somut Olmayan Kültürel Miras Müzesi Hamamönü",
+  "eslesme": "Somut Olmayan Kültürel Miras Müzesi, 8, Talatpaşa Bulvarı, Hamamönü, Hacettepe Mahallesi, Altındağ, Ankara, İç Anadolu B",
+  "tur": "museum"
+ },
+ "Ankara Radyo ve İletişim Müzesi": null,
+ "Hamamönü Tarihi Bölgesi": {
+  "lat": 39.93347,
+  "lng": 32.86608,
+  "sorgu": "Hamamönü Ankara",
+  "eslesme": "Hamamönü, Hacettepe Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06230, Türkiye",
+  "tur": "quarter"
+ },
+ "TCDD Açık Hava Buharlı Lokomotif Müzesi": null,
+ "Seğmenler Parkı": {
+  "lat": 39.89602,
+  "lng": 32.86278,
+  "sorgu": "Seğmenler Parkı Çankaya Ankara",
+  "eslesme": "Seğmenler Parkı, Çankaya Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Botanik Parkı": {
+  "lat": 39.88798,
+  "lng": 32.85866,
+  "sorgu": "Botanik Parkı Atakule Ankara",
+  "eslesme": "Botanik Parkı, Çankaya Caddesi, Atakule, Çankaya Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06690, Türkiye",
+  "tur": "bus_stop"
+ },
+ "Altınpark": {
+  "lat": 39.96634,
+  "lng": 32.87931,
+  "sorgu": "Altınpark Ankara",
+  "eslesme": "Altınpark, Altındağ, Ankara, İç Anadolu Bölgesi, 06130, Türkiye",
+  "tur": "park"
+ },
+ "Harikalar Diyarı": {
+  "lat": 39.9805,
+  "lng": 32.59159,
+  "sorgu": "Harikalar Diyarı Sincan Ankara",
+  "eslesme": "Harikalar Diyarı, Yunus Emre Mahallesi, Sincan, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Göksu Parkı": {
+  "lat": 39.99283,
+  "lng": 32.65065,
+  "sorgu": "Göksu Parkı, Etimesgut, Ankara",
+  "eslesme": "Göksu Parkı, 6, Göksu Mahallesi, Etimesgut, Ankara, İç Anadolu Bölgesi, 06820, Türkiye",
+  "tur": "park"
+ },
+ "50. Yıl Parkı": {
+  "lat": 39.9239,
+  "lng": 32.87693,
+  "sorgu": "50. Yıl Parkı, Çankaya, Ankara",
+  "eslesme": "50. Yıl Parkı, 50. Yıl Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Dikmen Vadisi": {
+  "lat": 39.88543,
+  "lng": 32.84459,
+  "sorgu": "Dikmen Vadisi Parkı Ankara",
+  "eslesme": "Dikmen Vadisi, Güzeltepe Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Kurtuluş Parkı": {
+  "lat": 39.92665,
+  "lng": 32.86339,
+  "sorgu": "Kurtuluş Parkı Ankara",
+  "eslesme": "Kurtuluş Parkı, Fidanlık Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "wood"
+ },
+ "Estergon Kalesi (Türk Kültür Merkezi)": {
+  "lat": 39.98077,
+  "lng": 32.86646,
+  "sorgu": "Estergon Kalesi Keçiören",
+  "eslesme": "Estergon Kalesi Türk Kültür Merkezi, Estergon Kalesi Sokak, Güçlükaya Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 0",
+  "tur": "attraction"
+ },
+ "Kartaltepe Kent Ormanı": null,
+ "Başkent Millet Bahçesi (AKM)": null,
+ "İmrahor Vadisi Millet Bahçesi": null,
+ "Ankara Millet Bahçesi (Etimesgut)": null,
+ "Keçiören (Bağlum) Millet Bahçesi": null,
+ "Kafes Fırın Söğütözü": null,
+ "Yuba Cafe & Bistro": null,
+ "AOÇ Kaşıbeyaz Ankara": null,
+ "Deniz Kozanlı Kahvaltı & Mantı": null,
+ "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)": null,
+ "Fevzi Hoca Köfte-Balık Çayyolu": {
+  "lat": 39.88606,
+  "lng": 32.70057,
+  "sorgu": "Fevzi Hoca Çayyolu",
+  "eslesme": "Fevzi Hoca Balık-Köfte Çayyolu, 4, 2679. Sokak, Çayyolu Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06810, T",
+  "tur": "restaurant"
+ },
+ "Otto Lounge Restoran & Cafe": {
+  "lat": 39.90206,
+  "lng": 32.81016,
+  "sorgu": "Otto Lounge Çukurambar",
+  "eslesme": "OTTO Lounge, Muhsin Yazıcıoğlu Caddesi, Çukurambar, Kızılırmak Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 0",
+  "tur": "restaurant"
+ },
+ "Masabaşı Kebapçısı Balgat": null,
+ "Kukla Kebap Balgat": {
+  "lat": 39.90982,
+  "lng": 32.81606,
+  "sorgu": "Kukla Kebap Balgat",
+  "eslesme": "Kukla Kebap, 1419. Cadde, Balgat Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06520, Türkiye",
+  "tur": "restaurant"
+ },
+ "Serüven Balık Restaurant": null,
+ "Marco Pascha Çukurambar": null,
+ "ChronoStation Aile Yaşam Merkezi (ChronoCafe)": null,
+ "Pupilla Çocuk Kafe & Restoran": null,
+ "Çalgan Saklıköy (Çalgan Et Lokantası)": null,
+ "Cafemiz": {
+  "lat": 39.89792,
+  "lng": 32.86578,
+  "sorgu": "Cafemiz Arjantin Caddesi Ankara",
+  "eslesme": "Cafemiz, 19, Arjantin Caddesi, Gaziosmanpaşa Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06680, Türkiye",
+  "tur": "cafe"
+ },
+ "Kirit Cafe": null,
+ "Karçiçeği Cafe & Restaurant (Mogan Gölü)": null,
+ "Köyüm Cafe (Mogan Parkı)": null,
+ "Çağlar Restaurant (Mogan Gölü)": null,
+ "Pars Garden (Eymir/Gölbaşı)": null,
+ "Eğriçimen Kahvaltı & Et & Balık Restaurant": {
+  "lat": 39.79201,
+  "lng": 32.69052,
+  "sorgu": "Eğriçimen Restaurant İncek",
+  "eslesme": "Eğriçimen, Turgut Özal Bulvarı, İncek Mahallesi, Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
+  "tur": "restaurant"
+ },
+ "Esrarengiz Bahçe": null,
+ "Botanik Kır Bahçesi & At Biniciliği": null,
+ "Yayla Karadeniz Kır Lokantası": null,
+ "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı": null,
+ "ma&me&pa Family Club (Bilkent Center)": null,
+ "Cumba Çocuk Kitap Cafe": null,
+ "Lora Çikolata Kahve Batıkent": null,
+ "Mini Koala Oyun Atölyesi & Kafe": null,
+ "Delta Macera Sport & Cafe (Eymir Gölü)": {
+  "lat": 39.8265,
+  "lng": 32.84998,
+  "sorgu": "Delta Macera Eymir Gölü",
+  "eslesme": "Delta Macera, Eymir Gölü, Yeşilkent Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06550, Türkiye",
+  "tur": "bicycle"
+ },
+ "Powertec Cafe & Bistro": null
 }

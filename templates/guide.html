@@ -21,7 +21,7 @@
       <thead><tr><th>#</th><th>Mekân</th><th>İlçe</th><th>Ortam</th><th>Ücret</th><th>En iyi yaş</th><th>Puan</th></tr></thead>
       <tbody>
       {% for m in r.mekanlar %}
-      <tr><td>{{ loop.index }}</td><td><a href="{{ m.url }}">{{ m.kategori.ikon }} {{ m.name }}</a></td><td>{{ m.district }}</td><td>{{ 'Kapalı' if m.indoor else 'Açık' }}</td><td>{{ m.fiyat_etiket or '–' }}</td><td>{{ m.en_iyi_yas }}</td><td><b>{{ m.puan }}</b></td></tr>
+      <tr><td>{{ loop.index }}</td><td><a href="{{ m.url }}">{{ m.kategori.ikon }} {{ m.name }}</a></td><td>{{ m.district }}</td><td>{{ 'Kapalı' if m.indoor else 'Açık' }}</td><td>{% if m.aile_fiyat and m.aile_fiyat.aile_tl %}≈{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[0]).replace(',', '.') }}–{{ '{:,.0f}'.format(m.aile_fiyat.aile_tl[1]).replace(',', '.') }} ₺ (aile){% else %}{{ m.fiyat_etiket or '–' }}{% endif %}</td><td>{{ m.en_iyi_yas }}</td><td><b>{{ m.puan }}</b></td></tr>
       {% endfor %}
       </tbody>
     </table>

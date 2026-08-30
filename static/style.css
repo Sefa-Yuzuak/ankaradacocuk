@@ -189,3 +189,11 @@ p{margin:0 0 1em}
 .pin span{transform:rotate(45deg);font-size:16px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 @media print{.ust,.alt,.filtre,.eylemler,.mekan-sag{display:none}}
+
+/* Aile hesabı */
+.aile-hesap{background:#fff;border:2px solid var(--sari);border-radius:var(--r);padding:16px 18px;margin:18px 0}
+.aile-hesap h2{margin-top:0!important;font-size:1.15rem}
+.hesap-satir{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
+.hesap-kutu{flex:1 1 200px;background:#fff8e6;border-radius:var(--r-k);padding:10px 14px;display:flex;flex-direction:column}
+.hesap-kutu span{font-size:.8rem;color:var(--metin-2);font-weight:700}
+.hesap-kutu strong{font-size:1.4rem;color:var(--turuncu-koyu)}
