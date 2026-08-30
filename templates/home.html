@@ -51,6 +51,27 @@
   </div>
 </section>
 
+{% if etkinlikler %}
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>🎫 Yaklaşan etkinlikler</h2><a href="/etkinlikler/">Tüm takvim →</a></div>
+  <div class="etkinlik-izgara">
+    {% for e in etkinlikler[:4] %}
+    <a class="etkinlik-kart etk-mini" href="/etkinlikler/#{{ e.slug }}">
+      <div class="etk-tarih">
+        {% if e._bas %}<span class="etk-gun">{{ e._bas.day }}</span><span class="etk-ay">{{ ["","Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"][e._bas.month] }}</span>
+        {% else %}<span class="etk-gun">•</span><span class="etk-ay">Sürekli</span>{% endif %}
+      </div>
+      <div class="etk-govde">
+        <div class="etk-meta"><span class="etk-tip">{{ e.tip.ikon }} {{ e.tip.ad }}</span></div>
+        <h3>{{ e.name }}</h3>
+        <p class="etk-yer">📍 {{ e.venue_name or 'Ankara' }}{% if e.tarih_tr %} · 🗓️ {{ e.tarih_tr }}{% endif %}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section class="kap bolum">
   <div class="bolum-bas"><h2>En yüksek puanlılar</h2><a href="/tum-mekanlar/">Tam sıralama →</a></div>
   <div class="izgara">

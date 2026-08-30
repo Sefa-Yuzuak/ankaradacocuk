@@ -85,6 +85,20 @@ YAS_GRUPLARI = [
 
 FIYAT_ETIKET = {"ücretsiz": "Ücretsiz", "uygun": "₺ Uygun", "orta": "₺₺ Orta", "yüksek": "₺₺₺ Yüksek"}
 
+ETKINLIK_TIP = {
+    "tiyatro": {"ad": "Çocuk Tiyatrosu", "ikon": "🎭"},
+    "konser": {"ad": "Konser", "ikon": "🎵"},
+    "muzikal": {"ad": "Müzikal", "ikon": "🎼"},
+    "atolye": {"ad": "Atölye", "ikon": "🎨"},
+    "festival": {"ad": "Festival", "ikon": "🎉"},
+    "gosteri": {"ad": "Gösteri", "ikon": "🎪"},
+    "sinema": {"ad": "Çocuk Sineması", "ikon": "🎬"},
+    "bilim": {"ad": "Bilim Etkinliği", "ikon": "🔬"},
+}
+
+AYLAR_TR = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+            "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+
 
 def yukle(ad: str):
     with open(DATA / ad, encoding="utf-8") as f:
@@ -191,6 +205,71 @@ def sss_schema(sorular):
                             "acceptedAnswer": {"@type": "Answer", "text": s["cevap"]}} for s in sorular]}
 
 
+def _tarih(x):
+    """'YYYY-MM-DD' ya da 'YYYY-MM-DDTHH:MM' -> (date|None, saat|None)."""
+    if not x:
+        return None, None
+    try:
+        g = date.fromisoformat(str(x)[:10])
+    except ValueError:
+        return None, None
+    saat = str(x)[11:16] if "T" in str(x) else None
+    return g, saat
+
+
+def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
+    sonuc, goruldu = [], set()
+    for e in etkinlikler:
+        bas, saat = _tarih(e.get("startDate"))
+        bit, _ = _tarih(e.get("endDate"))
+        son = bit or bas
+        # geçmiş tek seferlik etkinlikleri ele (yinelenenler kalır)
+        if not e.get("recurring") and son and son < bugun:
+            continue
+        slug = slugify(e.get("name") or "etkinlik")
+        if slug in goruldu:
+            slug = f"{slug}-{slugify(e.get('venue_name') or e.get('district') or 'ankara')}"
+        goruldu.add(slug)
+        e["slug"] = slug
+        e["_bas"] = bas
+        e["saat"] = saat
+        if bas:
+            e["tarih_tr"] = f"{bas.day} {AYLAR_TR[bas.month]} {bas.year}"
+            if bit and bit != bas:
+                e["tarih_tr"] += f" – {bit.day} {AYLAR_TR[bit.month]}"
+        else:
+            e["tarih_tr"] = None
+        e["tip"] = ETKINLIK_TIP.get(e.get("type") or "", {"ad": "Etkinlik", "ikon": "🎫"})
+        e["sources"] = e.get("sources") or []
+        sonuc.append(e)
+    sonuc.sort(key=lambda e: (e["_bas"] is None, e["_bas"] or date.max))
+    return sonuc
+
+
+def schema_etkinlik(e: dict, site: dict) -> dict:
+    d = {"@context": "https://schema.org", "@type": "Event", "name": e["name"],
+         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+         "eventStatus": "https://schema.org/EventScheduled",
+         "description": e.get("description") or "",
+         "url": site["url"] + "/etkinlikler/#" + e["slug"],
+         "location": {"@type": "Place", "name": e.get("venue_name") or "Ankara",
+                      "address": {"@type": "PostalAddress",
+                                  "addressLocality": e.get("district") or "Ankara",
+                                  "addressRegion": "Ankara", "addressCountry": "TR",
+                                  **({"streetAddress": e["address"]} if e.get("address") else {})}}}
+    _tz = lambda x: (str(x) + "+03:00") if ("T" in str(x) and "+" not in str(x)) else str(x)
+    if e.get("startDate"):
+        d["startDate"] = _tz(e["startDate"])
+    if e.get("endDate"):
+        d["endDate"] = _tz(e["endDate"])
+    if e.get("offers_url"):
+        d["offers"] = {"@type": "Offer", "url": e["offers_url"], "availability": "https://schema.org/InStock"}
+    if e.get("organizer"):
+        d["organizer"] = {"@type": "Organization", "name": e["organizer"]}
+    d["audience"] = {"@type": "PeopleAudience", "audienceType": "Çocuklar ve aileler"}
+    return d
+
+
 def yaz(yol: str, icerik: str):
     hedef = DIST / yol.strip("/")
     if yol.endswith("/") or "." not in hedef.name:
@@ -235,6 +314,10 @@ def main():
     site["guncelleme_tr"] = date.today().strftime("%d.%m.%Y")
     mekanlar = hazirla(yukle("mekanlar.json"))
     rehberler = yukle("rehberler.json")
+    try:
+        etkinlikler = etkinlik_hazirla(yukle("etkinlikler.json"), date.today())
+    except FileNotFoundError:
+        etkinlikler = []
 
     ilceler = {}
     for m in mekanlar:
@@ -257,7 +340,8 @@ def main():
     env.filters["json"] = lambda v: json.dumps(v, ensure_ascii=False)
     env.filters["slug"] = slugify
     ortak = dict(site=site, kategoriler=kategoriler, ilceler=ilce_listesi, yas_gruplari=YAS_GRUPLARI,
-                 rehberler=rehberler, toplam=len(mekanlar), FIYAT_ETIKET=FIYAT_ETIKET)
+                 rehberler=rehberler, etkinlikler=etkinlikler, toplam=len(mekanlar),
+                 FIYAT_ETIKET=FIYAT_ETIKET)
 
     if DIST.exists():
         shutil.rmtree(DIST)
@@ -346,6 +430,14 @@ def main():
           ikon="🗂️", mekanlar=mekanlar, canonical="/tum-mekanlar/",
           meta_desc=f"Ankara'da çocuklarla gidilecek {len(mekanlar)} mekânın tam listesi: yaş, ücret, kapalı/açık ve ilçe filtreleriyle.",
           schema=[liste_schema(site, "Tüm mekânlar", "/tum-mekanlar/", mekanlar)])
+    # Etkinlikler (yaklaşan çocuk & aile etkinlikleri)
+    et_schema = [schema_etkinlik(e, site) for e in etkinlikler]
+    et_schema.append(kirintilar(site, ("Etkinlikler", "/etkinlikler/")))
+    sayfa("/etkinlikler/", "events.html", canonical="/etkinlikler/",
+          meta_desc="Ankara'da çocuklar ve aileler için yaklaşan tiyatro, konser, atölye, festival ve "
+          "bilim etkinlikleri — tarih, mekân, yaş ve bilet bilgisiyle güncel takvim.",
+          schema=et_schema)
+
     for p in yukle("sayfalar.json"):
         sayfa(p["url"], "page.html", p=p, canonical=p["url"])
     yaz("/404.html", env.get_template("404.html").render(**ortak))
@@ -364,8 +456,15 @@ def main():
     bugun = site["guncelleme"]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
-        oncelik = "1.0" if u == "/" else "0.8" if u.startswith("/mekan/") or u.startswith("/rehber/") else "0.6"
-        sm.append(f"  <url><loc>{site['url']}{u}</loc><lastmod>{bugun}</lastmod><priority>{oncelik}</priority></url>")
+        if u == "/":
+            oncelik, cf = "1.0", "daily"
+        elif u == "/etkinlikler/":
+            oncelik, cf = "0.9", "weekly"
+        elif u.startswith("/mekan/") or u.startswith("/rehber/"):
+            oncelik, cf = "0.8", "monthly"
+        else:
+            oncelik, cf = "0.6", "monthly"
+        sm.append(f"  <url><loc>{site['url']}{u}</loc><lastmod>{bugun}</lastmod><changefreq>{cf}</changefreq><priority>{oncelik}</priority></url>")
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 
@@ -390,6 +489,12 @@ def main():
     llms += [f"- [{m['name']}]({site['url']}{m['url']}): {m['kategori']['kisa']}, {m.get('district') or 'Ankara'}, "
              f"puan {m['puan']}/10, {m['fiyat_etiket'] or 'ücret bilgisi yok'}. {m.get('description') or ''}"
              for m in mekanlar]
+    if etkinlikler:
+        llms += ["", "## Yaklaşan Etkinlikler"]
+        llms += [f"- {e['name']} ({e['tip']['ad']}): {e.get('venue_name') or 'Ankara'}"
+                 + (f", {e['tarih_tr']}" if e.get("tarih_tr") else "")
+                 + (f", {e['recurring']}" if e.get("recurring") else "")
+                 + (f". {e.get('description') or ''}") for e in etkinlikler]
     (DIST / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
     shutil.copy(KOK / "build" / "htaccess.txt", DIST / ".htaccess")

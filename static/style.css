@@ -197,3 +197,25 @@ p{margin:0 0 1em}
 .hesap-kutu{flex:1 1 200px;background:#fff8e6;border-radius:var(--r-k);padding:10px 14px;display:flex;flex-direction:column}
 .hesap-kutu span{font-size:.8rem;color:var(--metin-2);font-weight:700}
 .hesap-kutu strong{font-size:1.4rem;color:var(--turuncu-koyu)}
+
+/* Etkinlikler */
+.etkinlik-izgara{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.etkinlik-kart{display:flex;gap:14px;background:var(--kart);border:1px solid var(--cizgi);border-radius:var(--r);box-shadow:var(--golge);padding:16px;transition:.15s;color:var(--metin)}
+.etkinlik-kart:hover{transform:translateY(-2px);text-decoration:none;border-color:var(--turuncu)}
+.etk-tarih{flex:0 0 58px;height:64px;border-radius:14px;background:linear-gradient(160deg,var(--turuncu),var(--turuncu-koyu));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.etk-gun{font-size:1.6rem;font-weight:900}
+.etk-ay{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.etk-govde{flex:1;min-width:0}
+.etk-govde h3{margin:.1em 0 .25em}
+.etk-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:2px}
+.etk-tip{font-size:.75rem;font-weight:900;color:var(--mor);background:#f2ecfb;padding:3px 9px;border-radius:999px}
+.etk-yer{font-size:.85rem;color:var(--metin-2);margin:0 0 .5em}
+.etk-aciklama{font-size:.9rem;color:var(--metin-2);margin:0 0 .6em}
+.etk-baglanti{display:flex;align-items:center;gap:12px;margin-top:8px}
+.btn-kucuk{padding:7px 13px;font-size:.85rem}
+.kaynak-link{font-size:.78rem;color:var(--metin-2);text-decoration:underline}
+.etk-mini{flex-direction:row}
+.etk-mini .etk-govde h3{font-size:1rem}
+.etk-not{margin-top:22px}
+.bos-kutu{background:var(--kart);border:1px dashed var(--cizgi);border-radius:var(--r);padding:28px;text-align:center}
+@media(max-width:520px){.etkinlik-izgara{grid-template-columns:1fr}}

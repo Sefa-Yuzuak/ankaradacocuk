@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Ankara'da Çocuk Etkinlikleri — Yaklaşan Tiyatro, Konser ve Atölyeler | {{ site.ad }}{% endblock %}
+{% block desc %}{{ meta_desc }}{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Etkinlikler</span></nav>
+<section class="kap liste-bas">
+  <h1>🎫 Ankara'da Yaklaşan Çocuk & Aile Etkinlikleri</h1>
+  <p class="alt-metin">Çocuk tiyatroları, konserler, atölyeler ve festivaller; tarih, mekân, yaş ve bilet bağlantısıyla.
+    {% if etkinlikler %}<strong>{{ etkinlikler|length }} etkinlik</strong>, tarihe göre sıralı.{% endif %}
+    Güncelleme: {{ site.guncelleme_tr }}.</p>
+</section>
+<section class="kap">
+  {% if etkinlikler %}
+  <div class="etkinlik-izgara">
+    {% for e in etkinlikler %}
+    <article class="etkinlik-kart" id="{{ e.slug }}">
+      <div class="etk-tarih">
+        {% if e._bas %}
+        <span class="etk-gun">{{ e._bas.day }}</span>
+        <span class="etk-ay">{{ ["","Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"][e._bas.month] }}</span>
+        {% else %}<span class="etk-gun">•</span><span class="etk-ay">Sürekli</span>{% endif %}
+      </div>
+      <div class="etk-govde">
+        <div class="etk-meta"><span class="etk-tip">{{ e.tip.ikon }} {{ e.tip.ad }}</span>
+          {% if e.recurring %}<span class="rozet">🔁 {{ e.recurring }}</span>{% endif %}</div>
+        <h3>{{ e.name }}</h3>
+        <p class="etk-yer">📍 {{ e.venue_name or 'Ankara' }}{% if e.district %} · {{ e.district }}{% endif %}
+          {% if e.tarih_tr %}· 🗓️ {{ e.tarih_tr }}{% if e.saat %} {{ e.saat }}{% endif %}{% endif %}</p>
+        {% if e.description %}<p class="etk-aciklama">{{ e.description }}</p>{% endif %}
+        <div class="kart-alt">
+          {% if e.age_min is not none or e.age_max is not none %}<span class="rozet">👶 {{ e.age_min or 0 }}-{{ e.age_max or 16 }} yaş</span>{% endif %}
+          {% if e.price_note %}<span class="rozet">🎟️ {{ e.price_note }}</span>{% endif %}
+          {% if e.organizer %}<span class="rozet">{{ e.organizer }}</span>{% endif %}
+        </div>
+        <div class="etk-baglanti">
+          {% if e.offers_url %}<a class="btn btn-birincil btn-kucuk" href="{{ e.offers_url }}" target="_blank" rel="noopener nofollow">Bilet / detay →</a>{% endif %}
+          {% for s in e.sources[:1] %}<a class="kaynak-link" href="{{ s }}" target="_blank" rel="noopener nofollow">kaynak</a>{% endfor %}
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="alt-metin etk-not">Tarihler ve biletler kaynak sitelerde değişebilir; gitmeden önce bilet bağlantısından teyit edin.
+    Eksik ya da yanlış bir etkinlik mi var? <a href="/mekan-oner/">Bize bildirin</a>.</p>
+  {% else %}
+  <div class="bos-kutu">
+    <p><strong>Şu an listelenen yaklaşan etkinlik yok.</strong></p>
+    <p class="alt-metin">Takvimi düzenli güncelliyoruz. Bu arada kalıcı mekânlara göz atın:
+      <a href="/kategori/sanat/">Tiyatro & Sanat</a>, <a href="/kategori/bilim/">Bilim & Keşif</a>,
+      <a href="/rehber/{{ rehberler[0].slug }}/">rehberler</a>.</p>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

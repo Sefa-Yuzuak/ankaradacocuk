@@ -7,6 +7,7 @@
 <meta name="description" content="{% block desc %}{{ site.aciklama }}{% endblock %}">
 <link rel="canonical" href="{{ site.url }}{{ canonical|default('/') }}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{% if site.gsc %}<meta name="google-site-verification" content="{{ site.gsc }}">{% endif %}
 <meta name="theme-color" content="#ff7a59">
 <meta name="geo.region" content="TR-06">
 <meta name="geo.placename" content="Ankara">
@@ -20,6 +21,10 @@
 <meta property="og:url" content="{{ site.url }}{{ canonical|default('/') }}">
 <meta property="og:image" content="{{ site.url }}/static/og.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ self.title() }}">
+<meta name="twitter:description" content="{{ self.desc() }}">
+<meta name="twitter:image" content="{{ site.url }}/static/og.png">
+<meta property="og:image:alt" content="{{ site.ad }} — Ankara'da çocukla gidilecek yerler">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/static/icon-192.png">
 <link rel="manifest" href="/static/manifest.webmanifest">
@@ -31,6 +36,10 @@
 {% for s in schema|default([]) %}
 <script type="application/ld+json">{{ s|json|safe }}</script>
 {% endfor %}
+{% if site.ga4 %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.ga4 }}',{anonymize_ip:true});</script>
+{% endif %}
 </head>
 <body class="{% block bodyclass %}{% endblock %}">
 <a class="skip" href="#icerik">İçeriğe geç</a>
@@ -45,6 +54,7 @@
       <a href="/kategori/yemek/">Kafeler</a>
       <a href="/yas/0-3-yas/">Yaşa göre</a>
       <a href="/rehber/{{ rehberler[0].slug }}/">Rehberler</a>
+      <a href="/etkinlikler/">Etkinlikler</a>
       <a href="/harita/">Harita</a>
     </nav>
     <a class="btn btn-ara" href="/ara/" aria-label="Ara">🔍 <span>Ara</span></a>
@@ -55,6 +65,7 @@
     {% for k in kategoriler %}<a href="/kategori/{{ k.slug }}/">{{ k.ikon }} {{ k.ad }}</a>{% endfor %}
     {% for y in yas_gruplari %}<a href="/yas/{{ y.slug }}/">{{ y.ikon }} {{ y.ad }}</a>{% endfor %}
     {% for r in rehberler %}<a href="{{ r.url }}">{{ r.ikon }} {{ r.baslik }}</a>{% endfor %}
+    <a href="/etkinlikler/">🎫 Etkinlikler</a>
     <a href="/harita/">🗺️ Harita</a>
     <a href="/hakkinda/">ℹ️ Hakkında</a>
   </nav>
