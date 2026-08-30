@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ baslik }} ({{ mekanlar|length }}) | {{ site.ad }}{% endblock %}
+{% block desc %}{{ meta_desc }}{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>{{ baslik }}</span></nav>
+<section class="kap liste-bas">
+  <h1>{{ ikon }} {{ baslik }}</h1>
+  <p class="alt-metin">{{ alt }} <strong>{{ mekanlar|length }} mekân</strong>, puan sırasına göre.</p>
+</section>
+<section class="kap">
+  <form class="filtre" id="filtre" aria-label="Filtreler">
+    <select name="yas"><option value="">Yaş: hepsi</option><option value="b">0-3</option><option value="o">3-6</option><option value="i">6-11</option><option value="e">11-16</option></select>
+    <select name="ortam"><option value="">Ortam: hepsi</option><option value="1">🏠 Kapalı</option><option value="0">☀️ Açık</option></select>
+    <select name="fiyat"><option value="">Bütçe: hepsi</option><option value="ücretsiz">Ücretsiz</option><option value="uygun">Uygun</option><option value="orta">Orta</option><option value="yüksek">Yüksek</option></select>
+    <select name="ilce"><option value="">İlçe: hepsi</option>{% for i in ilceler %}<option value="{{ i.slug }}">{{ i.ad }}</option>{% endfor %}</select>
+    <select name="kat"><option value="">Kategori: hepsi</option>{% for k in kategoriler %}<option value="{{ k.slug }}">{{ k.kisa }}</option>{% endfor %}</select>
+    <select name="sira"><option value="puan">Sırala: puan</option><option value="ad">Ad (A-Z)</option></select>
+    <button class="btn" type="reset">Temizle</button>
+    <output name="sayi" aria-live="polite"></output>
+  </form>
+  <div class="izgara" id="liste">
+    {% for m in mekanlar %}{% include "_kart.html" %}{% endfor %}
+  </div>
+  <p class="bos" id="bos" hidden>Bu filtrelerle mekân bulunamadı. Filtreleri gevşetmeyi deneyin.</p>
+</section>
+{% endblock %}

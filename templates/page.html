@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ p.baslik }} | {{ site.ad }}{% endblock %}
+{% block desc %}{{ p.meta }}{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>{{ p.baslik }}</span></nav>
+<article class="kap metin-sayfa">
+  <h1>{{ p.baslik }}</h1>
+  {{ p.html|safe }}
+</article>
+{% endblock %}

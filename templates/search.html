@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% set canonical = '/ara/' %}
+{% block title %}Mekân Ara & Öneri Sihirbazı | {{ site.ad }}{% endblock %}
+{% block desc %}Yaşa, ortama, bütçeye ve ilçeye göre Ankara'da çocukla gidilecek yer önerisi alın; isimle arayın.{% endblock %}
+{% block head %}<meta name="robots" content="noindex, follow">{% endblock %}
+{% block content %}
+<section class="kap liste-bas">
+  <h1>🔍 Mekân ara & öneri</h1>
+  <form class="filtre" id="ara-form" role="search">
+    <input type="search" name="q" placeholder="Mekân adı, ilçe, özellik… (örn. trambolin, Çayyolu)" aria-label="Ara" autofocus>
+    <select name="yas"><option value="">Yaş: hepsi</option><option value="b">0-3</option><option value="o">3-6</option><option value="i">6-11</option><option value="e">11-16</option></select>
+    <select name="ortam"><option value="">Ortam: hepsi</option><option value="1">🏠 Kapalı</option><option value="0">☀️ Açık</option></select>
+    <select name="fiyat"><option value="">Bütçe: hepsi</option><option value="ücretsiz">Ücretsiz</option><option value="uygun">Uygun</option><option value="orta">Orta</option><option value="yüksek">Yüksek</option></select>
+    <select name="ilce"><option value="">İlçe: hepsi</option>{% for i in ilceler %}<option value="{{ i.slug }}">{{ i.ad }}</option>{% endfor %}</select>
+    <select name="kat"><option value="">Kategori: hepsi</option>{% for k in kategoriler %}<option value="{{ k.slug }}">{{ k.kisa }}</option>{% endfor %}</select>
+    <output name="sayi" aria-live="polite"></output>
+  </form>
+  <div class="izgara" id="sonuclar"></div>
+  <p class="bos" id="bos" hidden>Sonuç yok. Daha az filtre deneyin.</p>
+</section>
+{% endblock %}

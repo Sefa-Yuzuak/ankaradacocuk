@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Sayfa bulunamadı | {{ site.ad }}{% endblock %}
+{% block desc %}Aradığınız sayfa yok.{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section class="kap metin-sayfa" style="text-align:center">
+  <p style="font-size:4rem">🧭</p>
+  <h1>Bu sayfa kaybolmuş</h1>
+  <p>Belki mekân taşındı ya da adres yanlış yazıldı. <a href="/ara/">Arama</a> yapabilir veya <a href="/">ana sayfaya</a> dönebilirsiniz.</p>
+  <div class="cip-liste" style="justify-content:center">{% for r in rehberler %}<a class="cip" href="{{ r.url }}">{{ r.ikon }} {{ r.kisa }}</a>{% endfor %}</div>
+</section>
+{% endblock %}

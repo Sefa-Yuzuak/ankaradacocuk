@@ -1,0 +1,206 @@
+{
+ "Kızılcahamam Termal (günübirlik aile banyoları)": null,
+ "Ayaş İçmece ve Kaplıcaları": null,
+ "Tarihi Haymana Kaplıca Tesisleri (Belediye)": null,
+ "Beypazarı Tarihi Çarşı ve Hıdırlık Tepesi": null,
+ "Beypazarı Yaşayan Müze": {
+  "lat": 40.17098,
+  "lng": 31.91781,
+  "sorgu": "Yaşayan Müze Beypazarı",
+  "eslesme": "Yaşayan Müze, Çınar Sokağı, İstiklal Mahallesi, Beypazarı, Ankara, İç Anadolu Bölgesi, 06730, Türkiye",
+  "tur": "museum"
+ },
+ "İnözü Vadisi ve Kelebekler Vadisi Tabiat Parkı": {
+  "lat": 40.17851,
+  "lng": 31.91958,
+  "sorgu": "İnözü Vadisi Beypazarı",
+  "eslesme": "İnözü Vadisi, Milli Egemenlik Caddesi, Kurtuluş Mahallesi, Beypazarı, Ankara, İç Anadolu Bölgesi, 06730, Türkiye",
+  "tur": "attraction"
+ },
+ "Eğriova Tabiat Parkı": null,
+ "Nallıhan Kuş Cenneti": {
+  "lat": 40.10652,
+  "lng": 31.6046,
+  "sorgu": "Nallıhan Kuş Cenneti Davutoğlan",
+  "eslesme": "Nallıhan Kuş Cenneti Tüneli, Davutoğlan, Nallıhan, Ankara, İç Anadolu Bölgesi, 06920, Türkiye",
+  "tur": "trunk"
+ },
+ "Kesikköprü Barajı": {
+  "lat": 39.39599,
+  "lng": 33.42095,
+  "sorgu": "Kesikköprü Barajı Bala",
+  "eslesme": "Kesikköprü Barajı, Kesikköprü, Kesikköprü Mahallesi, Balâ, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "dam"
+ },
+ "Mavi Göl (Bayındır Barajı)": {
+  "lat": 39.91351,
+  "lng": 32.96568,
+  "sorgu": "Kayaş, Mamak, Ankara",
+  "eslesme": "Kayaş, Kayaş Caddesi, Kayaş, Kayaş Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06270, Türkiye",
+  "tur": "station"
+ },
+ "Çamlıdere Fosil Ormanı (Pelitçik)": null,
+ "Çamkoru Tabiat Parkı": {
+  "lat": 40.58291,
+  "lng": 32.4989,
+  "sorgu": "Çamkoru Tabiat Parkı",
+  "eslesme": "Çamkoru Tabiat Parkı, Avdan Mahallesi, Çamlıdere, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "nature_reserve"
+ },
+ "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": null,
+ "Çubuk Karagöl Tabiat Parkı": {
+  "lat": 40.41033,
+  "lng": 32.90964,
+  "sorgu": "Karagöl Tabiat Parkı Çubuk",
+  "eslesme": "Karagöl Tabiat Parkı, Yaylak mahallesi, Çubuk, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "nature_reserve"
+ },
+ "Elmadağ Kayak Merkezi": {
+  "lat": 39.80629,
+  "lng": 32.96436,
+  "sorgu": "Elmadağ Kayak Merkezi",
+  "eslesme": "Elmadağ Kayak Merkezi, Osmanlı Caddesi, Zirvekent, Zirvekent Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06270, Türkiy",
+  "tur": "sports_centre"
+ },
+ "Kalecik Kalesi": {
+  "lat": 40.09546,
+  "lng": 33.40567,
+  "sorgu": "Kalecik Kalesi",
+  "eslesme": "Kalecik Kalesi, Şehit Ali Ekşioğlu Sokak, Ahikemal Şenyurt Mahallesi, Çanşa Kale Mahallesi, Kalecik, Ankara, İç Anadolu ",
+  "tur": "castle"
+ },
+ "Tulumtaş Mağarası": {
+  "lat": 39.77416,
+  "lng": 32.68338,
+  "sorgu": "Tulumtaş Mağarası Gölbaşı",
+  "eslesme": "Tulumtaş Mağarası, Ankara Çevre Yolu, Tulumtaş Mahallesi, Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
+  "tur": "cave_entrance"
+ },
+ "Ahlatlıbel Atatürk Parkı": {
+  "lat": 39.84315,
+  "lng": 32.7924,
+  "sorgu": "Ahlatlıbel Atatürk Parkı",
+  "eslesme": "Çankaya Belediyesi Ahlatlıbel Atatürk Parkı Sosyal Tesisleri, Ahlatlıbel Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu ",
+  "tur": "park"
+ },
+ "Tuz Gölü": {
+  "lat": 39.07415,
+  "lng": 33.41169,
+  "sorgu": "Tuz Gölü, Şereflikoçhisar, Ankara",
+  "eslesme": "Tuz Gölü, Ankara-Adana yolu, Hacıbektaşlı Mahallesi, Şereflikoçhisar, Ankara, İç Anadolu Bölgesi, 06950, Türkiye",
+  "tur": "viewpoint"
+ },
+ "Beynam Atatürk Ormanı (Beynam Muhafaza Ormanı)": {
+  "lat": 39.68112,
+  "lng": 32.89625,
+  "sorgu": "Beynam, Ankara–Bala (D140) yolu, Bala, Ankara",
+  "eslesme": "Ankara Bala Yolu, Balâ yolu, Beynam Mahallesi, Balâ, Ankara, İç Anadolu Bölgesi, 06720, Türkiye",
+  "tur": "bus_stop"
+ },
+ "Ankara Kültür Yolu Festivali": {
+  "lat": 39.94441,
+  "lng": 32.83748,
+  "sorgu": "Başkent Millet Bahçesi Ankara",
+  "eslesme": "Başkent Millet Bahçesi, Zübeyde Hanım Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "tur": "park"
+ },
+ "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": null,
+ "ABB Yarıyıl Çocuk Festivali (Altınpark)": null,
+ "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": null,
+ "Tuğram At Çiftliği": {
+  "lat": 39.79253,
+  "lng": 32.80667,
+  "sorgu": "Gölbaşı, Ankara",
+  "eslesme": "Gölbaşı, Ankara, İç Anadolu Bölgesi, 06830, Türkiye",
+  "tur": "administrative"
+ },
+ "Feza Gürsey Bilim Merkezi": {
+  "lat": 39.96838,
+  "lng": 32.87988,
+  "sorgu": "Feza Gürsey Bilim Merkezi Altınpark Ankara",
+  "eslesme": "Feza Gürsey Bilim Merkezi, 154, Şehit Astsubay Ömer Halisdemir Bulvarı, Yıldıztepe Mahallesi, Altındağ, Ankara, İç Anado",
+  "tur": "museum"
+ },
+ "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi": {
+  "lat": 39.90231,
+  "lng": 32.79842,
+  "sorgu": "MTA Tabiat Tarihi Müzesi Ankara",
+  "eslesme": "MTA Tabiat Tarihi Müzesi, Öğretmenler Caddesi, Çukurambar Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06530,",
+  "tur": "museum"
+ },
+ "Rahmi M. Koç Müzesi Ankara (Çengelhan)": null,
+ "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)": null,
+ "Ankara Etnografya Müzesi": {
+  "lat": 39.93267,
+  "lng": 32.8553,
+  "sorgu": "Ankara Etnografya Müzesi, Altındağ, Ankara",
+  "eslesme": "Etnografya Müzesi, 4, Türkocağı Sokak, Hamamönü, Hacettepe Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06230, Türki",
+  "tur": "museum"
+ },
+ "Ankara Resim ve Heykel Müzesi": {
+  "lat": 39.93332,
+  "lng": 32.85576,
+  "sorgu": "Ankara Resim ve Heykel Müzesi",
+  "eslesme": "Ankara Resim ve Heykel Müzesi, 1, Türkocağı Sokak, Hamamönü, Hacettepe Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, ",
+  "tur": "museum"
+ },
+ "Kurtuluş Savaşı Müzesi (I. TBMM Binası)": {
+  "lat": 39.94189,
+  "lng": 32.85369,
+  "sorgu": "Kurtuluş Savaşı Müzesi Ulus Ankara",
+  "eslesme": "Kurtuluş Savaşı Müzesi, 2/1, Cumhuriyet Caddesi, Ulus, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 0605",
+  "tur": "museum"
+ },
+ "Cumhuriyet Müzesi (II. TBMM Binası)": null,
+ "CerModern (CerÇocuk atölyeleri)": {
+  "lat": 39.93176,
+  "lng": 32.85021,
+  "sorgu": "CerModern Ankara",
+  "eslesme": "CerModern, 3, Altınsoy Caddesi, Opera, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06101, Türkiye",
+  "tur": "public"
+ },
+ "Erimtan Arkeoloji ve Sanat Müzesi": {
+  "lat": 39.9378,
+  "lng": 32.863,
+  "sorgu": "Erimtan Arkeoloji ve Sanat Müzesi, Altındağ, Ankara",
+  "eslesme": "Erimtan Arkeoloji ve Sanat Müzesi, 10, Gözcü Sokak, Samanpazarı, Kale Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 0",
+  "tur": "museum"
+ },
+ "Ulucanlar Cezaevi Müzesi": {
+  "lat": 39.93807,
+  "lng": 32.87327,
+  "sorgu": "Ulucanlar Cezaevi Müzesi Ankara",
+  "eslesme": "Ulucanlar Cezaevi Müzesi, Armağan Sokak, Ulucanlar, Hacettepe Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 06230, Tü",
+  "tur": "museum"
+ },
+ "Türk Hava Kuvvetleri Müzesi": {
+  "lat": 39.94652,
+  "lng": 32.70805,
+  "sorgu": "Hava Kuvvetleri Müzesi Etimesgut",
+  "eslesme": "Hava Kuvvetleri Müzesi, Fatih Sultan Mehmet Bulvarı, Şaşmaz, Bahçekapı Mahallesi, Etimesgut, Ankara, İç Anadolu Bölgesi,",
+  "tur": "bus_stop"
+ },
+ "ODTÜ Bilim ve Teknoloji Müzesi": {
+  "lat": 39.90139,
+  "lng": 32.77155,
+  "sorgu": "ODTÜ Bilim ve Teknoloji Müzesi",
+  "eslesme": "ODTÜ Bilim ve Teknoloji Müzesi, 2. Yol, Üniversiteler, Üniversiteler Mahallesi, Çankaya, Ankara, İç Anadolu Bölgesi, 068",
+  "tur": "museum"
+ },
+ "ODTÜ Toplum ve Bilim Merkezi Gökevi (Planetaryum)": null,
+ "Ankara Üniversitesi Kreiken Rasathanesi (Halk Günleri)": {
+  "lat": 39.84383,
+  "lng": 32.77773,
+  "sorgu": "Ankara Üniversitesi Kreiken Rasathanesi Ahlatlıbel",
+  "eslesme": "Ankara Üniversitesi Alper Gezeravcı Yerleşkesi Kreiken Rasathanesi Yolu, Ahlatlıbel Mahallesi, Ankara, Çankaya, Ankara, ",
+  "tur": "footway"
+ },
+ "Ali Kuşçu Gökbilim Merkezi": {
+  "lat": 39.92541,
+  "lng": 32.91722,
+  "sorgu": "Ali Kuşçu Gökbilim Merkezi Mamak",
+  "eslesme": "Ali Kuşçu Gökbilim Merkezi, 627. Caddesi, Misket Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06260, Türkiye",
+  "tur": "planetarium"
+ },
+ "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": null
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Ankarada Çocuk",
+  "short_name": "AnkaradaÇocuk",
+  "description": "Ankara'da çocukla gidilecek yerler — yaşa göre puanlı rehber",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#ff7a59",
+  "lang": "tr",
+  "icons": [
+    {"src": "/static/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/static/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}

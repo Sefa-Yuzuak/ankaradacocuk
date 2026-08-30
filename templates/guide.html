@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ r.baslik }} ({{ site.guncelleme[:4] }}) | {{ site.ad }}{% endblock %}
+{% block desc %}{{ r.meta }}{% endblock %}
+{% block ogtype %}article{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Rehber</span> › <span>{{ r.baslik }}</span></nav>
+<article class="kap rehber">
+  <header class="liste-bas">
+    <h1>{{ r.ikon }} {{ r.baslik }}</h1>
+    <p class="alt-metin">{{ r.giris }}</p>
+    <p class="kucuk">Güncellendi: <time datetime="{{ site.guncelleme }}">{{ site.guncelleme_tr }}</time> · {{ r.mekanlar|length }} mekân</p>
+  </header>
+
+  <div class="kisa-cevap kutu">
+    <strong>Kısa cevap:</strong> {{ r.kisa_cevap }}
+    <ol class="ilk-uc">{% for m in r.mekanlar[:5] %}<li><a href="{{ m.url }}">{{ m.name }}</a> <span>({{ m.district }}, {{ m.puan }}/10)</span></li>{% endfor %}</ol>
+  </div>
+
+  <div class="tablo-kaydir">
+    <table class="karsilastirma">
+      <thead><tr><th>#</th><th>Mekân</th><th>İlçe</th><th>Ortam</th><th>Ücret</th><th>En iyi yaş</th><th>Puan</th></tr></thead>
+      <tbody>
+      {% for m in r.mekanlar %}
+      <tr><td>{{ loop.index }}</td><td><a href="{{ m.url }}">{{ m.kategori.ikon }} {{ m.name }}</a></td><td>{{ m.district }}</td><td>{{ 'Kapalı' if m.indoor else 'Açık' }}</td><td>{{ m.fiyat_etiket or '–' }}</td><td>{{ m.en_iyi_yas }}</td><td><b>{{ m.puan }}</b></td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="izgara">
+    {% for m in r.mekanlar %}{% include "_kart.html" %}{% endfor %}
+  </div>
+
+  {% if r.sss %}
+  <section class="sss">
+    <h2>Sık sorulanlar</h2>
+    {% for s in r.sss %}<details{% if loop.first %} open{% endif %}><summary>{{ s.soru }}</summary><p>{{ s.cevap }}</p></details>{% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="diger-rehberler">
+    <h2>Diğer rehberler</h2>
+    <div class="cip-liste">{% for d in rehberler if d.slug != r.slug %}<a class="cip" href="{{ d.url }}">{{ d.ikon }} {{ d.kisa }}</a>{% endfor %}</div>
+  </section>
+</article>
+{% endblock %}

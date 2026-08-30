@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.ad }}{% endblock %}</title>
+<meta name="description" content="{% block desc %}{{ site.aciklama }}{% endblock %}">
+<link rel="canonical" href="{{ site.url }}{{ canonical|default('/') }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#ff7a59">
+<meta name="geo.region" content="TR-06">
+<meta name="geo.placename" content="Ankara">
+<meta name="geo.position" content="39.9208;32.8541">
+<meta name="ICBM" content="39.9208, 32.8541">
+<meta property="og:type" content="{% block ogtype %}website{% endblock %}">
+<meta property="og:site_name" content="{{ site.ad }}">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.desc() }}">
+<meta property="og:url" content="{{ site.url }}{{ canonical|default('/') }}">
+<meta property="og:image" content="{{ site.url }}/static/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+<link rel="manifest" href="/static/manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap">
+<link rel="stylesheet" href="/static/style.css?v={{ site.guncelleme }}">
+{% block head %}{% endblock %}
+{% for s in schema|default([]) %}
+<script type="application/ld+json">{{ s|json|safe }}</script>
+{% endfor %}
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+      <img src="/static/logo.svg" alt="" width="40" height="40"><span>ankarada<b>çocuk</b></span>
+    </a>
+    <nav class="menu" aria-label="Ana menü">
+      <a href="/tum-mekanlar/">Mekânlar</a>
+      <a href="/kategori/park/">Parklar</a>
+      <a href="/kategori/yemek/">Kafeler</a>
+      <a href="/yas/0-3-yas/">Yaşa göre</a>
+      <a href="/rehber/{{ rehberler[0].slug }}/">Rehberler</a>
+      <a href="/harita/">Harita</a>
+    </nav>
+    <a class="btn btn-ara" href="/ara/" aria-label="Ara">🔍 <span>Ara</span></a>
+    <button class="hamburger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobilmenu">☰</button>
+  </div>
+  <nav id="mobilmenu" class="mobilmenu" hidden aria-label="Mobil menü">
+    <a href="/tum-mekanlar/">🗂️ Tüm mekânlar</a>
+    {% for k in kategoriler %}<a href="/kategori/{{ k.slug }}/">{{ k.ikon }} {{ k.ad }}</a>{% endfor %}
+    {% for y in yas_gruplari %}<a href="/yas/{{ y.slug }}/">{{ y.ikon }} {{ y.ad }}</a>{% endfor %}
+    {% for r in rehberler %}<a href="{{ r.url }}">{{ r.ikon }} {{ r.baslik }}</a>{% endfor %}
+    <a href="/harita/">🗺️ Harita</a>
+    <a href="/hakkinda/">ℹ️ Hakkında</a>
+  </nav>
+</header>
+<main id="icerik">
+{% block content %}{% endblock %}
+</main>
+<footer class="alt">
+  <div class="kap alt-ic">
+    <div>
+      <a class="logo" href="/"><img src="/static/logo.svg" alt="" width="36" height="36"><span>ankarada<b>çocuk</b></span></a>
+      <p>{{ site.slogan }}</p>
+      <p class="kucuk">Son güncelleme: <time datetime="{{ site.guncelleme }}">{{ site.guncelleme_tr }}</time> · {{ toplam }} mekân</p>
+    </div>
+    <div>
+      <h4>Kategoriler</h4>
+      {% for k in kategoriler %}<a href="/kategori/{{ k.slug }}/">{{ k.ad }}</a>{% endfor %}
+    </div>
+    <div>
+      <h4>Rehberler</h4>
+      {% for r in rehberler %}<a href="{{ r.url }}">{{ r.baslik }}</a>{% endfor %}
+    </div>
+    <div>
+      <h4>Yaşa göre</h4>
+      {% for y in yas_gruplari %}<a href="/yas/{{ y.slug }}/">{{ y.ad }}</a>{% endfor %}
+      <h4>İlçeler</h4>
+      {% for i in ilceler[:8] %}<a href="/ilce/{{ i.slug }}/">{{ i.ad }}</a>{% endfor %}
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="/hakkinda/">Hakkında</a>
+      <a href="/puanlama-yontemi/">Puanlama yöntemi</a>
+      <a href="/mekan-oner/">Mekân öner / düzeltme bildir</a>
+      <a href="/gizlilik/">Gizlilik</a>
+      <a href="/harita/">Harita</a>
+    </div>
+  </div>
+  <div class="kap telif">© {{ site.guncelleme[:4] }} {{ site.ad }} · Bağımsız aile rehberi. Bilgiler kaynaklarından derlenmiştir; gitmeden önce mekânla teyit edin.</div>
+</footer>
+<script src="/static/app.js?v={{ site.guncelleme }}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

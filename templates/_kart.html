@@ -1,0 +1,19 @@
+{# Mekân kartı: m, opsiyonel yas_alan #}
+<article class="kart{% if m.status == 'kapalı' %} kapali{% endif %}" data-slug="{{ m.slug }}" data-kat="{{ m.category }}" data-ilce="{{ m.ilce_slug }}" data-indoor="{{ 1 if m.indoor else 0 }}" data-fiyat="{{ m.price }}" data-puan="{{ m.puan }}" data-b="{{ m.score_bebek or 0 }}" data-o="{{ m.score_okul_oncesi or 0 }}" data-i="{{ m.score_ilkokul or 0 }}" data-e="{{ m.score_ergen or 0 }}" data-ad="{{ m.name }}">
+  <a class="kart-kapak" href="{{ m.url }}" style="--kr:{{ m.kategori.renk }}" aria-hidden="true" tabindex="-1">
+    <span class="kapak-ikon">{{ m.kategori.ikon }}</span>
+    <span class="puan-rozet" title="Ankarada Çocuk Puanı">{{ m.puan }}</span>
+    {% if m.status == 'kapalı' %}<span class="etiket-kapali">Kapalı</span>{% endif %}
+  </a>
+  <div class="kart-govde">
+    <div class="kart-meta"><span class="kat" style="--kr:{{ m.kategori.renk }}">{{ m.kategori.kisa }}</span> · {{ m.district or 'Ankara' }}{% if m.distance_km %} · {{ m.distance_km }} km{% endif %}</div>
+    <h3><a href="{{ m.url }}">{{ m.name }}</a></h3>
+    <p class="kart-aciklama">{{ (m.description or '')[:120] }}{% if (m.description or '')|length > 120 %}…{% endif %}</p>
+    <div class="kart-alt">
+      <span class="rozet">{{ '🏠 Kapalı alan' if m.indoor else '☀️ Açık hava' }}</span>
+      {% if m.fiyat_etiket %}<span class="rozet">{{ m.fiyat_etiket }}</span>{% endif %}
+      <span class="rozet" title="En uygun yaş grubu">👶 {{ m.en_iyi_yas }} yaş</span>
+      {% if yas_alan %}<span class="rozet vurgu">Bu yaş için {{ m[yas_alan] }}/5</span>{% endif %}
+    </div>
+  </div>
+</article>

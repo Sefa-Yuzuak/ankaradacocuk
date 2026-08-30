@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set canonical = '/harita/' %}
+{% block title %}Ankara Çocuk Mekânları Haritası — {{ mekanlar|length }} Mekân | {{ site.ad }}{% endblock %}
+{% block desc %}Ankara'da çocukla gidilecek park, kafe, müze ve oyun alanlarının tamamı tek haritada. Kategoriye ve yaşa göre filtreleyin, yol tarifi alın.{% endblock %}
+{% block head %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">{% endblock %}
+{% block content %}
+<section class="kap liste-bas">
+  <h1>🗺️ Ankara çocuk mekânları haritası</h1>
+  <p class="alt-metin">{{ mekanlar|length }} mekân. Kategori seçip iğnelere dokunun.</p>
+  <form class="filtre" id="harita-filtre">
+    <select name="kat"><option value="">Kategori: hepsi</option>{% for k in kategoriler %}<option value="{{ k.slug }}">{{ k.ikon }} {{ k.kisa }}</option>{% endfor %}</select>
+    <select name="yas"><option value="">Yaş: hepsi</option><option value="b">0-3</option><option value="o">3-6</option><option value="i">6-11</option><option value="e">11-16</option></select>
+    <select name="ortam"><option value="">Ortam: hepsi</option><option value="1">🏠 Kapalı</option><option value="0">☀️ Açık</option></select>
+    <button class="btn" type="button" id="konum">📍 Bana yakın</button>
+  </form>
+</section>
+<div id="buyuk-harita" class="harita buyuk"></div>
+{% endblock %}
+{% block scripts %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Ankara'da Çocukla Gidilecek Yerler — {{ toplam }} Mekân, Yaşa Göre Puanlı | {{ site.ad }}{% endblock %}
+{% block desc %}Ankara'da çocuklu aileler için parklar, oyun alanlı kafeler, müzeler, bilim merkezleri ve günübirlik geziler. {{ toplam }} mekân yaş gruplarına göre puanlandı; ücret, ulaşım ve aile ipuçlarıyla.{% endblock %}
+{% block bodyclass %}anasayfa{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="kap">
+    <p class="ust-baslik">Ankara'nın çocuklu aile rehberi</p>
+    <h1>Bugün çocukla <em>nereye</em> gidelim?</h1>
+    <p class="hero-alt">{{ toplam }} park, kafe, müze, oyun alanı ve gezi rotası; her biri 0-3, 3-6, 6-11 ve 11-16 yaş için ayrı ayrı puanlandı. Uydurma bilgi yok, kaynaklı ve güncel.</p>
+
+    <form class="sihirbaz" id="sihirbaz" action="/ara/" method="get" aria-label="Hızlı öneri sihirbazı">
+      <label>Çocuğun yaşı
+        <select name="yas">
+          <option value="">Fark etmez</option>
+          <option value="b">0-3 yaş</option><option value="o">3-6 yaş</option>
+          <option value="i">6-11 yaş</option><option value="e">11-16 yaş</option>
+        </select></label>
+      <label>Ortam
+        <select name="ortam">
+          <option value="">Fark etmez</option><option value="1">🏠 Kapalı (yağmur/kış)</option><option value="0">☀️ Açık hava</option>
+        </select></label>
+      <label>Bütçe
+        <select name="fiyat">
+          <option value="">Fark etmez</option><option value="ücretsiz">Ücretsiz</option><option value="uygun">Uygun</option><option value="orta">Orta</option>
+        </select></label>
+      <label>İlçe
+        <select name="ilce">
+          <option value="">Tüm Ankara</option>
+          {% for i in ilceler %}<option value="{{ i.slug }}">{{ i.ad }} ({{ i.mekanlar|length }})</option>{% endfor %}
+        </select></label>
+      <button class="btn btn-birincil" type="submit">Öneri getir →</button>
+    </form>
+    <div class="hizli">
+      <span>Hızlı seçim:</span>
+      {% for r in rehberler[:5] %}<a class="cip" href="{{ r.url }}">{{ r.ikon }} {{ r.kisa }}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>Kategoriler</h2><a href="/tum-mekanlar/">Tümünü gör →</a></div>
+  <div class="kat-izgara">
+    {% for k in kategoriler %}
+    <a class="kat-kart" href="/kategori/{{ k.slug }}/" style="--kr:{{ k.renk }}">
+      <span class="kat-ikon">{{ k.ikon }}</span>
+      <span class="kat-ad">{{ k.ad }}</span>
+      <span class="kat-sayi">{{ k.mekanlar|length }} mekân</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>En yüksek puanlılar</h2><a href="/tum-mekanlar/">Tam sıralama →</a></div>
+  <div class="izgara">
+    {% for m in one_cikan %}{% include "_kart.html" %}{% endfor %}
+  </div>
+</section>
+
+<section class="bolum yas-bolum">
+  <div class="kap">
+    <h2>Yaşa göre seç</h2>
+    <p class="alt-metin">Aynı park 2 yaşındaki için harika, 12 yaşındaki için sıkıcı olabilir. Bu yüzden her mekânı dört yaş grubu için ayrı puanladık.</p>
+    <div class="yas-izgara">
+      {% for y in yas_gruplari %}
+      <a class="yas-kart" href="/yas/{{ y.slug }}/"><span class="yas-ikon">{{ y.ikon }}</span><strong>{{ y.ad }}</strong><span>{{ y.aciklama }}</span></a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>Rehberler</h2></div>
+  <div class="rehber-izgara">
+    {% for r in rehberler %}
+    <a class="rehber-kart" href="{{ r.url }}"><span class="rehber-ikon">{{ r.ikon }}</span><strong>{{ r.baslik }}</strong><span>{{ r.ozet }}</span><em>{{ r.mekanlar|length }} mekân</em></a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>İlçeye göre</h2><a href="/harita/">Haritada gör →</a></div>
+  <div class="cip-liste">
+    {% for i in ilceler %}<a class="cip" href="/ilce/{{ i.slug }}/">📍 {{ i.ad }} <b>{{ i.mekanlar|length }}</b></a>{% endfor %}
+  </div>
+</section>
+
+<section class="kap bolum sss">
+  <h2>Sık sorulanlar</h2>
+  <details open><summary>Ankara'da çocukla gidilecek en iyi yerler hangileri?</summary><p>Puanlamamıza göre ilk sıralarda {{ one_cikan[0].name }}, {{ one_cikan[1].name }} ve {{ one_cikan[2].name }} var. Ancak "en iyi", çocuğun yaşına göre değişir: 0-3 yaş için sakin parklar ve oyun alanlı kafeler, 6-11 yaş için bilim merkezleri ve trambolin parkları öne çıkıyor. <a href="/yas/0-3-yas/">Yaş sayfalarına</a> bakın.</p></details>
+  <details><summary>Ankara'da yağmurlu günde çocukla ne yapılır?</summary><p>Kapalı alan seçeneklerini <a href="/rehber/yagmurlu-gun/">Yağmurlu gün rehberinde</a> topladık: bilim merkezleri, müzeler, AVM oyun alanları, trambolin parkları ve kapalı oyun alanlı kafeler.</p></details>
+  <details><summary>Ankara'da ücretsiz çocuk aktiviteleri var mı?</summary><p>Evet; belediye parkları, millet bahçeleri, bazı müzeler ve kütüphanelerin çocuk bölümleri ücretsiz. <a href="/rehber/ucretsiz/">Ücretsiz mekânlar rehberi</a>nde tamamını listeledik.</p></details>
+  <details><summary>Puanlar nasıl hesaplanıyor?</summary><p>Her mekân dört yaş grubu, erişilebilirlik, güvenlik ve fiyat/performans için 1-5 arasında puanlanır; genel puan 10 üzerindendir. Ayrıntı: <a href="/puanlama-yontemi/">Puanlama yöntemi</a>.</p></details>
+</section>
+{% endblock %}
