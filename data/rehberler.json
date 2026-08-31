@@ -1,107 +1,387 @@
 [
-  {
-    "slug": "yagmurlu-gun", "ikon": "🌧️", "kisa": "Yağmurlu gün", "limit": 20,
-    "baslik": "Ankara'da Yağmurlu Günde Çocukla Ne Yapılır?",
-    "ozet": "Hava bozduğunda kurtaran kapalı mekânlar: bilim merkezleri, müzeler, trambolin ve oyun alanları.",
-    "meta": "Ankara'da yağmurlu ya da soğuk günde çocukla gidilecek kapalı mekânlar: bilim merkezleri, müzeler, trambolin parkları, AVM oyun alanları ve oyun alanlı kafeler; yaşa göre puanlı liste.",
-    "giris": "Ankara kışı uzun, bahar yağmurları sürprizli. Bu listede yalnızca kapalı alan mekânlar var; hepsi yaş grubuna göre puanlandı ve puan sırasına dizildi.",
-    "kisa_cevap": "Kapalı alan arıyorsanız bilim merkezleri ve interaktif müzeler 6-11 yaş için, oyun alanlı kafeler ve AVM oyun alanları 0-6 yaş için en iyi seçenek. İlk beş öneri:",
-    "kural": {"indoor": true},
-    "sss": [
-      {"soru": "Ankara'da yağmurlu günde bebekle nereye gidilir?", "cevap": "Bebek arabasıyla rahat gezilen, bebek bakım odası olan kapalı mekânlar öne çıkar: oyun alanlı kafeler, AVM çocuk alanları ve müzelerin geniş fuayeleri. 0-3 yaş sayfasında kapalı alan filtresini kullanın."},
-      {"soru": "Kış tatilinde (sömestr) Ankara'da çocukla ne yapılır?", "cevap": "Bilim merkezleri, çocuk tiyatroları, buz pateni ve trambolin parkları sömestrde en yoğun mekânlardır; sabah erken saatte gidin ve varsa online rezervasyon yapın."},
-      {"soru": "Ücretsiz kapalı mekân var mı?", "cevap": "Evet; bazı belediye bilim merkezleri, kütüphanelerin çocuk bölümleri ve birçok müze ücretsiz ya da sembolik ücretlidir. Ücretsiz mekânlar rehberine bakın."}
-    ]
+ {
+  "slug": "yagmurlu-gun",
+  "ikon": "🌧️",
+  "kisa": "Yağmurlu gün",
+  "limit": 20,
+  "baslik": "Ankara'da Yağmurlu Günde Çocukla Ne Yapılır?",
+  "ozet": "Hava bozduğunda kurtaran kapalı mekânlar: bilim merkezleri, müzeler, trambolin ve oyun alanları.",
+  "meta": "Ankara'da yağmurlu ya da soğuk günde çocukla gidilecek kapalı mekânlar: bilim merkezleri, müzeler, trambolin parkları, AVM oyun alanları ve oyun alanlı kafeler; yaşa göre puanlı liste.",
+  "giris": "Ankara kışı uzun, bahar yağmurları sürprizli. Bu listede yalnızca kapalı alan mekânlar var; hepsi yaş grubuna göre puanlandı ve puan sırasına dizildi.",
+  "kisa_cevap": "Kapalı alan arıyorsanız bilim merkezleri ve interaktif müzeler 6-11 yaş için, oyun alanlı kafeler ve AVM oyun alanları 0-6 yaş için en iyi seçenek. İlk beş öneri:",
+  "kural": {
+   "indoor": true
   },
-  {
-    "slug": "ucretsiz", "ikon": "🆓", "kisa": "Ücretsiz", "limit": 25,
-    "baslik": "Ankara'da Ücretsiz Çocuk Aktiviteleri ve Mekânlar",
-    "ozet": "Bütçe harcamadan tam gün geçirebileceğiniz parklar, müzeler, kütüphaneler ve millet bahçeleri.",
-    "meta": "Ankara'da çocukla ücretsiz gidilecek yerler: parklar, millet bahçeleri, ücretsiz müzeler ve çocuk kütüphaneleri; yaşa göre puanlanmış güncel liste.",
-    "giris": "Giriş ücreti olmayan mekânları topladık. Bazılarında park içi ücretli aktiviteler (lunapark, bisiklet kiralama) bulunur; mekân sayfalarındaki ücret notlarına bakın.",
-    "kisa_cevap": "Ankara'da ücretsiz mekân seçeneği çok geniş: büyük parklar, millet bahçeleri ve pek çok müze ücretsiz. En yüksek puanlı ücretsiz mekânlar:",
-    "kural": {"fiyat": ["ücretsiz"]},
-    "sss": [
-      {"soru": "Ankara'da ücretsiz müze var mı?", "cevap": "Evet, birçok belediye müzesi ve bazı devlet müzeleri ücretsizdir; Müzekart ile de çok sayıda müzeye ücretsiz girilir. Müzeler kategorisinde ücret filtresini kullanın."},
-      {"soru": "Millet bahçelerinde çocuk oyun alanı var mı?", "cevap": "Ankara'daki millet bahçelerinde geniş oyun alanları, bisiklet yolları ve kafeler bulunur; giriş ücretsizdir, otopark ücretli olabilir."}
-    ]
+  "sss": [
+   {
+    "soru": "Ankara'da yağmurlu günde bebekle nereye gidilir?",
+    "cevap": "Bebek arabasıyla rahat gezilen, bebek bakım odası olan kapalı mekânlar öne çıkar: oyun alanlı kafeler, AVM çocuk alanları ve müzelerin geniş fuayeleri. 0-3 yaş sayfasında kapalı alan filtresini kullanın."
+   },
+   {
+    "soru": "Kış tatilinde (sömestr) Ankara'da çocukla ne yapılır?",
+    "cevap": "Bilim merkezleri, çocuk tiyatroları, buz pateni ve trambolin parkları sömestrde en yoğun mekânlardır; sabah erken saatte gidin ve varsa online rezervasyon yapın."
+   },
+   {
+    "soru": "Ücretsiz kapalı mekân var mı?",
+    "cevap": "Evet; bazı belediye bilim merkezleri, kütüphanelerin çocuk bölümleri ve birçok müze ücretsiz ya da sembolik ücretlidir. Ücretsiz mekânlar rehberine bakın."
+   }
+  ]
+ },
+ {
+  "slug": "ucretsiz",
+  "ikon": "🆓",
+  "kisa": "Ücretsiz",
+  "limit": 25,
+  "baslik": "Ankara'da Ücretsiz Çocuk Aktiviteleri ve Mekânlar",
+  "ozet": "Bütçe harcamadan tam gün geçirebileceğiniz parklar, müzeler, kütüphaneler ve millet bahçeleri.",
+  "meta": "Ankara'da çocukla ücretsiz gidilecek yerler: parklar, millet bahçeleri, ücretsiz müzeler ve çocuk kütüphaneleri; yaşa göre puanlanmış güncel liste.",
+  "giris": "Giriş ücreti olmayan mekânları topladık. Bazılarında park içi ücretli aktiviteler (lunapark, bisiklet kiralama) bulunur; mekân sayfalarındaki ücret notlarına bakın.",
+  "kisa_cevap": "Ankara'da ücretsiz mekân seçeneği çok geniş: büyük parklar, millet bahçeleri ve pek çok müze ücretsiz. En yüksek puanlı ücretsiz mekânlar:",
+  "kural": {
+   "fiyat": [
+    "ücretsiz"
+   ]
   },
-  {
-    "slug": "bebekle-gidilecek-yerler", "ikon": "🍼", "kisa": "Bebekle", "limit": 20,
-    "baslik": "Ankara'da Bebekle (0-3 Yaş) Gidilecek Yerler",
-    "ozet": "Bebek arabasıyla rahat, sakin ve güvenli; bebek bakım imkânı olan mekânlar.",
-    "meta": "Ankara'da bebekle gidilecek yerler: bebek arabasına uygun parklar, sakin kafeler ve bebek bakım odalı mekânlar; 0-3 yaş için puanlanmış liste.",
-    "giris": "0-3 yaş için önemli olan üç şey: düz zemin (bebek arabası), sakinlik ve bebek bakım imkânı. Bu listedeki mekânlar 0-3 yaş alt puanı 4 ve üzeri olanlardır.",
-    "kisa_cevap": "Bebekle en rahat gezilen yerler düz yürüyüş yollu parklar ve oyun alanlı kafelerdir. 0-3 yaş puanı en yüksek mekânlar:",
-    "kural": {"min_puan_alan": "score_bebek", "min_puan": 4, "sirala_alan": "score_bebek"},
-    "sss": [
-      {"soru": "Ankara'da bebek bakım odası olan mekânlar hangileri?", "cevap": "Büyük AVM'ler, yeni müzeler ve bazı kafelerde bebek bakım odası bulunur; mekân sayfalarında 'bebek bakım odası' özelliğini arayın."},
-      {"soru": "Bebekle parka gitmek için en iyi mevsim?", "cevap": "Ankara'da ilkbahar ve sonbahar sabahları idealdir; yaz öğlenleri güneş sert, kış rüzgârlıdır."}
-    ]
+  "sss": [
+   {
+    "soru": "Ankara'da ücretsiz müze var mı?",
+    "cevap": "Evet, birçok belediye müzesi ve bazı devlet müzeleri ücretsizdir; Müzekart ile de çok sayıda müzeye ücretsiz girilir. Müzeler kategorisinde ücret filtresini kullanın."
+   },
+   {
+    "soru": "Millet bahçelerinde çocuk oyun alanı var mı?",
+    "cevap": "Ankara'daki millet bahçelerinde geniş oyun alanları, bisiklet yolları ve kafeler bulunur; giriş ücretsizdir, otopark ücretli olabilir."
+   }
+  ]
+ },
+ {
+  "slug": "bebekle-gidilecek-yerler",
+  "ikon": "🍼",
+  "kisa": "Bebekle",
+  "limit": 20,
+  "baslik": "Ankara'da Bebekle (0-3 Yaş) Gidilecek Yerler",
+  "ozet": "Bebek arabasıyla rahat, sakin ve güvenli; bebek bakım imkânı olan mekânlar.",
+  "meta": "Ankara'da bebekle gidilecek yerler: bebek arabasına uygun parklar, sakin kafeler ve bebek bakım odalı mekânlar; 0-3 yaş için puanlanmış liste.",
+  "giris": "0-3 yaş için önemli olan üç şey: düz zemin (bebek arabası), sakinlik ve bebek bakım imkânı. Bu listedeki mekânlar 0-3 yaş alt puanı 4 ve üzeri olanlardır.",
+  "kisa_cevap": "Bebekle en rahat gezilen yerler düz yürüyüş yollu parklar ve oyun alanlı kafelerdir. 0-3 yaş puanı en yüksek mekânlar:",
+  "kural": {
+   "min_puan_alan": "score_bebek",
+   "min_puan": 4,
+   "sirala_alan": "score_bebek"
   },
-  {
-    "slug": "hafta-sonu-gunubirlik", "ikon": "🚗", "kisa": "Günübirlik gezi", "limit": 20,
-    "baslik": "Ankara'dan Çocukla Günübirlik Gezi Rotaları",
-    "ozet": "Şehirden 1-2 saat uzaklıkta doğa, tarih, çiftlik ve kaplıca rotaları.",
-    "meta": "Ankara'dan çocukla günübirlik gidilecek yerler: Beypazarı, Kızılcahamam, Gölbaşı, Polatlı, Nallıhan ve daha fazlası; mesafe, ücret ve yaşa göre puanla.",
-    "giris": "Hafta sonu şehirden çıkmak isteyen aileler için 2 saat içinde ulaşılan rotalar. Mesafeler Kızılay'dan yaklaşık kara yolu mesafesidir.",
-    "kisa_cevap": "Küçük çocuklarla en rahat rotalar Gölbaşı ve Kızılcahamam; 6 yaş üstü için Beypazarı ve Polatlı Gordion tarih rotası öne çıkar. Puan sırasına göre:",
-    "kural": {"kategori": ["gezi"]},
-    "sss": [
-      {"soru": "Ankara'ya en yakın doğa gezisi nerede?", "cevap": "Eymir ve Mogan gölleri şehre 20-25 km; Kızılcahamam Soğuksu Milli Parkı yaklaşık 80 km uzaklıktadır."},
-      {"soru": "Çocukla arabasız günübirlik gezi mümkün mü?", "cevap": "Evet; Kızılcahamam'a EGO otobüsü, Polatlı ve Eskişehir'e YHT ile gidilebilir. Mekân sayfalarında ulaşım satırına bakın."}
-    ]
+  "sss": [
+   {
+    "soru": "Ankara'da bebek bakım odası olan mekânlar hangileri?",
+    "cevap": "Büyük AVM'ler, yeni müzeler ve bazı kafelerde bebek bakım odası bulunur; mekân sayfalarında 'bebek bakım odası' özelliğini arayın."
+   },
+   {
+    "soru": "Bebekle parka gitmek için en iyi mevsim?",
+    "cevap": "Ankara'da ilkbahar ve sonbahar sabahları idealdir; yaz öğlenleri güneş sert, kış rüzgârlıdır."
+   }
+  ]
+ },
+ {
+  "slug": "hafta-sonu-gunubirlik",
+  "ikon": "🚗",
+  "kisa": "Günübirlik gezi",
+  "limit": 20,
+  "baslik": "Ankara'dan Çocukla Günübirlik Gezi Rotaları",
+  "ozet": "Şehirden 1-2 saat uzaklıkta doğa, tarih, çiftlik ve kaplıca rotaları.",
+  "meta": "Ankara'dan çocukla günübirlik gidilecek yerler: Beypazarı, Kızılcahamam, Gölbaşı, Polatlı, Nallıhan ve daha fazlası; mesafe, ücret ve yaşa göre puanla.",
+  "giris": "Hafta sonu şehirden çıkmak isteyen aileler için 2 saat içinde ulaşılan rotalar. Mesafeler Kızılay'dan yaklaşık kara yolu mesafesidir.",
+  "kisa_cevap": "Küçük çocuklarla en rahat rotalar Gölbaşı ve Kızılcahamam; 6 yaş üstü için Beypazarı ve Polatlı Gordion tarih rotası öne çıkar. Puan sırasına göre:",
+  "kural": {
+   "kategori": [
+    "gezi"
+   ]
   },
-  {
-    "slug": "oyun-alanli-kafeler", "ikon": "☕", "kisa": "Oyun alanlı kafe", "limit": 20,
-    "baslik": "Ankara'da Oyun Alanlı Kafe ve Restoranlar",
-    "ozet": "Siz kahvenizi içerken çocuğun güvenle oynayabileceği kafeler, kahvaltı bahçeleri ve aile restoranları.",
-    "meta": "Ankara'da oyun alanlı kafe ve restoranlar: çocuk menüsü, mama sandalyesi ve kapalı/açık oyun alanı olan mekânlar ilçe ilçe; yaşa göre puanlı.",
-    "giris": "Ebeveynlerin en çok aradığı şey: rahat oturulacak, çocuğun gözünüzün önünde oynayacağı bir yer. Bu listede oyun alanı olan yeme-içme mekânları var.",
-    "kisa_cevap": "Çayyolu-Ümitköy, Gölbaşı ve Eryaman hattında oyun alanlı kafe yoğunluğu yüksek. En iyi puanlılar:",
-    "kural": {"kategori": ["yemek"], "ozellik": ["oyun alan", "oyun park", "oyun oda"]},
-    "sss": [
-      {"soru": "Ankara'da kapalı oyun alanlı kafe var mı?", "cevap": "Evet; özellikle Çayyolu, Ümitköy, Eryaman ve Keçiören'de kapalı oyun alanı olan kafeler var. Listeyi 'Kapalı' ortam filtresiyle daraltın."},
-      {"soru": "Doğum günü yapılabilecek kafeler hangileri?", "cevap": "Mekân sayfalarında 'doğum günü' özelliği olanlar organizasyon kabul ediyor; fiyat ve kapasiteyi mekânla teyit edin."}
-    ]
+  "sss": [
+   {
+    "soru": "Ankara'ya en yakın doğa gezisi nerede?",
+    "cevap": "Eymir ve Mogan gölleri şehre 20-25 km; Kızılcahamam Soğuksu Milli Parkı yaklaşık 80 km uzaklıktadır."
+   },
+   {
+    "soru": "Çocukla arabasız günübirlik gezi mümkün mü?",
+    "cevap": "Evet; Kızılcahamam'a EGO otobüsü, Polatlı ve Eskişehir'e YHT ile gidilebilir. Mekân sayfalarında ulaşım satırına bakın."
+   }
+  ]
+ },
+ {
+  "slug": "oyun-alanli-kafeler",
+  "ikon": "☕",
+  "kisa": "Oyun alanlı kafe",
+  "limit": 20,
+  "baslik": "Ankara'da Oyun Alanlı Kafe ve Restoranlar",
+  "ozet": "Siz kahvenizi içerken çocuğun güvenle oynayabileceği kafeler, kahvaltı bahçeleri ve aile restoranları.",
+  "meta": "Ankara'da oyun alanlı kafe ve restoranlar: çocuk menüsü, mama sandalyesi ve kapalı/açık oyun alanı olan mekânlar ilçe ilçe; yaşa göre puanlı.",
+  "giris": "Ebeveynlerin en çok aradığı şey: rahat oturulacak, çocuğun gözünüzün önünde oynayacağı bir yer. Bu listede oyun alanı olan yeme-içme mekânları var.",
+  "kisa_cevap": "Çayyolu-Ümitköy, Gölbaşı ve Eryaman hattında oyun alanlı kafe yoğunluğu yüksek. En iyi puanlılar:",
+  "kural": {
+   "kategori": [
+    "yemek"
+   ],
+   "ozellik": [
+    "oyun alan",
+    "oyun park",
+    "oyun oda"
+   ]
   },
-  {
-    "slug": "kis-aktiviteleri", "ikon": "❄️", "kisa": "Kış", "limit": 15,
-    "baslik": "Ankara'da Kışın Çocukla Yapılacak Aktiviteler",
-    "ozet": "Buz pateni, kayak, kapalı bilim merkezleri ve sıcak kafeler — kış için özel seçki.",
-    "meta": "Ankara'da kışın çocukla ne yapılır: Elmadağ kayak, buz pateni pistleri, kapalı bilim merkezleri ve trambolin parkları; kış aktiviteleri rehberi.",
-    "giris": "Ankara kışı sert ama fırsat dolu: kayak merkezi şehre 25 km, buz pistleri yıl boyu açık. Kapalı alanlar ve kış sporlarını bir araya getirdik.",
-    "kisa_cevap": "Kışın en iyi seçenekler: Elmadağ'da kızak/kayak (6+ yaş), buz pateni (5+ yaş) ve bilim merkezleri. Puan sırasıyla:",
-    "kural": {"mevsim": ["kış", "her mevsim"], "indoor": true, "kategori": ["spor", "bilim", "oyun", "muze"]},
-    "ekle": ["Elmadağ Kayak Merkezi"],
-    "sss": [
-      {"soru": "Ankara'da çocuklar kayak öğrenebilir mi?", "cevap": "Elmadağ Kayak Merkezi şehre yakın, kısa pistleriyle başlangıç için uygundur; ekipman kiralanabilir. Kar durumu için gitmeden önce arayın."},
-      {"soru": "Ankara'da buz pateni pisti nerede?", "cevap": "Belediyeye ait ve AVM içi buz pistleri var; mekân sayfalarında saat ve ücret bilgilerini görebilirsiniz."}
-    ]
+  "sss": [
+   {
+    "soru": "Ankara'da kapalı oyun alanlı kafe var mı?",
+    "cevap": "Evet; özellikle Çayyolu, Ümitköy, Eryaman ve Keçiören'de kapalı oyun alanı olan kafeler var. Listeyi 'Kapalı' ortam filtresiyle daraltın."
+   },
+   {
+    "soru": "Doğum günü yapılabilecek kafeler hangileri?",
+    "cevap": "Mekân sayfalarında 'doğum günü' özelliği olanlar organizasyon kabul ediyor; fiyat ve kapasiteyi mekânla teyit edin."
+   }
+  ]
+ },
+ {
+  "slug": "kis-aktiviteleri",
+  "ikon": "❄️",
+  "kisa": "Kış",
+  "limit": 15,
+  "baslik": "Ankara'da Kışın Çocukla Yapılacak Aktiviteler",
+  "ozet": "Buz pateni, kayak, kapalı bilim merkezleri ve sıcak kafeler — kış için özel seçki.",
+  "meta": "Ankara'da kışın çocukla ne yapılır: Elmadağ kayak, buz pateni pistleri, kapalı bilim merkezleri ve trambolin parkları; kış aktiviteleri rehberi.",
+  "giris": "Ankara kışı sert ama fırsat dolu: kayak merkezi şehre 25 km, buz pistleri yıl boyu açık. Kapalı alanlar ve kış sporlarını bir araya getirdik.",
+  "kisa_cevap": "Kışın en iyi seçenekler: Elmadağ'da kızak/kayak (6+ yaş), buz pateni (5+ yaş) ve bilim merkezleri. Puan sırasıyla:",
+  "kural": {
+   "mevsim": [
+    "kış",
+    "her mevsim"
+   ],
+   "indoor": true,
+   "kategori": [
+    "spor",
+    "bilim",
+    "oyun",
+    "muze"
+   ]
   },
-  {
-    "slug": "yaz-tatili", "ikon": "☀️", "kisa": "Yaz", "limit": 20,
-    "baslik": "Ankara'da Yaz Tatilinde Çocukla Yapılacak Şeyler",
-    "ozet": "Su oyunları, göl kenarı, açık hava parkları ve serin doğa rotaları.",
-    "meta": "Ankara'da yaz tatilinde çocukla ne yapılır: su oyunlu parklar, göller, açık hava oyun alanları ve serin orman rotaları; yaşa göre puanlı liste.",
-    "giris": "Uzun yaz tatilinde her gün başka bir plan lazım. Açık hava mekânlarını yaz uygunluğuna göre sıraladık; sabah erken veya akşamüstü saatlerini tercih edin.",
-    "kisa_cevap": "Yazın Ankara'da en iyi plan sabah park/göl, öğleden sonra kapalı alan. Yaz için en yüksek puanlı açık hava mekânları:",
-    "kural": {"indoor": false, "mevsim": ["yaz", "her mevsim", "ilkbahar-sonbahar"]},
-    "sss": [
-      {"soru": "Ankara'da çocuklar için su parkı var mı?", "cevap": "Bazı büyük parklarda su oyun alanları ve aquapark tarzı tesisler bulunur; yedek kıyafet ve havlu götürün. Mekân sayfalarında 'su oyunları' özelliğine bakın."},
-      {"soru": "Yazın Ankara'da serin doğa nerede?", "cevap": "Kızılcahamam Soğuksu, Çamlıdere Çamkoru ve Çubuk Karagöl şehirden birkaç derece serindir; göl ve orman kombinasyonu için idealdir."}
-    ]
+  "ekle": [
+   "Elmadağ Kayak Merkezi"
+  ],
+  "sss": [
+   {
+    "soru": "Ankara'da çocuklar kayak öğrenebilir mi?",
+    "cevap": "Elmadağ Kayak Merkezi şehre yakın, kısa pistleriyle başlangıç için uygundur; ekipman kiralanabilir. Kar durumu için gitmeden önce arayın."
+   },
+   {
+    "soru": "Ankara'da buz pateni pisti nerede?",
+    "cevap": "Belediyeye ait ve AVM içi buz pistleri var; mekân sayfalarında saat ve ücret bilgilerini görebilirsiniz."
+   }
+  ]
+ },
+ {
+  "slug": "yaz-tatili",
+  "ikon": "☀️",
+  "kisa": "Yaz",
+  "limit": 20,
+  "baslik": "Ankara'da Yaz Tatilinde Çocukla Yapılacak Şeyler",
+  "ozet": "Su oyunları, göl kenarı, açık hava parkları ve serin doğa rotaları.",
+  "meta": "Ankara'da yaz tatilinde çocukla ne yapılır: su oyunlu parklar, göller, açık hava oyun alanları ve serin orman rotaları; yaşa göre puanlı liste.",
+  "giris": "Uzun yaz tatilinde her gün başka bir plan lazım. Açık hava mekânlarını yaz uygunluğuna göre sıraladık; sabah erken veya akşamüstü saatlerini tercih edin.",
+  "kisa_cevap": "Yazın Ankara'da en iyi plan sabah park/göl, öğleden sonra kapalı alan. Yaz için en yüksek puanlı açık hava mekânları:",
+  "kural": {
+   "indoor": false,
+   "mevsim": [
+    "yaz",
+    "her mevsim",
+    "ilkbahar-sonbahar"
+   ]
   },
-  {
-    "slug": "ilkokul-cagi-en-iyiler", "ikon": "🔭", "kisa": "6-11 yaş favorileri", "limit": 15,
-    "baslik": "Ankara'da 6-11 Yaş Çocuklar İçin En İyi 15 Mekân",
-    "ozet": "Keşfetmeyi, koşturmayı ve deney yapmayı seven ilkokul çağı için üst liste.",
-    "meta": "Ankara'da ilkokul çağı (6-11 yaş) çocuklarla gidilecek en iyi mekânlar: bilim merkezleri, trambolin parkları, macera parkurları ve müzeler; puanlı üst liste.",
-    "giris": "İlkokul çağı hem en enerjik hem en meraklı dönem. Bu listede 6-11 yaş puanı 5 olan mekânlar var.",
-    "kisa_cevap": "6-11 yaş için bilim merkezleri, büyük parklar ve macera aktiviteleri birinci sırada. Liste:",
-    "kural": {"min_puan_alan": "score_ilkokul", "min_puan": 5, "sirala_alan": "score_ilkokul"},
-    "sss": [
-      {"soru": "Ankara'da çocuklar için bilim merkezi var mı?", "cevap": "Evet, birden fazla belediye bilim merkezi ve üniversite müzesi var; çoğu ücretsiz ya da sembolik ücretli. Bilim & Keşif kategorisine bakın."}
-    ]
-  }
+  "sss": [
+   {
+    "soru": "Ankara'da çocuklar için su parkı var mı?",
+    "cevap": "Bazı büyük parklarda su oyun alanları ve aquapark tarzı tesisler bulunur; yedek kıyafet ve havlu götürün. Mekân sayfalarında 'su oyunları' özelliğine bakın."
+   },
+   {
+    "soru": "Yazın Ankara'da serin doğa nerede?",
+    "cevap": "Kızılcahamam Soğuksu, Çamlıdere Çamkoru ve Çubuk Karagöl şehirden birkaç derece serindir; göl ve orman kombinasyonu için idealdir."
+   }
+  ]
+ },
+ {
+  "slug": "ilkokul-cagi-en-iyiler",
+  "ikon": "🔭",
+  "kisa": "6-11 yaş favorileri",
+  "limit": 15,
+  "baslik": "Ankara'da 6-11 Yaş Çocuklar İçin En İyi 15 Mekân",
+  "ozet": "Keşfetmeyi, koşturmayı ve deney yapmayı seven ilkokul çağı için üst liste.",
+  "meta": "Ankara'da ilkokul çağı (6-11 yaş) çocuklarla gidilecek en iyi mekânlar: bilim merkezleri, trambolin parkları, macera parkurları ve müzeler; puanlı üst liste.",
+  "giris": "İlkokul çağı hem en enerjik hem en meraklı dönem. Bu listede 6-11 yaş puanı 5 olan mekânlar var.",
+  "kisa_cevap": "6-11 yaş için bilim merkezleri, büyük parklar ve macera aktiviteleri birinci sırada. Liste:",
+  "kural": {
+   "min_puan_alan": "score_ilkokul",
+   "min_puan": 5,
+   "sirala_alan": "score_ilkokul"
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da çocuklar için bilim merkezi var mı?",
+    "cevap": "Evet, birden fazla belediye bilim merkezi ve üniversite müzesi var; çoğu ücretsiz ya da sembolik ücretli. Bilim & Keşif kategorisine bakın."
+   }
+  ]
+ },
+ {
+  "slug": "bilim-merkezleri-planetaryum",
+  "ikon": "🔭",
+  "kisa": "Bilim merkezleri",
+  "limit": 15,
+  "baslik": "Ankara'da Bilim Merkezleri ve Planetaryumlar (Çocuklar İçin)",
+  "ozet": "Deney, keşif ve uzay: Ankara'nın çocuk dostu bilim merkezleri ve planetaryumları.",
+  "meta": "Ankara'da çocuklarla gidilecek bilim merkezleri ve planetaryumlar: interaktif deneyler, gökbilim gösterileri ve keşif atölyeleri; yaşa göre puanlı liste, ücret ve ulaşım bilgisiyle.",
+  "giris": "Çocuğun 'neden?' sorularına en iyi cevabı dokunarak öğrenmek verir. Ankara'daki bilim merkezlerini ve planetaryumları yaşa göre puanlayıp bir araya getirdik; hepsi keşif ve deney odaklı.",
+  "kisa_cevap": "Ankara'da bilim merkezleri özellikle 6-11 yaş için idealdir; interaktif deneyler ve gökevi gösterileri en çok bu yaşa hitap eder. Okul öncesi için kısa ve renkli bölümleri, ergenler için derin içerikli sergileri seçin.",
+  "kural": {
+   "kategori": [
+    "bilim"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da çocuklar için hangi bilim merkezleri var?",
+    "cevap": "Feza Gürsey, Alev Alatlı, ODTÜ Bilim ve Teknoloji Müzesi, Mamak Bilim Merkezi ve planetaryumlar öne çıkar; tam liste yukarıda puan sırasına dizili."
+   },
+   {
+    "soru": "Bilim merkezleri kaç yaş çocuğa uygun?",
+    "cevap": "Çoğu 6 yaş ve üstü için en verimlidir; birçoğunda okul öncesi çocuklara uygun bölümler de bulunur."
+   },
+   {
+    "soru": "Bilim merkezleri ücretli mi?",
+    "cevap": "Belediye ve üniversite bilim merkezlerinin çoğu ücretsiz ya da çok uygun; her mekânın güncel ücreti kendi sayfasında."
+   }
+  ]
+ },
+ {
+  "slug": "akvaryum-hayvanat-bahcesi",
+  "ikon": "🐠",
+  "kisa": "Akvaryum & hayvanlar",
+  "limit": 15,
+  "baslik": "Ankara'da Akvaryum ve Hayvanat Bahçeleri",
+  "ozet": "Balıklar, egzotik hayvanlar ve çiftlik hayvanları: çocukların bayıldığı mekânlar.",
+  "meta": "Ankara'da çocuklarla gidilecek akvaryumlar, hayvanat bahçeleri ve hayvan besleme çiftlikleri; yaşa göre puanlı, ücret ve ulaşım bilgili liste.",
+  "giris": "Canlı bir hayvanı yakından görmek çocuklar için unutulmaz. Ankara'daki akvaryumları, hayvanat bahçelerini ve çiftlikleri topladık; bebekten ergene her yaşa uygun seçenekler var.",
+  "kisa_cevap": "Ankara'da akvaryum ve hayvan mekânları her yaşa uygundur; özellikle 2-6 yaş çocuklar hayvan besleme ve renkli akvaryumlardan çok keyif alır. Bebek arabasıyla gezilebilen mekânları tercih edin.",
+  "kural": {
+   "kategori": [
+    "hayvanat"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da akvaryum nerede?",
+    "cevap": "Aqua Vega (Nata Vega) ve Keçiören Deniz Dünyası öne çıkar; hayvanat bahçesi ve çiftlikler de listede."
+   },
+   {
+    "soru": "Hayvan besleme çiftliği var mı?",
+    "cevap": "Evet; Neşeli Köy ve çiftlik konseptli mekânlarda çocuklar hayvan besleyebilir. Detay her mekânın sayfasında."
+   }
+  ]
+ },
+ {
+  "slug": "cocuk-atolyeleri-seramik-sanat",
+  "ikon": "🎨",
+  "kisa": "Atölyeler",
+  "limit": 15,
+  "baslik": "Ankara'da Çocuk Atölyeleri: Seramik, Sanat, Robotik",
+  "ozet": "Üreterek öğrenme: seramik, resim, mutfak, lego ve robotik atölyeleri.",
+  "meta": "Ankara'da çocuklar için atölyeler: seramik, resim, mutfak, LEGO/STEM ve robotik. Yaşa göre puanlı liste, ücret ve konum bilgisiyle.",
+  "giris": "Bir şey üretmek çocuğun özgüvenini büyütür. Ankara'daki çocuk atölyelerini — seramikten robotiğe — bir araya getirdik; hafta sonu planı için birebir.",
+  "kisa_cevap": "Ankara'da çocuk atölyeleri genelde 4 yaş ve üstü içindir; seramik ve resim küçüklere, robotik ve kodlama 7 yaş üstüne daha uygundur. Çoğu randevu ister.",
+  "kural": {
+   "kategori": [
+    "atolye"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da çocuk seramik atölyesi var mı?",
+    "cevap": "Evet; Neriseramik, Terra Point ve Studio No.24 gibi seramik atölyeleri listede. Detaylar mekân sayfalarında."
+   },
+   {
+    "soru": "Atölyeler kaç yaşa uygun?",
+    "cevap": "Çoğu 4 yaş üstü; robotik/kodlama atölyeleri genelde 7 yaş ve üzeri içindir."
+   }
+  ]
+ },
+ {
+  "slug": "buz-pisti-paten-kayak",
+  "ikon": "⛸️",
+  "kisa": "Buz & kayak",
+  "limit": 15,
+  "baslik": "Ankara'da Buz Pisti, Paten ve Kayak",
+  "ozet": "Buz pateni, tekerlekli paten ve kayak: hareketli çocuklara enerji atma adresi.",
+  "meta": "Ankara'da çocuklarla buz pisti, paten ve kayak merkezleri; yaşa göre puanlı liste, ücret ve ulaşım bilgisiyle. Kışın da yazın da hareket.",
+  "giris": "Enerjisi bitmeyen çocuklar için buz ve paten birebir. Ankara'daki buz pistlerini, paten alanlarını ve kayak merkezini topladık.",
+  "kisa_cevap": "Ankara'da buz pisti ve paten özellikle 6 yaş ve üstü için uygundur; küçük çocuklar için yardımlı/gözetimli seanslar tercih edin. Kayak için Elmadağ en yakın merkezdir.",
+  "kural": {
+   "kategori": [
+    "spor"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da buz pisti nerede?",
+    "cevap": "BelPa Buz Sarayı, Kent Paten (Oran) ve Ahmet Çalık Buz Pisti (ücretsiz) öne çıkar; tam liste yukarıda."
+   },
+   {
+    "soru": "Kaç yaşından itibaren uygun?",
+    "cevap": "Genelde 6 yaş ve üstü; bazı tesislerde küçükler için yardımlı seanslar var."
+   }
+  ]
+ },
+ {
+  "slug": "cocuk-kutuphaneleri",
+  "ikon": "📚",
+  "kisa": "Kütüphaneler",
+  "limit": 15,
+  "baslik": "Ankara'da Çocuk Kütüphaneleri ve Okuma Alanları",
+  "ozet": "Bebek kütüphanesinden oyuncak kütüphanesine: okuma sevgisi için sakin adresler.",
+  "meta": "Ankara'da çocuk kütüphaneleri, bebek kütüphaneleri ve oyuncak kütüphaneleri; çoğu ücretsiz. Yaşa göre puanlı liste, konum ve saat bilgisiyle.",
+  "giris": "Kitapla erken tanışan çocuk hep kazanır. Ankara'daki çocuk ve bebek kütüphanelerini, oyuncak kütüphanelerini derledik; çoğu ücretsiz ve sakin.",
+  "kisa_cevap": "Ankara'da çocuk kütüphaneleri 0 yaştan itibaren uygundur; bebek kütüphaneleri 0-3, çocuk bölümleri okul çağı içindir. Belediye kütüphanelerinin neredeyse tamamı ücretsizdir.",
+  "kural": {
+   "kategori": [
+    "kutuphane"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da bebek kütüphanesi var mı?",
+    "cevap": "Evet; Sincan, Çankaya (Minik Adımlar) ve Altındağ bebek/çocuk kütüphaneleri listede. Çoğu ücretsiz."
+   },
+   {
+    "soru": "Kütüphaneler ücretli mi?",
+    "cevap": "Belediye ve halk kütüphaneleri ücretsizdir; oyuncak kütüphanelerinde ödünç modeli olabilir."
+   }
+  ]
+ },
+ {
+  "slug": "okul-oncesi-3-6-yas",
+  "ikon": "🧸",
+  "kisa": "3-6 yaş favorileri",
+  "limit": 18,
+  "baslik": "Ankara'da 3-6 Yaş (Okul Öncesi) Çocuklar İçin En İyi Mekânlar",
+  "ozet": "Oyun alanı, hayvan besleme ve kısa dikkat süresine uygun, okul öncesine göre puanlı seçki.",
+  "meta": "Ankara'da 3-6 yaş okul öncesi çocuklar için en iyi mekânlar: oyun alanlı kafeler, hayvan çiftlikleri, park ve atölyeler; okul öncesi puanına göre sıralı liste.",
+  "giris": "3-6 yaş için 'çok uzun' ve 'çok karmaşık' olan her şey sıkıcıdır. Bu listede yalnızca okul öncesi puanı yüksek, kısa sürede keyif veren mekânlar var.",
+  "kisa_cevap": "Ankara'da okul öncesi (3-6 yaş) için oyun alanlı kafeler, hayvan besleme çiftlikleri, top havuzlu oyun merkezleri ve kısa gezilebilen parklar en iyisidir. Bebek arabasıyla rahat olanları tercih edin.",
+  "kural": {
+   "min_puan_alan": "score_okul_oncesi",
+   "min_puan": 4,
+   "sirala_alan": "score_okul_oncesi"
+  },
+  "sss": [
+   {
+    "soru": "3 yaşındaki çocukla Ankara'da nereye gidilir?",
+    "cevap": "Oyun alanlı kafeler, hayvan besleme çiftlikleri ve sakin parklar idealdir; listedeki tüm mekânlar okul öncesi için yüksek puanlıdır."
+   },
+   {
+    "soru": "Okul öncesi için kapalı mekân var mı?",
+    "cevap": "Evet; top havuzlu oyun merkezleri ve oyun alanlı kafeler yağmurlu günlerde de uygundur."
+   }
+  ]
+ }
 ]
