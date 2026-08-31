@@ -12,7 +12,11 @@
 <nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <a href="/kategori/{{ m.category }}/">{{ m.kategori.ad }}</a> › <span>{{ m.name }}</span></nav>
 
 <section class="kap mekan-bas" style="--kr:{{ m.kategori.renk }}">
-  <div class="mekan-kapak"><span>{{ m.kategori.ikon }}</span></div>
+  <div class="mekan-kapak{% if m.foto %} foto{% endif %}">
+    {% if m.foto %}<img src="/static/img/mekan/{{ m.foto.lg }}" alt="{{ m.name }}" width="1200" height="675">
+    <span class="foto-kunye">📷 {% if m.foto.sayfa %}<a href="{{ m.foto.sayfa }}" target="_blank" rel="noopener nofollow">{{ m.foto.yazar or 'Wikimedia' }}</a>{% else %}{{ m.foto.yazar or 'Wikimedia' }}{% endif %} · {{ m.foto.lisans }} · Wikimedia Commons</span>
+    {% else %}<span>{{ m.kategori.ikon }}</span>{% endif %}
+  </div>
   <div class="mekan-bilgi">
     <div class="kart-meta"><a class="kat" href="/kategori/{{ m.category }}/" style="--kr:{{ m.kategori.renk }}">{{ m.kategori.kisa }}</a>{% if m.subcategory %} · {{ m.subcategory }}{% endif %} · <a href="/ilce/{{ m.ilce_slug }}/">{{ m.district or 'Ankara' }}</a></div>
     <h1>{{ m.name }}</h1>

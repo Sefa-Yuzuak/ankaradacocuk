@@ -1,7 +1,7 @@
 {# Mekân kartı: m, opsiyonel yas_alan #}
 <article class="kart{% if m.status == 'kapalı' %} kapali{% endif %}" data-slug="{{ m.slug }}" data-kat="{{ m.category }}" data-ilce="{{ m.ilce_slug }}" data-indoor="{{ 1 if m.indoor else 0 }}" data-fiyat="{{ m.price or '' }}" data-puan="{{ m.puan }}" data-b="{{ m.score_bebek or 0 }}" data-o="{{ m.score_okul_oncesi or 0 }}" data-i="{{ m.score_ilkokul or 0 }}" data-e="{{ m.score_ergen or 0 }}" data-ad="{{ m.name }}">
-  <a class="kart-kapak" href="{{ m.url }}" style="--kr:{{ m.kategori.renk }}" aria-hidden="true" tabindex="-1">
-    <span class="kapak-ikon">{{ m.kategori.ikon }}</span>
+  <a class="kart-kapak{% if m.foto %} foto{% endif %}" href="{{ m.url }}" style="--kr:{{ m.kategori.renk }}" aria-hidden="true" tabindex="-1">
+    {% if m.foto %}<img class="kapak-img" src="/static/img/mekan/{{ m.foto.sm }}" alt="{{ m.name }}" loading="lazy" width="640" height="360">{% else %}<span class="kapak-ikon">{{ m.kategori.ikon }}</span>{% endif %}
     <span class="puan-rozet" title="Ankarada Çocuk Puanı">{{ m.puan }}</span>
     {% if m.status == 'kapalı' %}<span class="etiket-kapali">Kapalı</span>{% endif %}
   </a>
