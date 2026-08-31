@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Ankara Çocuk Rehberleri — Tema, Yaş ve Mevsime Göre Listeler | {{ site.ad }}{% endblock %}
+{% block desc %}{{ meta_desc }}{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Rehberler</span></nav>
+<section class="kap liste-bas">
+  <h1>🧭 Ankara Çocuk Rehberleri</h1>
+  <p class="alt-metin">Ne aradığınıza göre hazır listeler: yaşa, mevsime, ilçeye ve temaya göre seçilmiş mekânlar.
+    Toplam <strong>{{ rehberler|length }} rehber</strong>. Bir konu seçin, gerisini biz derledik.</p>
+</section>
+<section class="kap">
+  <div class="rehber-izgara">
+    {% for r in rehberler %}
+    <a class="rehber-kart" href="{{ r.url }}">
+      <span class="rehber-ikon">{{ r.ikon }}</span>
+      <strong>{{ r.baslik }}</strong>
+      <span>{{ r.ozet }}</span>
+      <em>{{ r.mekanlar|length }} mekân</em>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

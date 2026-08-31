@@ -333,3 +333,6 @@ p{margin:0 0 1em}
 .ri-liste{margin:0;padding-left:0;list-style:none;display:grid;gap:8px}
 .ri-liste li{position:relative;padding:10px 14px 10px 40px;background:#fff;border:1.5px solid var(--cizgi);border-radius:var(--r-k)}
 .ri-liste li::before{content:"✓";position:absolute;left:14px;top:10px;color:var(--yesil);font-weight:900}
+
+.cip-one{background:var(--turuncu);border-color:var(--turuncu);color:#fff;font-weight:800}
+.cip-one:hover{background:var(--turuncu-koyu);border-color:var(--turuncu-koyu);color:#fff}

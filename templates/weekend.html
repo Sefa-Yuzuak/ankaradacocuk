@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{{ hs_baslik }} | {{ site.ad }}{% endblock %}
+{% block desc %}{{ meta_desc }}{% endblock %}
+{% block content %}
+<nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Bu hafta sonu</span></nav>
+<section class="kap liste-bas">
+  <h1>🗓️ {{ hs_baslik }}</h1>
+  <p class="alt-metin">Bu hafta sonu Ankara'da çocukla nereye gidebilirsiniz? Aşağıda hafta sonuna denk gelen
+    etkinlikleri ve hava durumuna göre açık/kapalı mekân önerilerini topladık.</p>
+  <p class="kucuk">Güncellendi: <time datetime="{{ site.guncelleme }}">{{ site.guncelleme_tr }}</time></p>
+</section>
+
+{% if hs_etkinlik %}
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>🎫 Hafta sonu etkinlikleri</h2><a href="/etkinlikler/">Tüm takvim →</a></div>
+  <div class="etkinlik-izgara">
+    {% for e in hs_etkinlik %}
+    <article class="etkinlik-kart">
+      <div class="etk-tarih">
+        {% if e._bas %}
+        <span class="etk-gun">{{ e._bas.day }}</span>
+        <span class="etk-ay">{{ ["","Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"][e._bas.month] }}</span>
+        {% else %}<span class="etk-gun">•</span><span class="etk-ay">Sürekli</span>{% endif %}
+      </div>
+      <div class="etk-govde">
+        <div class="etk-meta"><span class="etk-tip">{{ e.tip.ikon }} {{ e.tip.ad }}</span>
+          {% if e.recurring %}<span class="rozet">🔁 {{ e.recurring }}</span>{% endif %}</div>
+        <h3>{{ e.name }}</h3>
+        <p class="etk-yer">📍 {{ e.venue_name or 'Ankara' }}{% if e.district %} · {{ e.district }}{% endif %}
+          {% if e.tarih_tr %}· 🗓️ {{ e.tarih_tr }}{% if e.saat %} {{ e.saat }}{% endif %}{% endif %}</p>
+        <div class="kart-alt">
+          {% if e.age_min is not none or e.age_max is not none %}<span class="rozet">👶 {{ e.age_min or 0 }}-{{ e.age_max or 16 }} yaş</span>{% endif %}
+          {% if e.price_note %}<span class="rozet">🎟️ {{ e.price_note }}</span>{% endif %}
+        </div>
+        {% if e.offers_url %}<div class="etk-baglanti"><a class="btn btn-birincil btn-kucuk" href="{{ e.offers_url }}" target="_blank" rel="noopener nofollow">Bilet / detay →</a></div>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="alt-metin etk-not">Tarih ve biletler değişebilir; gitmeden önce bilet bağlantısından teyit edin.</p>
+</section>
+{% else %}
+<section class="kap kutu">
+  <p>Bu hafta sonuna işaretli özel bir etkinlik bulunmuyor. <a href="/etkinlikler/">Yaklaşan tüm etkinliklere</a> göz atabilir
+    veya aşağıdaki mekân önerilerinden seçebilirsiniz.</p>
+</section>
+{% endif %}
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>☀️ Hava güzelse: açık hava</h2></div>
+  <div class="izgara">
+    {% for m in hs_acik %}{% include "_kart.html" %}{% endfor %}
+  </div>
+</section>
+
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>🌧️ Yağmur veya soğuk olursa: kapalı mekânlar</h2></div>
+  <div class="izgara">
+    {% for m in hs_kapali %}{% include "_kart.html" %}{% endfor %}
+  </div>
+</section>
+
+<section class="kap bolum">
+  <p class="alt-metin">Daha fazla fikir için <a href="/rehberler/">tüm rehberlere</a> bakın veya
+    <a href="/ara/">ne aradığınızı yazın</a>.</p>
+</section>
+{% endblock %}

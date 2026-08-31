@@ -38,7 +38,8 @@
     </form>
     <div class="hizli">
       <span>Hızlı seçim:</span>
-      {% for r in rehberler[:5] %}<a class="cip" href="{{ r.url }}">{{ r.ikon }} {{ r.kisa }}</a>{% endfor %}
+      <a class="cip cip-one" href="/bu-hafta-sonu/">🗓️ Bu hafta sonu</a>
+      {% for r in rehberler[:4] %}<a class="cip" href="{{ r.url }}">{{ r.ikon }} {{ r.kisa }}</a>{% endfor %}
     </div>
   </div>
 </section>
@@ -104,9 +105,9 @@
 </section>
 
 <section class="kap bolum">
-  <div class="bolum-bas"><h2>Rehberler</h2></div>
+  <div class="bolum-bas"><h2>Rehberler</h2><a href="/rehberler/">Tüm rehberler ({{ rehberler|length }}) →</a></div>
   <div class="rehber-izgara">
-    {% for r in rehberler %}
+    {% for r in rehberler[:6] %}
     <a class="rehber-kart" href="{{ r.url }}"><span class="rehber-ikon">{{ r.ikon }}</span><strong>{{ r.baslik }}</strong><span>{{ r.ozet }}</span><em>{{ r.mekanlar|length }} mekân</em></a>
     {% endfor %}
   </div>

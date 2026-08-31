@@ -12,7 +12,7 @@ import re
 import shutil
 import statistics
 import unicodedata
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -270,6 +270,7 @@ def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
         goruldu.add(slug)
         e["slug"] = slug
         e["_bas"] = bas
+        e["_son"] = son
         e["saat"] = saat
         if bas:
             e["tarih_tr"] = f"{bas.day} {AYLAR_TR[bas.month]} {bas.year}"
@@ -355,6 +356,7 @@ def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
 
 def main():
     site = yukle("site.json")
+    bugun = date.today()
     site["guncelleme"] = date.today().isoformat()
     site["guncelleme_tr"] = date.today().strftime("%d.%m.%Y")
     mekanlar = hazirla(yukle("mekanlar.json"))
@@ -491,6 +493,29 @@ def main():
         sayfa(r["url"], "guide.html", r=r, canonical=r["url"],
               schema=[liste_schema(site, r["baslik"], r["url"], r["mekanlar"]), sss_schema(r.get("sss", [])),
                       kirintilar(site, (r["baslik"], r["url"]))])
+
+    # Rehberler indeks (sadeleştirme: hepsi tek temiz sayfada)
+    sayfa("/rehberler/", "rehberler_index.html", canonical="/rehberler/",
+          meta_desc="Ankara'da çocukla gidilecek yerler için tüm rehberler: yaşa, mevsime, ilçeye ve temaya göre "
+          "seçilmiş listeler — doğum günü, erişilebilir mekânlar, tiyatro, ücretsiz aktiviteler ve daha fazlası.",
+          schema=[kirintilar(site, ("Rehberler", "/rehberler/"))])
+
+    # Bu hafta sonu (dinamik: yaklaşan hafta sonuna denk gelen etkinlikler + öneri mekânlar)
+    wd = bugun.weekday()
+    cmt = bugun - timedelta(days=wd - 5) if wd >= 5 else bugun + timedelta(days=5 - wd)
+    pzr = cmt + timedelta(days=1)
+    hs_etkinlik = [e for e in etkinlikler
+                   if e.get("recurring") or (e["_bas"] and e["_bas"] <= pzr and (e["_son"] or e["_bas"]) >= cmt)]
+    hs_acik = sorted([m for m in mekanlar if not m.get("indoor") and m["status"] != "kapalı"],
+                     key=lambda m: -(m.get("puan") or 0))[:6]
+    hs_kapali = sorted([m for m in mekanlar if m.get("indoor") and m["status"] != "kapalı"],
+                       key=lambda m: -(m.get("puan") or 0))[:6]
+    hs_baslik = f"Bu Hafta Sonu Ankara'da Çocukla ({cmt.day} {AYLAR_TR[cmt.month]} – {pzr.day} {AYLAR_TR[pzr.month]})"
+    sayfa("/bu-hafta-sonu/", "weekend.html", canonical="/bu-hafta-sonu/", hs_baslik=hs_baslik,
+          hs_etkinlik=hs_etkinlik, hs_acik=hs_acik, hs_kapali=hs_kapali, cmt=cmt, pzr=pzr,
+          meta_desc="Bu hafta sonu Ankara'da çocukla nereye gidilir? Hafta sonuna denk gelen çocuk etkinlikleri "
+          "ve hava durumuna göre açık/kapalı mekân önerileri — güncel liste.",
+          schema=[kirintilar(site, ("Bu hafta sonu", "/bu-hafta-sonu/"))])
 
     # Diğer sayfalar
     sayfa("/harita/", "map.html", mekanlar=[m for m in mekanlar if m.get("lat") and m.get("lng")])

@@ -204,6 +204,171 @@
   ]
  },
  {
+  "slug": "okul-tatili-somestr-ara-tatil",
+  "ikon": "🎒",
+  "kisa": "Okul tatili",
+  "limit": 24,
+  "baslik": "Okul Tatilinde Ankara'da Çocukla Ne Yapılır? (Sömestr & Ara Tatil)",
+  "ozet": "Yarıyıl (sömestr) ve ara tatilde çocukları oyalayacak kapalı aktiviteler: bilim merkezleri, tiyatro, atölye, trambolin ve oyun merkezleri.",
+  "meta": "Okul tatilinde (sömestr / yarıyıl ve ara tatil) Ankara'da çocukla yapılacaklar: bilim merkezleri, çocuk tiyatroları, atölyeler, trambolin ve kapalı oyun merkezleri, buz pisti. Yaşa göre puanlı liste ve günlük plan önerileri.",
+  "giris": "Okul tatilleri (kasımdaki ara tatil ve ocak-şubattaki sömestr) hava soğukken gelir; bu yüzden listede ağırlıkla kapalı ve aktif mekânlar var. Hepsi yaş grubuna göre puanlandı. Tatile denk gelen festival ve özel etkinlikleri de Etkinlikler takviminden takip edin.",
+  "kisa_cevap": "Tatilde en çok işe yarayanlar bilim merkezleri, atölyeler (seramik, robotik), çocuk tiyatroları, trambolin parkları ve kapalı oyun merkezleridir. Tatil için en yüksek puanlı mekânlar:",
+  "kural": {
+   "indoor": true,
+   "kategori": [
+    "bilim",
+    "oyun",
+    "sanat",
+    "atolye",
+    "spor",
+    "muze"
+   ],
+   "sirala_alan": "puan"
+  },
+  "bolumler": [
+   {
+    "baslik": "Tatil için günlük plan önerisi",
+    "maddeler": [
+     "Sabah enerjisi: Trambolin parkı ya da kapalı oyun merkezi ile güne başlayın.",
+     "Öğleden sonra sakinleşme: Bilim merkezi, müze ya da atölye (seramik/robotik) ile öğrenerek dinlenin.",
+     "Akşamüstü: Çocuk tiyatrosu ya da sinema seansıyla günü tamamlayın.",
+     "Bütçe günü: Ücretsiz müzeler ve kütüphanelerin çocuk bölümleri tatilde harika seçenektir."
+    ]
+   },
+   {
+    "baslik": "İpucu",
+    "p": [
+     "Tatil dönemleri eğlence merkezlerinde çok yoğun geçer; popüler mekânlarda sabah erken saatleri seçin ve mümkünse online rezervasyon yapın. Tatile özel festival ve gösterileri kaçırmamak için Etkinlikler takvimini kontrol edin."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Sömestr tatilinde Ankara'da çocukla nereye gidilir?",
+    "cevap": "Sömestr (yarıyıl) tatili kış ortasına denk geldiği için bilim merkezleri, çocuk tiyatroları, atölyeler, trambolin ve kapalı oyun merkezleri ile buz pisti en çok tercih edilen yerlerdir."
+   },
+   {
+    "soru": "Ara tatilde çocuk nasıl oyalanır?",
+    "cevap": "Ara tatil (kasım) için kapalı ve aktif mekânlar idealdir: kapalı oyun merkezleri, bilim merkezleri, atölyeler ve tiyatro. Tatile denk gelen özel etkinlikleri Etkinlikler takviminden takip edin."
+   },
+   {
+    "soru": "Tatilde ücretsiz aktivite var mı?",
+    "cevap": "Evet; ücretsiz müzeler, belediye bilim merkezleri, kütüphanelerin çocuk bölümleri ve belediye oyun evleri tatilde bütçe dostu seçeneklerdir. Ücretsiz mekânlar rehberine bakın."
+   }
+  ]
+ },
+ {
+  "slug": "cocuk-tiyatrolari-sahne-sanatlari",
+  "ikon": "🎭",
+  "kisa": "Tiyatro & sahne",
+  "limit": 12,
+  "baslik": "Ankara'da Çocuk Tiyatroları ve Sahne Sanatları (2026)",
+  "ozet": "Devlet tiyatrosu, belediye çocuk tiyatroları, opera-bale çocuk programları ve tiyatro festivalleri — çocuklar için sahne sanatları rehberi.",
+  "meta": "Ankara'da çocuk tiyatroları ve sahne sanatları 2026: Ankara Devlet Tiyatrosu çocuk oyunları, ABB Başkent çocuk tiyatroları, Devlet Opera ve Balesi çocuk programları ve çocuk tiyatro festivalleri. Bilet, yaş önerisi ve güncel oyunlar.",
+  "giris": "Sahne sanatları çocuğun hayal gücünü ve dikkatini besleyen en değerli deneyimlerden biri. Ankara'da devlet ve belediye tiyatroları düzenli olarak çocuk oyunları sahneler; opera ve bale de çocuklara özel programlar sunar. Aşağıda bu kurumları topladık; güncel oyun ve seans tarihlerini Etkinlikler sayfasında bulabilirsiniz.",
+  "kisa_cevap": "En düzenli çocuk oyunları Ankara Devlet Tiyatrosu ve ABB Başkent Tiyatroları'nda sahnelenir; opera-bale çocuk programları ve uluslararası çocuk tiyatro festivalleri de takip edilmeli. Öne çıkan sahneler:",
+  "kural": {
+   "metin": [
+    "tiyatro",
+    "opera",
+    "bale"
+   ],
+   "kategori": [
+    "sanat"
+   ],
+   "sirala_alan": "puan"
+  },
+  "bolumler": [
+   {
+    "baslik": "Güncel oyunları nereden takip etmeli?",
+    "p": [
+     "Oyun programları haftalık değişir. Devlet Tiyatrosu biletleri Devlet Tiyatroları resmi bilet sisteminden, belediye tiyatroları çoğunlukla ücretsiz veya sembolik ücretle mekânından temin edilir.",
+     "Sitemizdeki Etkinlikler takviminde yaklaşan çocuk tiyatrosu, müzikal ve gösteri seanslarını tarih ve yaşa göre görebilirsiniz."
+    ]
+   },
+   {
+    "baslik": "Yaşa göre öneri",
+    "maddeler": [
+     "3-5 yaş: Kısa süreli (30-40 dk), kukla ve müzikli oyunlar; interaktif çocuk tiyatroları idealdir.",
+     "6-9 yaş: Masal uyarlamaları ve müzikaller; 45-60 dakikalık oyunlar bu yaşta çok tutar.",
+     "9 yaş ve üzeri: Klasik uyarlamalar, bale/opera çocuk programları ve daha uzun sahne yapımları."
+    ]
+   },
+   {
+    "baslik": "Tiyatroya gitmeden önce",
+    "maddeler": [
+     "Oyunun yaş aralığını kontrol edin; çok küçük çocuklar uzun oyunlarda sıkılabilir.",
+     "Seanstan 15-20 dakika önce salonda olun; geç girişlere çoğu sahnede izin verilmez.",
+     "Ücretsiz belediye oyunlarında yer sınırlıdır; erken gidin veya rezervasyon yapın."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Ankara'da çocuk tiyatrosu biletleri nereden alınır?",
+    "cevap": "Ankara Devlet Tiyatrosu biletleri Devlet Tiyatroları resmi bilet sisteminden alınır. Belediye çocuk tiyatroları (ör. ABB Başkent Tiyatroları) çoğunlukla ücretsiz ya da sembolik ücretlidir ve mekânından temin edilir."
+   },
+   {
+    "soru": "Kaç yaşındaki çocuk tiyatroya götürülür?",
+    "cevap": "3 yaşından itibaren kısa, kukla ve müzikli oyunlarla başlanabilir. Oyunların belirtilen yaş aralığına dikkat edin; küçük yaşta 30-40 dakikalık oyunlar daha uygundur."
+   },
+   {
+    "soru": "Ücretsiz çocuk tiyatrosu var mı?",
+    "cevap": "Evet, belediye tiyatrolarının birçok çocuk oyunu ücretsiz ya da sembolik ücretlidir. Güncel seansları Etkinlikler takviminden takip edin."
+   }
+  ]
+ },
+ {
+  "slug": "erisilebilir-engelli-dostu",
+  "ikon": "♿",
+  "kisa": "Erişilebilir",
+  "limit": 26,
+  "baslik": "Ankara'da Erişilebilir (Engelli-Dostu) Çocuk Mekânları",
+  "ozet": "Bebek arabası ve tekerlekli sandalye ile rahat gezilen, düz zeminli ve erişimi kolay mekânlar — erişilebilirlik puanı en yüksek yerler.",
+  "meta": "Ankara'da engelli-dostu ve erişilebilir çocuk mekânları: tekerlekli sandalye ve bebek arabasıyla rahat gezilen, rampa/asansör ve düz zeminli parklar, müzeler ve oyun alanları. Erişilebilirlik puanına göre sıralı liste.",
+  "giris": "Bebek arabasıyla ya da tekerlekli sandalyeyle gezerken zemin, rampa ve mesafe her şeyi belirler. Bu listedeki mekânları erişilebilirlik puanına (düz zemin, rampa/asansör, geniş yollar, erişilebilir tuvalet) göre sıraladık. Yine de her ziyaret öncesi güncel durumu mekândan teyit etmenizi öneririz.",
+  "kisa_cevap": "En rahat erişim düz zeminli büyük parklar, millet bahçeleri ve yeni müzelerdedir; bunlar hem bebek arabası hem tekerlekli sandalye için uygundur. Erişilebilirlik puanı en yüksek mekânlar:",
+  "kural": {
+   "min_puan_alan": "score_erisilebilirlik",
+   "min_puan": 5,
+   "sirala_alan": "score_erisilebilirlik"
+  },
+  "bolumler": [
+   {
+    "baslik": "Erişilebilir mekân seçerken nelere bakmalı?",
+    "maddeler": [
+     "Zemin: Düz, sert zemin (asfalt/beton yürüyüş yolu) bebek arabası ve tekerlekli sandalye için en rahatıdır; çakıl ve toprak yollar zorlar.",
+     "Rampa ve asansör: Kot farkı olan müze ve merkezlerde rampa/asansör olup olmadığını önceden sorun.",
+     "Mesafe ve dinlenme: Geniş parklarda otopark-giriş mesafesi ve oturma bankı sıklığı önemlidir.",
+     "Tuvalet: Erişilebilir (engelli) tuvalet ve bebek bakım/alt değiştirme alanı var mı?",
+     "Otopark: Girişe yakın engelli otopark yeri bulunup bulunmadığını kontrol edin."
+    ]
+   },
+   {
+    "baslik": "İpuçları",
+    "maddeler": [
+     "Kalabalık saatlerde manevra alanı daralır; hafta içi sabah saatleri daha rahattır.",
+     "Yağmurlu havada kapalı mekânları tercih edin; ıslak zemin ve çamur erişimi zorlaştırır.",
+     "Mekân sayfasındaki 'Aile ipuçları' ve 'Ulaşım' notlarında erişimle ilgili detayları bulabilirsiniz."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Ankara'da bebek arabasıyla en rahat gezilen yerler neresi?",
+    "cevap": "Düz ve geniş yürüyüş yolları olan büyük parklar ve millet bahçeleri (ör. göl çevresi parklar) bebek arabası için en rahat yerlerdir. Yeni müzelerin çoğu da asansörlü ve düz zeminlidir."
+   },
+   {
+    "soru": "Tekerlekli sandalyeyle gezilebilecek müze var mı?",
+    "cevap": "Evet, yeni yapılan ve restore edilen müzelerin büyük kısmı rampa/asansör ile erişilebilir. Ziyaret öncesi mekânın erişilebilirlik durumunu telefonla teyit etmeniz önerilir."
+   },
+   {
+    "soru": "Engelli tuvaleti ve bebek bakım alanı olan mekânlar hangileri?",
+    "cevap": "Büyük AVM'ler, yeni müzeler ve büyük parkların ziyaretçi merkezlerinde erişilebilir tuvalet ve bebek bakım alanı bulunur. Mekân sayfasındaki özellikleri kontrol edin."
+   }
+  ]
+ },
+ {
   "slug": "hafta-sonu-gunubirlik",
   "ikon": "🚗",
   "kisa": "Günübirlik gezi",

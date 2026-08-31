@@ -51,11 +51,10 @@
     </a>
     <nav class="menu" aria-label="Ana menü">
       <a href="/tum-mekanlar/">Mekânlar</a>
-      <a href="/kategori/park/">Parklar</a>
-      <a href="/kategori/yemek/">Kafeler</a>
       <a href="/yas/0-3-yas/">Yaşa göre</a>
-      <a href="/rehber/{{ rehberler[0].slug }}/">Rehberler</a>
+      <a href="/rehberler/">Rehberler</a>
       <a href="/etkinlikler/">Etkinlikler</a>
+      <a href="/bu-hafta-sonu/">Bu hafta sonu</a>
       <a href="/harita/">Harita</a>
     </nav>
     <a class="btn btn-ara" href="/ara/" aria-label="Ara">🔍 <span>Ara</span></a>
@@ -66,6 +65,8 @@
     {% for k in kategoriler %}<a href="/kategori/{{ k.slug }}/">{{ k.ikon }} {{ k.ad }}</a>{% endfor %}
     {% for y in yas_gruplari %}<a href="/yas/{{ y.slug }}/">{{ y.ikon }} {{ y.ad }}</a>{% endfor %}
     {% for r in rehberler %}<a href="{{ r.url }}">{{ r.ikon }} {{ r.baslik }}</a>{% endfor %}
+    <a href="/rehberler/">🧭 Rehberler</a>
+    <a href="/bu-hafta-sonu/">🗓️ Bu hafta sonu</a>
     <a href="/etkinlikler/">🎫 Etkinlikler</a>
     <a href="/harita/">🗺️ Harita</a>
     <a href="/hakkinda/">ℹ️ Hakkında</a>
