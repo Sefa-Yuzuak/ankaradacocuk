@@ -205,6 +205,36 @@ def sss_schema(sorular):
                             "acceptedAnswer": {"@type": "Answer", "text": s["cevap"]}} for s in sorular]}
 
 
+def mekan_sss(m):
+    """Mekan verisinden SSS uretir (FAQPage + GEO icin, hepsi gercek veriye dayali)."""
+    yas_txt = f"{m.get('age_min') or 0}-{m['age_max'] if m.get('age_max') and m['age_max'] < 99 else '16+'}"
+    sss = [{"soru": f"{m['name']} kaç yaş çocuk için uygun?",
+            "cevap": f"{m['name']} {yas_txt} yaş aralığındaki çocuklara uygundur; en çok {m['en_iyi_yas']} "
+                     f"yaş grubuna hitap eder. Ankarada Çocuk Puanı 10 üzerinden {m['puan']}."}]
+    if m.get("aile_fiyat") and (m["aile_fiyat"].get("aile_tl")):
+        a = m["aile_fiyat"]["aile_tl"]
+        sss.append({"soru": f"{m['name']} 3-4 kişilik aileye kaça gelir?",
+                    "cevap": f"Yorumlardan yaklaşık hesap: 2 yetişkin + 1-2 çocuk için ~{a[0]:.0f}–{a[1]:.0f} ₺. "
+                             "Güncel fiyat için gitmeden teyit edin."})
+    elif m.get("price_note"):
+        sss.append({"soru": f"{m['name']} ücretli mi?", "cevap": m["price_note"]})
+    elif m.get("fiyat_etiket"):
+        sss.append({"soru": f"{m['name']} ücretli mi?",
+                    "cevap": f"Bütçe düzeyi: {m['fiyat_etiket']}. Güncel ücret için gitmeden önce teyit edin."})
+    sss.append({"soru": f"{m['name']} kapalı alan mı?",
+                "cevap": "Kapalı alan; yağmurlu ve soğuk günlerde de uygundur." if m.get("indoor")
+                         else "Açık hava mekânı; ziyareti hava durumuna göre planlamak iyi olur."})
+    if m.get("transport"):
+        sss.append({"soru": f"{m['name']} nasıl gidilir?",
+                    "cevap": f"{m.get('district') or 'Ankara'} ilçesinde. {m['transport']}"})
+    if m.get("google") and m["google"].get("rating"):
+        sss.append({"soru": f"{m['name']} Google puanı kaç?",
+                    "cevap": f"Google'da {m['google']['rating']} puan"
+                             + (f" ({m['google']['count']} değerlendirme)" if m['google'].get('count') else "")
+                             + ". Yorumları Google haritalar sayfasından okuyabilirsiniz."})
+    return sss[:5]
+
+
 def _tarih(x):
     """'YYYY-MM-DD' ya da 'YYYY-MM-DDTHH:MM' -> (date|None, saat|None)."""
     if not x:
@@ -393,9 +423,11 @@ def main():
             def uzak(b):
                 return (b["lat"] - m["lat"]) ** 2 + (b["lng"] - m["lng"]) ** 2
             yakin = sorted([b for b in mekanlar if b is not m and b.get("lat") and b.get("lng")], key=uzak)[:4]
-        sayfa(m["url"], "place.html", m=m, benzer=benzer, yakin=yakin, schema=[
+        m_sss = mekan_sss(m)
+        sayfa(m["url"], "place.html", m=m, benzer=benzer, yakin=yakin, sss=m_sss, schema=[
             schema_mekan(m, site),
             kirintilar(site, (m["kategori"]["ad"], f"/kategori/{m['category']}/"), (m["name"], m["url"])),
+            sss_schema(m_sss),
         ])
 
     # Kategori
@@ -510,9 +542,12 @@ def main():
     llms += ["", "## Kategoriler"]
     llms += [f"- [{k['ad']}]({site['url']}/kategori/{k['slug']}/): {len(k['mekanlar'])} mekân" for k in kategoriler]
     llms += ["", "## Mekânlar"]
-    llms += [f"- [{m['name']}]({site['url']}{m['url']}): {m['kategori']['kisa']}, {m.get('district') or 'Ankara'}, "
-             f"puan {m['puan']}/10, {m['fiyat_etiket'] or 'ücret bilgisi yok'}. {m.get('description') or ''}"
-             for m in mekanlar]
+    for m in mekanlar:
+        g = f", Google {m['google']['rating']}" if m.get("google") and m["google"].get("rating") else ""
+        llms.append(f"- [{m['name']}]({site['url']}{m['url']}): {m['kategori']['kisa']}, {m.get('district') or 'Ankara'}, "
+                    f"puan {m['puan']}/10{g}, {m['fiyat_etiket'] or 'ücret bilgisi yok'}, "
+                    f"{'kapalı alan' if m.get('indoor') else 'açık hava'}, en uygun yaş {m['en_iyi_yas']}. "
+                    f"{m.get('description') or ''}")
     if etkinlikler:
         llms += ["", "## Yaklaşan Etkinlikler"]
         llms += [f"- {e['name']} ({e['tip']['ad']}): {e.get('venue_name') or 'Ankara'}"
@@ -521,6 +556,8 @@ def main():
                  + (f". {e.get('description') or ''}") for e in etkinlikler]
     (DIST / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
+    (DIST / "OneSignalSDKWorker.js").write_text(
+        'importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");', encoding="utf-8")
     shutil.copy(KOK / "build" / "htaccess.txt", DIST / ".htaccess")
     print(f"✓ {len(urls)} sayfa, {len(mekanlar)} mekân, {len(ilce_listesi)} ilçe, {len(rehberler)} rehber -> {DIST}")
 

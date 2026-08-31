@@ -3,7 +3,9 @@
 {% block title %}{{ m.name }} — Çocukla Gidilir mi? Puan, Ücret, Ulaşım | {{ site.ad }}{% endblock %}
 {% block desc %}{{ m.name }} ({{ m.district or 'Ankara' }}): çocuklu aileler için {{ m.puan }}/10 puan. {{ (m.description or '')[:140] }}{% endblock %}
 {% block ogtype %}place{% endblock %}
+{% set og_gorsel = site.url + '/static/img/mekan/' + (m.foto.lg if m.foto else m.kapak) if (m.foto or m.kapak) else site.url + '/static/og.png' %}
 {% block head %}
+<link rel="preload" as="image" href="/static/img/mekan/{{ m.foto.lg if m.foto else m.kapak }}" fetchpriority="high">
 {% if m.lat and m.lng %}<meta property="place:location:latitude" content="{{ m.lat }}"><meta property="place:location:longitude" content="{{ m.lng }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">{% endif %}
 <meta property="article:modified_time" content="{{ site.guncelleme }}">
@@ -120,4 +122,14 @@
   </aside>
 </section>
 {% endblock %}
-{% block scripts %}{% if m.lat and m.lng %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endif %}{% endblock %}
+{% block scripts %}{% if m.lat and m.lng %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endif %}
+
+{% if sss %}
+<section class="kap bolum sss">
+  <h2>{{ m.name }} — Sık sorulanlar</h2>
+  {% for s in sss %}
+  <details{% if loop.first %} open{% endif %}><summary>{{ s.soru }}</summary><p>{{ s.cevap }}</p></details>
+  {% endfor %}
+</section>
+{% endif %}
+{% endblock %}
