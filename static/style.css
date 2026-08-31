@@ -324,3 +324,12 @@ p{margin:0 0 1em}
   .filtre output{grid-column:1/-1;margin:2px 0 0;text-align:center}
   .filtre button[type=reset]{grid-column:1/-1;width:100%}
 }
+
+/* Rehber zengin içerik bölümleri (doğum günü vb.) */
+.rehber-icerik{margin:8px 0 4px}
+.ri-bolum{margin:26px 0}
+.ri-bolum h2{margin:0 0 10px;font-size:1.3rem}
+.ri-bolum p{margin:0 0 10px;color:var(--metin-2);max-width:72ch}
+.ri-liste{margin:0;padding-left:0;list-style:none;display:grid;gap:8px}
+.ri-liste li{position:relative;padding:10px 14px 10px 40px;background:#fff;border:1.5px solid var(--cizgi);border-radius:var(--r-k)}
+.ri-liste li::before{content:"✓";position:absolute;left:14px;top:10px;color:var(--yesil);font-weight:900}

@@ -334,6 +334,8 @@ def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
             continue
         if k.get("mevsim") and m.get("best_season") not in k["mevsim"]:
             continue
+        if k.get("dogum_gunu") and not m.get("dogum_gunu"):
+            continue
         if k.get("ilce") and m.get("district") not in k["ilce"]:
             continue
         if k.get("metin"):

@@ -31,6 +31,26 @@
     {% for m in r.mekanlar %}{% include "_kart.html" %}{% endfor %}
   </div>
 
+  {% if r.bolumler %}
+  <div class="rehber-icerik">
+    {% for b in r.bolumler %}
+    <section class="ri-bolum">
+      <h2>{{ b.baslik }}</h2>
+      {% for pr in b.p %}<p>{{ pr }}</p>{% endfor %}
+      {% if b.maddeler %}<ul class="ri-liste">{% for md in b.maddeler %}<li>{{ md }}</li>{% endfor %}</ul>{% endif %}
+      {% if b.tablo %}
+      <div class="tablo-kaydir">
+        <table class="karsilastirma">
+          <thead><tr>{% for h in b.tablo.basliklar %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+          <tbody>{% for satir in b.tablo.satirlar %}<tr>{% for c in satir %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+        </table>
+      </div>
+      {% endif %}
+    </section>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   {% if r.sss %}
   <section class="sss">
     <h2>Sık sorulanlar</h2>

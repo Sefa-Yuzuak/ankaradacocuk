@@ -80,6 +80,130 @@
   ]
  },
  {
+  "slug": "cocuk-dogum-gunu-mekanlari",
+  "ikon": "🎂",
+  "kisa": "Doğum günü",
+  "limit": 30,
+  "baslik": "Ankara'da Çocuk Doğum Günü Mekanları (Fiyat ve Paket Rehberi)",
+  "ozet": "Doğum günü partisi için oyun alanlı eğlence merkezleri, trambolin ve bowling salonları, oyun/parti evleri ve atölyeler — yaşa, davetli sayısına ve bütçeye göre seçilmiş mekânlar.",
+  "meta": "Ankara'da çocuk doğum günü mekanları: kapalı oyun alanları, trambolin ve bowling parti paketleri, oyun/parti evleri ve seramik/LEGO/robotik atölyeleri. İlçeye, yaşa ve bütçeye göre karşılaştırmalı liste, bütçe rehberi ve rezervasyondan önce sorulacak sorular.",
+  "giris": "Çocuğunuzun doğum gününü Ankara'da nerede kutlayacağınıza karar vermek kolay değil: yaş grubu, davetli sayısı, mekânın sunduğu paket ve bütçe birlikte düşünülmeli. Bu rehberde yalnızca gerçekten doğum günü ve özel etkinlik organizasyonu yapan ticari mekânları topladık; hepsi yaş grubuna göre puanlandı ve puana göre sıralandı. Belediyelerin ücretsiz oyun evleri ve oyuncak kütüphaneleri bu listede yer almaz (rezervasyonlu parti düzenlemezler).",
+  "kisa_cevap": "0-4 yaş için yumuşak oyun (soft play) alanları ve oyun/parti evleri; 5-9 yaş için kapalı eğlence merkezleri ve trambolin parkları; 9 yaş ve üzeri için bowling ile LEGO, robotik ve seramik atölyeleri en çok tercih edilenlerdir. En yüksek puanlı doğum günü mekânları:",
+  "kural": {
+   "dogum_gunu": true,
+   "sirala_alan": "puan"
+  },
+  "bolumler": [
+   {
+    "baslik": "Yaşa göre doğru mekân tipini seçin",
+    "p": [
+     "Doğum günü mekânı seçiminde en belirleyici etken çocukların yaşı. Küçük yaş grubunda güvenli ve yumuşak zemin, büyük yaşta ise hareket ve rekabet öne çıkar."
+    ],
+    "maddeler": [
+     "0-4 yaş: Yumuşak oyun (soft play) alanları, top havuzlu oyun evleri ve parti evleri — düşük yükseklik, yumuşak zemin, ebeveyn oturma alanı.",
+     "5-9 yaş: Kapalı eğlence merkezleri, labirent-kaydırak alanları ve trambolin parkları — bol enerji harcatır, animasyonlu paketler bu yaşta en verimli.",
+     "9 yaş ve üzeri: Bowling salonları, LEGO/robotik atölyeleri ve seramik stüdyoları — takım oyunu veya beceri odaklı, 'büyümüş' hissettiren kutlamalar.",
+     "Karışık yaş grubu: AVM içindeki büyük eğlence merkezleri farklı yaşlara aynı anda hitap eder; kardeşli davetlilerde en güvenli seçim."
+    ]
+   },
+   {
+    "baslik": "Bütçe rehberi: doğum günü fiyatını ne belirler?",
+    "p": [
+     "Paket fiyatı çoğunlukla davetli (çocuk) sayısı üzerinden hesaplanır; ikram, animasyon ve süre eklendikçe artar. Aşağıdaki tablo mekân tipine göre fiyatlandırmanın nasıl kurulduğunu ve genelde nelerin dahil olduğunu özetler.",
+     "Her mekânın güncel aile bütçesi tahmini yukarıdaki karşılaştırma tablosunda yer alıyor; net paket fiyatını ve güncel kampanyaları rezervasyondan önce mekândan teyit edin."
+    ],
+    "tablo": {
+     "basliklar": [
+      "Mekân tipi",
+      "Fiyat genelde",
+      "Genelde dahil olan",
+      "En uygun yaş"
+     ],
+     "satirlar": [
+      [
+       "Oyun / parti evi (soft play)",
+       "Çocuk başına paket",
+       "Oyun alanı, davetiye, pasta masası, ikram; çoğunda animatör",
+       "0-6"
+      ],
+      [
+       "Kapalı eğlence merkezi (AVM)",
+       "Çocuk başına + jeton/bilet",
+       "Oyun jetonları, ayrılmış parti alanı, ikram menüsü",
+       "4-10"
+      ],
+      [
+       "Trambolin parkı",
+       "Kişi başı saatlik + parti paketi",
+       "Trambolin seansı, güvenlik çorabı, ayrı parti odası",
+       "5-12"
+      ],
+      [
+       "Bowling / aile eğlence merkezi",
+       "Masa/kulvar + kişi başı",
+       "Bowling kulvarı, oyun alanı, menü; kişi başı ikram",
+       "8-14"
+      ],
+      [
+       "Atölye (seramik / LEGO / robotik)",
+       "Katılımcı başına",
+       "Malzeme, eğitmen, yapılan ürünü eve götürme",
+       "6-13"
+      ]
+     ]
+    }
+   },
+   {
+    "baslik": "Rezervasyondan önce mutlaka sorun",
+    "maddeler": [
+     "Paket kaç çocuk içindir, ekstra davetlinin kişi başı ücreti nedir?",
+     "Dışarıdan pasta / ikram getirilebilir mi, yoksa yalnızca mekânın menüsü mü geçerli?",
+     "Süre ne kadar, uzatma ücretli mi? Alan yalnızca size mi ayrılıyor?",
+     "Animatör / yüz boyama / balon süsleme dahil mi, ekstra mı?",
+     "Refakatçi yetişkinler ve kardeşler için ayrı ücret var mı?",
+     "İptal / tarih değiştirme koşulları ve kapora tutarı nedir?",
+     "Otopark, bebek arabası erişimi ve alerjen (gıda) bilgisi var mı?"
+    ]
+   },
+   {
+    "baslik": "Kutlama günü için pratik ipuçları",
+    "maddeler": [
+     "Davetiyeyi en az 10 gün önceden gönderin; katılım sayısını 2 gün kala teyit edin.",
+     "Hafta içi öğleden sonra saatleri hem daha uygun fiyatlı hem daha sakin olur.",
+     "Küçük yaş grubunda partiyi 1,5-2 saatle sınırlayın; çocuklar çabuk yorulur.",
+     "Yedek kıyafet, ıslak mendil ve küçük hediye çantaları (parti sonu) hazır bulundurun.",
+     "Fotoğraf/çekim için mekânın izin ve ışık durumunu önceden sorun."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "soru": "Ankara'da çocuk doğum günü partisi ortalama ne kadara mal olur?",
+    "cevap": "Maliyet davetli sayısı, mekân tipi ve pakete (ikram, animasyon, süre) göre değişir. Fiyat genelde çocuk başına hesaplanır; soft play ve atölyeler daha ekonomik, AVM eğlence merkezleri ve trambolin paketleri daha yüksek olabilir. Her mekânın güncel aile bütçesi tahmini karşılaştırma tablosunda yer alır; net paket fiyatını mekândan teyit edin."
+   },
+   {
+    "soru": "Doğum günü mekânı kaç gün önceden ayırtılmalı?",
+    "cevap": "Hafta sonu ve okul tatili dönemleri için en az 2-3 hafta önceden rezervasyon önerilir; popüler AVM eğlence merkezlerinde bir ay öncesi daha güvenlidir. Hafta içi günlerde daha kısa sürede yer bulunabilir."
+   },
+   {
+    "soru": "Pasta ve ikramı dışarıdan getirebilir miyim?",
+    "cevap": "Mekâna göre değişir. Bazı mekânlar yalnızca kendi menüsünü sunar, bazıları dış pasta veya ikrama (bazen 'pasta servis ücreti' ile) izin verir. Rezervasyondan önce mutlaka sorun."
+   },
+   {
+    "soru": "Hangi yaş için hangi mekân tipi uygun?",
+    "cevap": "0-4 yaş için soft play ve oyun/parti evleri, 5-9 yaş için kapalı eğlence merkezleri ve trambolin parkları, 9 yaş ve üzeri için bowling ile seramik/LEGO/robotik atölyeleri en uygunudur. Karışık yaş grubunda büyük AVM eğlence merkezleri en esnek seçenektir."
+   },
+   {
+    "soru": "Yağmurlu veya soğuk havada doğum günü için uygun mu?",
+    "cevap": "Bu rehberdeki mekânların neredeyse tamamı kapalı alandır; mevsimden bağımsız, yağmurlu ve soğuk günlerde de doğum günü kutlaması için uygundur."
+   },
+   {
+    "soru": "En ekonomik doğum günü seçeneği nedir?",
+    "cevap": "Hafta içi saatlerde yumuşak oyun evleri ve mahalle ölçekli oyun kafeleri en uygun seçeneklerdir. Bütçe kısıtlıysa parkta/millet bahçesinde açık hava kutlaması da yapılabilir; ücretsiz mekânlar rehberine bakın."
+   }
+  ]
+ },
+ {
   "slug": "hafta-sonu-gunubirlik",
   "ikon": "🚗",
   "kisa": "Günübirlik gezi",

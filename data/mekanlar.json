@@ -3902,7 +3902,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "dogum_gunu": true
  },
  {
   "name": "JoyPort Eğlence Merkezi – Podium AVM",
@@ -3955,7 +3956,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Joyland Oyun Parkı – Panora AVM",
@@ -4049,7 +4051,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Arckids Eğlence Merkezi – Arcadium AVM",
@@ -4096,7 +4099,8 @@
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
   "score_fiyat_performans": 3,
-  "koordinat_kaynak": "osm"
+  "koordinat_kaynak": "osm",
+  "dogum_gunu": true
  },
  {
   "name": "Funnivarium – Forum Ankara AVM",
@@ -4147,7 +4151,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Open Play Trampoline Park – Antares AVM",
@@ -4200,7 +4205,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "dogum_gunu": true
  },
  {
   "name": "Arena Trambolin Park – Acity AVM",
@@ -4249,7 +4255,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "BelPa Buz Pateni Sarayı (Ankara Büyükşehir)",
@@ -4613,7 +4620,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Play Planet Bowling – ANKAmall",
@@ -4658,7 +4666,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Rollhouse Bowling – Cepa AVM",
@@ -4702,7 +4711,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Waterpark Ankara (Keçiören)",
@@ -4989,7 +4999,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "dogum_gunu": true
  },
  {
   "name": "Neriseramik – Çocuklar İçin Seramik Workshop",
@@ -5034,7 +5045,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "dogum_gunu": true
  },
  {
   "name": "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları",
@@ -7396,7 +7408,8 @@
    "https://www.avmdergi.com/next-level-max-level-eglence-merkezi-ankara/",
    "https://www.nextlevelavm.com.tr/tr/magazalar/max-level-aile-ve-cocuk-oyun-eglence-merkezi",
    "https://bioyla.com/isletme-detay/max-level-kids-74351"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Çamlıdere Macera Parkı",
@@ -7478,7 +7491,8 @@
   "sources": [
    "https://tr.foursquare.com/v/optimum-playland-e%C4%9Flence-merkezi/519df67c498e5da24a323a93",
    "https://www.playland.com.tr/"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Toru Entertainment (Taurus AVM)",
@@ -7518,7 +7532,8 @@
   "score_fiyat_performans": 3,
   "sources": [
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-eglence-merkezi-toru-entertainment-taurus-alisveris-merkezi_657"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Etimesgut Aile Yaşam Merkezi",
@@ -7723,7 +7738,8 @@
    "https://yandex.com.tr/maps/org/cufcuf_oyun_ve_parti_evi/232344015470/reviews/",
    "https://www.ankararestoranlari.com/blog/ankarada-53-tane-cocukla-gidilebilecek-park-eglence-mekani-ve-cocuk-oyun-alani-olan-yer"
   ],
-  "koordinat_kaynak": "osm"
+  "koordinat_kaynak": "osm",
+  "dogum_gunu": true
  },
  {
   "name": "Kurtboğazı Barajı Piknik Alanı",
@@ -7847,7 +7863,8 @@
   "sources": [
    "https://www.novakidschool.com/tr/blog/ankarada-oyun-yeri/",
    "https://restaurantguru.com/Yuki-Kids-Oyunevi-and-Kafe-Ankara"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Candy Kids Park",
@@ -7887,7 +7904,8 @@
   "sources": [
    "https://www.calisma-saati.com/subeler/390623/ankara-candy-kids-park",
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-eglence-merkezi-candy-kids-park-2_4906"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "CSO Ada Ankara Çocuk Atölyeleri",
@@ -8089,7 +8107,8 @@
   "sources": [
    "http://www.atolyeminisanat.com/hakkimizda",
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-muzik-ve-sanat-merkezi-mini-sanat-cocukca-eglenceler-atolyesi-2_2441"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Nomi Oyun Evi",
@@ -8129,7 +8148,8 @@
    "https://www.novakidschool.com/tr/blog/ankarada-oyun-yeri/",
    "https://www.ankararestoranlari.com/blog/ankarada-53-tane-cocukla-gidilebilecek-park-eglence-mekani-ve-cocuk-oyun-alani-olan-yer"
   ],
-  "koordinat_kaynak": "osm"
+  "koordinat_kaynak": "osm",
+  "dogum_gunu": true
  },
  {
   "name": "ABB Çocuk Etkinlik Merkezleri",
@@ -8698,7 +8718,8 @@
   "sources": [
    "https://www.rocknball.com.tr/iletisim/",
    "https://benefitsystems.com.tr/en/facilities/rock-n-ball-eglence-merkezi/"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)",
@@ -8740,7 +8761,8 @@
   "score_fiyat_performans": 3,
   "sources": [
    "https://kucukdahilerbatikent.com.tr/robotik-kodlama-atolyesi/"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Sewolab Robotik Tasarım ve Kodlama",
@@ -8783,7 +8805,8 @@
   "sources": [
    "https://sewolab.com/",
    "https://sewolab.com/robotik-kodlama-egitimi/"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)",
@@ -8864,7 +8887,8 @@
   "sources": [
    "https://onedio.com/haber/ankara-da-cocuklarinizla-gidebileceginiz-mekanlar-1107211",
    "https://cokgezencocuklar.com/2022/03/25/ankara-cocuk-oyun-alani-kafe-restoran/"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Studio No.24 Seramik Atölyesi (Ümitköy)",
@@ -8906,7 +8930,8 @@
   "sources": [
    "https://www.instagram.com/studiono24/",
    "https://www.no24studio.com/umitkoy"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "Terra Point Art Studio (Seramik Sanatları Stüdyosu)",
@@ -8946,7 +8971,8 @@
   "sources": [
    "https://terrapointart.com/"
   ],
-  "koordinat_kaynak": "osm"
+  "koordinat_kaynak": "osm",
+  "dogum_gunu": true
  },
  {
   "name": "Kaptan Kebap (Çukurambar)",
@@ -9264,7 +9290,8 @@
   "score_fiyat_performans": 3,
   "sources": [
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-atolyesi-ve-oyun-grubu-cayyolu-sanat-atolyesi_921"
-  ]
+  ],
+  "dogum_gunu": true
  },
  {
   "name": "KindyROO Çayyolu",
