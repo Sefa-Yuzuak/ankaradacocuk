@@ -124,6 +124,14 @@
 {% endblock %}
 {% block scripts %}{% if m.lat and m.lng %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endif %}
 
+{% if m.rehberler %}
+<section class="kap bolum">
+  <div class="bolum-bas"><h2>{{ m.name }} bu rehberlerde</h2></div>
+  <div class="cip-liste">
+    {% for r in m.rehberler %}<a class="cip" href="{{ r.url }}">{{ r.ikon }} {{ r.baslik }}</a>{% endfor %}
+  </div>
+</section>
+{% endif %}
 {% if sss %}
 <section class="kap bolum sss">
   <h2>{{ m.name }} — Sık sorulanlar</h2>

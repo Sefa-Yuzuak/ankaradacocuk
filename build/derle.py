@@ -328,6 +328,11 @@ def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
             continue
         if k.get("ilce") and m.get("district") not in k["ilce"]:
             continue
+        if k.get("metin"):
+            havuz = " ".join(str(m.get(x) or "") for x in ("name", "address", "district", "subcategory")).lower()
+            havuz += " " + " ".join(m.get("features") or []).lower()
+            if not any(t.lower() in havuz for t in k["metin"]):
+                continue
         if k.get("max_km") and (m.get("distance_km") or 0) > k["max_km"]:
             continue
         secilen.append(m)
@@ -382,6 +387,8 @@ def main():
     for r in rehberler:
         r["mekanlar"] = rehber_filtre(r, mekanlar)
         r["url"] = f"/rehber/{r['slug']}/"
+    for m in mekanlar:
+        m["rehberler"] = [r for r in rehberler if m in r["mekanlar"]][:6]
 
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)

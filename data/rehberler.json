@@ -383,5 +383,156 @@
     "cevap": "Evet; top havuzlu oyun merkezleri ve oyun alanlı kafeler yağmurlu günlerde de uygundur."
    }
   ]
+ },
+ {
+  "slug": "cayyolu-umitkoy-cocuk",
+  "ikon": "📍",
+  "kisa": "Çayyolu & Ümitköy",
+  "limit": 15,
+  "baslik": "Çayyolu ve Ümitköy'de Çocukla Gidilecek Yerler",
+  "ozet": "Çayyolu, Ümitköy ve çevresinde oyun alanlı kafeler, atölyeler ve parklar.",
+  "meta": "Çayyolu ve Ümitköy'de çocukla gidilecek yerler: oyun alanlı kafeler, çocuk atölyeleri ve parklar; yaşa göre puanlı, ücret ve konum bilgili liste.",
+  "giris": "Batı Ankara'nın en kalabalık çocuklu aile bölgesi Çayyolu–Ümitköy hattı. Buradaki çocuk dostu mekânları bir araya getirdik.",
+  "kisa_cevap": "Çayyolu ve Ümitköy'de çocukla gidebileceğiniz oyun alanlı kafeler, gelişim ve sanat atölyeleri ile mahalle parkları öne çıkar; hepsi bu listede yaşa göre puanlı.",
+  "kural": {
+   "metin": [
+    "çayyolu",
+    "ümitköy",
+    "ümitkoy",
+    "umitkoy"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Çayyolu'nda çocukla nereye gidilir?",
+    "cevap": "Oyun alanlı kafeler, çocuk atölyeleri ve mahalle parkları en pratik seçeneklerdir; liste yukarıda puan sırasına dizili."
+   }
+  ]
+ },
+ {
+  "slug": "batikent-cocuk",
+  "ikon": "📍",
+  "kisa": "Batıkent",
+  "limit": 15,
+  "baslik": "Batıkent'te Çocukla Gidilecek Yerler",
+  "ozet": "Batıkent ve çevresinde çocuk dostu kafeler, oyun alanları ve parklar.",
+  "meta": "Batıkent'te çocukla gidilecek yerler: oyun alanlı kafeler, aquapark, park ve oyun merkezleri; yaşa göre puanlı, ücret ve ulaşım bilgili liste.",
+  "giris": "Batıkent ve çevresi çocuklu aileler için hareketli bir bölge. Buradaki çocuk dostu mekânları derledik.",
+  "kisa_cevap": "Batıkent'te çocukla gidebileceğiniz oyun alanlı kafeler, aquapark ve parklar öne çıkar; tümü bu listede puanlı.",
+  "kural": {
+   "metin": [
+    "batıkent",
+    "batikent"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Batıkent'te çocuk için ne var?",
+    "cevap": "Oyun alanlı kafeler, aquapark ve parklar; detaylar mekân sayfalarında."
+   }
+  ]
+ },
+ {
+  "slug": "metro-yakini-mekanlar",
+  "ikon": "🚇",
+  "kisa": "Metroya yakın",
+  "limit": 18,
+  "baslik": "Ankara'da Metroya Yakın Çocuk Mekânları (Arabasız Ulaşım)",
+  "ozet": "Arabaya gerek yok: metro/Ankaray ile kolay ulaşılan çocuk dostu mekânlar.",
+  "meta": "Ankara'da metroya yakın çocukla gidilecek yerler: toplu taşımayla kolay ulaşılan park, müze ve oyun alanları; yaşa göre puanlı liste.",
+  "giris": "Trafik ve otopark derdi olmadan çocukla gezmek isteyenler için metro/Ankaray'a yakın mekânları topladık.",
+  "kisa_cevap": "Ankara'da metroya yakın mekânlar özellikle merkez müzeler, Gençlik Parkı ve bazı oyun alanlarıdır; arabasız, toplu taşımayla rahat ulaşılır.",
+  "kural": {
+   "ozellik": [
+    "metro",
+    "ankaray"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da arabasız çocukla nereye gidilir?",
+    "cevap": "Metro/Ankaray hattındaki müzeler, parklar ve oyun alanları arabasız gezmeye en uygunudur; liste yukarıda."
+   }
+  ]
+ },
+ {
+  "slug": "gol-kenari-piknik",
+  "ikon": "🏞️",
+  "kisa": "Göl & piknik",
+  "limit": 18,
+  "baslik": "Ankara'da Göl Kenarı ve Piknik Yerleri (Çocuklu Aileler)",
+  "ozet": "Mogan, Eymir ve baraj kenarları: doğada çocukla piknik ve yürüyüş.",
+  "meta": "Ankara'da çocuklu ailelere göl kenarı ve piknik yerleri: Mogan, Eymir, barajlar ve tabiat parkları; yaşa göre puanlı, ulaşım ve mevsim bilgili liste.",
+  "giris": "Hafta sonu doğaya kaçmak isteyen aileler için Ankara'nın göl kenarlarını ve piknik alanlarını derledik.",
+  "kisa_cevap": "Ankara'da çocukla göl kenarı ve piknik için Mogan Gölü, Eymir Gölü ve çevre barajlar öne çıkar; bebek arabasıyla yürüyüşe uygun düz alanları tercih edin.",
+  "kural": {
+   "metin": [
+    "göl",
+    "gölü",
+    "gol ",
+    "mogan",
+    "eymir",
+    "baraj",
+    "piknik",
+    "tabiat park"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da çocukla piknik nereye yapılır?",
+    "cevap": "Mogan, Eymir ve baraj kenarları ile tabiat parkları en uygunudur; hepsi listede."
+   }
+  ]
+ },
+ {
+  "slug": "ankara-kaleleri-tarihi",
+  "ikon": "🏰",
+  "kisa": "Kaleler & tarih",
+  "limit": 15,
+  "baslik": "Ankara'da Kaleler ve Tarihi Yerler (Çocuklarla Keşif)",
+  "ozet": "Ankara Kalesi'nden örenyerlerine: çocukla tarih keşfi.",
+  "meta": "Ankara'da çocuklarla gezilecek kaleler ve tarihi yerler: Ankara Kalesi, Hamamönü, örenyerleri; yaşa göre puanlı, ulaşım bilgili liste.",
+  "giris": "Tarih, çocuğa yerinde anlatılınca akılda kalır. Ankara'nın kalelerini ve tarihi bölgelerini çocuklu aileler için topladık.",
+  "kisa_cevap": "Ankara'da çocukla Ankara Kalesi, Hamamönü ve çevredeki kaleler/örenyerleri gezilebilir; taş zeminler için rahat ayakkabı ve dikkat önerilir.",
+  "kural": {
+   "metin": [
+    "kale",
+    "kalesi",
+    "hamamönü",
+    "örenyeri",
+    "antik",
+    "höyük",
+    "tarihi bölge"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara Kalesi çocukla gezilir mi?",
+    "cevap": "Evet, manzarası çocukların ilgisini çeker; taş/dik zeminlerde küçüklerle dikkatli olun."
+   }
+  ]
+ },
+ {
+  "slug": "yagmurda-bebekle",
+  "ikon": "🍼",
+  "kisa": "Yağmurda bebekle",
+  "limit": 15,
+  "baslik": "Yağmurlu Günde Bebekle (0-3 Yaş) Ankara'da Nereye Gidilir?",
+  "ozet": "Kapalı, sakin ve bebek arabasıyla rahat: yağmurlu günde 0-3 yaş için mekânlar.",
+  "meta": "Ankara'da yağmurlu ya da soğuk günde bebekle (0-3 yaş) gidilecek kapalı mekânlar: sakin, bebek arabasıyla rahat, bakım imkânı olan yerler; puanlı liste.",
+  "giris": "Hava kötü ve bebekle evde sıkıldıysanız: kapalı, sakin ve bebek arabasıyla rahat gezilen mekânları seçtik.",
+  "kisa_cevap": "Yağmurlu günde bebekle Ankara'da kapalı oyun alanlı kafeler, bebek kütüphaneleri ve sakin AVM alanları en iyisidir; bebek bakım/emzirme imkânı olanları tercih edin.",
+  "kural": {
+   "indoor": true,
+   "min_puan_alan": "score_bebek",
+   "min_puan": 4,
+   "sirala_alan": "score_bebek"
+  },
+  "sss": [
+   {
+    "soru": "Yağmurlu günde bebekle nereye gidilir?",
+    "cevap": "Kapalı oyun alanlı kafeler, bebek kütüphaneleri ve sakin AVM alanları; hepsi listede 0-3 yaş için yüksek puanlı."
+   }
+  ]
  }
 ]
