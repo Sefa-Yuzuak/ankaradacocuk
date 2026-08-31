@@ -101,7 +101,7 @@
         <a class="kart-kapak${m.foto ? ' foto' : ''}" href="${m.url}" style="--kr:${m.renk}" aria-hidden="true" tabindex="-1">${m.foto ? `<img class="kapak-img" src="/static/img/mekan/${m.foto.sm}" alt="${m.name}" loading="lazy">` : `<span class="kapak-ikon">${m.ikon}</span>`}<span class="puan-rozet">${m.puan}</span>${m.status === 'kapalı' ? '<span class="etiket-kapali">Kapalı</span>' : ''}</a>
         <div class="kart-govde"><div class="kart-meta"><span class="kat" style="--kr:${m.renk}">${m.kat_ad}</span> · ${m.district || 'Ankara'}</div>
         <h3><a href="${m.url}">${m.name}</a></h3><p class="kart-aciklama">${(m.description || '').slice(0, 120)}…</p>
-        <div class="kart-alt"><span class="rozet">${m.indoor ? '🏠 Kapalı alan' : '☀️ Açık hava'}</span>${m.price ? `<span class="rozet">${{ 'ücretsiz': 'Ücretsiz', 'uygun': '₺ Uygun', 'orta': '₺₺ Orta', 'yüksek': '₺₺₺ Yüksek' }[m.price] || ''}</span>` : ''}</div></div>
+        <div class="kart-alt"><span class="rozet">${m.indoor ? '🏠 Kapalı alan' : '☀️ Açık hava'}</span>${m.price ? `<span class="rozet">${{ 'ücretsiz': 'Ücretsiz', 'uygun': '₺ Uygun', 'orta': '₺₺ Orta', 'yüksek': '₺₺₺ Yüksek' }[m.price] || ''}</span>` : ''}</div><div class="kart-eylem"><a class="kart-btn birincil" href="${m.maps_url}" target="_blank" rel="noopener">📍 Yol tarifi</a>${m.phone ? `<a class="kart-btn" href="tel:${m.phone.replace(/\s/g,'')}">📞 Ara</a>` : ''}</div></div>
       </article>`;
     const calistir = () => {
       const f = Object.fromEntries(new FormData(araForm));
@@ -165,4 +165,43 @@
       }, () => alert('Konum alınamadı. Tarayıcı izni gerekiyor.'));
     });
   }
+
+  // E-bülten aboneliği
+  const bultenForm = document.getElementById('bulten-form');
+  if (bultenForm) {
+    const sonuc = document.getElementById('bulten-sonuc');
+    const goster = (msg, ok) => { sonuc.textContent = msg; sonuc.hidden = false; sonuc.className = 'bulten-sonuc' + (ok ? ' ok' : ' hata'); };
+    bultenForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = (bultenForm.email.value || '').trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { goster('Lütfen geçerli bir e-posta gir.', false); return; }
+      const endpoint = bultenForm.dataset.endpoint;
+      if (endpoint) {
+        try {
+          const r = await fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, body: JSON.stringify({ email: email, kaynak: 'ankaradacocuk e-bulten' }) });
+          if (r.ok) { goster('Teşekkürler! Aboneliğin alındı. 🎉', true); bultenForm.reset(); }
+          else { goster('Bir sorun oldu, birazdan tekrar dene.', false); }
+        } catch (x) { goster('Bağlantı hatası, tekrar dene.', false); }
+      } else {
+        const adres = bultenForm.dataset.eposta || 'merhaba@ankaradacocuk.com';
+        location.href = 'mailto:' + adres + '?subject=' + encodeURIComponent('E-bulten aboneligi') + '&body=' + encodeURIComponent('Beni e-bultene ekleyin: ' + email);
+        goster('E-posta uygulaman açılıyor; göndererek aboneliğini tamamla.', true);
+      }
+    });
+  }
+
+  // Çerez onay bildirimi (Google Consent Mode)
+  const cbanner = document.getElementById('cerez-banner');
+  if (cbanner) {
+    let mevcut = null; try { mevcut = localStorage.getItem('cerez_ok'); } catch (e) {}
+    if (mevcut === null) cbanner.hidden = false;
+    const kapat = (deger) => {
+      try { localStorage.setItem('cerez_ok', deger); } catch (e) {}
+      cbanner.hidden = true;
+      if (deger === '1' && typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: 'granted' });
+    };
+    const k = document.getElementById('cerez-kabul'); if (k) k.addEventListener('click', () => kapat('1'));
+    const r = document.getElementById('cerez-red'); if (r) r.addEventListener('click', () => kapat('0'));
+  }
+
 })();

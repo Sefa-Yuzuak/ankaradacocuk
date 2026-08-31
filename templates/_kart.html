@@ -15,5 +15,9 @@
       <span class="rozet" title="En uygun yaş grubu">👶 {{ m.en_iyi_yas }} yaş</span>
       {% if yas_alan %}<span class="rozet vurgu">Bu yaş için {{ m[yas_alan] }}/5</span>{% endif %}
     </div>
+    <div class="kart-eylem">
+      <a class="kart-btn birincil" href="{{ m.maps_url }}" target="_blank" rel="noopener">📍 Yol tarifi</a>
+      {% if m.phone %}<a class="kart-btn" href="tel:{{ m.phone|replace(' ', '') }}">📞 Ara</a>{% endif %}
+    </div>
   </div>
 </article>

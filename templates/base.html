@@ -38,7 +38,7 @@
 {% endfor %}
 {% if site.ga4 %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ site.ga4 }}',{anonymize_ip:true});</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted'});try{if(localStorage.getItem('cerez_ok')==='1')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}gtag('js',new Date());gtag('config','{{ site.ga4 }}',{anonymize_ip:true});</script>
 {% endif %}
 </head>
 <body class="{% block bodyclass %}{% endblock %}">
@@ -73,6 +73,20 @@
 <main id="icerik">
 {% block content %}{% endblock %}
 </main>
+<section class="bulten" aria-label="E-bülten">
+  <div class="kap bulten-ic">
+    <div class="bulten-yazi">
+      <h2>📬 Yeni mekân ve etkinliklerden haberdar ol</h2>
+      <p>Ankara'da çocukla gidilecek yeni yerleri ve yaklaşan etkinlikleri ara sıra e-postayla gönderelim. Spam yok, tek tıkla çıkarsın.</p>
+    </div>
+    <form class="bulten-form" id="bulten-form" data-endpoint="{{ site.bulten_endpoint }}" data-eposta="{{ site.eposta }}">
+      <input type="email" name="email" required placeholder="e-posta adresin" aria-label="E-posta adresi" autocomplete="email">
+      <button class="btn btn-birincil" type="submit">Abone ol</button>
+    </form>
+    <p class="bulten-sonuc" id="bulten-sonuc" role="status" aria-live="polite" hidden></p>
+    <p class="bulten-not kucuk">Kaydolarak <a href="/cerez-politikasi/">çerez</a> ve <a href="/gizlilik/">gizlilik</a> politikamızı kabul etmiş olursun.</p>
+  </div>
+</section>
 <footer class="alt">
   <div class="kap alt-ic">
     <div>
@@ -100,11 +114,20 @@
       <a href="/puanlama-yontemi/">Puanlama yöntemi</a>
       <a href="/mekan-oner/">Mekân öner / düzeltme bildir</a>
       <a href="/gizlilik/">Gizlilik</a>
+      <a href="/cerez-politikasi/">Çerez politikası</a>
       <a href="/harita/">Harita</a>
     </div>
   </div>
   <div class="kap telif">© {{ site.guncelleme[:4] }} {{ site.ad }} · Bağımsız aile rehberi. Bilgiler kaynaklarından derlenmiştir; gitmeden önce mekânla teyit edin.</div>
 </footer>
+<div class="cerez-banner" id="cerez-banner" hidden>
+  <p>🍪 Deneyimini iyileştirmek ve ziyaret istatistiği (Google Analytics) için çerez kullanıyoruz.
+    Ayrıntı: <a href="/cerez-politikasi/">Çerez Politikası</a>.</p>
+  <div class="cerez-dugme">
+    <button class="btn btn-cerez-red" type="button" id="cerez-red">Reddet</button>
+    <button class="btn btn-birincil" type="button" id="cerez-kabul">Kabul et</button>
+  </div>
+</div>
 {% block scripts %}{% endblock %}
 <script src="/static/app.js?v={{ site.guncelleme }}" defer></script>
 </body>
