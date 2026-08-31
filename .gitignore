@@ -1,3 +1,4 @@
 dist/
 deploy/.ftp.env
 __pycache__/
+sosyal/

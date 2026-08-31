@@ -319,6 +319,12 @@ def main():
         _foto = {}
     for _m in mekanlar:
         _m["foto"] = _foto.get(_m["name"]) or None
+    try:
+        _kapak = yukle("kapak.json")
+    except FileNotFoundError:
+        _kapak = {}
+    for _m in mekanlar:
+        _m["kapak"] = _kapak.get(_m["name"])
     rehberler = yukle("rehberler.json")
     try:
         etkinlikler = etkinlik_hazirla(yukle("etkinlikler.json"), date.today())
@@ -454,7 +460,7 @@ def main():
     hafif = [{k: m.get(k) for k in ("name", "slug", "url", "category", "district", "ilce_slug", "lat", "lng",
                                     "indoor", "price", "puan", "age_min", "age_max", "features", "best_season",
                                     "status", "score_bebek", "score_okul_oncesi", "score_ilkokul", "score_ergen",
-                                    "description", "subcategory", "aile_fiyat", "foto", "phone", "maps_url")}
+                                    "description", "subcategory", "aile_fiyat", "foto", "kapak", "phone", "maps_url")}
              | {"ikon": m["kategori"]["ikon"], "renk": m["kategori"]["renk"], "kat_ad": m["kategori"]["kisa"]}
              for m in mekanlar]
     (DIST / "static").mkdir(exist_ok=True)

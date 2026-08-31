@@ -75,7 +75,7 @@ p{margin:0 0 1em}
 .kart{background:var(--kart);border-radius:var(--r);overflow:hidden;box-shadow:var(--golge);display:flex;flex-direction:column;transition:.15s;border:1px solid var(--cizgi)}
 .kart:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(60,30,0,.13)}
 .kart.kapali{opacity:.6}
-.kart-kapak{display:flex;align-items:center;justify-content:center;height:120px;background:linear-gradient(135deg,color-mix(in srgb,var(--kr) 22%,#fff),color-mix(in srgb,var(--kr) 55%,#fff));position:relative}
+.kart-kapak{display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;background:linear-gradient(135deg,color-mix(in srgb,var(--kr) 22%,#fff),color-mix(in srgb,var(--kr) 55%,#fff));position:relative}
 .kapak-ikon{font-size:3rem;filter:drop-shadow(0 4px 6px rgba(0,0,0,.12))}
 .puan-rozet{position:absolute;right:12px;top:12px;background:var(--metin);color:#fff;font-weight:900;padding:4px 10px;border-radius:999px;font-size:.9rem}
 .etiket-kapali{position:absolute;left:12px;top:12px;background:#c62828;color:#fff;font-weight:800;font-size:.75rem;padding:3px 8px;border-radius:6px}
@@ -114,8 +114,9 @@ p{margin:0 0 1em}
 .bos{padding:40px;text-align:center;color:var(--metin-2);background:#fff;border-radius:var(--r)}
 
 /* Mekân detay */
-.mekan-bas{display:grid;grid-template-columns:200px 1fr 260px;gap:24px;padding-top:16px;align-items:start}
-.mekan-kapak{height:200px;border-radius:var(--r);background:linear-gradient(135deg,color-mix(in srgb,var(--kr) 22%,#fff),color-mix(in srgb,var(--kr) 55%,#fff));display:flex;align-items:center;justify-content:center;font-size:5rem}
+.mekan-bas{padding-top:16px}
+.mekan-bas-alt{display:grid;grid-template-columns:1fr 300px;gap:24px;align-items:start;margin-top:20px}
+.mekan-kapak{width:100%;aspect-ratio:16/9;max-height:440px;border-radius:var(--r);overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--kr) 22%,#fff),color-mix(in srgb,var(--kr) 55%,#fff));display:flex;align-items:center;justify-content:center;font-size:6rem;position:relative}
 .ozet{font-size:1.08rem}
 .eylemler{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .uyari{background:#fff3e0;border:1.5px solid #ffcc80;padding:10px 14px;border-radius:var(--r-k);font-size:.95rem}
@@ -154,7 +155,7 @@ p{margin:0 0 1em}
 .mini-liste li{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px dashed var(--cizgi);font-weight:700;font-size:.95rem}
 .mini-liste a{color:var(--metin)}
 .mini-liste span{color:var(--turuncu-koyu);font-weight:900}
-@media(max-width:960px){.mekan-bas{grid-template-columns:1fr}.mekan-kapak{height:140px}.mekan-govde{grid-template-columns:1fr}}
+@media(max-width:960px){.mekan-bas-alt{grid-template-columns:1fr}.mekan-govde{grid-template-columns:1fr}}
 
 /* Rehber */
 .tablo-kaydir{overflow-x:auto;margin:0 0 28px;border-radius:var(--r-k);border:1px solid var(--cizgi);background:#fff}
