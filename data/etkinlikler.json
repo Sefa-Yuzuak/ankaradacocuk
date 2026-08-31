@@ -797,5 +797,43 @@
   "sources": [
    "http://www.rmk-museum.org.tr/ankara/muzede-egitim/bireysel-cocuk-atolyeleri"
   ]
+ },
+ {
+  "name": "ABB Yaz Okulu Şenlikleri — Eylül İlçe Turu",
+  "type": "festival",
+  "venue_name": "İlçe meydanları (açık hava)",
+  "district": "Ankara",
+  "address": "Haymana, Gölbaşı (Mogan Park), Elmadağ, Bala, Şereflikoçhisar, Evren",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-28",
+  "recurring": "İlçe turu: 1-3 Eyl Haymana, 6-8 Eyl Gölbaşı (Mogan Park), 11-13 Eyl Elmadağ, 16-18 Eyl Bala, 21-23 Eyl Şereflikoçhisar, 26-28 Eyl Evren · her akşam 18:00-22:00",
+  "age_min": 3,
+  "age_max": 12,
+  "price_note": "Ücretsiz",
+  "offers_url": null,
+  "organizer": "Ankara Büyükşehir Belediyesi",
+  "description": "ABB'nin ilçe ilçe dolaşan ücretsiz yaz şenliği: sirk gösterileri, açık hava sinema, şişme oyuncaklar, yüz boyama, pamuk şeker ve pony binme. Akşam 18:00-22:00, okul öncesi ve okul çağı için.",
+  "sources": [
+   "https://ankaracocuketkinlikler.com/ankara-buyuksehir-belediyesi-yaz-okulu-ve-senlikleri-1-28-eylul/"
+  ]
+ },
+ {
+  "name": "ABB Yaz Okulu Şenlikleri — Ekim İlçe Turu",
+  "type": "festival",
+  "venue_name": "İlçe mesire alanları (açık hava)",
+  "district": "Ankara",
+  "address": "Kalecik (Meşran Sosyal Tesisler yanı), Akyurt (Mesire Alanı)",
+  "startDate": "2026-10-01",
+  "endDate": "2026-10-08",
+  "recurring": "1-3 Ekim Kalecik, 6-8 Ekim Akyurt · her akşam 18:00-22:00",
+  "age_min": 3,
+  "age_max": 12,
+  "price_note": "Ücretsiz",
+  "offers_url": null,
+  "organizer": "Ankara Büyükşehir Belediyesi",
+  "description": "ABB yaz şenliklerinin ekim ayağı: sirk sahne gösterileri, açık hava sinema, şişme ve akülü oyun alanları, palyaço, yüz boyama, pamuk şeker ve pony binme. Akşam 18:00-22:00.",
+  "sources": [
+   "https://ankaracocuketkinlikler.com/ankara-buyuksehir-belediyesi-yaz-okulu-senlikleri-1-8-ekim/"
+  ]
  }
 ]
