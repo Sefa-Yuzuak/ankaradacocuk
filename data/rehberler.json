@@ -534,5 +534,125 @@
     "cevap": "Kapalı oyun alanlı kafeler, bebek kütüphaneleri ve sakin AVM alanları; hepsi listede 0-3 yaş için yüksek puanlı."
    }
   ]
+ },
+ {
+  "slug": "trambolin-parklari",
+  "ikon": "🤸",
+  "kisa": "Trambolin",
+  "limit": 15,
+  "baslik": "Ankara'da Trambolin Parkları ve Aktif Oyun Merkezleri",
+  "ozet": "Zıpla, tırman, boşal: enerjisi yüksek çocuklar için trambolin ve macera parkları.",
+  "meta": "Ankara'da çocuklar için trambolin parkları ve aktif oyun merkezleri; yaşa göre puanlı, konum ve ücret bilgili liste. Yağmurda da uygun kapalı eğlence.",
+  "giris": "Enerjisi taşan çocuklar için trambolin parkları birebir — hem eğlenceli hem yorucu. Ankara'daki trambolin ve aktif oyun merkezlerini topladık.",
+  "kisa_cevap": "Ankara'da trambolin parkları özellikle 5-13 yaş için uygundur; çoğu AVM içinde, kapalı ve yağmurlu günlerde de gidilebilir. Küçükler için ayrı yaş seansları olan yerleri seçin.",
+  "kural": {
+   "metin": [
+    "trambolin",
+    "jump",
+    "zıpzıp",
+    "zıp zıp",
+    "trampoline"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da trambolin parkı nerede?",
+    "cevap": "Arena, Open Play, Rock'n Ball gibi merkezler öne çıkar; çoğu AVM içinde ve kapalı."
+   },
+   {
+    "soru": "Trambolin kaç yaşa uygun?",
+    "cevap": "Genelde 5 yaş ve üstü; birçok tesiste küçükler için ayrı, gözetimli alanlar var."
+   }
+  ]
+ },
+ {
+  "slug": "avm-oyun-eglence-merkezleri",
+  "ikon": "🛍️",
+  "kisa": "AVM oyun alanları",
+  "limit": 18,
+  "baslik": "Ankara AVM'lerinde Çocuk Oyun ve Eğlence Merkezleri",
+  "ozet": "JoyLand'den Macera Adası'na: AVM'lerdeki kapalı oyun ve eğlence merkezleri.",
+  "meta": "Ankara AVM'lerinde çocuk oyun alanları ve eğlence merkezleri: kapalı, yağmurda uygun, kaydırak-top havuzu-oyun makineleri; yaşa göre puanlı liste ve konum.",
+  "giris": "Alışveriş ile çocuk eğlencesini birleştiren AVM oyun merkezlerini derledik; hepsi kapalı, klimalı ve yağmurlu günlerde kurtarıcı.",
+  "kisa_cevap": "Ankara'da AVM oyun merkezleri 2-12 yaş için uygundur; kapalı ve klimalı oldukları için yaz sıcağında ve yağmurlu günlerde idealdir. Bilet/jeton sistemiyle çalışır.",
+  "kural": {
+   "metin": [
+    "avm",
+    "outlet",
+    "kentpark",
+    "panora",
+    "cepa",
+    "forum",
+    "antares",
+    "podium",
+    "armada",
+    "next level",
+    "taurus",
+    "ankamall",
+    "acity",
+    "arcadium"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da AVM içinde oyun alanı nerede?",
+    "cevap": "Macera Adası (Kentpark), JoyPort (Podium), Funnivarium (Forum), Joyland (Panora) gibi merkezler; tam liste yukarıda."
+   }
+  ]
+ },
+ {
+  "slug": "ucretsiz-muzeler-cocuk",
+  "ikon": "🏛️",
+  "kisa": "Ücretsiz müzeler",
+  "limit": 18,
+  "baslik": "Ankara'da Çocukla Gezilebilecek Ücretsiz Müzeler",
+  "ozet": "Bütçe dostu kültür: giriş ücreti olmayan, çocuk dostu müzeler ve bilim noktaları.",
+  "meta": "Ankara'da ücretsiz müzeler ve bilim noktaları: çocuklarla gezilebilecek, giriş ücreti olmayan kültür mekânları; yaşa göre puanlı, konum ve saat bilgili liste.",
+  "giris": "Kültür pahalı olmak zorunda değil. Ankara'nın ücretsiz, çocuk dostu müzelerini ve bilim noktalarını bir araya getirdik.",
+  "kisa_cevap": "Ankara'da birçok belediye ve üniversite müzesi ile bazı devlet müzeleri ücretsizdir; özellikle etnografya, bilim ve tematik müzeler çocuklarla ücretsiz gezilebilir.",
+  "kural": {
+   "kategori": [
+    "muze",
+    "bilim"
+   ],
+   "fiyat": [
+    "ücretsiz"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da ücretsiz müze var mı?",
+    "cevap": "Evet; birçok belediye/üniversite müzesi ve bilim merkezi ücretsizdir. Güncel durum her mekânın sayfasında belirtilir."
+   }
+  ]
+ },
+ {
+  "slug": "bahceli-kahvalti-brunch",
+  "ikon": "🍳",
+  "kisa": "Bahçeli kahvaltı",
+  "limit": 15,
+  "baslik": "Ankara'da Bahçeli, Oyun Alanlı Kahvaltı ve Brunch Mekanları",
+  "ozet": "Çocuk oynasın, siz keyifle kahvaltı edin: bahçeli ve oyun alanlı mekânlar.",
+  "meta": "Ankara'da bahçeli ve oyun alanlı kahvaltı & brunch mekanları; çocuklu ailelere uygun, yaşa göre puanlı, konum ve yaklaşık fiyat bilgili liste.",
+  "giris": "Hafta sonu kahvaltısını çocukla huzurla yapmanın yolu: bahçesi ve oyun alanı olan mekânlar. Ankara'daki en iyilerini seçtik.",
+  "kisa_cevap": "Ankara'da çocuklu aileler için bahçeli, oyun alanlı köy kahvaltısı ve brunch mekânları idealdir; çocuk oynarken siz rahat kahvaltı edersiniz. Hafta sonu erken gidin.",
+  "kural": {
+   "metin": [
+    "kahvaltı",
+    "brunch",
+    "köy kahvaltı",
+    "kır bahçe",
+    "bahçe"
+   ],
+   "kategori": [
+    "yemek"
+   ]
+  },
+  "sss": [
+   {
+    "soru": "Ankara'da çocuk oynayabileceği kahvaltı mekanı var mı?",
+    "cevap": "Evet; bahçeli köy kahvaltısı ve oyun alanlı brunch mekânları listede, çoğunda çocuk oyun alanı var."
+   }
+  ]
  }
 ]
