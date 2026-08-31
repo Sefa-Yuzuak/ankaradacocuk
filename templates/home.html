@@ -29,6 +29,11 @@
           <option value="">Tüm Ankara</option>
           {% for i in ilceler %}<option value="{{ i.slug }}">{{ i.ad }} ({{ i.mekanlar|length }})</option>{% endfor %}
         </select></label>
+      <label>Ne yapmak istersin?
+        <select name="kat">
+          <option value="">Fark etmez</option>
+          {% for k in kategoriler %}<option value="{{ k.slug }}">{{ k.ikon }} {{ k.kisa }}</option>{% endfor %}
+        </select></label>
       <button class="btn btn-birincil" type="submit">Öneri getir →</button>
     </form>
     <div class="hizli">
