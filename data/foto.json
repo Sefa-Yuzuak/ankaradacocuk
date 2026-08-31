@@ -49,7 +49,15 @@
   "lg": "kesikkopru-baraji-lg.webp",
   "sm": "kesikkopru-baraji-sm.webp"
  },
- "Mavi Göl (Bayındır Barajı)": null,
+ "Mavi Göl (Bayındır Barajı)": {
+  "wiki": "Ankara Bayındır Barajı Mavi Göl.jpg",
+  "sayfa": "https://commons.wikimedia.org/wiki/File:Ankara_Bay%C4%B1nd%C4%B1r_Baraj%C4%B1_Mavi_G%C3%B6l.jpg",
+  "yazar": "NowhereLady",
+  "lisans": "CC BY-SA 4.0",
+  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "lg": "mavi-gol-bayindir-baraji-lg.webp",
+  "sm": "mavi-gol-bayindir-baraji-sm.webp"
+ },
  "Çamlıdere Fosil Ormanı (Pelitçik)": null,
  "Çamkoru Tabiat Parkı": {
   "wiki": "Çamkoru Tabiat Parkı",
@@ -62,7 +70,15 @@
  },
  "Gordion Antik Kenti ve Müzesi (UNESCO)": null,
  "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": null,
- "Çubuk Karagöl Tabiat Parkı": null,
+ "Çubuk Karagöl Tabiat Parkı": {
+  "wiki": "Çubuk Karagöl Tabiat Parkı Resim 2.jpg",
+  "sayfa": "https://commons.wikimedia.org/wiki/File:%C3%87ubuk_Karag%C3%B6l_Tabiat_Park%C4%B1_Resim_2.jpg",
+  "yazar": "Esma.Ünal.23",
+  "lisans": "CC BY-SA 4.0",
+  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "lg": "cubuk-karagol-tabiat-parki-lg.webp",
+  "sm": "cubuk-karagol-tabiat-parki-sm.webp"
+ },
  "Elmadağ Kayak Merkezi": null,
  "Kalecik Kalesi": {
   "wiki": "Kalecik",
@@ -120,7 +136,15 @@
   "sm": "feza-gursey-bilim-merkezi-sm.webp"
  },
  "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi": null,
- "Anadolu Medeniyetleri Müzesi": null,
+ "Anadolu Medeniyetleri Müzesi": {
+  "wiki": "Ankara - Anadolu Medeniyetleri Müzesi 1215.jpg",
+  "sayfa": "https://commons.wikimedia.org/wiki/File:Ankara_-_Anadolu_Medeniyetleri_M%C3%BCzesi_1215.jpg",
+  "yazar": "Phyrexian",
+  "lisans": "CC BY-SA 4.0",
+  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "lg": "anadolu-medeniyetleri-muzesi-lg.webp",
+  "sm": "anadolu-medeniyetleri-muzesi-sm.webp"
+ },
  "Rahmi M. Koç Müzesi Ankara (Çengelhan)": {
   "wiki": "Çengelhan Rahmi M. Koç Müzesi",
   "yazar": "Ahmetan",
@@ -372,7 +396,15 @@
   "sm": "estergon-kalesi-turk-kultur-merkezi-sm.webp"
  },
  "Kartaltepe Kent Ormanı": null,
- "Başkent Millet Bahçesi (AKM)": null,
+ "Başkent Millet Bahçesi (AKM)": {
+  "wiki": "Başkent Millet Bahçesi.jpg",
+  "sayfa": "https://commons.wikimedia.org/wiki/File:Ba%C5%9Fkent_Millet_Bah%C3%A7esi.jpg",
+  "yazar": "Metuboy",
+  "lisans": "CC BY-SA 4.0",
+  "lisans_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "lg": "baskent-millet-bahcesi-akm-lg.webp",
+  "sm": "baskent-millet-bahcesi-akm-sm.webp"
+ },
  "İmrahor Vadisi Millet Bahçesi": null,
  "Ankara Millet Bahçesi (Etimesgut)": null,
  "Keçiören (Bağlum) Millet Bahçesi": null,
