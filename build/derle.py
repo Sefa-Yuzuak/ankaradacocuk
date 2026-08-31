@@ -325,6 +325,12 @@ def main():
         _kapak = {}
     for _m in mekanlar:
         _m["kapak"] = _kapak.get(_m["name"])
+    try:
+        _google = yukle("google.json")
+    except FileNotFoundError:
+        _google = {}
+    for _m in mekanlar:
+        _m["google"] = _google.get(_m["name"])
     rehberler = yukle("rehberler.json")
     try:
         etkinlikler = etkinlik_hazirla(yukle("etkinlikler.json"), date.today())
@@ -460,7 +466,7 @@ def main():
     hafif = [{k: m.get(k) for k in ("name", "slug", "url", "category", "district", "ilce_slug", "lat", "lng",
                                     "indoor", "price", "puan", "age_min", "age_max", "features", "best_season",
                                     "status", "score_bebek", "score_okul_oncesi", "score_ilkokul", "score_ergen",
-                                    "description", "subcategory", "aile_fiyat", "foto", "kapak", "phone", "maps_url")}
+                                    "description", "subcategory", "aile_fiyat", "foto", "kapak", "phone", "maps_url", "google")}
              | {"ikon": m["kategori"]["ikon"], "renk": m["kategori"]["renk"], "kat_ad": m["kategori"]["kisa"]}
              for m in mekanlar]
     (DIST / "static").mkdir(exist_ok=True)
@@ -468,7 +474,8 @@ def main():
 
     # sitemap, robots, llms.txt, htaccess
     bugun = site["guncelleme"]
-    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
+    mekan_gorsel = {m['url']: (m['foto']['lg'] if m.get('foto') else m.get('kapak')) for m in mekanlar if m.get('foto') or m.get('kapak')}
     for u in urls:
         if u == "/":
             oncelik, cf = "1.0", "daily"
@@ -478,7 +485,10 @@ def main():
             oncelik, cf = "0.8", "monthly"
         else:
             oncelik, cf = "0.6", "monthly"
-        sm.append(f"  <url><loc>{site['url']}{u}</loc><lastmod>{bugun}</lastmod><changefreq>{cf}</changefreq><priority>{oncelik}</priority></url>")
+        img = ""
+        if u in mekan_gorsel:
+            img = f"<image:image><image:loc>{site['url']}/static/img/mekan/{mekan_gorsel[u]}</image:loc></image:image>"
+        sm.append(f"  <url><loc>{site['url']}{u}</loc><lastmod>{bugun}</lastmod><changefreq>{cf}</changefreq><priority>{oncelik}</priority>{img}</url>")
     sm.append("</urlset>")
     (DIST / "sitemap.xml").write_text("\n".join(sm), encoding="utf-8")
 

@@ -305,3 +305,10 @@ p{margin:0 0 1em}
 .btn-cerez-red{background:transparent;border-color:rgba(255,255,255,.4);color:#fff;padding:9px 16px}
 .btn-cerez-red:hover{border-color:#fff;color:#fff}
 .cerez-banner .btn-birincil{padding:9px 18px}
+
+/* Google puanı */
+.google-rozet{background:#eef4ff;color:#2f7de1}
+.google-puan{margin:.6em 0 0;font-size:.92rem;color:var(--metin-2)}
+.google-puan b{color:var(--metin);font-size:1.02rem}
+.g-yildiz{color:#f6a609}
+.google-puan a{font-weight:700}

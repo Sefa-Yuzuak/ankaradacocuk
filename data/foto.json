@@ -17,9 +17,33 @@
   "lg": "kizilcahamam-termal-gunubirlik-aile-banyolari-lg.webp",
   "sm": "kizilcahamam-termal-gunubirlik-aile-banyolari-sm.webp"
  },
- "Ayaş İçmece ve Kaplıcaları": null,
- "Tarihi Haymana Kaplıca Tesisleri (Belediye)": null,
- "Beypazarı Tarihi Çarşı ve Hıdırlık Tepesi": null,
+ "Ayaş İçmece ve Kaplıcaları": {
+  "yazar": "Tur Sad",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14631507542638718348",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ayas-icmece-ve-kaplicalari-lg.webp",
+  "sm": "ayas-icmece-ve-kaplicalari-sm.webp"
+ },
+ "Tarihi Haymana Kaplıca Tesisleri (Belediye)": {
+  "yazar": "Tarihi Haymana Kaplıca Tesisleri",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14492233354785751557",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "tarihi-haymana-kaplica-tesisleri-belediye-lg.webp",
+  "sm": "tarihi-haymana-kaplica-tesisleri-belediye-sm.webp"
+ },
+ "Beypazarı Tarihi Çarşı ve Hıdırlık Tepesi": {
+  "yazar": "Ahmet Benek",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=5986216264041461153",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "beypazari-tarihi-carsi-ve-hidirlik-tepesi-lg.webp",
+  "sm": "beypazari-tarihi-carsi-ve-hidirlik-tepesi-sm.webp"
+ },
  "Beypazarı Yaşayan Müze": {
   "wiki": "Beypazarı Yaşayan Müze",
   "yazar": "Gargarapalvin",
@@ -30,7 +54,15 @@
   "sm": "beypazari-yasayan-muze-sm.webp"
  },
  "İnözü Vadisi ve Kelebekler Vadisi Tabiat Parkı": null,
- "Eğriova Tabiat Parkı": null,
+ "Eğriova Tabiat Parkı": {
+  "yazar": "AVUKAT-EMİN KUTLUCA",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12745874941688520703",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "egriova-tabiat-parki-lg.webp",
+  "sm": "egriova-tabiat-parki-sm.webp"
+ },
  "Nallıhan Kuş Cenneti": {
   "wiki": "Nallıhan",
   "yazar": "Bilinmiyor",
@@ -58,7 +90,15 @@
   "lg": "mavi-gol-bayindir-baraji-lg.webp",
   "sm": "mavi-gol-bayindir-baraji-sm.webp"
  },
- "Çamlıdere Fosil Ormanı (Pelitçik)": null,
+ "Çamlıdere Fosil Ormanı (Pelitçik)": {
+  "yazar": "KoSeKu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=7465523838198155226",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "camlidere-fosil-ormani-pelitcik-lg.webp",
+  "sm": "camlidere-fosil-ormani-pelitcik-sm.webp"
+ },
  "Çamkoru Tabiat Parkı": {
   "wiki": "Çamkoru Tabiat Parkı",
   "yazar": "Emin Başar ÖZDEMİR",
@@ -68,8 +108,24 @@
   "lg": "camkoru-tabiat-parki-lg.webp",
   "sm": "camkoru-tabiat-parki-sm.webp"
  },
- "Gordion Antik Kenti ve Müzesi (UNESCO)": null,
- "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": null,
+ "Gordion Antik Kenti ve Müzesi (UNESCO)": {
+  "yazar": "Ayşe Akgün",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3105628289435850766",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "gordion-antik-kenti-ve-muzesi-unesco-lg.webp",
+  "sm": "gordion-antik-kenti-ve-muzesi-unesco-sm.webp"
+ },
+ "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": {
+  "yazar": "Sinan Doğan",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=8812363262450676852",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sakarya-meydan-muharebesi-tarihi-milli-parki-duatepe-lg.webp",
+  "sm": "sakarya-meydan-muharebesi-tarihi-milli-parki-duatepe-sm.webp"
+ },
  "Çubuk Karagöl Tabiat Parkı": {
   "wiki": "Çubuk Karagöl Tabiat Parkı Resim 2.jpg",
   "sayfa": "https://commons.wikimedia.org/wiki/File:%C3%87ubuk_Karag%C3%B6l_Tabiat_Park%C4%B1_Resim_2.jpg",
@@ -89,7 +145,15 @@
   "lg": "kalecik-kalesi-lg.webp",
   "sm": "kalecik-kalesi-sm.webp"
  },
- "Mogan Gölü ve Mogan Park": null,
+ "Mogan Gölü ve Mogan Park": {
+  "yazar": "Murat Gündoğan",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4920340437955929254",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "mogan-golu-ve-mogan-park-lg.webp",
+  "sm": "mogan-golu-ve-mogan-park-sm.webp"
+ },
  "Eymir Gölü (ODTÜ)": {
   "wiki": "Eymir Gölü",
   "yazar": "Nedim Ardoğa",
@@ -99,8 +163,24 @@
   "lg": "eymir-golu-odtu-lg.webp",
   "sm": "eymir-golu-odtu-sm.webp"
  },
- "Tulumtaş Mağarası": null,
- "Ahlatlıbel Atatürk Parkı": null,
+ "Tulumtaş Mağarası": {
+  "yazar": "Ahmet Ataş",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15651253196634778900",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "tulumtas-magarasi-lg.webp",
+  "sm": "tulumtas-magarasi-sm.webp"
+ },
+ "Ahlatlıbel Atatürk Parkı": {
+  "yazar": "Haşim Mansurgüler",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4679649330352437667",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ahlatlibel-ataturk-parki-lg.webp",
+  "sm": "ahlatlibel-ataturk-parki-sm.webp"
+ },
  "Tuz Gölü": null,
  "Hattuşa (Boğazköy) Örenyeri – 2,5 saat, sınırda": {
   "wiki": "Hattuşa",
@@ -111,7 +191,15 @@
   "lg": "hattusa-bogazkoy-orenyeri-2-5-saat-sinirda-lg.webp",
   "sm": "hattusa-bogazkoy-orenyeri-2-5-saat-sinirda-sm.webp"
  },
- "Beynam Atatürk Ormanı (Beynam Muhafaza Ormanı)": null,
+ "Beynam Atatürk Ormanı (Beynam Muhafaza Ormanı)": {
+  "yazar": "Şahan Sümer",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9521398458940068150",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "beynam-ataturk-ormani-beynam-muhafaza-ormani-lg.webp",
+  "sm": "beynam-ataturk-ormani-beynam-muhafaza-ormani-sm.webp"
+ },
  "Eskişehir Sazova Bilim Sanat ve Kültür Parkı (Masal Şatosu) – YHT ile": {
   "wiki": "Sazova Bilim Kültür ve Sanat Parkı",
   "yazar": "Honacan",
@@ -124,8 +212,24 @@
  "Ankara Kültür Yolu Festivali": null,
  "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": null,
  "ABB Yarıyıl Çocuk Festivali (Altınpark)": null,
- "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": null,
- "Tuğram At Çiftliği": null,
+ "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": {
+  "yazar": "Türkiye Binicilik Vakfı",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=2111545314324474750",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "turkiye-binicilik-vakfi-cocuklar-icin-pony-ve-atlarla-tanisma-incek-lg.webp",
+  "sm": "turkiye-binicilik-vakfi-cocuklar-icin-pony-ve-atlarla-tanisma-incek-sm.webp"
+ },
+ "Tuğram At Çiftliği": {
+  "yazar": "Admin A",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=2768532300117483166",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "tugram-at-ciftligi-lg.webp",
+  "sm": "tugram-at-ciftligi-sm.webp"
+ },
  "Feza Gürsey Bilim Merkezi": {
   "wiki": "Feza Gürsey Bilim Merkezi",
   "yazar": "Nosferatü",
@@ -135,7 +239,15 @@
   "lg": "feza-gursey-bilim-merkezi-lg.webp",
   "sm": "feza-gursey-bilim-merkezi-sm.webp"
  },
- "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi": null,
+ "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi": {
+  "yazar": "Ahmet Ataş",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15964906560868467162",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "mta-sehit-cuma-dag-tabiat-tarihi-muzesi-lg.webp",
+  "sm": "mta-sehit-cuma-dag-tabiat-tarihi-muzesi-sm.webp"
+ },
  "Anadolu Medeniyetleri Müzesi": {
   "wiki": "Ankara - Anadolu Medeniyetleri Müzesi 1215.jpg",
   "sayfa": "https://commons.wikimedia.org/wiki/File:Ankara_-_Anadolu_Medeniyetleri_M%C3%BCzesi_1215.jpg",
@@ -247,9 +359,33 @@
  },
  "ODTÜ Toplum ve Bilim Merkezi Gökevi (Planetaryum)": null,
  "Ankara Üniversitesi Kreiken Rasathanesi (Halk Günleri)": null,
- "Ali Kuşçu Gökbilim Merkezi": null,
- "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": null,
- "Atatürk Çocukları Doğal Yaşam Parkı ve Hayvanat Bahçesi (AOÇ)": null,
+ "Ali Kuşçu Gökbilim Merkezi": {
+  "yazar": "Ömer Faruk Aytekin",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10626564999966147548",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ali-kuscu-gokbilim-merkezi-lg.webp",
+  "sm": "ali-kuscu-gokbilim-merkezi-sm.webp"
+ },
+ "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": {
+  "yazar": "Altındağ Alev Alatlı Bilim Merkezi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9598275827072528919",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "alev-alatli-bilim-merkezi-baskent-millet-bahcesi-lg.webp",
+  "sm": "alev-alatli-bilim-merkezi-baskent-millet-bahcesi-sm.webp"
+ },
+ "Atatürk Çocukları Doğal Yaşam Parkı ve Hayvanat Bahçesi (AOÇ)": {
+  "yazar": "ERKAN YILMAZ",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16038139933411843417",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ataturk-cocuklari-dogal-yasam-parki-ve-hayvanat-bahcesi-aoc-lg.webp",
+  "sm": "ataturk-cocuklari-dogal-yasam-parki-ve-hayvanat-bahcesi-aoc-sm.webp"
+ },
  "Atatürk Orman Çiftliği Hayvanat Bahçesi (eski)": {
   "wiki": "Atatürk Orman Çiftliği Hayvanat Bahçesi",
   "yazar": "2e65z64k",
@@ -259,8 +395,24 @@
   "lg": "ataturk-orman-ciftligi-hayvanat-bahcesi-eski-lg.webp",
   "sm": "ataturk-orman-ciftligi-hayvanat-bahcesi-eski-sm.webp"
  },
- "Keçiören Evcil Hayvanlar Parkı": null,
- "Aqua Vega Akvaryum (Nata Vega Outlet)": null,
+ "Keçiören Evcil Hayvanlar Parkı": {
+  "yazar": "Q X",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17123269253639642803",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kecioren-evcil-hayvanlar-parki-lg.webp",
+  "sm": "kecioren-evcil-hayvanlar-parki-sm.webp"
+ },
+ "Aqua Vega Akvaryum (Nata Vega Outlet)": {
+  "yazar": "Ulviye Ozgul",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3007827470851622900",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "aqua-vega-akvaryum-nata-vega-outlet-lg.webp",
+  "sm": "aqua-vega-akvaryum-nata-vega-outlet-sm.webp"
+ },
  "Ankara Devlet Tiyatrosu – Çocuk Oyunları": {
   "wiki": "Ankara Devlet Tiyatrosu",
   "yazar": "A.Savin",
@@ -270,7 +422,15 @@
   "lg": "ankara-devlet-tiyatrosu-cocuk-oyunlari-lg.webp",
   "sm": "ankara-devlet-tiyatrosu-cocuk-oyunlari-sm.webp"
  },
- "ABB Başkent Tiyatroları – Çocuk Tiyatrosu (Gençlik Parkı)": null,
+ "ABB Başkent Tiyatroları – Çocuk Tiyatrosu (Gençlik Parkı)": {
+  "yazar": "Mustafa Taştay",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15740348969088464312",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "abb-baskent-tiyatrolari-cocuk-tiyatrosu-genclik-parki-lg.webp",
+  "sm": "abb-baskent-tiyatrolari-cocuk-tiyatrosu-genclik-parki-sm.webp"
+ },
  "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)": {
   "wiki": "Devlet Opera ve Balesi",
   "yazar": "Atilim Gunes Baydin",
@@ -283,7 +443,15 @@
  "PTT Pul Müzesi": null,
  "Meteoroloji Müzesi": null,
  "Ankara Somut Olmayan Kültürel Miras Müzesi (SOKÜM)": null,
- "Ankara Radyo ve İletişim Müzesi": null,
+ "Ankara Radyo ve İletişim Müzesi": {
+  "yazar": "Radyo Ve İletişim Müzesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10489792608853946442",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ankara-radyo-ve-iletisim-muzesi-lg.webp",
+  "sm": "ankara-radyo-ve-iletisim-muzesi-sm.webp"
+ },
  "Ankara Kalesi": {
   "wiki": "Ankara Kalesi",
   "yazar": "Bernard Gagnon",
@@ -293,7 +461,15 @@
   "lg": "ankara-kalesi-lg.webp",
   "sm": "ankara-kalesi-sm.webp"
  },
- "Hamamönü Tarihi Bölgesi": null,
+ "Hamamönü Tarihi Bölgesi": {
+  "yazar": "Enis Sucu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3441905351383975007",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "hamamonu-tarihi-bolgesi-lg.webp",
+  "sm": "hamamonu-tarihi-bolgesi-sm.webp"
+ },
  "TCDD Açık Hava Buharlı Lokomotif Müzesi": {
   "wiki": "TCDD Açık Hava Buharlı Lokomotif Müzesi",
   "yazar": "Mutt",
@@ -312,7 +488,15 @@
   "lg": "genclik-parki-lg.webp",
   "sm": "genclik-parki-sm.webp"
  },
- "Wonderland Eurasia (Ankapark)": null,
+ "Wonderland Eurasia (Ankapark)": {
+  "yazar": "Burcu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16866332911631738715",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "wonderland-eurasia-ankapark-lg.webp",
+  "sm": "wonderland-eurasia-ankapark-sm.webp"
+ },
  "Kuğulu Park": {
   "wiki": "Kuğulu Park",
   "yazar": "Elelicht",
@@ -395,7 +579,15 @@
   "lg": "estergon-kalesi-turk-kultur-merkezi-lg.webp",
   "sm": "estergon-kalesi-turk-kultur-merkezi-sm.webp"
  },
- "Kartaltepe Kent Ormanı": null,
+ "Kartaltepe Kent Ormanı": {
+  "yazar": "Fatih Kocatürk",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=8429042448208229382",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kartaltepe-kent-ormani-lg.webp",
+  "sm": "kartaltepe-kent-ormani-sm.webp"
+ },
  "Başkent Millet Bahçesi (AKM)": {
   "wiki": "Başkent Millet Bahçesi.jpg",
   "sayfa": "https://commons.wikimedia.org/wiki/File:Ba%C5%9Fkent_Millet_Bah%C3%A7esi.jpg",
@@ -405,36 +597,236 @@
   "lg": "baskent-millet-bahcesi-akm-lg.webp",
   "sm": "baskent-millet-bahcesi-akm-sm.webp"
  },
- "İmrahor Vadisi Millet Bahçesi": null,
- "Ankara Millet Bahçesi (Etimesgut)": null,
- "Keçiören (Bağlum) Millet Bahçesi": null,
- "Macera Adası – Kentpark AVM": null,
- "JoyPort Eğlence Merkezi – Podium AVM": null,
- "Joyland Oyun Parkı – Panora AVM": null,
+ "İmrahor Vadisi Millet Bahçesi": {
+  "yazar": "MURAT BULUT",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=18369077403620842536",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "imrahor-vadisi-millet-bahcesi-lg.webp",
+  "sm": "imrahor-vadisi-millet-bahcesi-sm.webp"
+ },
+ "Ankara Millet Bahçesi (Etimesgut)": {
+  "yazar": "Oğuzhan DİKMEN",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=6134888006428813188",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ankara-millet-bahcesi-etimesgut-lg.webp",
+  "sm": "ankara-millet-bahcesi-etimesgut-sm.webp"
+ },
+ "Keçiören (Bağlum) Millet Bahçesi": {
+  "yazar": "Adem Babadag",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10169880313500675652",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kecioren-baglum-millet-bahcesi-lg.webp",
+  "sm": "kecioren-baglum-millet-bahcesi-sm.webp"
+ },
+ "Macera Adası – Kentpark AVM": {
+  "yazar": "O. B.",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10492172148405006383",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "macera-adasi-kentpark-avm-lg.webp",
+  "sm": "macera-adasi-kentpark-avm-sm.webp"
+ },
+ "JoyPort Eğlence Merkezi – Podium AVM": {
+  "yazar": "Emily Wu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11454377401143899414",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "joyport-eglence-merkezi-podium-avm-lg.webp",
+  "sm": "joyport-eglence-merkezi-podium-avm-sm.webp"
+ },
+ "Joyland Oyun Parkı – Panora AVM": {
+  "yazar": "Joyland Eğlence Merkezi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=5428242035010982150",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "joyland-oyun-parki-panora-avm-lg.webp",
+  "sm": "joyland-oyun-parki-panora-avm-sm.webp"
+ },
  "Cepa AVM Oyun Parkı (Fun Park / Jokerland)": null,
- "Arckids Eğlence Merkezi – Arcadium AVM": null,
+ "Arckids Eğlence Merkezi – Arcadium AVM": {
+  "yazar": "Yasin AKAGÜNDÜZ",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12251714315654612390",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "arckids-eglence-merkezi-arcadium-avm-lg.webp",
+  "sm": "arckids-eglence-merkezi-arcadium-avm-sm.webp"
+ },
  "Funnivarium – Forum Ankara AVM": null,
- "Open Play Trampoline Park – Antares AVM": null,
- "Arena Trambolin Park – Acity AVM": null,
+ "Open Play Trampoline Park – Antares AVM": {
+  "yazar": "Open Play Trambolin Park",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=7525687078172582158",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "open-play-trampoline-park-antares-avm-lg.webp",
+  "sm": "open-play-trampoline-park-antares-avm-sm.webp"
+ },
+ "Arena Trambolin Park – Acity AVM": {
+  "yazar": "Arena Trambolin",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15524776853862163687",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "arena-trambolin-park-acity-avm-lg.webp",
+  "sm": "arena-trambolin-park-acity-avm-sm.webp"
+ },
  "BelPa Buz Pateni Sarayı (Ankara Büyükşehir)": null,
- "Kent Paten Buz Pisti – Oran": null,
- "Ankara Karting (Mühye)": null,
- "Hipodrom RS Arena Karting": null,
- "Altınpark Go-kart / Akülü Araçlar": null,
- "Kısa Kaya Boulder Evi": null,
- "Tragos Boulder": null,
- "Rolling Ball Bowling – Armada AVM": null,
+ "Kent Paten Buz Pisti – Oran": {
+  "yazar": "Bengiege e",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17400739858508328021",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kent-paten-buz-pisti-oran-lg.webp",
+  "sm": "kent-paten-buz-pisti-oran-sm.webp"
+ },
+ "Ankara Karting (Mühye)": {
+  "yazar": "Ilker uğurluer",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17725751716393007937",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ankara-karting-muhye-lg.webp",
+  "sm": "ankara-karting-muhye-sm.webp"
+ },
+ "Hipodrom RS Arena Karting": {
+  "yazar": "Hipodrom Arena Go-Karting Tesisleri",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1198127417457782727",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "hipodrom-rs-arena-karting-lg.webp",
+  "sm": "hipodrom-rs-arena-karting-sm.webp"
+ },
+ "Altınpark Go-kart / Akülü Araçlar": {
+  "yazar": "Fatma Ayfer Kırkpınar",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3281616679115896297",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "altinpark-go-kart-akulu-araclar-lg.webp",
+  "sm": "altinpark-go-kart-akulu-araclar-sm.webp"
+ },
+ "Kısa Kaya Boulder Evi": {
+  "yazar": "melih serdaroğlu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3176097069641720774",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kisa-kaya-boulder-evi-lg.webp",
+  "sm": "kisa-kaya-boulder-evi-sm.webp"
+ },
+ "Tragos Boulder": {
+  "yazar": "Tragos Boulder &amp; Outdoor",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13993931947605443090",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "tragos-boulder-lg.webp",
+  "sm": "tragos-boulder-sm.webp"
+ },
+ "Rolling Ball Bowling – Armada AVM": {
+  "yazar": "Rolling Ball Bowling Armada",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3581346084254622482",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "rolling-ball-bowling-armada-avm-lg.webp",
+  "sm": "rolling-ball-bowling-armada-avm-sm.webp"
+ },
  "Play Planet Bowling – ANKAmall": null,
- "Rollhouse Bowling – Cepa AVM": null,
- "Waterpark Ankara (Keçiören)": null,
- "Club Watercity Aquapark – Gölbaşı": null,
- "AnkTalya Aquapark – Batıkent": null,
- "Kartaltepe Aquapark – Keçiören": null,
+ "Rollhouse Bowling – Cepa AVM": {
+  "yazar": "Ayşegül Özdemir",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10348440244785886036",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "rollhouse-bowling-cepa-avm-lg.webp",
+  "sm": "rollhouse-bowling-cepa-avm-sm.webp"
+ },
+ "Waterpark Ankara (Keçiören)": {
+  "yazar": "taner karabulut",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10602988951686167969",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "waterpark-ankara-kecioren-lg.webp",
+  "sm": "waterpark-ankara-kecioren-sm.webp"
+ },
+ "Club Watercity Aquapark – Gölbaşı": {
+  "yazar": "Gölbaşı AQUAPARK",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=18013796514609133135",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "club-watercity-aquapark-golbasi-lg.webp",
+  "sm": "club-watercity-aquapark-golbasi-sm.webp"
+ },
+ "AnkTalya Aquapark – Batıkent": {
+  "yazar": "AnkTalya Aqua Park Yüzme Havuzu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10721388839672419797",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "anktalya-aquapark-batikent-lg.webp",
+  "sm": "anktalya-aquapark-batikent-sm.webp"
+ },
+ "Kartaltepe Aquapark – Keçiören": {
+  "yazar": "L A Y Dツ卂几卂几卂丂",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16125012523729596931",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kartaltepe-aquapark-kecioren-lg.webp",
+  "sm": "kartaltepe-aquapark-kecioren-sm.webp"
+ },
  "Ankara Atlıspor Kulübü – Pony Okulu": null,
- "Bricks 4 Kidz Ankara – LEGO S.T.E.M. Atölyesi": null,
- "Neriseramik – Çocuklar İçin Seramik Workshop": null,
- "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları": null,
- "Anıt Eğitim – Çocuk Pastacılık Kursu": null,
+ "Bricks 4 Kidz Ankara – LEGO S.T.E.M. Atölyesi": {
+  "yazar": "Bricks4Kidz Ankara",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9983471583383125827",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "bricks-4-kidz-ankara-lego-s-t-e-m-atolyesi-lg.webp",
+  "sm": "bricks-4-kidz-ankara-lego-s-t-e-m-atolyesi-sm.webp"
+ },
+ "Neriseramik – Çocuklar İçin Seramik Workshop": {
+  "yazar": "Neriseramik - Ankara Seramik Atölyesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=8303626762590597415",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "neriseramik-cocuklar-icin-seramik-workshop-lg.webp",
+  "sm": "neriseramik-cocuklar-icin-seramik-workshop-sm.webp"
+ },
+ "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları": {
+  "yazar": "Golden Chef Mutfak Akademisi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=6813359802872936303",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "golden-chef-mutfak-akademisi-ebeveyn-cocuk-workshoplari-lg.webp",
+  "sm": "golden-chef-mutfak-akademisi-ebeveyn-cocuk-workshoplari-sm.webp"
+ },
+ "Anıt Eğitim – Çocuk Pastacılık Kursu": {
+  "yazar": "Anıt Eğitim",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14408290816954005359",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "anit-egitim-cocuk-pastacilik-kursu-lg.webp",
+  "sm": "anit-egitim-cocuk-pastacilik-kursu-sm.webp"
+ },
  "Çankaya Belediyesi Çocuk Atölyeleri ve Gelişimsel Oyunevleri": null,
  "Cumhurbaşkanlığı Millet Kütüphanesi – Nasreddin Hoca Çocuk Kütüphanesi": {
   "wiki": "Cumhurbaşkanlığı Millet Kütüphanesi",
@@ -454,40 +846,280 @@
   "lg": "adnan-otuken-il-halk-kutuphanesi-cocuk-bolumu-lg.webp",
   "sm": "adnan-otuken-il-halk-kutuphanesi-cocuk-bolumu-sm.webp"
  },
- "Ankara Ali Dayı Çocuk Kütüphanesi": null,
- "Altındağ Bebek ve Çocuk Kütüphanesi": null,
- "Escape Planet – Sherlock Holmes Odası (Bahçelievler)": null,
- "Kafes Fırın Söğütözü": null,
- "Yuba Cafe & Bistro": null,
+ "Ankara Ali Dayı Çocuk Kütüphanesi": {
+  "yazar": "akineton",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11363549719709358129",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ankara-ali-dayi-cocuk-kutuphanesi-lg.webp",
+  "sm": "ankara-ali-dayi-cocuk-kutuphanesi-sm.webp"
+ },
+ "Altındağ Bebek ve Çocuk Kütüphanesi": {
+  "yazar": "Altındağ Bebek Kütüphanesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=2788535632688328530",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "altindag-bebek-ve-cocuk-kutuphanesi-lg.webp",
+  "sm": "altindag-bebek-ve-cocuk-kutuphanesi-sm.webp"
+ },
+ "Escape Planet – Sherlock Holmes Odası (Bahçelievler)": {
+  "yazar": "Murat Sancaktar",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4599243701085579482",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "escape-planet-sherlock-holmes-odasi-bahcelievler-lg.webp",
+  "sm": "escape-planet-sherlock-holmes-odasi-bahcelievler-sm.webp"
+ },
+ "Kafes Fırın Söğütözü": {
+  "yazar": "KAFES FIRIN",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13921473826648726302",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kafes-firin-sogutozu-lg.webp",
+  "sm": "kafes-firin-sogutozu-sm.webp"
+ },
+ "Yuba Cafe & Bistro": {
+  "yazar": "Yuba Cafe &amp; Bistro",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=5585604738408364367",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "yuba-cafe-bistro-lg.webp",
+  "sm": "yuba-cafe-bistro-sm.webp"
+ },
  "AOÇ Kaşıbeyaz Ankara": null,
- "Deniz Kozanlı Kahvaltı & Mantı": null,
+ "Deniz Kozanlı Kahvaltı & Mantı": {
+  "yazar": "Deniz Kozanlı",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1795436361209584875",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "deniz-kozanli-kahvalti-manti-lg.webp",
+  "sm": "deniz-kozanli-kahvalti-manti-sm.webp"
+ },
  "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)": null,
- "Fevzi Hoca Köfte-Balık Çayyolu": null,
+ "Fevzi Hoca Köfte-Balık Çayyolu": {
+  "yazar": "Tecnokent Yardım",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=18122182541135920626",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "fevzi-hoca-kofte-balik-cayyolu-lg.webp",
+  "sm": "fevzi-hoca-kofte-balik-cayyolu-sm.webp"
+ },
  "Otto Lounge Restoran & Cafe": null,
- "Masabaşı Kebapçısı Balgat": null,
- "Kukla Kebap Balgat": null,
- "Serüven Balık Restaurant": null,
- "Marco Pascha Çukurambar": null,
- "ChronoStation Aile Yaşam Merkezi (ChronoCafe)": null,
- "Pupilla Çocuk Kafe & Restoran": null,
- "Çalgan Saklıköy (Çalgan Et Lokantası)": null,
- "Cafemiz": null,
- "Kirit Cafe": null,
- "Karçiçeği Cafe & Restaurant (Mogan Gölü)": null,
- "Köyüm Cafe (Mogan Parkı)": null,
- "Çağlar Restaurant (Mogan Gölü)": null,
- "Pars Garden (Eymir/Gölbaşı)": null,
- "Eğriçimen Kahvaltı & Et & Balık Restaurant": null,
- "Esrarengiz Bahçe": null,
+ "Masabaşı Kebapçısı Balgat": {
+  "yazar": "Zülküf Yıldırım",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15132028704632945047",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "masabasi-kebapcisi-balgat-lg.webp",
+  "sm": "masabasi-kebapcisi-balgat-sm.webp"
+ },
+ "Kukla Kebap Balgat": {
+  "yazar": "Ismihan güney",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17631767977378865639",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kukla-kebap-balgat-lg.webp",
+  "sm": "kukla-kebap-balgat-sm.webp"
+ },
+ "Serüven Balık Restaurant": {
+  "yazar": "اسوم العبوسي",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10022263587013354521",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "seruven-balik-restaurant-lg.webp",
+  "sm": "seruven-balik-restaurant-sm.webp"
+ },
+ "Marco Pascha Çukurambar": {
+  "yazar": "Fikri Dincer",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14450537718871606758",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "marco-pascha-cukurambar-lg.webp",
+  "sm": "marco-pascha-cukurambar-sm.webp"
+ },
+ "ChronoStation Aile Yaşam Merkezi (ChronoCafe)": {
+  "yazar": "Chrono Station Aile Yaşam Merkezi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9972624540852464467",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "chronostation-aile-yasam-merkezi-chronocafe-lg.webp",
+  "sm": "chronostation-aile-yasam-merkezi-chronocafe-sm.webp"
+ },
+ "Pupilla Çocuk Kafe & Restoran": {
+  "yazar": "Pupilla Çocuk",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=18240076214301383520",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "pupilla-cocuk-kafe-restoran-lg.webp",
+  "sm": "pupilla-cocuk-kafe-restoran-sm.webp"
+ },
+ "Çalgan Saklıköy (Çalgan Et Lokantası)": {
+  "yazar": "Çalgan Saklıköy",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16564940765159722034",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "calgan-saklikoy-calgan-et-lokantasi-lg.webp",
+  "sm": "calgan-saklikoy-calgan-et-lokantasi-sm.webp"
+ },
+ "Cafemiz": {
+  "yazar": "serap turkut",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=6474263417234061156",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cafemiz-lg.webp",
+  "sm": "cafemiz-sm.webp"
+ },
+ "Kirit Cafe": {
+  "yazar": "Kirit Cafe",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16596298133422801801",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kirit-cafe-lg.webp",
+  "sm": "kirit-cafe-sm.webp"
+ },
+ "Karçiçeği Cafe & Restaurant (Mogan Gölü)": {
+  "yazar": "Karcicegi Cafe&amp;Restaurant",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4231215144240197298",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "karcicegi-cafe-restaurant-mogan-golu-lg.webp",
+  "sm": "karcicegi-cafe-restaurant-mogan-golu-sm.webp"
+ },
+ "Köyüm Cafe (Mogan Parkı)": {
+  "yazar": "İbrahim",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1191704324914012610",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "koyum-cafe-mogan-parki-lg.webp",
+  "sm": "koyum-cafe-mogan-parki-sm.webp"
+ },
+ "Çağlar Restaurant (Mogan Gölü)": {
+  "yazar": "HÜSEYİN ÇALIŞKAN",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11751698111128673485",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "caglar-restaurant-mogan-golu-lg.webp",
+  "sm": "caglar-restaurant-mogan-golu-sm.webp"
+ },
+ "Pars Garden (Eymir/Gölbaşı)": {
+  "yazar": "Kamal B",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11568561143938154910",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "pars-garden-eymir-golbasi-lg.webp",
+  "sm": "pars-garden-eymir-golbasi-sm.webp"
+ },
+ "Eğriçimen Kahvaltı & Et & Balık Restaurant": {
+  "yazar": "Eğriçimen KAHVALTI &amp; ET &amp; BALIK Restaurant",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14640663525749471659",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "egricimen-kahvalti-et-balik-restaurant-lg.webp",
+  "sm": "egricimen-kahvalti-et-balik-restaurant-sm.webp"
+ },
+ "Esrarengiz Bahçe": {
+  "yazar": "Esma Deveci",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3618150514415884261",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "esrarengiz-bahce-lg.webp",
+  "sm": "esrarengiz-bahce-sm.webp"
+ },
  "Botanik Kır Bahçesi & At Biniciliği": null,
- "Yayla Karadeniz Kır Lokantası": null,
- "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı": null,
- "ma&me&pa Family Club (Bilkent Center)": null,
- "Cumba Çocuk Kitap Cafe": null,
- "Lora Çikolata Kahve Batıkent": null,
- "Mini Koala Oyun Atölyesi & Kafe": null,
- "Delta Macera Sport & Cafe (Eymir Gölü)": null,
- "Powertec Cafe & Bistro": null,
+ "Yayla Karadeniz Kır Lokantası": {
+  "yazar": "Burcu Girgiç",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14230442375929568577",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "yayla-karadeniz-kir-lokantasi-lg.webp",
+  "sm": "yayla-karadeniz-kir-lokantasi-sm.webp"
+ },
+ "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı": {
+  "yazar": "Ayşe Bacı Kır Bahçesi &amp; Köy Kahvaltısı",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=6981269686076650636",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ayse-baci-kir-bahcesi-koy-kahvaltisi-lg.webp",
+  "sm": "ayse-baci-kir-bahcesi-koy-kahvaltisi-sm.webp"
+ },
+ "ma&me&pa Family Club (Bilkent Center)": {
+  "yazar": "ma&amp;me&amp;pa Family Club",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12404677941732752016",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ma-me-pa-family-club-bilkent-center-lg.webp",
+  "sm": "ma-me-pa-family-club-bilkent-center-sm.webp"
+ },
+ "Cumba Çocuk Kitap Cafe": {
+  "yazar": "Mehmet Coşan",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12599166265830841273",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cumba-cocuk-kitap-cafe-lg.webp",
+  "sm": "cumba-cocuk-kitap-cafe-sm.webp"
+ },
+ "Lora Çikolata Kahve Batıkent": {
+  "yazar": "Ferhat Kesici",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16955437790408739665",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "lora-cikolata-kahve-batikent-lg.webp",
+  "sm": "lora-cikolata-kahve-batikent-sm.webp"
+ },
+ "Mini Koala Oyun Atölyesi & Kafe": {
+  "yazar": "Mini Koala Kids And Family Club",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1437056506632341695",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "mini-koala-oyun-atolyesi-kafe-lg.webp",
+  "sm": "mini-koala-oyun-atolyesi-kafe-sm.webp"
+ },
+ "Delta Macera Sport & Cafe (Eymir Gölü)": {
+  "yazar": "Saliha Akcay",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=7998851684728908958",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "delta-macera-sport-cafe-eymir-golu-lg.webp",
+  "sm": "delta-macera-sport-cafe-eymir-golu-sm.webp"
+ },
+ "Powertec Cafe & Bistro": {
+  "yazar": "oktay levent inak",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11355178466660583149",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "powertec-cafe-bistro-lg.webp",
+  "sm": "powertec-cafe-bistro-sm.webp"
+ },
  "Altınköy Açık Hava Müzesi": {
   "wiki": "Altınköy Açık Hava Müzesi",
   "yazar": "gokhanksm",
@@ -497,17 +1129,105 @@
   "lg": "altinkoy-acik-hava-muzesi-lg.webp",
   "sm": "altinkoy-acik-hava-muzesi-sm.webp"
  },
- "Keçiören Deniz Dünyası Akvaryumu": null,
- "Üreğil Millet Bahçesi": null,
- "Max Level Aile ve Çocuk Oyun Eğlence Merkezi": null,
- "Çamlıdere Macera Parkı": null,
- "Playland Optimum": null,
- "Toru Entertainment (Taurus AVM)": null,
- "Etimesgut Aile Yaşam Merkezi": null,
- "Sincan Belediyesi Bebek Kütüphanesi": null,
- "Ankara Üniversitesi Çocuk Üniversitesi": null,
- "Neşeli Köy (Ters Ev ve Çiftlik)": null,
- "Çufçuf Oyun ve Parti Evi": null,
+ "Keçiören Deniz Dünyası Akvaryumu": {
+  "yazar": "Keçiören Belediyesi Deniz Dünyası",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4778100476319731945",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kecioren-deniz-dunyasi-akvaryumu-lg.webp",
+  "sm": "kecioren-deniz-dunyasi-akvaryumu-sm.webp"
+ },
+ "Üreğil Millet Bahçesi": {
+  "yazar": "Mohammed بالعربي",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1048162466795496515",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "uregil-millet-bahcesi-lg.webp",
+  "sm": "uregil-millet-bahcesi-sm.webp"
+ },
+ "Max Level Aile ve Çocuk Oyun Eğlence Merkezi": {
+  "yazar": "Özden Ulusoy",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15798016346684964187",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "max-level-aile-ve-cocuk-oyun-eglence-merkezi-lg.webp",
+  "sm": "max-level-aile-ve-cocuk-oyun-eglence-merkezi-sm.webp"
+ },
+ "Çamlıdere Macera Parkı": {
+  "yazar": "Macera Park Çamlıdere",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=7419616187325529976",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "camlidere-macera-parki-lg.webp",
+  "sm": "camlidere-macera-parki-sm.webp"
+ },
+ "Playland Optimum": {
+  "yazar": "Playland",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15350555948382401577",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "playland-optimum-lg.webp",
+  "sm": "playland-optimum-sm.webp"
+ },
+ "Toru Entertainment (Taurus AVM)": {
+  "yazar": "Sunshine PRODUCTION",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11171568140169160512",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "toru-entertainment-taurus-avm-lg.webp",
+  "sm": "toru-entertainment-taurus-avm-sm.webp"
+ },
+ "Etimesgut Aile Yaşam Merkezi": {
+  "yazar": "edip rıza tosun",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4195202905373917509",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "etimesgut-aile-yasam-merkezi-lg.webp",
+  "sm": "etimesgut-aile-yasam-merkezi-sm.webp"
+ },
+ "Sincan Belediyesi Bebek Kütüphanesi": {
+  "yazar": "Sincan Bebek Kütüphanesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11858240412897366458",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sincan-belediyesi-bebek-kutuphanesi-lg.webp",
+  "sm": "sincan-belediyesi-bebek-kutuphanesi-sm.webp"
+ },
+ "Ankara Üniversitesi Çocuk Üniversitesi": {
+  "yazar": "Yagmur Varol",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=174225493757808064",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ankara-universitesi-cocuk-universitesi-lg.webp",
+  "sm": "ankara-universitesi-cocuk-universitesi-sm.webp"
+ },
+ "Neşeli Köy (Ters Ev ve Çiftlik)": {
+  "yazar": "Neşeli köy tepetaklak ev",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11146174488584576057",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "neseli-koy-ters-ev-ve-ciftlik-lg.webp",
+  "sm": "neseli-koy-ters-ev-ve-ciftlik-sm.webp"
+ },
+ "Çufçuf Oyun ve Parti Evi": {
+  "yazar": "Mehmet ÇINAR",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13508795346033834054",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cufcuf-oyun-ve-parti-evi-lg.webp",
+  "sm": "cufcuf-oyun-ve-parti-evi-sm.webp"
+ },
  "Kurtboğazı Barajı Piknik Alanı": {
   "wiki": "Kurtboğazı Barajı",
   "yazar": "Modern primat",
@@ -517,12 +1237,52 @@
   "lg": "kurtbogazi-baraji-piknik-alani-lg.webp",
   "sm": "kurtbogazi-baraji-piknik-alani-sm.webp"
  },
- "Çansera Kent Bahçesi": null,
- "Yuki Kids Oyunevi & Cafe": null,
- "Candy Kids Park": null,
+ "Çansera Kent Bahçesi": {
+  "yazar": "cengiz pamuk",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16242351319833683648",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cansera-kent-bahcesi-lg.webp",
+  "sm": "cansera-kent-bahcesi-sm.webp"
+ },
+ "Yuki Kids Oyunevi & Cafe": {
+  "yazar": "TiniMini Kids Oyun Evi &amp;Parti Evi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=1951956098062069842",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "yuki-kids-oyunevi-cafe-lg.webp",
+  "sm": "yuki-kids-oyunevi-cafe-sm.webp"
+ },
+ "Candy Kids Park": {
+  "yazar": "O. B.",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12148139836645650368",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "candy-kids-park-lg.webp",
+  "sm": "candy-kids-park-sm.webp"
+ },
  "CSO Ada Ankara Çocuk Atölyeleri": null,
- "Da Vinci Board Game Cafe": null,
- "Sincan Anne-Çocuk Oyun Evleri": null,
+ "Da Vinci Board Game Cafe": {
+  "yazar": "Da Vinci Board Game Cafe (Neorama)",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=391508017133066719",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "da-vinci-board-game-cafe-lg.webp",
+  "sm": "da-vinci-board-game-cafe-sm.webp"
+ },
+ "Sincan Anne-Çocuk Oyun Evleri": {
+  "yazar": "beyza demir",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11233889851562274827",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sincan-anne-cocuk-oyun-evleri-lg.webp",
+  "sm": "sincan-anne-cocuk-oyun-evleri-sm.webp"
+ },
  "Eğrekkaya Barajı": {
   "wiki": "Eğrekkaya Barajı",
   "yazar": "Ji-Elle",
@@ -533,34 +1293,242 @@
   "sm": "egrekkaya-baraji-sm.webp"
  },
  "Mini Sanat Çocukça Eğlenceler Atölyesi": null,
- "Nomi Oyun Evi": null,
+ "Nomi Oyun Evi": {
+  "yazar": "GÖKSU ASYA SOLMAZ",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13586457689384834351",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "nomi-oyun-evi-lg.webp",
+  "sm": "nomi-oyun-evi-sm.webp"
+ },
  "ABB Çocuk Etkinlik Merkezleri": null,
- "ABB Başkent Oyun Dünyası (Demetevler Parkı)": null,
- "ABB Çocuk Oyun Odaları": null,
- "ABB Oyuncak Kütüphanesi": null,
+ "ABB Başkent Oyun Dünyası (Demetevler Parkı)": {
+  "yazar": "BAŞKENT OYUN DÜNYASI DEMETEVLER ANKARA BÜYÜKŞEHİR BELEDİYESİ",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=8775921083874992945",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "abb-baskent-oyun-dunyasi-demetevler-parki-lg.webp",
+  "sm": "abb-baskent-oyun-dunyasi-demetevler-parki-sm.webp"
+ },
+ "ABB Çocuk Oyun Odaları": {
+  "yazar": "Uğur Özabacı",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=10039618680025496762",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "abb-cocuk-oyun-odalari-lg.webp",
+  "sm": "abb-cocuk-oyun-odalari-sm.webp"
+ },
+ "ABB Oyuncak Kütüphanesi": {
+  "yazar": "Oyuncak Kütüphanesi Anaokulu",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16835719105721011641",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "abb-oyuncak-kutuphanesi-lg.webp",
+  "sm": "abb-oyuncak-kutuphanesi-sm.webp"
+ },
  "Keçiören Belediyesi Çocuk Eğitim Merkezi": null,
- "Keçiören Belediyesi Çocuk Hizmet Merkezi": null,
- "Güldeste Oyun Merkezi (Keçiören Belediyesi)": null,
- "Mamak Belediyesi Bilim Merkezi (Şehitlik)": null,
- "Akdere Bebek ve Çocuk Kütüphanesi (Mamak Belediyesi)": null,
- "Sincan Belediyesi Anne-Çocuk Oyun Evleri": null,
- "Altındağ Belediyesi Çocuk Kulübü Atölyeleri (Başkent Millet Bahçesi)": null,
- "Çankaya Belediyesi Minik Adımlar Bebek Kütüphanesi": null,
- "Çankaya Belediyesi Oyuncak Kütüphanesi": null,
- "Rock'n Ball Eğlence Merkezi": null,
- "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)": null,
- "Sewolab Robotik Tasarım ve Kodlama": null,
- "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)": null,
+ "Keçiören Belediyesi Çocuk Hizmet Merkezi": {
+  "yazar": "Muzaffer Özçelik",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15345207926639047311",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kecioren-belediyesi-cocuk-hizmet-merkezi-lg.webp",
+  "sm": "kecioren-belediyesi-cocuk-hizmet-merkezi-sm.webp"
+ },
+ "Güldeste Oyun Merkezi (Keçiören Belediyesi)": {
+  "yazar": "Güldeste Oyun Merkezi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=16766541343394068878",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "guldeste-oyun-merkezi-kecioren-belediyesi-lg.webp",
+  "sm": "guldeste-oyun-merkezi-kecioren-belediyesi-sm.webp"
+ },
+ "Mamak Belediyesi Bilim Merkezi (Şehitlik)": {
+  "yazar": "İsmail Tura",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=112933200744828368",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "mamak-belediyesi-bilim-merkezi-sehitlik-lg.webp",
+  "sm": "mamak-belediyesi-bilim-merkezi-sehitlik-sm.webp"
+ },
+ "Akdere Bebek ve Çocuk Kütüphanesi (Mamak Belediyesi)": {
+  "yazar": "Ailece Ankara",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13473134255100888143",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "akdere-bebek-ve-cocuk-kutuphanesi-mamak-belediyesi-lg.webp",
+  "sm": "akdere-bebek-ve-cocuk-kutuphanesi-mamak-belediyesi-sm.webp"
+ },
+ "Sincan Belediyesi Anne-Çocuk Oyun Evleri": {
+  "yazar": "T.C. Sincan Belediyesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=4474798429513554620",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sincan-belediyesi-anne-cocuk-oyun-evleri-lg.webp",
+  "sm": "sincan-belediyesi-anne-cocuk-oyun-evleri-sm.webp"
+ },
+ "Altındağ Belediyesi Çocuk Kulübü Atölyeleri (Başkent Millet Bahçesi)": {
+  "yazar": "Hayreddin ÇAVDARCI",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17013889013489898256",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "altindag-belediyesi-cocuk-kulubu-atolyeleri-baskent-millet-bahcesi-lg.webp",
+  "sm": "altindag-belediyesi-cocuk-kulubu-atolyeleri-baskent-millet-bahcesi-sm.webp"
+ },
+ "Çankaya Belediyesi Minik Adımlar Bebek Kütüphanesi": {
+  "yazar": "fulya yücel",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=15773736528855342881",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cankaya-belediyesi-minik-adimlar-bebek-kutuphanesi-lg.webp",
+  "sm": "cankaya-belediyesi-minik-adimlar-bebek-kutuphanesi-sm.webp"
+ },
+ "Çankaya Belediyesi Oyuncak Kütüphanesi": {
+  "yazar": "akineton",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11363549719709358129",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cankaya-belediyesi-oyuncak-kutuphanesi-lg.webp",
+  "sm": "cankaya-belediyesi-oyuncak-kutuphanesi-sm.webp"
+ },
+ "Rock'n Ball Eğlence Merkezi": {
+  "yazar": "Sefa GÜLŞEN",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=5267221801076516933",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "rock-n-ball-eglence-merkezi-lg.webp",
+  "sm": "rock-n-ball-eglence-merkezi-sm.webp"
+ },
+ "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)": {
+  "yazar": "Küçük Dahiler Akademi Batıkent",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=817534004953911559",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kucuk-dahiler-akademi-batikent-robotik-kodlama-atolyesi-lg.webp",
+  "sm": "kucuk-dahiler-akademi-batikent-robotik-kodlama-atolyesi-sm.webp"
+ },
+ "Sewolab Robotik Tasarım ve Kodlama": {
+  "yazar": "Sewolab Robotik Kodlama",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=11148266022760730688",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sewolab-robotik-tasarim-ve-kodlama-lg.webp",
+  "sm": "sewolab-robotik-tasarim-ve-kodlama-sm.webp"
+ },
+ "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)": {
+  "yazar": "Ahmet Çalık Buz Pateni Pisti",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=2262082358455149996",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "ahmet-calik-buz-pateni-pisti-kecioren-belediyesi-lg.webp",
+  "sm": "ahmet-calik-buz-pateni-pisti-kecioren-belediyesi-sm.webp"
+ },
  "Joymax Ankara": null,
- "Studio No.24 Seramik Atölyesi (Ümitköy)": null,
- "Terra Point Art Studio (Seramik Sanatları Stüdyosu)": null,
- "Kaptan Kebap (Çukurambar)": null,
- "100. Yıl Cumhuriyet Millet Bahçesi (Mamak)": null,
- "Sincan Bilim Merkezi (Bilim Sincan)": null,
- "Etimesgut Çocuk Trafik Eğitim Pisti (Eryaman)": null,
+ "Studio No.24 Seramik Atölyesi (Ümitköy)": {
+  "yazar": "Aslı Nur Köse",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=13581013374267300252",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "studio-no-24-seramik-atolyesi-umitkoy-lg.webp",
+  "sm": "studio-no-24-seramik-atolyesi-umitkoy-sm.webp"
+ },
+ "Terra Point Art Studio (Seramik Sanatları Stüdyosu)": {
+  "yazar": "Terra Point Art Studio",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=17047093569765750857",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "terra-point-art-studio-seramik-sanatlari-studyosu-lg.webp",
+  "sm": "terra-point-art-studio-seramik-sanatlari-studyosu-sm.webp"
+ },
+ "Kaptan Kebap (Çukurambar)": {
+  "yazar": "Ebru E. 0743",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9327451328292645958",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kaptan-kebap-cukurambar-lg.webp",
+  "sm": "kaptan-kebap-cukurambar-sm.webp"
+ },
+ "100. Yıl Cumhuriyet Millet Bahçesi (Mamak)": {
+  "yazar": "Kadir Tahir Savcıözen",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9724737656487555925",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "100-yil-cumhuriyet-millet-bahcesi-mamak-lg.webp",
+  "sm": "100-yil-cumhuriyet-millet-bahcesi-mamak-sm.webp"
+ },
+ "Sincan Bilim Merkezi (Bilim Sincan)": {
+  "yazar": "seren şahin",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=9637775272856710311",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "sincan-bilim-merkezi-bilim-sincan-lg.webp",
+  "sm": "sincan-bilim-merkezi-bilim-sincan-sm.webp"
+ },
+ "Etimesgut Çocuk Trafik Eğitim Pisti (Eryaman)": {
+  "yazar": "Fevzi Kose",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=3634221675377430218",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "etimesgut-cocuk-trafik-egitim-pisti-eryaman-lg.webp",
+  "sm": "etimesgut-cocuk-trafik-egitim-pisti-eryaman-sm.webp"
+ },
  "TCMB Para Müzesi": null,
- "Adventure Land Ankara Macera Parkı": null,
- "Muhye Paintball": null,
- "Çayyolu Sanat Atölyesi": null,
- "KindyROO Çayyolu": null
+ "Adventure Land Ankara Macera Parkı": {
+  "yazar": "Adventure Land Ankara",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=6902945315301408445",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "adventure-land-ankara-macera-parki-lg.webp",
+  "sm": "adventure-land-ankara-macera-parki-sm.webp"
+ },
+ "Muhye Paintball": {
+  "yazar": "Mühye Paintball - Anka Paintball - Paintsign Paintball",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=14473362195642725651",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "muhye-paintball-lg.webp",
+  "sm": "muhye-paintball-sm.webp"
+ },
+ "Çayyolu Sanat Atölyesi": {
+  "yazar": "Batı Sanat Atölyesi",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=12293441936558954830",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "cayyolu-sanat-atolyesi-lg.webp",
+  "sm": "cayyolu-sanat-atolyesi-sm.webp"
+ },
+ "KindyROO Çayyolu": {
+  "yazar": "Yeliz Özkan",
+  "lisans": "Google",
+  "sayfa": "https://maps.google.com/?cid=5305531060376873223",
+  "kaynak": "google",
+  "wiki": "",
+  "lg": "kindyroo-cayyolu-lg.webp",
+  "sm": "kindyroo-cayyolu-sm.webp"
+ }
 }

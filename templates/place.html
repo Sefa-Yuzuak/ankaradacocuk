@@ -38,6 +38,7 @@
       {% if m.phone %}<a class="btn" href="tel:{{ m.phone|replace(' ', '') }}">📞 {{ m.phone }}</a>{% endif %}
       <button class="btn" type="button" data-paylas data-baslik="{{ m.name }}">↗️ Paylaş</button>
     </div>
+    {% if m.google and m.google.rating %}<p class="google-puan"><span class="g-yildiz">★</span> Google: <b>{{ m.google.rating }}</b>{% if m.google.count %} · {{ m.google.count }} değerlendirme{% endif %}{% if m.google.url %} · <a href="{{ m.google.url }}" target="_blank" rel="noopener nofollow">Google'da yorumları oku →</a>{% endif %}</p>{% endif %}
   </div>
   <aside class="puan-kutu" aria-label="Puan kartı">
     <div class="puan-buyuk"><strong>{{ m.puan }}</strong><span>/10</span></div>

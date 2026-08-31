@@ -1,0 +1,953 @@
+{
+ "Soğuksu Milli Parkı": {
+  "place_id": "ChIJZ39suSb0gkARRv4x-KeYimw",
+  "rating": 4.5,
+  "count": 12213,
+  "url": "https://maps.google.com/?cid=7821231550073273926"
+ },
+ "Kızılcahamam Termal (günübirlik aile banyoları)": null,
+ "Ayaş İçmece ve Kaplıcaları": {
+  "place_id": "ChIJ4QVR9aPZ0hQRjO1tx5aODcs",
+  "rating": 3.4,
+  "count": 1303,
+  "url": "https://maps.google.com/?cid=14631507542638718348"
+ },
+ "Tarihi Haymana Kaplıca Tesisleri (Belediye)": {
+  "place_id": "ChIJHdEfJwCv0xQRBYIS-nPBHsk",
+  "rating": 3.9,
+  "count": 287,
+  "url": "https://maps.google.com/?cid=14492233354785751557"
+ },
+ "Beypazarı Tarihi Çarşı ve Hıdırlık Tepesi": {
+  "place_id": "ChIJtckH_O650hQRoXXbzvlPE1M",
+  "rating": 4.3,
+  "count": 948,
+  "url": "https://maps.google.com/?cid=5986216264041461153"
+ },
+ "Beypazarı Yaşayan Müze": {
+  "place_id": "ChIJdSTTNuS50hQRmesn2K83PGo",
+  "rating": 4.3,
+  "count": 2353,
+  "url": "https://maps.google.com/?cid=7655054695008299929"
+ },
+ "İnözü Vadisi ve Kelebekler Vadisi Tabiat Parkı": null,
+ "Eğriova Tabiat Parkı": {
+  "place_id": "ChIJxxFeF7e8gkAR_5_lmrpx4rA",
+  "rating": 4.1,
+  "count": 132,
+  "url": "https://maps.google.com/?cid=12745874941688520703"
+ },
+ "Nallıhan Kuş Cenneti": {
+  "place_id": "ChIJZQjlKEJgzRQRWH4Ylj3M0p0",
+  "rating": 4.5,
+  "count": 2559,
+  "url": "https://maps.google.com/?cid=11372376573947182680"
+ },
+ "Kesikköprü Barajı": {
+  "place_id": "ChIJhXyZjj7z1BQRL5Y4CmX_u-Q",
+  "rating": 4.3,
+  "count": 176,
+  "url": "https://maps.google.com/?cid=16482048070720722479"
+ },
+ "Mavi Göl (Bayındır Barajı)": null,
+ "Çamlıdere Fosil Ormanı (Pelitçik)": {
+  "place_id": "ChIJqVtL9nGSgkAR2gcDdmDemmc",
+  "rating": 3.6,
+  "count": 87,
+  "url": "https://maps.google.com/?cid=7465523838198155226"
+ },
+ "Çamkoru Tabiat Parkı": {
+  "place_id": "ChIJ-8ykLlzvgkARKNlELC671kE",
+  "rating": 4.2,
+  "count": 2014,
+  "url": "https://maps.google.com/?cid=4744185064466995496"
+ },
+ "Gordion Antik Kenti ve Müzesi (UNESCO)": {
+  "place_id": "ChIJAwKjUrpg0hQRDlg6lHloGSs",
+  "rating": 4.4,
+  "count": 1174,
+  "url": "https://maps.google.com/?cid=3105628289435850766"
+ },
+ "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": {
+  "place_id": "ChIJeweYDCxa0hQRdDQTgrLNS3o",
+  "rating": 4.6,
+  "count": 469,
+  "url": "https://maps.google.com/?cid=8812363262450676852"
+ },
+ "Çubuk Karagöl Tabiat Parkı": {
+  "place_id": "ChIJpy6bTNBEgkARUJwprRlKdFs",
+  "rating": 4.5,
+  "count": 6167,
+  "url": "https://maps.google.com/?cid=6589973628889701456"
+ },
+ "Elmadağ Kayak Merkezi": {
+  "place_id": "ChIJRR8UAbdb0xQRHYhfBYBjjBk",
+  "rating": 3.5,
+  "count": 1938,
+  "url": "https://maps.google.com/?cid=1840955749184800797"
+ },
+ "Kalecik Kalesi": {
+  "place_id": "ChIJi1ctwZLzgUAR8n7rcpwYruw",
+  "rating": 4.1,
+  "count": 308,
+  "url": "https://maps.google.com/?cid=17054595899120647922"
+ },
+ "Mogan Gölü ve Mogan Park": {
+  "place_id": "ChIJ1TCwlMNB0xQRpmRaKo-PSEQ",
+  "rating": 4.4,
+  "count": 4239,
+  "url": "https://maps.google.com/?cid=4920340437955929254"
+ },
+ "Eymir Gölü (ODTÜ)": {
+  "place_id": "ChIJCcJAWQtE0xQRUm_kGruWJEE",
+  "rating": 4.5,
+  "count": 4130,
+  "url": "https://maps.google.com/?cid=4694042441981128530"
+ },
+ "Tulumtaş Mağarası": {
+  "place_id": "ChIJscJ9L3IV0xQRFO0cw9trNNk",
+  "rating": 4.4,
+  "count": 2868,
+  "url": "https://maps.google.com/?cid=15651253196634778900"
+ },
+ "Ahlatlıbel Atatürk Parkı": {
+  "place_id": "ChIJT3C2WblG0xQRozkNqUV08UA",
+  "rating": 4.6,
+  "count": 8847,
+  "url": "https://maps.google.com/?cid=4679649330352437667"
+ },
+ "Tuz Gölü": null,
+ "Hattuşa (Boğazköy) Örenyeri – 2,5 saat, sınırda": null,
+ "Beynam Atatürk Ormanı (Beynam Muhafaza Ormanı)": {
+  "place_id": "ChIJDzSz3DFm0xQRNhETrnPNIoQ",
+  "rating": 3.7,
+  "count": 1090,
+  "url": "https://maps.google.com/?cid=9521398458940068150"
+ },
+ "Eskişehir Sazova Bilim Sanat ve Kültür Parkı (Masal Şatosu) – YHT ile": {
+  "place_id": "ChIJt_pBuGcXzBQRKqnZ_xVwdNQ",
+  "rating": 4.6,
+  "count": 16823,
+  "url": "https://maps.google.com/?cid=15308984273128237354"
+ },
+ "Ankara Kültür Yolu Festivali": null,
+ "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": null,
+ "ABB Yarıyıl Çocuk Festivali (Altınpark)": null,
+ "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": {
+  "place_id": "ChIJ41MIX89F0xQRfmtzo0a3TR0",
+  "rating": 5,
+  "count": 2,
+  "url": "https://maps.google.com/?cid=2111545314324474750"
+ },
+ "Tuğram At Çiftliği": {
+  "place_id": "ChIJeYscaGRB0xQRnp6yaXXNayY",
+  "rating": 4,
+  "count": 344,
+  "url": "https://maps.google.com/?cid=2768532300117483166"
+ },
+ "Feza Gürsey Bilim Merkezi": {
+  "place_id": "ChIJlf01MOtN0xQRFoOIrQemVj8",
+  "rating": 4.4,
+  "count": 554,
+  "url": "https://maps.google.com/?cid=4564017824292963094"
+ },
+ "MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi": {
+  "place_id": "ChIJe24LnwJG0xQR2kHecO69jt0",
+  "rating": 4.7,
+  "count": 9437,
+  "url": "https://maps.google.com/?cid=15964906560868467162"
+ },
+ "Anadolu Medeniyetleri Müzesi": null,
+ "Rahmi M. Koç Müzesi Ankara (Çengelhan)": {
+  "place_id": "ChIJ9b_Z9mdO0xQRNU5BMBpIICo",
+  "rating": 4.8,
+  "count": 7922,
+  "url": "https://maps.google.com/?cid=3035505426163650101"
+ },
+ "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)": null,
+ "Anıtkabir ve Atatürk ve Kurtuluş Savaşı Müzesi": {
+  "place_id": "ChIJseKU0x1P0xQRiQQ-JH62lZY",
+  "rating": 4.8,
+  "count": 909,
+  "url": "https://maps.google.com/?cid=10850779530109256841"
+ },
+ "Ankara Etnografya Müzesi": null,
+ "Ankara Resim ve Heykel Müzesi": null,
+ "Kurtuluş Savaşı Müzesi (I. TBMM Binası)": null,
+ "Cumhuriyet Müzesi (II. TBMM Binası)": null,
+ "CerModern (CerÇocuk atölyeleri)": {
+  "place_id": "ChIJtXHx6_lO0xQRrPnb4V4RjX8",
+  "rating": 4.4,
+  "count": 7492,
+  "url": "https://maps.google.com/?cid=9191021513746938284"
+ },
+ "Erimtan Arkeoloji ve Sanat Müzesi": {
+  "place_id": "ChIJVWVakmdO0xQRnEaxWENl_IU",
+  "rating": 4.5,
+  "count": 1655,
+  "url": "https://maps.google.com/?cid=9654703041100727964"
+ },
+ "Ulucanlar Cezaevi Müzesi": {
+  "place_id": "ChIJF16msWtO0xQRh3CtfHpR5Xw",
+  "rating": 4.7,
+  "count": 18475,
+  "url": "https://maps.google.com/?cid=8999689016889405575"
+ },
+ "Türk Hava Kuvvetleri Müzesi": null,
+ "ODTÜ Bilim ve Teknoloji Müzesi": null,
+ "ODTÜ Toplum ve Bilim Merkezi Gökevi (Planetaryum)": null,
+ "Ankara Üniversitesi Kreiken Rasathanesi (Halk Günleri)": null,
+ "Ali Kuşçu Gökbilim Merkezi": {
+  "place_id": "ChIJYWmRhw5R0xQR3MOUxZAkeZM",
+  "rating": 4.1,
+  "count": 728,
+  "url": "https://maps.google.com/?cid=10626564999966147548"
+ },
+ "Alev Alatlı Bilim Merkezi (Başkent Millet Bahçesi)": {
+  "place_id": "ChIJtbGZ7TJP0xQRF3LgyALtM4U",
+  "rating": 4.3,
+  "count": 87,
+  "url": "https://maps.google.com/?cid=9598275827072528919"
+ },
+ "Atatürk Çocukları Doğal Yaşam Parkı ve Hayvanat Bahçesi (AOÇ)": {
+  "place_id": "ChIJM2XW8LpJ0xQRWR0FtUvrkt4",
+  "rating": 4.3,
+  "count": 926,
+  "url": "https://maps.google.com/?cid=16038139933411843417"
+ },
+ "Atatürk Orman Çiftliği Hayvanat Bahçesi (eski)": {
+  "place_id": "ChIJM5yfjK9J0xQRV_cV3gyyOqg",
+  "rating": 4.4,
+  "count": 122,
+  "url": "https://maps.google.com/?cid=12122197115356444503"
+ },
+ "Keçiören Evcil Hayvanlar Parkı": {
+  "place_id": "ChIJXfkpeBdN0xQRsx6PyKkSou0",
+  "rating": 4.3,
+  "count": 8861,
+  "url": "https://maps.google.com/?cid=17123269253639642803"
+ },
+ "Aqua Vega Akvaryum (Nata Vega Outlet)": {
+  "place_id": "ChIJr4kRXFBQ0xQR9MfFCSbzvSk",
+  "rating": 4.1,
+  "count": 12058,
+  "url": "https://maps.google.com/?cid=3007827470851622900"
+ },
+ "Ankara Devlet Tiyatrosu – Çocuk Oyunları": {
+  "place_id": "ChIJeX0wn6xP0xQRx2OyGrRCeRU",
+  "rating": 4.3,
+  "count": 578,
+  "url": "https://maps.google.com/?cid=1547341288287921095"
+ },
+ "ABB Başkent Tiyatroları – Çocuk Tiyatrosu (Gençlik Parkı)": {
+  "place_id": "ChIJ__8_q1hO0xQRuDU0z_3zcNo",
+  "rating": 4.7,
+  "count": 10,
+  "url": "https://maps.google.com/?cid=15740348969088464312"
+ },
+ "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)": {
+  "place_id": "ChIJ0SAOq1hO0xQRacbouwRBhSI",
+  "rating": 4.5,
+  "count": 409,
+  "url": "https://maps.google.com/?cid=2487465857780336233"
+ },
+ "PTT Pul Müzesi": null,
+ "Meteoroloji Müzesi": null,
+ "Ankara Somut Olmayan Kültürel Miras Müzesi (SOKÜM)": null,
+ "Ankara Radyo ve İletişim Müzesi": {
+  "place_id": "ChIJpYoBVABP0xQRSvBB6sw6k5E",
+  "rating": 4.6,
+  "count": 51,
+  "url": "https://maps.google.com/?cid=10489792608853946442"
+ },
+ "Ankara Kalesi": null,
+ "Hamamönü Tarihi Bölgesi": {
+  "place_id": "ChIJSxhUe0NO0xQRXwTCW64axC8",
+  "rating": 4.6,
+  "count": 4714,
+  "url": "https://maps.google.com/?cid=3441905351383975007"
+ },
+ "TCDD Açık Hava Buharlı Lokomotif Müzesi": {
+  "place_id": "ChIJDY6Ga_pO0xQRdcO_lB9-2gY",
+  "rating": 4.2,
+  "count": 5,
+  "url": "https://maps.google.com/?cid=493845783255171957"
+ },
+ "Gençlik Parkı": {
+  "place_id": "ChIJLbRQIfRO0xQRIZZ2_dlkOqk",
+  "rating": 4.1,
+  "count": 27382,
+  "url": "https://maps.google.com/?cid=12194169828482127393"
+ },
+ "Wonderland Eurasia (Ankapark)": {
+  "place_id": "ChIJu6y_SARJ0xQRWydK5WtAEeo",
+  "rating": 3,
+  "count": 146,
+  "url": "https://maps.google.com/?cid=16866332911631738715"
+ },
+ "Kuğulu Park": {
+  "place_id": "ChIJT7AhDqJP0xQRfUIL_yqAcTM",
+  "rating": 4.5,
+  "count": 27608,
+  "url": "https://maps.google.com/?cid=3706884890458538621"
+ },
+ "Seğmenler Parkı": {
+  "place_id": "ChIJN26nO5pP0xQRllqZX2CDKaU",
+  "rating": 4.4,
+  "count": 13655,
+  "url": "https://maps.google.com/?cid=11901187940247231126"
+ },
+ "Botanik Parkı": null,
+ "Altınpark": {
+  "place_id": "ChIJuRvc9ntN0xQRo_m17GJz5NM",
+  "rating": 4.4,
+  "count": 610,
+  "url": "https://maps.google.com/?cid=15268455505408162211"
+ },
+ "Harikalar Diyarı": null,
+ "Göksu Parkı": {
+  "place_id": "ChIJw3OaqSM30xQRfLH7thiK0jk",
+  "rating": 4.5,
+  "count": 15859,
+  "url": "https://maps.google.com/?cid=4166544444024926588"
+ },
+ "50. Yıl Parkı": null,
+ "Dikmen Vadisi": {
+  "place_id": "ChIJOeTTb31P0xQRW2nejVG8vwU",
+  "rating": 4.5,
+  "count": 9795,
+  "url": "https://maps.google.com/?cid=414256749199911259"
+ },
+ "Kurtuluş Parkı": null,
+ "Estergon Kalesi (Türk Kültür Merkezi)": null,
+ "Kartaltepe Kent Ormanı": {
+  "place_id": "ChIJJfqYgoVM0xQRBvQjmnL5-XQ",
+  "rating": 4.2,
+  "count": 2899,
+  "url": "https://maps.google.com/?cid=8429042448208229382"
+ },
+ "Başkent Millet Bahçesi (AKM)": {
+  "place_id": "ChIJ84cNvWNP0xQRhGf-RyOAI1U",
+  "rating": 4.2,
+  "count": 4431,
+  "url": "https://maps.google.com/?cid=6134888006428813188"
+ },
+ "İmrahor Vadisi Millet Bahçesi": {
+  "place_id": "ChIJMV_hFwBF0xQRKJx5NpMS7P4",
+  "rating": 3.9,
+  "count": 253,
+  "url": "https://maps.google.com/?cid=18369077403620842536"
+ },
+ "Ankara Millet Bahçesi (Etimesgut)": {
+  "place_id": "ChIJ84cNvWNP0xQRhGf-RyOAI1U",
+  "rating": 4.2,
+  "count": 4431,
+  "url": "https://maps.google.com/?cid=6134888006428813188"
+ },
+ "Keçiören (Bağlum) Millet Bahçesi": null,
+ "Macera Adası – Kentpark AVM": {
+  "place_id": "ChIJw94xkSdG0xQRL3Dto_qum5E",
+  "rating": 3.7,
+  "count": 425,
+  "url": "https://maps.google.com/?cid=10492172148405006383"
+ },
+ "JoyPort Eğlence Merkezi – Podium AVM": {
+  "place_id": "ChIJnZrFug5J0xQRFrVx9o4f9p4",
+  "rating": 4,
+  "count": 1028,
+  "url": "https://maps.google.com/?cid=11454377401143899414"
+ },
+ "Joyland Oyun Parkı – Panora AVM": {
+  "place_id": "ChIJf7UdPTQ20xQRBlGs6179VEs",
+  "rating": 3.8,
+  "count": 443,
+  "url": "https://maps.google.com/?cid=5428242035010982150"
+ },
+ "Cepa AVM Oyun Parkı (Fun Park / Jokerland)": null,
+ "Arckids Eğlence Merkezi – Arcadium AVM": {
+  "place_id": "ChIJ4YlmmcI40xQRpkUp-kHVBqo",
+  "rating": 3.9,
+  "count": 100,
+  "url": "https://maps.google.com/?cid=12251714315654612390"
+ },
+ "Funnivarium – Forum Ankara AVM": null,
+ "Open Play Trampoline Park – Antares AVM": {
+  "place_id": "ChIJS9r2XO9N0xQRDmE5WYaccGg",
+  "rating": 3.7,
+  "count": 282,
+  "url": "https://maps.google.com/?cid=7525687078172582158"
+ },
+ "Arena Trambolin Park – Acity AVM": {
+  "place_id": "ChIJBfssqV5J0xQR5ySpd0sWc9c",
+  "rating": 4.8,
+  "count": 166,
+  "url": "https://maps.google.com/?cid=15524776853862163687"
+ },
+ "BelPa Buz Pateni Sarayı (Ankara Büyükşehir)": null,
+ "Kent Paten Buz Pisti – Oran": {
+  "place_id": "ChIJD_D18UxE0xQRVaxeT7XYe_E",
+  "rating": 4.2,
+  "count": 583,
+  "url": "https://maps.google.com/?cid=17400739858508328021"
+ },
+ "Ankara Karting (Mühye)": {
+  "place_id": "ChIJk1T-jGpF0xQRQTtgYEWF_vU",
+  "rating": 4,
+  "count": 1261,
+  "url": "https://maps.google.com/?cid=17725751716393007937"
+ },
+ "Hipodrom RS Arena Karting": {
+  "place_id": "ChIJzXgorOg20xQRxy86yYmaoBA",
+  "rating": 3.6,
+  "count": 901,
+  "url": "https://maps.google.com/?cid=1198127417457782727"
+ },
+ "Altınpark Go-kart / Akülü Araçlar": {
+  "place_id": "ChIJIzCuBOpN0xQR6TWzn_ukii0",
+  "rating": 3.8,
+  "count": 549,
+  "url": "https://maps.google.com/?cid=3281616679115896297"
+ },
+ "Kısa Kaya Boulder Evi": {
+  "place_id": "ChIJ9W9I2q1P0xQRxmMnCHXDEyw",
+  "rating": 4.8,
+  "count": 66,
+  "url": "https://maps.google.com/?cid=3176097069641720774"
+ },
+ "Tragos Boulder": {
+  "place_id": "ChIJ6TABR0RF0xQREkIDnPZuNMI",
+  "rating": 4.8,
+  "count": 30,
+  "url": "https://maps.google.com/?cid=13993931947605443090"
+ },
+ "Rolling Ball Bowling – Armada AVM": {
+  "place_id": "ChIJ2f_yDSpP0xQREqO78Ul_szE",
+  "rating": 4.1,
+  "count": 48,
+  "url": "https://maps.google.com/?cid=3581346084254622482"
+ },
+ "Play Planet Bowling – ANKAmall": null,
+ "Rollhouse Bowling – Cepa AVM": {
+  "place_id": "ChIJZdlZra5H0xQRVLPRAZMLnY8",
+  "rating": 3.9,
+  "count": 994,
+  "url": "https://maps.google.com/?cid=10348440244785886036"
+ },
+ "Waterpark Ankara (Keçiören)": {
+  "place_id": "ChIJfwI4fr5N0xQRoT2lRkZiJZM",
+  "rating": 3.3,
+  "count": 942,
+  "url": "https://maps.google.com/?cid=10602988951686167969"
+ },
+ "Club Watercity Aquapark – Gölbaşı": {
+  "place_id": "ChIJJ5sjF5pA0xQRT3ZyJX3c_fk",
+  "rating": 3.2,
+  "count": 1700,
+  "url": "https://maps.google.com/?cid=18013796514609133135"
+ },
+ "AnkTalya Aquapark – Batıkent": {
+  "place_id": "ChIJO_phX4cw0xQR1RWDZ1gGypQ",
+  "rating": 3.3,
+  "count": 1315,
+  "url": "https://maps.google.com/?cid=10721388839672419797"
+ },
+ "Kartaltepe Aquapark – Keçiören": {
+  "place_id": "ChIJ4_Kqr6ZN0xQRA7Kg03SNx98",
+  "rating": 2.8,
+  "count": 1653,
+  "url": "https://maps.google.com/?cid=16125012523729596931"
+ },
+ "Ankara Atlıspor Kulübü – Pony Okulu": null,
+ "Bricks 4 Kidz Ankara – LEGO S.T.E.M. Atölyesi": {
+  "place_id": "ChIJ3c4PZP050xQRQ__BqIJqjIo",
+  "rating": 4.8,
+  "count": 23,
+  "url": "https://maps.google.com/?cid=9983471583383125827"
+ },
+ "Neriseramik – Çocuklar İçin Seramik Workshop": {
+  "place_id": "ChIJ-7ylQmNP0xQRJ7Gjy4toPHM",
+  "rating": 4.6,
+  "count": 61,
+  "url": "https://maps.google.com/?cid=8303626762590597415"
+ },
+ "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları": {
+  "place_id": "ChIJ9wkwNPxO0xQRb7cqWaTqjV4",
+  "rating": 4.9,
+  "count": 693,
+  "url": "https://maps.google.com/?cid=6813359802872936303"
+ },
+ "Anıt Eğitim – Çocuk Pastacılık Kursu": {
+  "place_id": "ChIJsWgYc_9O0xQRb_cQ3SiI9Mc",
+  "rating": 4.9,
+  "count": 244,
+  "url": "https://maps.google.com/?cid=14408290816954005359"
+ },
+ "Çankaya Belediyesi Çocuk Atölyeleri ve Gelişimsel Oyunevleri": null,
+ "Cumhurbaşkanlığı Millet Kütüphanesi – Nasreddin Hoca Çocuk Kütüphanesi": {
+  "place_id": "ChIJn_cwLslI0xQRGriTsYnj5A0",
+  "rating": 4.7,
+  "count": 8342,
+  "url": "https://maps.google.com/?cid=1001175197712365594"
+ },
+ "Adnan Ötüken İl Halk Kütüphanesi – Çocuk Bölümü": {
+  "place_id": "ChIJ-dXSGAFP0xQRu9daYLgAwH4",
+  "rating": 3.8,
+  "count": 737,
+  "url": "https://maps.google.com/?cid=9133300836197914555"
+ },
+ "Ankara Ali Dayı Çocuk Kütüphanesi": {
+  "place_id": "ChIJZY4Whb1P0xQRMRjEbkNws50",
+  "rating": 4.6,
+  "count": 53,
+  "url": "https://maps.google.com/?cid=11363549719709358129"
+ },
+ "Altındağ Bebek ve Çocuk Kütüphanesi": {
+  "place_id": "ChIJBXfGAVRT0xQRUi_oNWLesiY",
+  "rating": 3.8,
+  "count": 58,
+  "url": "https://maps.google.com/?cid=2788535632688328530"
+ },
+ "Escape Planet – Sherlock Holmes Odası (Bahçelievler)": {
+  "place_id": "ChIJD5vMwyJP0xQR2qioPsfL0z8",
+  "rating": 4.9,
+  "count": 23589,
+  "url": "https://maps.google.com/?cid=4599243701085579482"
+ },
+ "Kafes Fırın Söğütözü": {
+  "place_id": "ChIJa645SWY40xQRHptLq68CM8E",
+  "rating": 4.1,
+  "count": 6319,
+  "url": "https://maps.google.com/?cid=13921473826648726302"
+ },
+ "Yuba Cafe & Bistro": {
+  "place_id": "ChIJYff2WmhF0xQRT7mRcOoNhE0",
+  "rating": 4,
+  "count": 1463,
+  "url": "https://maps.google.com/?cid=5585604738408364367"
+ },
+ "AOÇ Kaşıbeyaz Ankara": null,
+ "Deniz Kozanlı Kahvaltı & Mantı": {
+  "place_id": "ChIJD_Q9mFdP0xQR65y3ntur6hg",
+  "rating": 4.2,
+  "count": 893,
+  "url": "https://maps.google.com/?cid=1795436361209584875"
+ },
+ "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)": null,
+ "Fevzi Hoca Köfte-Balık Çayyolu": {
+  "place_id": "ChIJoU5haQM50xQR8j0xdwHtfvs",
+  "rating": 4.1,
+  "count": 2787,
+  "url": "https://maps.google.com/?cid=18122182541135920626"
+ },
+ "Otto Lounge Restoran & Cafe": null,
+ "Masabaşı Kebapçısı Balgat": {
+  "place_id": "ChIJgW6-HUZP0xQRlzmpFu_D_9E",
+  "rating": 4.3,
+  "count": 12312,
+  "url": "https://maps.google.com/?cid=15132028704632945047"
+ },
+ "Kukla Kebap Balgat": {
+  "place_id": "ChIJUfR6wk5P0xQR52HG7Y6fsPQ",
+  "rating": 3.6,
+  "count": 2137,
+  "url": "https://maps.google.com/?cid=17631767977378865639"
+ },
+ "Serüven Balık Restaurant": {
+  "place_id": "ChIJnfpGElhF0xQRGWRD1aE7Fos",
+  "rating": 4.4,
+  "count": 449,
+  "url": "https://maps.google.com/?cid=10022263587013354521"
+ },
+ "Marco Pascha Çukurambar": {
+  "place_id": "ChIJ_6--GFVP0xQR5sW5On6fisg",
+  "rating": 3.7,
+  "count": 2435,
+  "url": "https://maps.google.com/?cid=14450537718871606758"
+ },
+ "ChronoStation Aile Yaşam Merkezi (ChronoCafe)": {
+  "place_id": "ChIJqS_CJ5g40xQRU6vawy7hZYo",
+  "rating": 3.4,
+  "count": 205,
+  "url": "https://maps.google.com/?cid=9972624540852464467"
+ },
+ "Pupilla Çocuk Kafe & Restoran": {
+  "place_id": "ChIJQzYsBSs50xQRYFt8Ra3EIf0",
+  "rating": 3.9,
+  "count": 195,
+  "url": "https://maps.google.com/?cid=18240076214301383520"
+ },
+ "Çalgan Saklıköy (Çalgan Et Lokantası)": {
+  "place_id": "ChIJyXjtCb5O0xQRMoy7cNx94uU",
+  "rating": 3.7,
+  "count": 2769,
+  "url": "https://maps.google.com/?cid=16564940765159722034"
+ },
+ "Cafemiz": {
+  "place_id": "ChIJN6gIm5dP0xQRZPeKnkY02Vk",
+  "rating": 4.1,
+  "count": 1820,
+  "url": "https://maps.google.com/?cid=6474263417234061156"
+ },
+ "Kirit Cafe": {
+  "place_id": "ChIJp_Fl-j5P0xQRiQMlrTjlUeY",
+  "rating": 4.3,
+  "count": 911,
+  "url": "https://maps.google.com/?cid=16596298133422801801"
+ },
+ "Karçiçeği Cafe & Restaurant (Mogan Gölü)": {
+  "place_id": "ChIJubfBfsJB0xQRsq6weMFLuDo",
+  "rating": 4,
+  "count": 249,
+  "url": "https://maps.google.com/?cid=4231215144240197298"
+ },
+ "Köyüm Cafe (Mogan Parkı)": {
+  "place_id": "ChIJ2ag_ecJB0xQRwuHLA8XIiRA",
+  "rating": 3.9,
+  "count": 376,
+  "url": "https://maps.google.com/?cid=1191704324914012610"
+ },
+ "Çağlar Restaurant (Mogan Gölü)": {
+  "place_id": "ChIJPcareJlB0xQRzRx0PStrFqM",
+  "rating": 4.1,
+  "count": 853,
+  "url": "https://maps.google.com/?cid=11751698111128673485"
+ },
+ "Pars Garden (Eymir/Gölbaşı)": {
+  "place_id": "ChIJKVUDwvRD0xQRngHSShHJi6A",
+  "rating": 4,
+  "count": 534,
+  "url": "https://maps.google.com/?cid=11568561143938154910"
+ },
+ "Eğriçimen Kahvaltı & Et & Balık Restaurant": {
+  "place_id": "ChIJ94Ov1t4_0xQRq7lQOOgVLss",
+  "rating": 3.8,
+  "count": 1124,
+  "url": "https://maps.google.com/?cid=14640663525749471659"
+ },
+ "Esrarengiz Bahçe": {
+  "place_id": "ChIJUQNWagEVgkAR5denG7lANjI",
+  "rating": 4.2,
+  "count": 425,
+  "url": "https://maps.google.com/?cid=3618150514415884261"
+ },
+ "Botanik Kır Bahçesi & At Biniciliği": null,
+ "Yayla Karadeniz Kır Lokantası": {
+  "place_id": "ChIJ_Zto_RMRgkARQZ3y3fGvfMU",
+  "rating": 3.3,
+  "count": 6,
+  "url": "https://maps.google.com/?cid=14230442375929568577"
+ },
+ "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı": {
+  "place_id": "ChIJUbj6O-pfgkARjDTNh8pz4mA",
+  "rating": 4.9,
+  "count": 35,
+  "url": "https://maps.google.com/?cid=6981269686076650636"
+ },
+ "ma&me&pa Family Club (Bilkent Center)": {
+  "place_id": "ChIJSzc0PaxH0xQRkLoaft1EJqw",
+  "rating": 4.5,
+  "count": 306,
+  "url": "https://maps.google.com/?cid=12404677941732752016"
+ },
+ "Cumba Çocuk Kitap Cafe": {
+  "place_id": "ChIJg7y41wBG0xQRuZvuLPc62a4",
+  "rating": 4.3,
+  "count": 274,
+  "url": "https://maps.google.com/?cid=12599166265830841273"
+ },
+ "Lora Çikolata Kahve Batıkent": {
+  "place_id": "ChIJj3xDAic30xQRUQuMLNbQTes",
+  "rating": 4.6,
+  "count": 395,
+  "url": "https://maps.google.com/?cid=16955437790408739665"
+ },
+ "Mini Koala Oyun Atölyesi & Kafe": {
+  "place_id": "ChIJJV_jyqVF0xQRvwj8Z0dz8RM",
+  "rating": 4.7,
+  "count": 74,
+  "url": "https://maps.google.com/?cid=1437056506632341695"
+ },
+ "Delta Macera Sport & Cafe (Eymir Gölü)": {
+  "place_id": "ChIJtZKTEGVP0xQRnixNPzqhAW8",
+  "rating": 3.7,
+  "count": 294,
+  "url": "https://maps.google.com/?cid=7998851684728908958"
+ },
+ "Powertec Cafe & Bistro": {
+  "place_id": "ChIJYyLK7D9J0xQR7QZ4MqeylZ0",
+  "rating": 3.9,
+  "count": 1151,
+  "url": "https://maps.google.com/?cid=11355178466660583149"
+ },
+ "Altınköy Açık Hava Müzesi": {
+  "place_id": "ChIJ7dHk9VxO0xQRguJ5A9462zc",
+  "rating": 4.4,
+  "count": 13563,
+  "url": "https://maps.google.com/?cid=4024875417201140354"
+ },
+ "Keçiören Deniz Dünyası Akvaryumu": {
+  "place_id": "ChIJu5-5zb1N0xQR6ZApWBE5T0I",
+  "rating": 4.4,
+  "count": 8625,
+  "url": "https://maps.google.com/?cid=4778100476319731945"
+ },
+ "Üreğil Millet Bahçesi": {
+  "place_id": "ChIJ0RZ47AtR0xQRQyQ-zDXSiw4",
+  "rating": 4.2,
+  "count": 2083,
+  "url": "https://maps.google.com/?cid=1048162466795496515"
+ },
+ "Max Level Aile ve Çocuk Oyun Eğlence Merkezi": {
+  "place_id": "ChIJaQiJFg1P0xQRW734cyrUPds",
+  "rating": 4,
+  "count": 371,
+  "url": "https://maps.google.com/?cid=15798016346684964187"
+ },
+ "Çamlıdere Macera Parkı": {
+  "place_id": "ChIJ6Y-y0i7ygkAReL9Gj5zF92Y",
+  "rating": 3.7,
+  "count": 300,
+  "url": "https://maps.google.com/?cid=7419616187325529976"
+ },
+ "Playland Optimum": {
+  "place_id": "ChIJl8Kg60030xQRKbQX6E0hCNU",
+  "rating": 3.2,
+  "count": 356,
+  "url": "https://maps.google.com/?cid=15350555948382401577"
+ },
+ "Toru Entertainment (Taurus AVM)": {
+  "place_id": "ChIJZ-ANIeNF0xQRQKfasghiCZs",
+  "rating": 1.9,
+  "count": 99,
+  "url": "https://maps.google.com/?cid=11171568140169160512"
+ },
+ "Etimesgut Aile Yaşam Merkezi": {
+  "place_id": "ChIJSUQvU_Q50xQRRcF_t9BaODo",
+  "rating": 4,
+  "count": 753,
+  "url": "https://maps.google.com/?cid=4195202905373917509"
+ },
+ "Sincan Belediyesi Bebek Kütüphanesi": {
+  "place_id": "ChIJUaUoIWY70xQRutHt79PukKQ",
+  "rating": 3.7,
+  "count": 47,
+  "url": "https://maps.google.com/?cid=11858240412897366458"
+ },
+ "Ankara Üniversitesi Çocuk Üniversitesi": {
+  "place_id": "ChIJy3l129xO0xQRwE1A2in5agI",
+  "rating": 4.8,
+  "count": 4,
+  "url": "https://maps.google.com/?cid=174225493757808064"
+ },
+ "Neşeli Köy (Ters Ev ve Çiftlik)": {
+  "place_id": "ChIJndZ9rdAX0xQROdyadKQqr5o",
+  "rating": 3.9,
+  "count": 2895,
+  "url": "https://maps.google.com/?cid=11146174488584576057"
+ },
+ "Çufçuf Oyun ve Parti Evi": {
+  "place_id": "ChIJ1aFRvD430xQRRvjLZ8vheLs",
+  "rating": 5,
+  "count": 1,
+  "url": "https://maps.google.com/?cid=13508795346033834054"
+ },
+ "Kurtboğazı Barajı Piknik Alanı": {
+  "place_id": "ChIJRxnE755lgkARJyREafMwf1Y",
+  "rating": 4.2,
+  "count": 3285,
+  "url": "https://maps.google.com/?cid=6232754231305315367"
+ },
+ "Çansera Kent Bahçesi": {
+  "place_id": "ChIJmVBeKx1G0xQRwKbIP3hsaOE",
+  "rating": 4.5,
+  "count": 6746,
+  "url": "https://maps.google.com/?cid=16242351319833683648"
+ },
+ "Yuki Kids Oyunevi & Cafe": {
+  "place_id": "ChIJUzWcgsY30xQRUrAlsrq9Fhs",
+  "rating": 4.8,
+  "count": 187,
+  "url": "https://maps.google.com/?cid=1951956098062069842"
+ },
+ "Candy Kids Park": {
+  "place_id": "ChIJGQ567YVJ0xQRwC8JXdHclqg",
+  "rating": 3,
+  "count": 6,
+  "url": "https://maps.google.com/?cid=12148139836645650368"
+ },
+ "CSO Ada Ankara Çocuk Atölyeleri": null,
+ "Da Vinci Board Game Cafe": {
+  "place_id": "ChIJcaU6QSlJ0xQR3xnvn3fqbgU",
+  "rating": 4.4,
+  "count": 387,
+  "url": "https://maps.google.com/?cid=391508017133066719"
+ },
+ "Sincan Anne-Çocuk Oyun Evleri": {
+  "place_id": "ChIJ0U4FU-Y60xQRCzA84EzL5ps",
+  "rating": 4.8,
+  "count": 23,
+  "url": "https://maps.google.com/?cid=11233889851562274827"
+ },
+ "Eğrekkaya Barajı": null,
+ "Mini Sanat Çocukça Eğlenceler Atölyesi": null,
+ "Nomi Oyun Evi": {
+  "place_id": "ChIJ78d07tRH0xQRL1Woy0jLjLw",
+  "rating": 4.8,
+  "count": 31,
+  "url": "https://maps.google.com/?cid=13586457689384834351"
+ },
+ "ABB Çocuk Etkinlik Merkezleri": null,
+ "ABB Başkent Oyun Dünyası (Demetevler Parkı)": {
+  "place_id": "ChIJY4URnMZJ0xQRMeM6nbpVynk",
+  "rating": 4.1,
+  "count": 24,
+  "url": "https://maps.google.com/?cid=8775921083874992945"
+ },
+ "ABB Çocuk Oyun Odaları": {
+  "place_id": "ChIJo0hKfTBF0xQRurxLT__jU4s",
+  "rating": 4.8,
+  "count": 115,
+  "url": "https://maps.google.com/?cid=10039618680025496762"
+ },
+ "ABB Oyuncak Kütüphanesi": {
+  "place_id": "ChIJlwHs01w_0xQRuQ3CwlN9pOk",
+  "rating": 4.6,
+  "count": 28,
+  "url": "https://maps.google.com/?cid=16835719105721011641"
+ },
+ "Keçiören Belediyesi Çocuk Eğitim Merkezi": {
+  "place_id": "ChIJ5U5rbxhM0xQRlMqXfkZSUHk",
+  "rating": 2.3,
+  "count": 3,
+  "url": "https://maps.google.com/?cid=8741577339451198100"
+ },
+ "Keçiören Belediyesi Çocuk Hizmet Merkezi": {
+  "place_id": "ChIJl9iRILRN0xQRjzLUj04h9dQ",
+  "rating": 3.8,
+  "count": 233,
+  "url": "https://maps.google.com/?cid=15345207926639047311"
+ },
+ "Güldeste Oyun Merkezi (Keçiören Belediyesi)": null,
+ "Mamak Belediyesi Bilim Merkezi (Şehitlik)": {
+  "place_id": "ChIJsxTla9BR0xQR0E2-0SU4kQE",
+  "rating": 5,
+  "count": 8,
+  "url": "https://maps.google.com/?cid=112933200744828368"
+ },
+ "Akdere Bebek ve Çocuk Kütüphanesi (Mamak Belediyesi)": {
+  "place_id": "ChIJDzQz7mZP0xQRT4Rvpjgw-ro",
+  "rating": 4,
+  "count": 14,
+  "url": "https://maps.google.com/?cid=13473134255100888143"
+ },
+ "Sincan Belediyesi Anne-Çocuk Oyun Evleri": {
+  "place_id": "ChIJ9wDbeoY60xQRvJqhkHatGT4",
+  "rating": 4,
+  "count": 2506,
+  "url": "https://maps.google.com/?cid=4474798429513554620"
+ },
+ "Altındağ Belediyesi Çocuk Kulübü Atölyeleri (Başkent Millet Bahçesi)": {
+  "place_id": "ChIJW8gdsk5P0xQREJP8EOp5Hew",
+  "rating": 3.1,
+  "count": 14,
+  "url": "https://maps.google.com/?cid=17013889013489898256"
+ },
+ "Çankaya Belediyesi Minik Adımlar Bebek Kütüphanesi": {
+  "place_id": "ChIJA4fEpJVH0xQRIZ8G18yR59o",
+  "rating": 4.3,
+  "count": 22,
+  "url": "https://maps.google.com/?cid=15773736528855342881"
+ },
+ "Çankaya Belediyesi Oyuncak Kütüphanesi": {
+  "place_id": "ChIJZY4Whb1P0xQRMRjEbkNws50",
+  "rating": 4.6,
+  "count": 53,
+  "url": "https://maps.google.com/?cid=11363549719709358129"
+ },
+ "Rock'n Ball Eğlence Merkezi": {
+  "place_id": "ChIJLd5mXlRJ0xQRRehbNlLuGEk",
+  "rating": 4,
+  "count": 197,
+  "url": "https://maps.google.com/?cid=5267221801076516933"
+ },
+ "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)": {
+  "place_id": "ChIJvb2DFWQ30xQRB5EUldh2WAs",
+  "rating": 5,
+  "count": 42,
+  "url": "https://maps.google.com/?cid=817534004953911559"
+ },
+ "Sewolab Robotik Tasarım ve Kodlama": {
+  "place_id": "ChIJYaxT7UE50xQRQNA1tOGYtpo",
+  "rating": 5,
+  "count": 5,
+  "url": "https://maps.google.com/?cid=11148266022760730688"
+ },
+ "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)": {
+  "place_id": "ChIJi0IqWqpN0xQRrKVlhOuHZB8",
+  "rating": 3.9,
+  "count": 254,
+  "url": "https://maps.google.com/?cid=2262082358455149996"
+ },
+ "Joymax Ankara": null,
+ "Studio No.24 Seramik Atölyesi (Ümitköy)": {
+  "place_id": "ChIJrbRaQLc50xQRnBkIZ7Vzebw",
+  "rating": 3.9,
+  "count": 379,
+  "url": "https://maps.google.com/?cid=13581013374267300252"
+ },
+ "Terra Point Art Studio (Seramik Sanatları Stüdyosu)": {
+  "place_id": "ChIJTf6JDEhF0xQRSbi7Rkhxk-w",
+  "rating": 4.9,
+  "count": 846,
+  "url": "https://maps.google.com/?cid=17047093569765750857"
+ },
+ "Kaptan Kebap (Çukurambar)": {
+  "place_id": "ChIJYSwv2qFP0xQRRuygapDDcYE",
+  "rating": 4,
+  "count": 435,
+  "url": "https://maps.google.com/?cid=9327451328292645958"
+ },
+ "100. Yıl Cumhuriyet Millet Bahçesi (Mamak)": {
+  "place_id": "ChIJpRDdzwhR0xQRVTPO7F819YY",
+  "rating": 4.4,
+  "count": 381,
+  "url": "https://maps.google.com/?cid=9724737656487555925"
+ },
+ "Sincan Bilim Merkezi (Bilim Sincan)": {
+  "place_id": "ChIJ2QGej38x0xQRp-yqK4xBwIU",
+  "rating": 4.7,
+  "count": 36,
+  "url": "https://maps.google.com/?cid=9637775272856710311"
+ },
+ "Etimesgut Çocuk Trafik Eğitim Pisti (Eryaman)": {
+  "place_id": "ChIJUT-0u8k30xQRyo7l21tZbzI",
+  "rating": 4.3,
+  "count": 12,
+  "url": "https://maps.google.com/?cid=3634221675377430218"
+ },
+ "TCMB Para Müzesi": null,
+ "Adventure Land Ankara Macera Parkı": {
+  "place_id": "ChIJc9Tpl05P0xQRvb583jAwzF8",
+  "rating": 4.5,
+  "count": 75,
+  "url": "https://maps.google.com/?cid=6902945315301408445"
+ },
+ "Muhye Paintball": {
+  "place_id": "ChIJJ_W1-0BF0xQREzXa2Du228g",
+  "rating": 4,
+  "count": 508,
+  "url": "https://maps.google.com/?cid=14473362195642725651"
+ },
+ "Çayyolu Sanat Atölyesi": {
+  "place_id": "ChIJAWHsRck40xQRTpl8z04Um6o",
+  "rating": 4.6,
+  "count": 28,
+  "url": "https://maps.google.com/?cid=12293441936558954830"
+ },
+ "KindyROO Çayyolu": {
+  "place_id": "ChIJx3iVmgo50xQRB6mQtmMIoUk",
+  "rating": 4.4,
+  "count": 62,
+  "url": "https://maps.google.com/?cid=5305531060376873223"
+ }
+}
