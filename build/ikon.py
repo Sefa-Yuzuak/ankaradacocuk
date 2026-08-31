@@ -4,17 +4,36 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 STATIC = Path(__file__).resolve().parent.parent / "static"
-TURUNCU, SARI, KOYU, BEYAZ = (255, 122, 89), (255, 201, 77), (34, 34, 42), (255, 255, 255)
+TURUNCU, SARI, KOYU, BEYAZ = (255, 122, 89), (255, 201, 77), (43, 43, 52), (255, 255, 255)
+KENAR, YANAK = (230, 96, 63), (255, 208, 194)
 
 
 def yuz(d: ImageDraw.ImageDraw, x, y, s):
-    """Basit gülen çocuk yüzü + gövde; s = ölçek (64 birimlik tuvale göre)."""
-    d.rounded_rectangle([x, y, x + 64 * s, y + 64 * s], radius=16 * s, fill=TURUNCU)
-    d.ellipse([x + 22 * s, y + 14 * s, x + 42 * s, y + 34 * s], fill=BEYAZ)
-    d.ellipse([x + 26 * s, y + 21 * s, x + 30 * s, y + 25 * s], fill=KOYU)
-    d.ellipse([x + 34 * s, y + 21 * s, x + 38 * s, y + 25 * s], fill=KOYU)
-    d.arc([x + 26 * s, y + 22 * s, x + 38 * s, y + 31 * s], 20, 160, fill=KOYU, width=max(1, int(2 * s)))
-    d.pieslice([x + 16 * s, y + 36 * s, x + 48 * s, y + 68 * s], 180, 360, fill=SARI)
+    """Konum iğnesi + gülen çocuk yüzü (marka). s = 64 birimlik tuvale ölçek."""
+    cx, cyh, R = x + 32 * s, y + 25 * s, 21 * s
+    # iğne gövdesi: alt uç üçgeni + baş dairesi (koyu kenar sonra ince orange üstüne)
+    def pin(renk, k=0.0):
+        d.polygon([(x + (17 + k) * s, y + (37 + k) * s), (cx, y + (61 - k) * s),
+                   (x + (47 - k) * s, y + (37 + k) * s)], fill=renk)
+        d.ellipse([cx - R + k * s, cyh - R + k * s, cx + R - k * s, cyh + R - k * s], fill=renk)
+    pin(KENAR, 0.0)
+    pin(TURUNCU, 1.4)
+    # yüz
+    fr = 12 * s
+    d.ellipse([cx - fr, cyh - fr, cx + fr, cyh + fr], fill=BEYAZ)
+    er = 2.2 * s
+    for ex in (-4.6, 4.6):
+        gx = cx + ex * s
+        d.ellipse([gx - er, cyh - 2 * s - er, gx + er, cyh - 2 * s + er], fill=KOYU)
+    d.arc([cx - 6 * s, cyh - 1 * s, cx + 6 * s, cyh + 7 * s], 20, 160, fill=KOYU, width=max(2, int(2.4 * s)))
+    cr = 1.7 * s
+    for cxo in (-7.6, 7.6):
+        px = cx + cxo * s
+        d.ellipse([px - cr, cyh + 2 * s - cr, px + cr, cyh + 2 * s + cr], fill=YANAK)
+    # keşif kıvılcımı (öneri/rehber)
+    sx, sy, r1, r2 = x + 51 * s, y + 11 * s, 5 * s, 1.9 * s
+    d.polygon([(sx, sy - r1), (sx + r2, sy - r2), (sx + r1, sy), (sx + r2, sy + r2),
+               (sx, sy + r1), (sx - r2, sy + r2), (sx - r1, sy), (sx - r2, sy - r2)], fill=SARI)
 
 
 def ikon(boyut):

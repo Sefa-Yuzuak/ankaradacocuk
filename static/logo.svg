@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="16" fill="#ff7a59"/><circle cx="32" cy="24" r="10" fill="#fff"/><circle cx="28" cy="23" r="1.8" fill="#22222a"/><circle cx="36" cy="23" r="1.8" fill="#22222a"/><path d="M27 28q5 4 10 0" stroke="#22222a" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M16 52c0-10 7-16 16-16s16 6 16 16" fill="#ffc94d"/><path d="M12 14l4-8 4 8" fill="#3aa66d"/><path d="M44 14l4-8 4 8" fill="#2f7de1"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ankaradaçocuk">
+  <title>ankaradaçocuk</title>
+  <!-- konum iğnesi (mekân/rehber) -->
+  <path d="M32 3.5C20.3 3.5 10.5 13 10.5 25c0 13.4 15.5 23.6 21.5 35.5C38 48.6 53.5 38.4 53.5 25 53.5 13 43.7 3.5 32 3.5Z"
+        fill="#ff7a59" stroke="#e6603f" stroke-width="1.4"/>
+  <!-- çocuk yüzü (kitle) -->
+  <circle cx="32" cy="25" r="12" fill="#fff"/>
+  <circle cx="27.4" cy="23" r="2.15" fill="#2b2b34"/>
+  <circle cx="36.6" cy="23" r="2.15" fill="#2b2b34"/>
+  <path d="M26.8 28.2q5.2 5 10.4 0" fill="none" stroke="#2b2b34" stroke-width="2.3" stroke-linecap="round"/>
+  <!-- yanak tonu -->
+  <circle cx="24.4" cy="27.2" r="1.7" fill="#ffd0c2"/>
+  <circle cx="39.6" cy="27.2" r="1.7" fill="#ffd0c2"/>
+  <!-- keşif kıvılcımı (öneri/rehber) -->
+  <path d="M51 7l1.5 3.8L56.3 12l-3.8 1.2L51 17l-1.2-3.8L46 12l3.8-1.2Z" fill="#ffc94d"/>
+</svg>

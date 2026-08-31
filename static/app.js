@@ -18,6 +18,41 @@
     else { await navigator.clipboard.writeText(location.href); b.textContent = '✅ Bağlantı kopyalandı'; }
   }));
 
+  // Öne çıkan etkinlik slider'ı
+  const slider = document.querySelector('[data-slider]');
+  if (slider) {
+    const yol = slider.querySelector('[data-track]');
+    const slaytlar = Array.from(yol.children);
+    const noktalar = slider.querySelector('[data-dots]');
+    const azalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let i = 0, sayac;
+    const git = (x) => {
+      i = (x + slaytlar.length) % slaytlar.length;
+      yol.style.transform = 'translateX(-' + (i * 100) + '%)';
+      if (noktalar) Array.from(noktalar.children).forEach((d, x2) => d.setAttribute('aria-current', x2 === i ? 'true' : 'false'));
+      sifirla();
+    };
+    const sifirla = () => { if (azalt || slaytlar.length < 2) return; clearInterval(sayac); sayac = setInterval(() => git(i + 1), 5500); };
+    if (slaytlar.length > 1) {
+      slaytlar.forEach((_, x) => {
+        const b = document.createElement('button'); b.type = 'button';
+        b.setAttribute('aria-label', (x + 1) + '. etkinlik');
+        b.addEventListener('click', () => git(x));
+        noktalar.appendChild(b);
+      });
+      slider.querySelector('[data-next]').addEventListener('click', () => git(i + 1));
+      slider.querySelector('[data-prev]').addEventListener('click', () => git(i - 1));
+      slider.addEventListener('mouseenter', () => clearInterval(sayac));
+      slider.addEventListener('mouseleave', sifirla);
+      let sx = 0;
+      yol.addEventListener('touchstart', e => sx = e.touches[0].clientX, { passive: true });
+      yol.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) git(i + (dx < 0 ? 1 : -1)); });
+      git(0);
+    } else {
+      slider.querySelectorAll('[data-prev],[data-next]').forEach(b => b.hidden = true);
+    }
+  }
+
   // Liste sayfası: DOM kartlarını filtrele
   const filtre = document.getElementById('filtre');
   const liste = document.getElementById('liste');

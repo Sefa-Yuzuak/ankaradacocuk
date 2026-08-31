@@ -565,5 +565,46 @@
   "sorgu": "Yunus Emre Kültür Merkezi Keçiören",
   "eslesme": "Yunus Emre Kültür ve Sanat Merkezi, Şener Sokak, Emrah Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 06010, Türkiye",
   "tur": "arts_centre"
+ },
+ "Güldeste Oyun Merkezi (Keçiören Belediyesi)": null,
+ "Mamak Belediyesi Bilim Merkezi (Şehitlik)": null,
+ "Akdere Bebek ve Çocuk Kütüphanesi (Mamak Belediyesi)": null,
+ "Sincan Belediyesi Anne-Çocuk Oyun Evleri": null,
+ "Altındağ Belediyesi Çocuk Kulübü Atölyeleri (Başkent Millet Bahçesi)": null,
+ "Çankaya Belediyesi Minik Adımlar Bebek Kütüphanesi": null,
+ "Çankaya Belediyesi Oyuncak Kütüphanesi": null,
+ "Rock'n Ball Eğlence Merkezi": null,
+ "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)": null,
+ "Sewolab Robotik Tasarım ve Kodlama": null,
+ "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)": null,
+ "Joymax Ankara": null,
+ "Studio No.24 Seramik Atölyesi (Ümitköy)": null,
+ "Terra Point Art Studio (Seramik Sanatları Stüdyosu)": {
+  "lat": 39.92359,
+  "lng": 32.82839,
+  "sorgu": "Terra Point Art Studio Bahçelievler Çankaya Ankara",
+  "eslesme": "Terra Point Art Studio, 85/A, Azerbaycan Caddesi, Yukarı Bahçelievler Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Böl",
+  "tur": "arts_centre"
+ },
+ "Kaptan Kebap (Çukurambar)": null,
+ "100. Yıl Cumhuriyet Millet Bahçesi (Mamak)": {
+  "lat": 39.90433,
+  "lng": 32.91431,
+  "sorgu": "100. Yıl Cumhuriyet Millet Bahçesi Mamak Ankara",
+  "eslesme": "100. Yıl Cumhuriyet Millet Bahçesi, Ege Mahallesi, Mamak, Ankara, İç Anadolu Bölgesi, 06270, Türkiye",
+  "tur": "park"
+ },
+ "Sincan Bilim Merkezi (Bilim Sincan)": null,
+ "Etimesgut Çocuk Trafik Eğitim Pisti (Eryaman)": null,
+ "TCMB Para Müzesi": null,
+ "Adventure Land Ankara Macera Parkı": null,
+ "Muhye Paintball": null,
+ "Çayyolu Sanat Atölyesi": null,
+ "KindyROO Çayyolu": {
+  "lat": 39.88134,
+  "lng": 32.68376,
+  "sorgu": "Çayyolu, Çankaya/Ankara",
+  "eslesme": "Çayyolu, Koru Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06810, Türkiye",
+  "tur": "quarter"
  }
 }

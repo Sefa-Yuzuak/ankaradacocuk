@@ -219,3 +219,44 @@ p{margin:0 0 1em}
 .etk-not{margin-top:22px}
 .bos-kutu{background:var(--kart);border:1px dashed var(--cizgi);border-radius:var(--r);padding:28px;text-align:center}
 @media(max-width:520px){.etkinlik-izgara{grid-template-columns:1fr}}
+
+/* Öne çıkan etkinlik slider'ı */
+.etk-slider-bolum{padding:28px 0 12px}
+.etk-slider{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--golge)}
+.etk-slider-yol{display:flex;transition:transform .5s cubic-bezier(.22,.61,.36,1);will-change:transform}
+.etk-slide{position:relative;min-width:100%;box-sizing:border-box;min-height:250px;display:flex;align-items:center;
+  padding:34px 40px;color:#fff;text-decoration:none;overflow:hidden;
+  background:linear-gradient(135deg,var(--turuncu),var(--turuncu-koyu))}
+.etk-slide:hover{text-decoration:none}
+.etk-slide-tiyatro{background:linear-gradient(135deg,#8a63d2,#c94a8c)}
+.etk-slide-muzikal{background:linear-gradient(135deg,#c94a8c,#8a63d2)}
+.etk-slide-konser{background:linear-gradient(135deg,#2f7de1,#1b4ea0)}
+.etk-slide-gosteri{background:linear-gradient(135deg,#ff7a59,#e6603f)}
+.etk-slide-festival{background:linear-gradient(135deg,#ffc94d,#ff7a59)}
+.etk-slide-sinema{background:linear-gradient(135deg,#3a3550,#2f7de1)}
+.etk-slide-atolye{background:linear-gradient(135deg,#3aa66d,#1fa2a6)}
+.etk-slide-bilim{background:linear-gradient(135deg,#2f7de1,#2fa6a6)}
+.etk-slide-ic{position:relative;z-index:2;max-width:70%}
+.etk-slide-tip{display:inline-block;background:rgba(255,255,255,.22);backdrop-filter:blur(4px);font-weight:800;
+  font-size:.8rem;padding:5px 12px;border-radius:999px;margin-bottom:12px}
+.etk-slide h3{color:#fff;font-size:clamp(1.4rem,3.2vw,2rem);margin:0 0 .35em;text-shadow:0 2px 12px rgba(0,0,0,.18)}
+.etk-slide-yer,.etk-slide-tarih{margin:0 0 .3em;font-weight:700;opacity:.95}
+.etk-slide-fiyat{display:inline-block;margin:.2em 0 0;font-weight:700;opacity:.95}
+.etk-slide-btn{margin-top:16px;background:#fff;color:var(--turuncu-koyu);border-color:#fff}
+.etk-slide-amblem{position:absolute;right:-10px;bottom:-30px;font-size:13rem;line-height:1;opacity:.16;
+  z-index:1;transform:rotate(-8deg);pointer-events:none}
+.etk-ok{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:50%;
+  border:0;background:rgba(255,255,255,.85);color:var(--metin);font-size:1.6rem;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.15);transition:.15s}
+.etk-ok:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.etk-ok-sol{left:14px}.etk-ok-sag{right:14px}
+.etk-noktalar{position:absolute;left:0;right:0;bottom:14px;z-index:3;display:flex;gap:8px;justify-content:center}
+.etk-noktalar button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer;transition:.2s}
+.etk-noktalar button[aria-current="true"]{background:#fff;width:26px;border-radius:999px}
+@media(max-width:640px){
+  .etk-slide{padding:24px 22px;min-height:230px}
+  .etk-slide-ic{max-width:88%}
+  .etk-slide-amblem{font-size:9rem;bottom:-16px;right:-6px}
+  .etk-ok{width:36px;height:36px;font-size:1.3rem}
+}
+@media(prefers-reduced-motion:reduce){.etk-slider-yol{transition:none}}

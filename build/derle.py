@@ -339,8 +339,10 @@ def main():
                       trim_blocks=True, lstrip_blocks=True)
     env.filters["json"] = lambda v: json.dumps(v, ensure_ascii=False)
     env.filters["slug"] = slugify
+    _buyuk = {"festival", "muzikal", "konser", "gosteri"}
+    one_etkinlik = [e for e in etkinlikler if e.get("type") in _buyuk][:6] or etkinlikler[:6]
     ortak = dict(site=site, kategoriler=kategoriler, ilceler=ilce_listesi, yas_gruplari=YAS_GRUPLARI,
-                 rehberler=rehberler, etkinlikler=etkinlikler, toplam=len(mekanlar),
+                 rehberler=rehberler, etkinlikler=etkinlikler, toplam=len(mekanlar), one_etkinlik=one_etkinlik,
                  FIYAT_ETIKET=FIYAT_ETIKET)
 
     if DIST.exists():
