@@ -2,3 +2,5 @@ dist/
 deploy/.ftp.env
 __pycache__/
 sosyal/
+build/.places.key
+*.key
