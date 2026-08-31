@@ -312,3 +312,15 @@ p{margin:0 0 1em}
 .google-puan b{color:var(--metin);font-size:1.02rem}
 .g-yildiz{color:#f6a609}
 .google-puan a{font-weight:700}
+
+/* Mobil filtre düzeltmesi: yapışkanlık ekranı kaplamasın, düzenli ızgara */
+@media(max-width:860px){
+  .filtre{position:static;box-shadow:0 2px 10px rgba(60,30,0,.06)}
+}
+@media(max-width:600px){
+  .filtre{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px}
+  .filtre select{width:100%}
+  .filtre input[type=search]{grid-column:1/-1;flex:none;width:100%}
+  .filtre output{grid-column:1/-1;margin:2px 0 0;text-align:center}
+  .filtre button[type=reset]{grid-column:1/-1;width:100%}
+}
