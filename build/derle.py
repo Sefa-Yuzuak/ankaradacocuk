@@ -140,9 +140,17 @@ def hazirla(mekanlar: list[dict]) -> list[dict]:
         m["kategori"] = KATEGORILER[m["category"]]
         m["ilce_slug"] = slugify(m.get("district") or "ankara")
         m["fiyat_etiket"] = FIYAT_ETIKET.get(m.get("price") or "", "")
-        m["features"] = m.get("features") or []
-        m["tips"] = m.get("tips") or []
-        m["sources"] = m.get("sources") or []
+        def _liste(v, boluml=False):
+            if isinstance(v, list):
+                return [x for x in v if x]
+            if not v:
+                return []
+            if boluml and isinstance(v, str):
+                return [p.strip() for p in re.split(r"(?<=[.!?])\s+", v) if p.strip()]
+            return [v]
+        m["features"] = _liste(m.get("features"))
+        m["tips"] = _liste(m.get("tips"), boluml=True)
+        m["sources"] = _liste(m.get("sources"))
         m["status"] = m.get("status") or "belirsiz"
         m["maps_url"] = ("https://www.google.com/maps/search/?api=1&query="
                          + (f"{m['lat']},{m['lng']}" if m.get("lat") and m.get("lng")
