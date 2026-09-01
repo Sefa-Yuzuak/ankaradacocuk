@@ -1,0 +1,39 @@
+name: Günlük tazeleme
+
+# "Bu hafta sonu" ve "Etkinlikler" sayfaları DERLEME anındaki tarihe göre üretilir.
+# Kod değişmezse Coolify'ın Docker önbelleği build adımını yeniden çalıştırmaz ve tarih donar.
+# Bu iş her gün küçük bir zaman damgasını commit'ler: hem Docker `COPY data/` katmanını
+# bozup derle.py'yi taze tarihle yeniden çalıştırır, hem de Coolify'ın push'ta otomatik
+# deploy'unu tetikler. Elle de çalıştırılabilir (Actions → Run workflow).
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # her gün 03:00 UTC = 06:00 TR
+  workflow_dispatch:
+
+permissions:
+  contents: write          # master'a push için
+
+jobs:
+  tazele:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zaman damgasını güncelle
+        run: |
+          BUGUN=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo "$BUGUN" > data/derleme_zamani.txt
+          echo "Yeni damga: $BUGUN"
+
+      - name: Commit & push (Coolify otomatik deploy'u tetikler)
+        run: |
+          git config user.name  "ankaradacocuk-bot"
+          git config user.email "bot@ankaradacocuk.com"
+          if git diff --quiet; then
+            echo "Değişiklik yok — atlanıyor."
+            exit 0
+          fi
+          git add data/derleme_zamani.txt
+          git commit -m "chore: günlük tazeleme $(date -u +'%Y-%m-%d')"
+          git push
