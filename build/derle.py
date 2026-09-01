@@ -415,6 +415,9 @@ def main():
     if DIST.exists():
         shutil.rmtree(DIST)
     shutil.copytree(STATIC, DIST / "static")
+    # kök favicon: tarayıcılar ve Google varsayılan olarak /favicon.ico ister
+    shutil.copy(STATIC / "favicon.ico", DIST / "favicon.ico")
+    shutil.copy(STATIC / "favicon.svg", DIST / "favicon.svg")
 
     urls = []
 
