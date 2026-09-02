@@ -1,45 +1,36 @@
 name: Günlük tazeleme
 
 # "Bu hafta sonu" ve "Etkinlikler" sayfaları DERLEME anındaki tarihe göre üretilir.
-# Coolify'ı doğrudan deploy API'siyle force=true tetikler: önbelleği atlar (derle.py
-# taze tarihle yeniden çalışır) ve push'a bağımlı otomatik-deploy'a gerek kalmaz.
+# Coolify'a bağlı GitHub webhook'u (repo Settings → Webhooks) her push'ta deploy tetikler.
+# Bu iş her gün küçük bir zaman damgasını commit'ler:
+#   - push → Coolify webhook → otomatik deploy
+#   - data/ değiştiği için Docker `COPY data/` katmanı bozulur → derle.py taze tarihle çalışır
 # Elle de çalıştırılabilir (Actions → Run workflow).
-#
-# Gerekli repo secret'ları (Settings → Secrets and variables → Actions):
-#   COOLIFY_DEPLOY_URL = Coolify uygulaması "Webhooks" sekmesindeki Deploy webhook URL'si
-#                        (instance + uuid içerir; ör. https://.../api/v1/deploy?uuid=xxxx)
-#   COOLIFY_TOKEN      = Coolify API token (Keys & Tokens). Bearer olarak gönderilir.
 
 on:
   schedule:
     - cron: "0 3 * * *"   # her gün 03:00 UTC = 06:00 TR
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  deploy:
+  tazele:
     runs-on: ubuntu-latest
     steps:
-      - name: Coolify'ı force=true ile yeniden derlet
-        env:
-          DEPLOY_URL: ${{ secrets.COOLIFY_DEPLOY_URL }}
-          TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+      - uses: actions/checkout@v4
+
+      - name: Zaman damgasını güncelle
         run: |
-          if [ -z "$DEPLOY_URL" ] || [ -z "$TOKEN" ]; then
-            echo "::error::COOLIFY_DEPLOY_URL ve/veya COOLIFY_TOKEN secret'ı tanımlı değil."
-            echo "Settings → Secrets and variables → Actions altından ekleyin."
-            exit 1
-          fi
-          # force=true'yu URL'ye ekle (zaten varsa dokunma)
-          case "$DEPLOY_URL" in
-            *force=*) URL="$DEPLOY_URL" ;;
-            *\?*)     URL="$DEPLOY_URL&force=true" ;;
-            *)        URL="$DEPLOY_URL?force=true" ;;
-          esac
-          echo "Deploy tetikleniyor (force=true)..."
-          code=$(curl -sS -o /tmp/yanit.txt -w "%{http_code}" -X POST "$URL" \
-                 -H "Authorization: Bearer $TOKEN")
-          echo "HTTP $code"; cat /tmp/yanit.txt || true; echo ""
-          case "$code" in
-            2*) echo "Deploy tetiklendi ✓" ;;
-            *)  echo "::error::Deploy tetiklenemedi (HTTP $code)"; exit 1 ;;
-          esac
+          BUGUN=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo "$BUGUN" > data/derleme_zamani.txt
+          echo "Yeni damga: $BUGUN"
+
+      - name: Commit & push (Coolify webhook'unu tetikler)
+        run: |
+          git config user.name  "ankaradacocuk-bot"
+          git config user.email "bot@ankaradacocuk.com"
+          git add data/derleme_zamani.txt
+          git commit -m "chore: günlük tazeleme $(date -u +'%Y-%m-%d')" || { echo "değişiklik yok"; exit 0; }
+          git push
