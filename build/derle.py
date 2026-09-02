@@ -12,7 +12,7 @@ import re
 import shutil
 import statistics
 import unicodedata
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime, timezone
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -358,6 +358,7 @@ def main():
     site = yukle("site.json")
     bugun = date.today()
     site["guncelleme"] = date.today().isoformat()
+    site["derleme_zamani"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     site["guncelleme_tr"] = date.today().strftime("%d.%m.%Y")
     mekanlar = hazirla(yukle("mekanlar.json"))
     try:
