@@ -336,3 +336,5 @@ p{margin:0 0 1em}
 
 .cip-one{background:var(--turuncu);border-color:var(--turuncu);color:#fff;font-weight:800}
 .cip-one:hover{background:var(--turuncu-koyu);border-color:var(--turuncu-koyu);color:#fff}
+
+.ri-link{background:#fff6f2;border:1.5px solid var(--cizgi);border-left:3px solid var(--turuncu);border-radius:var(--r-k);padding:10px 14px;margin:6px 0 0;font-weight:600}

@@ -38,6 +38,7 @@
       <h2>{{ b.baslik }}</h2>
       {% for pr in b.p %}<p>{{ pr }}</p>{% endfor %}
       {% if b.maddeler %}<ul class="ri-liste">{% for md in b.maddeler %}<li>{{ md }}</li>{% endfor %}</ul>{% endif %}
+      {% if b.link %}<p class="ri-link">👉 <a href="{{ b.link.url }}" rel="noopener">{{ b.link.metin }}</a>{% if b.link.not %} — {{ b.link.not }}{% endif %}</p>{% endif %}
       {% if b.tablo %}
       <div class="tablo-kaydir">
         <table class="karsilastirma">
