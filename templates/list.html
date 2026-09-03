@@ -7,6 +7,14 @@
   <h1>{{ ikon }} {{ baslik }}</h1>
   <p class="alt-metin">{{ alt }} <strong>{{ mekanlar|length }} mekân</strong>, puan sırasına göre.</p>
 </section>
+{% if sss and mekanlar %}
+<section class="kap">
+  <div class="kisa-cevap kutu">
+    <strong>Kısa cevap:</strong> {{ baslik }} arasında en yüksek Ankarada Çocuk Puanına sahip ilk beş:
+    <ol class="ilk-uc">{% for m in mekanlar[:5] %}<li><a href="{{ m.url }}">{{ m.name }}</a> <span>({{ m.district }}, {{ m.puan }}/10)</span></li>{% endfor %}</ol>
+  </div>
+</section>
+{% endif %}
 <section class="kap">
   <form class="filtre" id="filtre" aria-label="Filtreler">
     <select name="yas"><option value="">Yaş: hepsi</option><option value="b">0-3</option><option value="o">3-6</option><option value="i">6-11</option><option value="e">11-16</option></select>
@@ -23,4 +31,10 @@
   </div>
   <p class="bos" id="bos" hidden>Bu filtrelerle mekân bulunamadı. Filtreleri gevşetmeyi deneyin.</p>
 </section>
+{% if sss %}
+<section class="kap bolum sss">
+  <h2>Sık sorulanlar</h2>
+  {% for s in sss %}<details{% if loop.first %} open{% endif %}><summary>{{ s.soru }}</summary><p>{{ s.cevap }}</p></details>{% endfor %}
+</section>
+{% endif %}
 {% endblock %}

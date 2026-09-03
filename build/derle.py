@@ -308,6 +308,32 @@ def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
     return sonuc
 
 
+def liste_sss(konu, mekanlar):
+    """Kategori/ilce/yas liste sayfasi icin veri-turevli SSS (FAQPage + GEO)."""
+    top = mekanlar[:3]
+    sss = []
+    if top:
+        sss.append({"soru": f"{konu} arasında en yüksek puanlı hangisi?",
+                    "cevap": "En yüksek Ankarada Çocuk Puanına sahip olanlar: "
+                             + ", ".join(f"{m['name']} ({m['puan']}/10, {m.get('district') or 'Ankara'})" for m in top) + "."})
+    ucretsiz = [m for m in mekanlar if m.get("price") == "ücretsiz"]
+    if ucretsiz:
+        sss.append({"soru": f"{konu} arasında ücretsiz olan var mı?",
+                    "cevap": f"Evet, {len(ucretsiz)} ücretsiz seçenek var: "
+                             + ", ".join(m["name"] for m in ucretsiz[:4])
+                             + (" ve daha fazlası." if len(ucretsiz) > 4 else ".")})
+    kapali = [m for m in mekanlar if m.get("indoor")]
+    if kapali:
+        sss.append({"soru": f"{konu} arasında yağmurlu güne uygun kapalı mekân var mı?",
+                    "cevap": f"{len(kapali)} kapalı alan seçeneği yağmurlu ve soğuk günlerde de uygundur: "
+                             + ", ".join(m["name"] for m in kapali[:3]) + "."})
+    bebek = sorted([m for m in mekanlar if (m.get("score_bebek") or 0) >= 4], key=lambda m: -(m.get("score_bebek") or 0))
+    if bebek:
+        sss.append({"soru": f"{konu} arasında 0-3 yaş bebeğe en uygunu hangisi?",
+                    "cevap": "Bebekle en rahat gezilenler: " + ", ".join(m["name"] for m in bebek[:3]) + "."})
+    return sss[:4]
+
+
 def schema_etkinlik(e: dict, site: dict) -> dict:
     d = {"@context": "https://schema.org", "@type": "Event", "name": e["name"],
          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -496,18 +522,20 @@ def main():
     # Kategori
     for k in kategoriler:
         url = f"/kategori/{k['slug']}/"
+        _sss = liste_sss(f"Ankara'da çocukla gidilecek {k['ad'].lower()}", k["mekanlar"])
         sayfa(url, "list.html", baslik=f"Ankara'da Çocuklarla {k['ad']}", alt=k["aciklama"], ikon=k["ikon"],
-              mekanlar=k["mekanlar"], canonical=url, meta_desc=f"Ankara'da çocuklu aileler için {k['ad'].lower()}: "
+              mekanlar=k["mekanlar"], canonical=url, sss=_sss, meta_desc=f"Ankara'da çocuklu aileler için {k['ad'].lower()}: "
               f"{len(k['mekanlar'])} mekân, yaşa göre puan, ücret, ulaşım ve aile ipuçları.",
-              schema=[liste_schema(site, k["ad"], url, k["mekanlar"]), kirintilar(site, (k["ad"], url))])
+              schema=[liste_schema(site, k["ad"], url, k["mekanlar"]), sss_schema(_sss), kirintilar(site, (k["ad"], url))])
 
     # İlçe
     for i in ilce_listesi:
         url = f"/ilce/{i['slug']}/"
+        _sss = liste_sss(f"{i['ad']} çocuk mekânları", i["mekanlar"])
         sayfa(url, "list.html", baslik=f"{i['ad']}'de Çocuklarla Gidilecek Yerler", alt=f"{i['ad']} ilçesinde çocuklu aileler için seçilmiş mekânlar.",
-              ikon="📍", mekanlar=i["mekanlar"], canonical=url,
+              ikon="📍", mekanlar=i["mekanlar"], canonical=url, sss=_sss,
               meta_desc=f"Ankara {i['ad']} çocukla gidilecek yerler: parklar, kafeler, müzeler ve oyun alanları — yaşa göre puanlanmış {len(i['mekanlar'])} öneri.",
-              schema=[liste_schema(site, i["ad"], url, i["mekanlar"]), kirintilar(site, (i["ad"], url))])
+              schema=[liste_schema(site, i["ad"], url, i["mekanlar"]), sss_schema(_sss), kirintilar(site, (i["ad"], url))])
 
     # İlçe × kategori (yalnız ≥4 mekân olanlar)
     for i in ilce_listesi:
@@ -527,10 +555,11 @@ def main():
         url = f"/yas/{y['slug']}/"
         uyeler = sorted([m for m in mekanlar if (m.get(y["alan"]) or 0) >= 4 and m["status"] != "kapalı"],
                         key=lambda m: (-(m.get(y["alan"]) or 0), -m["puan"]))
+        _sss = liste_sss(f"Ankara'da {y['ad']} çocuklar için mekânlar", uyeler)
         sayfa(url, "list.html", baslik=f"Ankara'da {y['ad']} Çocuklar İçin En İyi Mekânlar", alt=y["aciklama"], ikon=y["ikon"],
-              mekanlar=uyeler, canonical=url, yas_alan=y["alan"],
+              mekanlar=uyeler, canonical=url, yas_alan=y["alan"], sss=_sss,
               meta_desc=f"Ankara'da {y['ad']} çocuklarla gidilecek en iyi {len(uyeler)} mekân: park, kafe, müze ve oyun alanı önerileri, puan ve ipuçlarıyla.",
-              schema=[liste_schema(site, y["ad"], url, uyeler), kirintilar(site, (y["ad"], url))])
+              schema=[liste_schema(site, y["ad"], url, uyeler), sss_schema(_sss), kirintilar(site, (y["ad"], url))])
 
     # Rehberler
     for r in rehberler:
