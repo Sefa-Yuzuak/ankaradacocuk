@@ -156,28 +156,35 @@ def mekan_gonderi(m):
 
 def metin(m):
     yas = en_iyi_yas(m)
-    ac = (m.get("description") or "").strip().split(". ")[0][:150].rstrip(".") + "."
-    ortam = "\U0001F3E0 Kapali alan" if m.get("indoor") else "\u2600\uFE0F Acik hava"
-    fiyat = {"ucretsiz": "Ucretsiz", "uygun": "Uygun", "orta": "Orta butce",
-             "yuksek": "Yuksek"}.get(m.get("price") or "", "")
+    ac = (m.get("description") or "").strip().split(". ")[0].strip()
+    if len(ac) > 160:
+        ac = ac[:160].rsplit(" ", 1)[0] + "…"
+    elif ac and not ac.endswith((".", "!", "?", "…")):
+        ac += "."
+    ortam = "🏠 Kapalı alan" if m.get("indoor") else "☀️ Açık hava"
+    fiyat = {"ücretsiz": "Ücretsiz", "uygun": "Uygun", "orta": "Orta bütçe",
+             "yüksek": "Yüksek bütçe"}.get(m.get("price") or "", "")
     tags = ["#ankara", "#ankaradacocuk", "#ankaraetkinlik", "#cocuklagezi", "#ankaragezilecekyerler",
             "#ailece", "#cocukaktiviteleri", "#ankarabebek", "#haftasonu", "#ankaraanne"]
     kattag = {"park": "#park", "muze": "#muze", "yemek": "#cocukdostukafe", "oyun": "#oyunalani",
-              "bilim": "#bilimmerkezi", "hayvanat": "#hayvanatbahcesi", "spor": "#buzpateni",
-              "atolye": "#atolye", "gezi": "#gunubirlik", "sanat": "#cocuktiyatrosu",
+              "bilim": "#bilimmerkezi", "hayvanat": "#hayvanatbahcesi", "spor": "#spor",
+              "atolye": "#atolye", "gezi": "#gunubirlik", "sanat": "#sanat",
               "kutuphane": "#kutuphane", "avm": "#avm"}.get(m["category"])
     if kattag:
         tags.insert(3, kattag)
-    satir = [f"\U0001F4CD {m['name']} - {m.get('district') or 'Ankara'}", "", ac, "",
-             f"\u2B50 Ankarada Cocuk Puani: {m['puan']}/10",
-             f"\U0001F476 En uygun yas: {yas}",
-             ortam + (f" | \U0001F4B8 {fiyat}" if fiyat else ""), "",
-             "Detayli puan, ucret, ulasim ve aile ipuclari \U0001F449 ankaradacocuk.com", ""]
-    if m.get("foto"):
-        satir += [f"\U0001F4F7 {m['foto'].get('yazar', '')} / {m['foto'].get('lisans', '')}, Wikimedia Commons", ""]
+    satir = [f"📍 {m['name']} — {m.get('district') or 'Ankara'}", "", ac, "",
+             f"⭐ Ankarada Çocuk Puanı: {m['puan']}/10",
+             f"👶 En uygun yaş: {yas}",
+             ortam + (f" · 💸 {fiyat}" if fiyat else ""), "",
+             "Detaylı puan, ücret, ulaşım ve aile ipuçları 👉 ankaradacocuk.com", ""]
+    f = m.get("foto") or {}
+    if f:
+        if f.get("wiki") or f.get("kaynak") == "wiki":
+            satir += [f"📷 {f.get('yazar', '')} · {f.get('lisans', '')} · Wikimedia Commons", ""]
+        else:
+            satir += [f"📷 Fotoğraf: Google · {f.get('yazar', '')}", ""]
     satir += [" ".join(tags)]
     return "\n".join(satir)
-
 
 def avatar():
     W = 1080
@@ -212,10 +219,23 @@ def main():
     GON.mkdir(parents=True, exist_ok=True)
     PRO.mkdir(parents=True, exist_ok=True)
     # derlenmis hafif veri: puan + foto zaten iceride
+    import math
+    for _eski in GON.glob("*.jpg"):
+        _eski.unlink()  # eski gonderileri temizle
     mekanlar = json.loads((KOK / "dist" / "static" / "mekanlar.json").read_text("utf-8"))
-    aday = [m for m in mekanlar if m.get("foto") and m.get("status") != "kapali"]
-    aday.sort(key=lambda m: -m["puan"])
-    sec = aday[:12]
+    aday = [m for m in mekanlar if m.get("foto") and m.get("status") != "kapali" and m.get("puan")]
+    def _skor(m):
+        c = (m.get("google") or {}).get("count") or 0
+        return (m["puan"] or 0) + 1.6 * math.log10(c + 1)  # kalite + populerlik
+    aday.sort(key=_skor, reverse=True)
+    sec, _kat = [], {}
+    for m in aday:
+        k = m["category"]
+        if _kat.get(k, 0) >= 2:  # kategori cesitliligi: en fazla 2
+            continue
+        sec.append(m); _kat[k] = _kat.get(k, 0) + 1
+        if len(sec) >= 12:
+            break
     metinler = ["# Instagram / Facebook - hazir gonderiler", "",
                 "Her gorsel `sosyal/gonderiler/` icinde; metni kopyala-yapistir.", ""]
     for i, m in enumerate(sec, 1):
