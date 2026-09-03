@@ -7341,7 +7341,9 @@
    "El sanatları atölyeleri",
    "Geniş otopark"
   ],
-  "tips": "İlkbahar ve sonbaharda doğa en güzel halinde; toplu taşıma (otobüs/dolmuş) veya özel araçla kolay ulaşılıyor.",
+  "tips": [
+   "İlkbahar ve sonbaharda doğa en güzel halinde; toplu taşıma (otobüs/dolmuş) veya özel araçla kolay ulaşılıyor."
+  ],
   "transport": "Ankara'nın birçok noktasından kalkan otobüs ve dolmuşlarla ulaşılabiliyor; özel araçla geniş otopark mevcut.",
   "status": "açık",
   "score_bebek": 3,
@@ -7382,7 +7384,10 @@
    "Su kaplumbağaları ve Nil timsahları",
    "Kafe alanı"
   ],
-  "tips": "Kapalı mekan olduğu için her mevsim uygun. Tünel bölümü çocukların ilgisini çekiyor.",
+  "tips": [
+   "Kapalı mekan olduğu için her mevsim uygun.",
+   "Tünel bölümü çocukların ilgisini çekiyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -7423,7 +7428,10 @@
    "Bisiklet ve yürüyüş yolları",
    "Millet kıraathanesi ve kafe"
   ],
-  "tips": "Hafta sonu yoğun oluyor; göl kenarı ve kamelyalarda mangal yakılabiliyor. Göletler nedeniyle küçük çocuklarda gözetim gerekir.",
+  "tips": [
+   "Hafta sonu yoğun oluyor; göl kenarı ve kamelyalarda mangal yakılabiliyor.",
+   "Göletler nedeniyle küçük çocuklarda gözetim gerekir."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 4,
@@ -7466,7 +7474,9 @@
    "Eğitici atölyeler",
    "Doğum günü organizasyonu"
   ],
-  "tips": "AVM içinde olduğu için hava şartından bağımsız her mevsim seçenek.",
+  "tips": [
+   "AVM içinde olduğu için hava şartından bağımsız her mevsim seçenek."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -7510,7 +7520,10 @@
    "Paintball, okçuluk, havalı tüfek",
    "Çadır kampı ve kahvaltı/mangal"
   ],
-  "tips": "Yaz ayları ve hafta sonları yoğun. Küçükler için çocuk parkurları uygun; yüksek parkurlarda yaş/boy sınırı olabilir.",
+  "tips": [
+   "Yaz ayları ve hafta sonları yoğun.",
+   "Küçükler için çocuk parkurları uygun; yüksek parkurlarda yaş/boy sınırı olabilir."
+  ],
   "transport": "Şehir merkezine uzak; özel araç önerilir.",
   "status": "açık",
   "score_bebek": 1,
@@ -7551,7 +7564,10 @@
    "Softplay",
    "0-6 yaş bölümü"
   ],
-  "tips": "Süreli giriş ücretlendirmesi var. Kullanıcı yorumlarında temizlik olumlu; bazı oyuncakların eski olduğu belirtiliyor.",
+  "tips": [
+   "Süreli giriş ücretlendirmesi var.",
+   "Kullanıcı yorumlarında temizlik olumlu; bazı oyuncakların eski olduğu belirtiliyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -7594,7 +7610,9 @@
    "Simülatör",
    "Softplay ve kafe"
   ],
-  "tips": "Doğum günü ve okul grupları için uygun; küçüklerden büyüklere her yaşa aktivite var.",
+  "tips": [
+   "Doğum günü ve okul grupları için uygun; küçüklerden büyüklere her yaşa aktivite var."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -7636,7 +7654,9 @@
    "Çocuk oyun alanı",
    "ABB Çocuk Etkinlik Merkezi"
   ],
-  "tips": "Belediye işletmesi olduğundan program ve kayıt için belediyeye danışmak gerekir.",
+  "tips": [
+   "Belediye işletmesi olduğundan program ve kayıt için belediyeye danışmak gerekir."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -7677,7 +7697,9 @@
    "Geri dönüşüm atölyeleri",
    "Mantık oyunları, dans, jimnastik"
   ],
-  "tips": "Anne-çocuk katılımlı etkinlikler; program için belediyeye danışılmalı.",
+  "tips": [
+   "Anne-çocuk katılımlı etkinlikler; program için belediyeye danışılmalı."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 5,
@@ -7719,7 +7741,9 @@
    "3-7. sınıf öğrencilerine yönelik",
    "Sanat ve kültür programları"
   ],
-  "tips": "Etkinlik başvuruları telefonla ve randevu ile yapılıyor.",
+  "tips": [
+   "Etkinlik başvuruları telefonla ve randevu ile yapılıyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -7760,7 +7784,9 @@
    "Eski traktör ve araçlar",
    "Doğal yaşam ortamı"
   ],
-  "tips": "Köye giriş ücretsiz; hayvan besleme ve Ters Ev gibi aktiviteler ayrı ücretli.",
+  "tips": [
+   "Köye giriş ücretsiz; hayvan besleme ve Ters Ev gibi aktiviteler ayrı ücretli."
+  ],
   "transport": "Dumlupınar Bulvarı üzerinden ulaşım; özel araç uygun.",
   "status": "açık",
   "score_bebek": 3,
@@ -7800,7 +7826,9 @@
    "Doğum günü ve parti organizasyonu",
    "Oyun grupları"
   ],
-  "tips": "Mahalle ölçeğinde bir oyun/parti evi; güncel hizmet ve fiyat için mekandan bilgi alınmalı.",
+  "tips": [
+   "Mahalle ölçeğinde bir oyun/parti evi; güncel hizmet ve fiyat için mekandan bilgi alınmalı."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -7843,7 +7871,10 @@
    "Büfe/restoran",
    "Baraj gölü manzarası"
   ],
-  "tips": "Hafta sonu yoğun. Gölde su sporları var; çocuklarda su kenarında gözetim gerekir.",
+  "tips": [
+   "Hafta sonu yoğun.",
+   "Gölde su sporları var; çocuklarda su kenarında gözetim gerekir."
+  ],
   "transport": "Özel araç önerilir.",
   "status": "açık",
   "score_bebek": 3,
@@ -7885,7 +7916,9 @@
    "Futbol sahaları",
    "Piknik alanları ve kafe"
   ],
-  "tips": "Merkezi ve düz zeminli olduğu için bebek arabasıyla gezmeye uygun.",
+  "tips": [
+   "Merkezi ve düz zeminli olduğu için bebek arabasıyla gezmeye uygun."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 4,
@@ -7926,7 +7959,9 @@
    "Kafe alanı",
    "Doğum günü ve tema organizasyonu"
   ],
-  "tips": "Butik ölçekli; ebeveynler kafede otururken çocuklar güvenli oyun alanında oynayabiliyor.",
+  "tips": [
+   "Butik ölçekli; ebeveynler kafede otururken çocuklar güvenli oyun alanında oynayabiliyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -7968,7 +8003,9 @@
    "2-5 ve 6-12 yaş ayrı softplay alanları",
    "Kafe"
   ],
-  "tips": "AVM içi; ebeveynler alışveriş veya kafe yaparken çocuklar softplay'de oynayabiliyor.",
+  "tips": [
+   "AVM içi; ebeveynler alışveriş veya kafe yaparken çocuklar softplay'de oynayabiliyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -8010,7 +8047,10 @@
    "Çocuk tiyatrosu",
    "Açık hava sineması"
   ],
-  "tips": "Atölyelerde yaş grubuna göre kontenjan sınırlı; önceden bilet/kayıt gerekebilir. Konser salonlarına yiyecek/içecek girişi yasak.",
+  "tips": [
+   "Atölyelerde yaş grubuna göre kontenjan sınırlı; önceden bilet/kayıt gerekebilir.",
+   "Konser salonlarına yiyecek/içecek girişi yasak."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8050,7 +8090,9 @@
    "Kafe hizmeti",
    "Bahçelievler ve Söğütözü şubeleri"
   ],
-  "tips": "Küçük çocuklardan çok ilkokul üstü ve ergenler için uygun; oyun seçiminde ekip yardımcı oluyor.",
+  "tips": [
+   "Küçük çocuklardan çok ilkokul üstü ve ergenler için uygun; oyun seçiminde ekip yardımcı oluyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8090,7 +8132,9 @@
    "Haftalık değişen aktiviteler",
    "Anne-çocuk katılımı"
   ],
-  "tips": "Program ve kayıt için Sincan Belediyesi'ne danışılmalı.",
+  "tips": [
+   "Program ve kayıt için Sincan Belediyesi'ne danışılmalı."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -8131,7 +8175,10 @@
    "Yürüyüş yolları",
    "Olta balıkçılığı"
   ],
-  "tips": "Çocuğa özel oyun donanımı sınırlı olabilir; doğa yürüyüşü ve piknik için uygun. Su kenarında gözetim gerekir.",
+  "tips": [
+   "Çocuğa özel oyun donanımı sınırlı olabilir; doğa yürüyüşü ve piknik için uygun.",
+   "Su kenarında gözetim gerekir."
+  ],
   "transport": "Özel araç önerilir.",
   "status": "açık",
   "score_bebek": 2,
@@ -8173,7 +8220,9 @@
    "Kütüphane, mutfak ve bahçe",
    "Doğum günü organizasyonu"
   ],
-  "tips": "Çayyolu/Ümitköy bölgesinde; program ve kayıt için atölye ile iletişime geçilmeli.",
+  "tips": [
+   "Çayyolu/Ümitköy bölgesinde; program ve kayıt için atölye ile iletişime geçilmeli."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8214,7 +8263,9 @@
    "Profesyonel ekip gözetimi",
    "Akran sosyalleşmesi"
   ],
-  "tips": "Küçük yaş grubuna odaklı; program için mekanla iletişime geçilmeli.",
+  "tips": [
+   "Küçük yaş grubuna odaklı; program için mekanla iletişime geçilmeli."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -8256,7 +8307,9 @@
    "ücretsiz",
    "21 merkez"
   ],
-  "tips": "Başvurular yıl içinde belirli tarihlerde açılıyor; kontenjan sınırlı, resmi siteden dönem takibi yapın.",
+  "tips": [
+   "Başvurular yıl içinde belirli tarihlerde açılıyor; kontenjan sınırlı, resmi siteden dönem takibi yapın."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8297,7 +8350,9 @@
    "park içi",
    "oyun ve etkinlik"
   ],
-  "tips": "Randevuyu oyunparki.ankara.bel.tr üzerinden alın; kontenjan haftalık ve sınırlı.",
+  "tips": [
+   "Randevuyu oyunparki.ankara.bel.tr üzerinden alın; kontenjan haftalık ve sınırlı."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8338,7 +8393,9 @@
    "23 oyun odası",
    "ön başvuru"
   ],
-  "tips": "Ön başvuru oyunodalari.ankara.bel.tr üzerinden yapılıyor; size en yakın odayı siteden kontrol edin.",
+  "tips": [
+   "Ön başvuru oyunodalari.ankara.bel.tr üzerinden yapılıyor; size en yakın odayı siteden kontrol edin."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8378,7 +8435,9 @@
    "atölye çalışmaları",
    "5 merkez"
   ],
-  "tips": "Ödünç alma ve atölye programı için ilgili çocuk kulübü/merkezine önceden danışın.",
+  "tips": [
+   "Ödünç alma ve atölye programı için ilgili çocuk kulübü/merkezine önceden danışın."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8420,7 +8479,9 @@
    "jimnastik",
    "danışmanlık"
   ],
-  "tips": "Kayıt için önceden başvuru gerekiyor; geniş yaş aralığı sayesinde kardeşler birlikte katılabilir.",
+  "tips": [
+   "Kayıt için önceden başvuru gerekiyor; geniş yaş aralığı sayesinde kardeşler birlikte katılabilir."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8461,7 +8522,9 @@
    "psikolojik danışmanlık",
    "aile eğitimi"
   ],
-  "tips": "Bireysel başvuruda üyelik formu, veli muvafakati, 2 fotoğraf ve kimlik fotokopisi isteniyor.",
+  "tips": [
+   "Bireysel başvuruda üyelik formu, veli muvafakati, 2 fotoğraf ve kimlik fotokopisi isteniyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8500,7 +8563,9 @@
    "park içi",
    "yarım gün seans"
   ],
-  "tips": "Çocukların tok gelmesi ve temiz kapalı ayakkabı (terlik) getirmesi isteniyor; dışarıdan oyuncak/yiyecek kabul edilmiyor.",
+  "tips": [
+   "Çocukların tok gelmesi ve temiz kapalı ayakkabı (terlik) getirmesi isteniyor; dışarıdan oyuncak/yiyecek kabul edilmiyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8542,7 +8607,9 @@
    "teknoloji",
    "randevulu"
   ],
-  "tips": "Randevu randevu.mamak.bel.tr üzerinden; günde en fazla 2 atölyeye katılınabiliyor.",
+  "tips": [
+   "Randevu randevu.mamak.bel.tr üzerinden; günde en fazla 2 atölyeye katılınabiliyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8584,7 +8651,10 @@
    "ebeveyn seminerleri",
    "bebek bakım alanı"
   ],
-  "tips": "Randevulu çalışıyor; wifi yok. Aileler çocuklarıyla birlikte etkinliklere katılıyor.",
+  "tips": [
+   "Randevulu çalışıyor; wifi yok.",
+   "Aileler çocuklarıyla birlikte etkinliklere katılıyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 5,
@@ -8624,7 +8694,9 @@
    "7 lokasyon",
    "haftalık farklı etkinlik"
   ],
-  "tips": "Anne eşliğinde katılım esas; size en yakın mahalle şubesini belediyeden teyit edin.",
+  "tips": [
+   "Anne eşliğinde katılım esas; size en yakın mahalle şubesini belediyeden teyit edin."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 2,
@@ -8666,7 +8738,10 @@
    "drama",
    "millet bahçesi içinde"
   ],
-  "tips": "Kontenjan sınırlı; randevu için belediyeyi arayın. Başkent Millet Bahçesi gezisiyle birleştirilebilir.",
+  "tips": [
+   "Kontenjan sınırlı; randevu için belediyeyi arayın.",
+   "Başkent Millet Bahçesi gezisiyle birleştirilebilir."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8709,7 +8784,9 @@
    "randevulu",
    "iki şube"
   ],
-  "tips": "Randevu basvuru.cankaya.bel.tr/bebekkutuphanesi veya telefonla alınıyor; seansta en fazla iki ebeveyn kabul ediliyor.",
+  "tips": [
+   "Randevu basvuru.cankaya.bel.tr/bebekkutuphanesi veya telefonla alınıyor; seansta en fazla iki ebeveyn kabul ediliyor."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 5,
@@ -8750,7 +8827,9 @@
    "park içinde",
    "seanslı kullanım"
   ],
-  "tips": "Park içinde olduğu için oyun sonrası açık alan gezisiyle birleştirilebilir; seans saatlerini önceden öğrenin.",
+  "tips": [
+   "Park içinde olduğu için oyun sonrası açık alan gezisiyle birleştirilebilir; seans saatlerini önceden öğrenin."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 3,
@@ -8793,7 +8872,9 @@
    "elektronik oyunlar",
    "parti salonu"
   ],
-  "tips": "Doğum günü ve grup partileri için parti odaları var; hafta sonu yoğun olabilir, bowling için rezervasyon önerilir.",
+  "tips": [
+   "Doğum günü ve grup partileri için parti odaları var; hafta sonu yoğun olabilir, bowling için rezervasyon önerilir."
+  ],
   "transport": "Anadolu Bulvarı üzerinde; toplu taşıma ile ulaşılabilir, otoparkı vardır.",
   "status": "açık",
   "score_bebek": 1,
@@ -8838,7 +8919,9 @@
    "sanat",
    "yabancı dil"
   ],
-  "tips": "Atölyeler çoğunlukla kayıtlı/dönemsel program şeklinde; katılım için önceden iletişim önerilir.",
+  "tips": [
+   "Atölyeler çoğunlukla kayıtlı/dönemsel program şeklinde; katılım için önceden iletişim önerilir."
+  ],
   "transport": "Batıkent bölgesi; metro (Batıkent) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -8882,7 +8965,9 @@
    "Micro:bit",
    "online ders"
   ],
-  "tips": "Bağlıca/Etimesgut çevresinde hizmet veriyor; kesin adres için önceden iletişim önerilir.",
+  "tips": [
+   "Bağlıca/Etimesgut çevresinde hizmet veriyor; kesin adres için önceden iletişim önerilir."
+  ],
   "transport": null,
   "status": "açık",
   "score_bebek": 1,
@@ -8923,7 +9008,10 @@
    "ücretsiz ekipman (paten, kask, dizlik, kolluk)",
    "randevu sistemi"
   ],
-  "tips": "Randevu 09:30-10:30 arasında alınıyor; randevusuz günde tek seans hakkı var. Kalın çorap ve eldiven getirin.",
+  "tips": [
+   "Randevu 09:30-10:30 arasında alınıyor; randevusuz günde tek seans hakkı var.",
+   "Kalın çorap ve eldiven getirin."
+  ],
   "transport": "Keçiören Ovacık; belediye otobüs hatları ile ulaşılabilir.",
   "status": "açık",
   "score_bebek": 1,
@@ -8966,7 +9054,10 @@
    "oyun görevlileri",
    "kafe"
   ],
-  "tips": "Oyun alanına girişte çorap zorunlu; unutursanız yerinde satın alınabilir. Detaylı bilgi için Instagram @joymaxankara.",
+  "tips": [
+   "Oyun alanına girişte çorap zorunlu; unutursanız yerinde satın alınabilir.",
+   "Detaylı bilgi için Instagram @joymaxankara."
+  ],
   "transport": "Çayyolu bölgesi; toplu taşıma ile ulaşılabilir.",
   "status": "açık",
   "score_bebek": 2,
@@ -9009,7 +9100,9 @@
    "mum atölyesi",
    "AVM içi"
   ],
-  "tips": "Etkinlik biletleri online alınabiliyor; çocuk atölyesi seansları için önceden kayıt önerilir.",
+  "tips": [
+   "Etkinlik biletleri online alınabiliyor; çocuk atölyesi seansları için önceden kayıt önerilir."
+  ],
   "transport": "Galleria AVM (Ümitköy) içinde; toplu taşıma ile ulaşılabilir, AVM otoparkı var.",
   "status": "açık",
   "score_bebek": 1,
@@ -9051,7 +9144,9 @@
    "3D karakter boyama",
    "maske boyama"
   ],
-  "tips": "Çocuk seansları için yaş uygunluğunu ve kontenjanı önceden telefonla teyit edin.",
+  "tips": [
+   "Çocuk seansları için yaş uygunluğunu ve kontenjanı önceden telefonla teyit edin."
+  ],
   "transport": "Bahçelievler; metro (Bahçelievler) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -9091,7 +9186,9 @@
    "kebap",
    "aile restoranı"
   ],
-  "tips": "Oyun alanı restoran içinde; yoğun öğle/akşam saatlerinde erken gitmek daha rahat.",
+  "tips": [
+   "Oyun alanı restoran içinde; yoğun öğle/akşam saatlerinde erken gitmek daha rahat."
+  ],
   "transport": "Çukurambar; toplu taşıma ile ulaşılabilir.",
   "status": "açık",
   "score_bebek": 3,
@@ -9132,7 +9229,9 @@
    "spor alanı",
    "yeşil alan"
   ],
-  "tips": "Bisiklet/scooter getirmek için uygun; yaz aylarında gölge ve su ihtiyacını unutmayın.",
+  "tips": [
+   "Bisiklet/scooter getirmek için uygun; yaz aylarında gölge ve su ihtiyacını unutmayın."
+  ],
   "transport": "Mamak; belediye otobüs hatları ile ulaşılabilir.",
   "status": "açık",
   "score_bebek": 3,
@@ -9173,7 +9272,9 @@
    "matematik atölyesi",
    "engelsiz erişim"
   ],
-  "tips": "Okul grupları için önceden rezervasyon öneriliyor; hafta içi açık.",
+  "tips": [
+   "Okul grupları için önceden rezervasyon öneriliyor; hafta içi açık."
+  ],
   "transport": "Sincan merkez; Başkentray (Sincan) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -9214,7 +9315,9 @@
    "engelli çocuk aracı",
    "uygulamalı eğitim"
   ],
-  "tips": "Eğitimler ücretsiz ve uygulamalı; katılım/randevu için belediye ile iletişim önerilir.",
+  "tips": [
+   "Eğitimler ücretsiz ve uygulamalı; katılım/randevu için belediye ile iletişim önerilir."
+  ],
   "transport": "Eryaman/Etimesgut; Başkentray ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -9255,7 +9358,9 @@
    "tarihî hisse senetleri",
    "baskı klişeleri"
   ],
-  "tips": "Ulus'taki diğer müzeler (Anadolu Medeniyetleri, Cumhuriyet Müzesi) ile aynı günde gezilebilir; ziyaret öncesi güncel saatleri teyit edin.",
+  "tips": [
+   "Ulus'taki diğer müzeler (Anadolu Medeniyetleri, Cumhuriyet Müzesi) ile aynı günde gezilebilir; ziyaret öncesi güncel saatleri teyit edin."
+  ],
   "transport": "Ulus; metro (Ulus) ve otobüs hatları ile kolay ulaşım.",
   "status": "açık",
   "score_bebek": 1,
@@ -9294,7 +9399,10 @@
    "ip parkuru",
    "tırmanma"
   ],
-  "tips": "Boy/yaş sınırları aktiviteye göre değişebilir; katılım öncesi telefonla teyit edin. Başkent Millet Bahçesi gezisiyle birleştirilebilir.",
+  "tips": [
+   "Boy/yaş sınırları aktiviteye göre değişebilir; katılım öncesi telefonla teyit edin.",
+   "Başkent Millet Bahçesi gezisiyle birleştirilebilir."
+  ],
   "transport": "Hipodrom/AKM bölgesi; Başkentray (Gazi/AKM) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -9333,7 +9441,9 @@
    "açık alan sahaları",
    "ücretsiz piknik-mangal alanı"
   ],
-  "tips": "Katılım için ön rezervasyon gerekli; yaş sınırı nedeniyle küçük çocuklar için uygun değil, aileler piknik alanında vakit geçirebilir.",
+  "tips": [
+   "Katılım için ön rezervasyon gerekli; yaş sınırı nedeniyle küçük çocuklar için uygun değil, aileler piknik alanında vakit geçirebilir."
+  ],
   "transport": "Mühye/İmrahor bölgesi; özel araçla ulaşım daha pratik.",
   "status": "açık",
   "score_bebek": 1,
@@ -9375,7 +9485,9 @@
    "bilişim",
    "oyun grubu"
   ],
-  "tips": "Dönemsel kayıt ile çalışan bir atölye; program ve yaş grupları için önceden iletişim önerilir.",
+  "tips": [
+   "Dönemsel kayıt ile çalışan bir atölye; program ve yaş grupları için önceden iletişim önerilir."
+  ],
   "transport": "Çayyolu/Ümitköy; metro (Çayyolu) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 1,
@@ -9415,7 +9527,9 @@
    "bebek programı",
    "okul öncesi gelişim"
   ],
-  "tips": "Kayıtlı/dönemsel program şeklinde; deneme seansı ve kayıt için önceden iletişim önerilir.",
+  "tips": [
+   "Kayıtlı/dönemsel program şeklinde; deneme seansı ve kayıt için önceden iletişim önerilir."
+  ],
   "transport": "Çayyolu; metro (Çayyolu) ve otobüs hatlarına yakın.",
   "status": "açık",
   "score_bebek": 4,
