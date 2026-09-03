@@ -60,8 +60,8 @@
   "district": "Kızılcahamam",
   "distance_km": 80,
   "address": "Kızılcahamam ilçe merkezi, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.4664,
+  "lng": 32.662,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -98,7 +98,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ayaş İçmece ve Kaplıcaları",
@@ -107,8 +108,8 @@
   "district": "Ayaş",
   "distance_km": 83,
   "address": "Ayaş–Beypazarı Yolu 23. km, Ayaş, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.16526,
+  "lng": 31.94448,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -147,7 +148,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Tarihi Haymana Kaplıca Tesisleri (Belediye)",
@@ -156,8 +158,8 @@
   "district": "Haymana",
   "distance_km": 75,
   "address": "Cimcime Termal Otel ve Ürofiz Termal Otel yanı, Haymana merkez, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.43182,
+  "lng": 32.49254,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -196,7 +198,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Beypazarı Tarihi Çarşı ve Hıdırlık Tepesi",
@@ -205,8 +208,8 @@
   "district": "Beypazarı",
   "distance_km": 100,
   "address": "Alaaddin Sokak / İmaret Meydanı ve Hıdırlık Tepesi Millet Bahçesi, Beypazarı, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.17038,
+  "lng": 31.91625,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -245,7 +248,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Beypazarı Yaşayan Müze",
@@ -351,8 +355,8 @@
   "district": "Beypazarı",
   "distance_km": 130,
   "address": "Beypazarı–Karaşar yolu, Eğriova Yaylası, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.45486,
+  "lng": 32.05904,
   "age_min": 3,
   "age_max": 99,
   "indoor": false,
@@ -392,7 +396,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Nallıhan Kuş Cenneti",
@@ -553,8 +558,8 @@
   "district": "Çamlıdere",
   "distance_km": 110,
   "address": "Pelitçik–Yahşihan mahalleleri, Çamlıdere, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.42365,
+  "lng": 32.38797,
   "age_min": 6,
   "age_max": 99,
   "indoor": false,
@@ -589,7 +594,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 1,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çamkoru Tabiat Parkı",
@@ -1367,8 +1373,8 @@
   "district": "Ankara",
   "distance_km": 0,
   "address": "Devlet Tiyatroları Ankara sahneleri (2026 programında Etimesgut de var)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88978,
+  "lng": 32.76625,
   "age_min": 3,
   "age_max": 14,
   "indoor": true,
@@ -1403,7 +1409,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "ABB Yarıyıl Çocuk Festivali (Altınpark)",
@@ -1412,8 +1419,8 @@
   "district": "Altındağ",
   "distance_km": 6,
   "address": "ANFA Altınpark Fuar ve Kongre Merkezi, Altındağ, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96779,
+  "lng": 32.87611,
   "age_min": 2,
   "age_max": 12,
   "indoor": true,
@@ -1452,7 +1459,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)",
@@ -1461,8 +1469,8 @@
   "district": "Gölbaşı",
   "distance_km": 20,
   "address": "İncek, Turgut Özal Blv. No:45, 06830 Gölbaşı, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.79924,
+  "lng": 32.69662,
   "age_min": 4,
   "age_max": 12,
   "indoor": false,
@@ -1496,7 +1504,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Tuğram At Çiftliği",
@@ -1505,8 +1514,8 @@
   "district": "Gölbaşı",
   "distance_km": 35,
   "address": "Gölbaşı, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.73455,
+  "lng": 32.72406,
   "age_min": 5,
   "age_max": 99,
   "indoor": false,
@@ -1542,7 +1551,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Feza Gürsey Bilim Merkezi",
@@ -1739,8 +1749,8 @@
   "subcategory": "oyuncak müzesi",
   "district": "Çankaya",
   "address": "Ankara Üniversitesi Eğitim Bilimleri Fakültesi, Beşevler 10. Yıl Yerleşkesi, Emniyet Mah., İncitaşı Sok. (Olimpik Yüzme Havuzu arkası), 06500 Beşevler/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92713,
+  "lng": 32.87406,
   "age_min": 3,
   "age_max": 12,
   "indoor": true,
@@ -1774,7 +1784,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Anıtkabir ve Atatürk ve Kurtuluş Savaşı Müzesi",
@@ -2229,8 +2240,8 @@
   "subcategory": "planetaryum (grup rezervasyonlu)",
   "district": "Çankaya",
   "address": "ODTÜ Toplum ve Bilim Merkezi (Sergi Alanı), Dumlupınar Bulvarı No:1, 06800 Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90133,
+  "lng": 32.77105,
   "age_min": 10,
   "age_max": 18,
   "indoor": true,
@@ -2263,7 +2274,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ankara Üniversitesi Kreiken Rasathanesi (Halk Günleri)",
@@ -2360,8 +2372,8 @@
   "subcategory": "belediye bilim merkezi + atölyeler",
   "district": "Altındağ",
   "address": "Başkent Millet Bahçesi, Zübeyde Hanım Mah., 06070 Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94481,
+  "lng": 32.83779,
   "age_min": 5,
   "age_max": 16,
   "indoor": true,
@@ -2395,7 +2407,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Atatürk Çocukları Doğal Yaşam Parkı ve Hayvanat Bahçesi (AOÇ)",
@@ -2403,8 +2416,8 @@
   "subcategory": "hayvanat bahçesi + doğal yaşam parkı",
   "district": "Yenimahalle",
   "address": "Atatürk Orman Çiftliği, Gazi Mah., 06560 Yenimahalle/Ankara (Hipodrom Cad. / TEİAŞ Akköprü girişi)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94625,
+  "lng": 32.80653,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -2444,7 +2457,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Atatürk Orman Çiftliği Hayvanat Bahçesi (eski)",
@@ -2632,8 +2646,8 @@
   "subcategory": "belediye çocuk tiyatrosu",
   "district": "Altındağ",
   "address": "Gençlik Parkı Kültür Merkezi, Ulus/Altındağ, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93898,
+  "lng": 32.84928,
   "age_min": 3,
   "age_max": 12,
   "indoor": true,
@@ -2666,7 +2680,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)",
@@ -2851,8 +2866,8 @@
   "subcategory": "iletişim tarihi müzesi",
   "district": "Altındağ",
   "address": "Hacettepe Mah., İnci Sokak No:3 (Karacabey Hamamı yanı), Hamamönü/Altındağ, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93379,
+  "lng": 32.86675,
   "age_min": 6,
   "age_max": 99,
   "indoor": true,
@@ -2885,7 +2900,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ankara Kalesi",
@@ -3622,8 +3638,8 @@
   "subcategory": "kent ormanı/mesire",
   "district": "Keçiören",
   "address": "Ovacık, Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.01135,
+  "lng": 32.81861,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3667,7 +3683,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Başkent Millet Bahçesi (AKM)",
@@ -4325,8 +4342,8 @@
   "subcategory": "buz pisti",
   "district": "Çankaya",
   "address": "Yukarı Dikmen Mah. 631. Cad. No:5/1, Çankaya Belediyesi Bülent Ecevit Buz Sporları Salonu, Oran, 06550 Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.85133,
+  "lng": 32.83808,
   "age_min": 4,
   "age_max": 99,
   "indoor": true,
@@ -4362,7 +4379,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ankara Karting (Mühye)",
@@ -4370,8 +4388,8 @@
   "subcategory": "go-kart",
   "district": "Çankaya",
   "address": "Yeşilkent Mah. 9. Cad., 06706 Çankaya/Ankara (Mühye)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.86345,
+  "lng": 32.86994,
   "age_min": 8,
   "age_max": 99,
   "indoor": false,
@@ -4411,7 +4429,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Hipodrom RS Arena Karting",
@@ -4419,8 +4438,8 @@
   "subcategory": "go-kart",
   "district": "Yenimahalle",
   "address": "75. Yıl Hipodromu fuar alanı, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97047,
+  "lng": 32.67661,
   "age_min": 8,
   "age_max": 99,
   "indoor": false,
@@ -4453,7 +4472,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Altınpark Go-kart / Akülü Araçlar",
@@ -4505,8 +4525,8 @@
   "subcategory": "tırmanma / boulder salonu",
   "district": "Çankaya",
   "address": "Tınaztepe Mah. Akyüz Sok. No:22, Çankaya/Ankara (taşınma sürecinde; Anneysen'de Malıköy/Sincan adresi listeleniyor)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91475,
+  "lng": 32.86287,
   "age_min": 4,
   "age_max": 99,
   "indoor": true,
@@ -4544,7 +4564,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Tragos Boulder",
@@ -4552,8 +4573,8 @@
   "subcategory": "tırmanma / boulder salonu",
   "district": "Ankara",
   "address": null,
-  "lat": null,
-  "lng": null,
+  "lat": 39.88026,
+  "lng": 32.82343,
   "age_min": 5,
   "age_max": 99,
   "indoor": true,
@@ -4587,7 +4608,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Rolling Ball Bowling – Armada AVM",
@@ -4735,8 +4757,8 @@
   "subcategory": "aquapark",
   "district": "Keçiören",
   "address": "Hacıkadın rekreasyon alanı yakını, Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.00906,
+  "lng": 32.87721,
   "age_min": 4,
   "age_max": 99,
   "indoor": false,
@@ -4774,7 +4796,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Club Watercity Aquapark – Gölbaşı",
@@ -4925,8 +4948,8 @@
   "subcategory": "at biniciliği",
   "district": "Yenimahalle",
   "address": "Emniyet Mah. Alparslan Türkeş Cad. No:8, Beştepe, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.9313,
+  "lng": 32.81717,
   "age_min": 3,
   "age_max": 99,
   "indoor": true,
@@ -4968,7 +4991,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Bricks 4 Kidz Ankara – LEGO S.T.E.M. Atölyesi",
@@ -4976,8 +5000,8 @@
   "subcategory": "lego / robotik",
   "district": "Çankaya",
   "address": "Atölyeler ODTÜ Mezunları Derneği'nde: İşçi Blokları Mah. 1540. Sok. No:58, Çankaya/Ankara (kendi sabit adresi yayımlanmıyor)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89646,
+  "lng": 32.79381,
   "age_min": 4,
   "age_max": 13,
   "indoor": true,
@@ -5015,7 +5039,8 @@
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
   "score_fiyat_performans": 2,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Neriseramik – Çocuklar İçin Seramik Workshop",
@@ -5023,8 +5048,8 @@
   "subcategory": "seramik",
   "district": "Çankaya",
   "address": "Gerede Sok. No:3/D, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90227,
+  "lng": 32.85447,
   "age_min": 4,
   "age_max": 99,
   "indoor": true,
@@ -5061,7 +5086,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Golden Chef Mutfak Akademisi – Ebeveyn-Çocuk Workshopları",
@@ -5069,8 +5095,8 @@
   "subcategory": "mutfak",
   "district": "Çankaya",
   "address": "Prof. Dr. Ahmet Taner Kışlalı Mah. 2815. Sok. No:7, Çayyolu, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.87135,
+  "lng": 32.6895,
   "age_min": 5,
   "age_max": 14,
   "indoor": true,
@@ -5105,7 +5131,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Anıt Eğitim – Çocuk Pastacılık Kursu",
@@ -5113,8 +5140,8 @@
   "subcategory": "mutfak / pastacılık",
   "district": "Çankaya",
   "address": "Maltepe Mah. Özveren Cad. Yayla Sok. No:4 D:15-16, Kızılay, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92388,
+  "lng": 32.84802,
   "age_min": 7,
   "age_max": 16,
   "indoor": true,
@@ -5147,7 +5174,8 @@
   "score_ergen": 5,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çankaya Belediyesi Çocuk Atölyeleri ve Gelişimsel Oyunevleri",
@@ -5155,8 +5183,8 @@
   "subcategory": "belediye ücretsiz atölye (resim, seramik, dans, bale, satranç, akıl oyunları)",
   "district": "Çankaya",
   "address": "Oyunevleri (3-6 yaş): Cebeci, Bayraktar, Sokullu, Kırkkonaklar, Dilekler, 50. Yıl; Atölyeler (6-12 yaş): Çayyolu, Kırkkonaklar, Dilekler, 50. Yıl, Karapınar",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92431,
+  "lng": 32.86127,
   "age_min": 3,
   "age_max": 12,
   "indoor": true,
@@ -5198,7 +5226,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Cumhurbaşkanlığı Millet Kütüphanesi – Nasreddin Hoca Çocuk Kütüphanesi",
@@ -5254,8 +5283,8 @@
   "subcategory": "halk kütüphanesi çocuk bölümü",
   "district": "Çankaya",
   "address": "Kumrular Cad. No:3, Kızılay, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91973,
+  "lng": 32.85045,
   "age_min": 0,
   "age_max": 14,
   "indoor": true,
@@ -5292,7 +5321,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ankara Ali Dayı Çocuk Kütüphanesi",
@@ -5300,8 +5330,8 @@
   "subcategory": "çocuk kütüphanesi (Kültür ve Turizm Bakanlığı)",
   "district": "Çankaya",
   "address": "100. Yıl Mah. Nene Hatun Cad. No:57, 06680 Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89948,
+  "lng": 32.86813,
   "age_min": 0,
   "age_max": 14,
   "indoor": true,
@@ -5333,7 +5363,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Altındağ Bebek ve Çocuk Kütüphanesi",
@@ -5341,8 +5372,8 @@
   "subcategory": "bebek ve çocuk kütüphanesi",
   "district": "Altındağ",
   "address": "Karapürçek Mah. 421. Cad. No:1, Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97488,
+  "lng": 32.9723,
   "age_min": 0,
   "age_max": 12,
   "indoor": true,
@@ -5374,7 +5405,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Escape Planet – Sherlock Holmes Odası (Bahçelievler)",
@@ -5486,8 +5518,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Ehlibeyt Mah., Ceyhun Atuf Kansu Cd. No:114/G D:12, Balgat, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89251,
+  "lng": 32.81648,
   "age_min": 0,
   "age_max": 12,
   "indoor": true,
@@ -5545,7 +5577,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "AOÇ Kaşıbeyaz Ankara",
@@ -5553,8 +5586,8 @@
   "subcategory": "restoran",
   "district": "Yenimahalle",
   "address": "Atatürk Orman Çiftliği, Emniyet Mah., Yeni Çiftlik Cd. No:2, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93588,
+  "lng": 32.81692,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5609,7 +5642,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Deniz Kozanlı Kahvaltı & Mantı",
@@ -5617,8 +5651,8 @@
   "subcategory": "kahvaltı",
   "district": "Çankaya",
   "address": "Oğuzlar Mah., Ceyhun Atıf Kansu Cd. 1368. Sk. No:4, Balgat, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89852,
+  "lng": 32.81828,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5670,7 +5704,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Köy Bahçesi (Bağlıca Ocakbaşı Köy Bahçesi)",
@@ -5678,8 +5713,8 @@
   "subcategory": "kır bahçesi",
   "district": "Etimesgut",
   "address": "Bağlıca Mah., Bağlıca Blv. No:75, Etimesgut/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89618,
+  "lng": 32.63452,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5734,7 +5769,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Fevzi Hoca Köfte-Balık Çayyolu",
@@ -5870,8 +5906,8 @@
   "subcategory": "restoran",
   "district": "Çankaya",
   "address": "Nasuh Akar Mah., Ziyabey Cd. No:35, Balgat, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91042,
+  "lng": 32.82041,
   "age_min": 0,
   "age_max": 12,
   "indoor": true,
@@ -5927,7 +5963,8 @@
    "kaynak": "https://menufiyati.tr/masabasi-menu-fiyatlari-2026/",
    "kaynak_tarihi": "2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Kukla Kebap Balgat",
@@ -5996,8 +6033,8 @@
   "subcategory": "restoran",
   "district": "Çankaya",
   "address": "Çukurambar, Protokol İş Merkezi, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89728,
+  "lng": 32.81032,
   "age_min": 2,
   "age_max": 12,
   "indoor": true,
@@ -6051,7 +6088,8 @@
    "kaynak": "https://menu-fiyatlari.com/uludag-kebap-menu-fiyat-listesi/",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Marco Pascha Çukurambar",
@@ -6059,8 +6097,8 @@
   "subcategory": "kahvaltı",
   "district": "Çankaya",
   "address": "Kızılırmak Mah., Muhsin Yazıcıoğlu Cd. 32/A, Çukurambar, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.9008,
+  "lng": 32.80998,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6115,7 +6153,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "ChronoStation Aile Yaşam Merkezi (ChronoCafe)",
@@ -6123,8 +6162,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Angora Blv. No:209/29, Beysupark Yaşam Merkezi, Çayyolu, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88502,
+  "lng": 32.71488,
   "age_min": 1,
   "age_max": 12,
   "indoor": true,
@@ -6163,7 +6202,8 @@
   "score_ergen": 2,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Pupilla Çocuk Kafe & Restoran",
@@ -6171,8 +6211,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Prof. Dr. Ahmet Taner Kışlalı Mah., 2886/1 Sk. No:3/5, Çayyolu, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.86738,
+  "lng": 32.68422,
   "age_min": 1,
   "age_max": 10,
   "indoor": true,
@@ -6209,7 +6249,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çalgan Saklıköy (Çalgan Et Lokantası)",
@@ -6217,8 +6258,8 @@
   "subcategory": "kır bahçesi",
   "district": "Çankaya",
   "address": "Alacaatlı Mah., Alacaatlı Köyü Yolu No:1 (No:106), Ümitköy/Çayyolu, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.8509,
+  "lng": 32.67485,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6274,7 +6315,8 @@
    "kaynak": "https://www.ankararestoranlari.com/restoran/calgan-saklikoy-cayyolu",
    "kaynak_tarihi": "2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Cafemiz",
@@ -6345,8 +6387,8 @@
   "subcategory": "kahvaltı",
   "district": "Altındağ",
   "address": "Kale Mah., Koyunpazarı Sk. No:60, Ankara Kalesi, Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93708,
+  "lng": 32.86382,
   "age_min": 2,
   "age_max": 99,
   "indoor": true,
@@ -6399,7 +6441,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Karçiçeği Cafe & Restaurant (Mogan Gölü)",
@@ -6407,8 +6450,8 @@
   "subcategory": "kahvaltı",
   "district": "Gölbaşı",
   "address": "Karşıyaka Mah., Haymana Yolu Blv. No:25, Gölbaşı/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.79987,
+  "lng": 32.79896,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6461,7 +6504,8 @@
    "kaynak": "https://www.kahvaltifiyatlari.com/karcicegi-cafe-restaurant-golbasi-ankara",
    "kaynak_tarihi": "2023 (eski)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Köyüm Cafe (Mogan Parkı)",
@@ -6469,8 +6513,8 @@
   "subcategory": "kahvaltı",
   "district": "Gölbaşı",
   "address": "Karşıyaka Mah., Haymana Yolu Blv. No:26, Mogan Parkı içi, Gölbaşı/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.80384,
+  "lng": 32.80073,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6522,7 +6566,8 @@
    "kaynak": "https://www.kahvaltifiyatlari.com/koyum-cafe-golbasi-ankara",
    "kaynak_tarihi": "2023 (eski)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çağlar Restaurant (Mogan Gölü)",
@@ -6530,8 +6575,8 @@
   "subcategory": "restoran",
   "district": "Gölbaşı",
   "address": "Karşıyaka Mah., Haymana Yolu Blv. No:127, Gölbaşı/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.78752,
+  "lng": 32.79152,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6585,7 +6630,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Pars Garden (Eymir/Gölbaşı)",
@@ -6593,8 +6639,8 @@
   "subcategory": "kır bahçesi",
   "district": "Gölbaşı",
   "address": "Eymir Mah., Eymir Gölü Yolu No:23/6, Gölbaşı/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.80866,
+  "lng": 32.82155,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -6649,7 +6695,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Eğriçimen Kahvaltı & Et & Balık Restaurant",
@@ -6721,8 +6768,8 @@
   "subcategory": "kır bahçesi",
   "district": "Çubuk",
   "address": "Aşağıçavundur Mah., Karagöl Cd. Temel Sk. No:196 (Abad Parkı karşısı), Çubuk/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.25544,
+  "lng": 33.02093,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6776,7 +6823,8 @@
    "kaynak": "https://restaurantguru.com/Esrarengiz-Bahce-Cubuk",
    "kaynak_tarihi": "2025-2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Botanik Kır Bahçesi & At Biniciliği",
@@ -6784,8 +6832,8 @@
   "subcategory": "çiftlik",
   "district": "Çubuk",
   "address": "Fatih Mah., Lider Sk. No:5, Çubuk/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.18775,
+  "lng": 33.02306,
   "age_min": 2,
   "age_max": 99,
   "indoor": true,
@@ -6840,7 +6888,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Yayla Karadeniz Kır Lokantası",
@@ -6848,8 +6897,8 @@
   "subcategory": "kahvaltı",
   "district": "Çubuk",
   "address": "Fatih Mah., Ankara Blv. No:430, Çubuk/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.18274,
+  "lng": 33.0217,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -6901,7 +6950,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ayşe Bacı Kır Bahçesi & Köy Kahvaltısı",
@@ -6909,8 +6959,8 @@
   "subcategory": "kır bahçesi",
   "district": "Kızılcahamam",
   "address": "Kırköy Mah., Göktaş Küme Evleri, Kızılcahamam/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.44609,
+  "lng": 32.69667,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -6963,7 +7013,8 @@
    "kaynak": "https://www.firsat.me/Blog/ankara-da-serpme-kahvalti-ve-kir-bahcesi-kulturu-eksiksiz-rehber",
    "kaynak_tarihi": "2026 (genel band)",
    "guven": "düşük"
-  }
+  },
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "ma&me&pa Family Club (Bilkent Center)",
@@ -6971,8 +7022,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Üniversiteler Mah., 1597. Cad. Bilkent Center AVM 3/13, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88371,
+  "lng": 32.75876,
   "age_min": 1,
   "age_max": 10,
   "indoor": true,
@@ -7014,7 +7065,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 3
+  "score_fiyat_performans": 3,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Cumba Çocuk Kitap Cafe",
@@ -7022,8 +7074,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Çukurambar Mah., Budapeşte Cd. No:31/A, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89639,
+  "lng": 32.80553,
   "age_min": 1,
   "age_max": 10,
   "indoor": true,
@@ -7060,7 +7112,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Lora Çikolata Kahve Batıkent",
@@ -7068,8 +7121,8 @@
   "subcategory": "pastane",
   "district": "Yenimahalle",
   "address": "Ergazi Mah., Cengiz Aytmatov Cd. No:19 D:H (Batıkent Gala), Batıkent, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.95967,
+  "lng": 32.71319,
   "age_min": 1,
   "age_max": 10,
   "indoor": true,
@@ -7105,7 +7158,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Mini Koala Oyun Atölyesi & Kafe",
@@ -7113,8 +7167,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Hilal Mah., Aleksander Dubçek Cd. 18/A, Yıldız, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.86528,
+  "lng": 32.85367,
   "age_min": 1,
   "age_max": 7,
   "indoor": true,
@@ -7149,7 +7203,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Delta Macera Sport & Cafe (Eymir Gölü)",
@@ -7221,8 +7276,8 @@
   "subcategory": "kafe",
   "district": "Yenimahalle",
   "address": "Gayret Mah., İvedik Cd. No:51, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96342,
+  "lng": 32.8048,
   "age_min": 0,
   "age_max": 8,
   "indoor": true,
@@ -7257,7 +7312,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Altınköy Açık Hava Müzesi",
@@ -7318,8 +7374,8 @@
   "phone": null,
   "website": null,
   "google_maps_query": "Keçiören Deniz Dünyası Akvaryum Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97627,
+  "lng": 32.87315,
   "features": [
    "150 türde ~4000 balık",
    "Köpek balıklı tünel akvaryum",
@@ -7338,7 +7394,8 @@
   "score_fiyat_performans": 4,
   "sources": [
    "https://gezginsitesi.com/kecioren-deniz-dunyasi-akvaryum-ankara-giris-ucreti/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Üreğil Millet Bahçesi",
@@ -7400,8 +7457,8 @@
   "phone": "0312 666 07 76",
   "website": null,
   "google_maps_query": "Max Level Next Level AVM Çankaya Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91156,
+  "lng": 32.81162,
   "features": [
    "~6.000 m² kapalı alan",
    "Kaydıraklar ve tırmanma duvarları",
@@ -7424,7 +7481,8 @@
    "https://www.nextlevelavm.com.tr/tr/magazalar/max-level-aile-ve-cocuk-oyun-eglence-merkezi",
    "https://bioyla.com/isletme-detay/max-level-kids-74351"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çamlıdere Macera Parkı",
@@ -7484,8 +7542,8 @@
   "phone": null,
   "website": "https://www.playland.com.tr",
   "google_maps_query": "Playland Optimum Outlet Etimesgut Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96384,
+  "lng": 32.65459,
   "features": [
    "Trambolin",
    "Kum havuzu",
@@ -7507,7 +7565,8 @@
    "https://tr.foursquare.com/v/optimum-playland-e%C4%9Flence-merkezi/519df67c498e5da24a323a93",
    "https://www.playland.com.tr/"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Toru Entertainment (Taurus AVM)",
@@ -7652,8 +7711,8 @@
   "phone": "0312 502 02 19",
   "website": "https://cocukuniversitesi.ankara.edu.tr",
   "google_maps_query": "Ankara Üniversitesi Çocuk Üniversitesi Tandoğan Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93499,
+  "lng": 32.83156,
   "features": [
    "Astronomi, böcek bilim, su okulu gibi bilim atölyeleri",
    "Randevu sistemiyle katılım",
@@ -7673,7 +7732,8 @@
   "sources": [
    "https://cocukuniversitesi.ankara.edu.tr/tr/category/secki/",
    "https://www.ankara.edu.tr/akademik-ve-idari-birimler/koordinatorlukler/cocuk-bilim-merkezi-koordinatoerluegue"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Neşeli Köy (Ters Ev ve Çiftlik)",
@@ -7858,8 +7918,8 @@
   "phone": null,
   "website": null,
   "google_maps_query": "Yuki Kids Oyunevi Kafe Yenimahalle Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96607,
+  "lng": 32.80642,
   "features": [
    "Yumuşak blok ve top havuzu",
    "Kaydıraklar",
@@ -7880,7 +7940,8 @@
    "https://www.novakidschool.com/tr/blog/ankarada-oyun-yeri/",
    "https://restaurantguru.com/Yuki-Kids-Oyunevi-and-Kafe-Ankara"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Candy Kids Park",
@@ -7899,8 +7960,8 @@
   "phone": null,
   "website": null,
   "google_maps_query": "Candy Kids Park Batıkent Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94692,
+  "lng": 32.73676,
   "features": [
    "Atlıkarınca, dönme dolap, çarpışan araba",
    "9D sinema",
@@ -7921,7 +7982,8 @@
    "https://www.calisma-saati.com/subeler/390623/ankara-candy-kids-park",
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-eglence-merkezi-candy-kids-park-2_4906"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "CSO Ada Ankara Çocuk Atölyeleri",
@@ -7980,8 +8042,8 @@
   "phone": "+90 312 820 03 01",
   "website": "https://www.davinciboardgame.com",
   "google_maps_query": "Da Vinci Board Game Cafe Bahçelievler Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92625,
+  "lng": 32.82317,
   "features": [
    "Yüzlerce kutu/masa oyunu",
    "Oyun anlatan ekip",
@@ -8001,7 +8063,8 @@
   "sources": [
    "https://www.davinciboardgame.com/",
    "https://www.tripadvisor.com/Attraction_Review-g298656-d12384506-Reviews-Da_Vinci_Board_Game_Cafe-Ankara.html"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Sincan Anne-Çocuk Oyun Evleri",
@@ -8101,8 +8164,8 @@
   "phone": null,
   "website": "http://www.atolyeminisanat.com",
   "google_maps_query": "Mini Sanat Çocukça Eğlenceler Atölyesi Çayyolu Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.8818,
+  "lng": 32.71403,
   "features": [
    "Resim, seramik ve heykel atölyeleri",
    "Bale, drama ve yaratıcı hareket",
@@ -8124,7 +8187,8 @@
    "http://www.atolyeminisanat.com/hakkimizda",
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-muzik-ve-sanat-merkezi-mini-sanat-cocukca-eglenceler-atolyesi-2_2441"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Nomi Oyun Evi",
@@ -8225,8 +8289,8 @@
   "phone": null,
   "website": "https://oyunparki.ankara.bel.tr/",
   "google_maps_query": "Başkent Oyun Dünyası Demetevler Parkı Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96852,
+  "lng": 32.79749,
   "features": [
    "ücretsiz",
    "randevulu",
@@ -8246,7 +8310,8 @@
   "sources": [
    "https://www.ankara.bel.tr/haberler/baskent-oyun-dunyasi-18328",
    "https://oyunparki.ankara.bel.tr/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "ABB Çocuk Oyun Odaları",
@@ -8428,8 +8493,8 @@
   "phone": "444 52 76",
   "google_maps_query": "Şehit İmmet Özdemir Parkı Kuşcağız Keçiören",
   "website": "https://www.kecioren.bel.tr/kecioren-belediyesi-oyun-evi.html",
-  "lat": null,
-  "lng": null,
+  "lat": 40.00076,
+  "lng": 32.84252,
   "features": [
    "gözetimli oyun",
    "park içi",
@@ -8447,7 +8512,8 @@
   "score_fiyat_performans": 4,
   "sources": [
    "https://www.kecioren.bel.tr/kecioren-belediyesi-oyun-evi.html"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Mamak Belediyesi Bilim Merkezi (Şehitlik)",
@@ -8466,8 +8532,8 @@
   "phone": "0533 811 83 83",
   "website": "https://bilim.mamak.bel.tr/",
   "google_maps_query": "Mamak Belediyesi Bilim Merkezi General Zeki Doğan",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90986,
+  "lng": 32.90748,
   "features": [
    "ücretsiz",
    "6 atölye",
@@ -8489,7 +8555,8 @@
   "sources": [
    "https://www.mamak.bel.tr/proje/mamak-bilim-merkezi/",
    "https://bilim.mamak.bel.tr/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Akdere Bebek ve Çocuk Kütüphanesi (Mamak Belediyesi)",
@@ -8508,8 +8575,8 @@
   "phone": null,
   "website": "https://www.mamak.bel.tr/proje/akdere-bebek-kutuphanesi/",
   "google_maps_query": "Akdere Bilim Sanat Merkezi Mamak",
-  "lat": null,
-  "lng": null,
+  "lat": 39.92139,
+  "lng": 32.88549,
   "features": [
    "dokunsal kitaplar",
    "sesli öykü okuma",
@@ -8529,7 +8596,8 @@
   "score_fiyat_performans": 5,
   "sources": [
    "https://www.mamak.bel.tr/proje/akdere-bebek-kutuphanesi/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Sincan Belediyesi Anne-Çocuk Oyun Evleri",
@@ -8548,8 +8616,8 @@
   "phone": "444 47 62",
   "website": "https://www.sincan.bel.tr/sosyal-tesisler/anne-cocuk-oyun-evleri",
   "google_maps_query": "Sincan Belediyesi Anne Çocuk Oyun Evi",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96885,
+  "lng": 32.57666,
   "features": [
    "ücretsiz",
    "anne katılımlı",
@@ -8569,7 +8637,8 @@
   "sources": [
    "https://www.sincan.bel.tr/sosyal-tesisler/anne-cocuk-oyun-evleri",
    "https://www.sincan.bel.tr/proje/anne-cocuk-oyun-evleri/20"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Altındağ Belediyesi Çocuk Kulübü Atölyeleri (Başkent Millet Bahçesi)",
@@ -8588,8 +8657,8 @@
   "phone": "0312 507 01 98",
   "website": "https://www.altindag.bel.tr/tr",
   "google_maps_query": "Başkent Millet Bahçesi Çocuk Kulübü Altındağ",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94481,
+  "lng": 32.83779,
   "features": [
    "origami",
    "resim",
@@ -8610,7 +8679,8 @@
   "sources": [
    "https://www.ticarihayat.com/altindag-belediyesi-cocuk-kulubunden-dort-yeni-atolye",
    "https://www.yeniankara.com.tr/altindag/altindag-belediyesi-cocuk-kulubunde-dort-farkli-atolye-imkani-sunuyor-90316"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çankaya Belediyesi Minik Adımlar Bebek Kütüphanesi",
@@ -8629,8 +8699,8 @@
   "phone": "0312 266 37 72",
   "website": "https://www.cankaya.bel.tr/hizmetler/minik-adimlar-bebek",
   "google_maps_query": "Minik Adımlar Bebek Kütüphanesi Beytepe Çankaya",
-  "lat": null,
-  "lng": null,
+  "lat": 39.8546,
+  "lng": 32.75597,
   "features": [
    "ücretsiz",
    "dokunsal kitaplar",
@@ -8652,7 +8722,8 @@
   "sources": [
    "https://www.cankaya.bel.tr/haberler/cankayada-miniklere-buyuk-destek-bebek-kutuphanesi",
    "https://www.cankaya.bel.tr/hizmetler/minik-adimlar-bebek"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çankaya Belediyesi Oyuncak Kütüphanesi",
@@ -8671,8 +8742,8 @@
   "phone": null,
   "website": "https://www.cankaya.bel.tr/projeler/oyuncak-kutuphanesi",
   "google_maps_query": "Uğur Mumcu Parkı Çukurambar Çankaya",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90139,
+  "lng": 32.79755,
   "features": [
    "ücretsiz",
    "yaşa göre üç ayrı alan",
@@ -8691,7 +8762,8 @@
   "score_fiyat_performans": 5,
   "sources": [
    "https://www.cankaya.bel.tr/projeler/oyuncak-kutuphanesi"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Rock'n Ball Eğlence Merkezi",
@@ -8710,8 +8782,8 @@
   "phone": "+90 312 309 76 55",
   "website": "https://www.rocknball.com.tr/",
   "google_maps_query": "Rock'n Ball Eğlence Merkezi Yenimahalle Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96778,
+  "lng": 32.77059,
   "features": [
    "bowling",
    "bilardo",
@@ -8735,7 +8807,8 @@
    "https://www.rocknball.com.tr/iletisim/",
    "https://benefitsystems.com.tr/en/facilities/rock-n-ball-eglence-merkezi/"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Küçük Dahiler Akademi Batıkent (Robotik Kodlama Atölyesi)",
@@ -8754,8 +8827,8 @@
   "phone": "+90 543 502 69 37",
   "website": "https://kucukdahilerbatikent.com.tr/robotik-kodlama-atolyesi/",
   "google_maps_query": "Küçük Dahiler Akademi Batıkent Yenimahalle Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.98076,
+  "lng": 32.6903,
   "features": [
    "robotik kodlama atölyesi",
    "drama",
@@ -8778,7 +8851,8 @@
   "sources": [
    "https://kucukdahilerbatikent.com.tr/robotik-kodlama-atolyesi/"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Sewolab Robotik Tasarım ve Kodlama",
@@ -8797,8 +8871,8 @@
   "phone": "+90 538 500 68 27",
   "website": "https://sewolab.com/",
   "google_maps_query": "Sewolab robotik kodlama Etimesgut Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.9952,
+  "lng": 32.6398,
   "features": [
    "robotik tasarım",
    "Scratch",
@@ -8822,7 +8896,8 @@
    "https://sewolab.com/",
    "https://sewolab.com/robotik-kodlama-egitimi/"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Ahmet Çalık Buz Pateni Pisti (Keçiören Belediyesi)",
@@ -8841,8 +8916,8 @@
   "phone": "+90 501 710 04 49",
   "website": "https://www.kecioren.bel.tr/ahmet_calik_buz_pateni_pisti-81-sosyal-tesis.html",
   "google_maps_query": "Ahmet Çalık Buz Pateni Pisti Keçiören Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.01025,
+  "lng": 32.82577,
   "features": [
    "buz pateni",
    "ücretsiz ekipman (paten, kask, dizlik, kolluk)",
@@ -8861,7 +8936,8 @@
   "sources": [
    "https://www.kecioren.bel.tr/ahmet_calik_buz_pateni_pisti-81-sosyal-tesis.html",
    "https://www.ankahaber.net/haber/detay/kecioren_belediyesi_ahmet_calik_buz_pisti_ucretsiz_hizmet_vermeye_devam_ediyor_226385"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Joymax Ankara",
@@ -8923,8 +8999,8 @@
   "phone": null,
   "website": "https://www.no24studio.com/umitkoy",
   "google_maps_query": "Studio No.24 Seramik Atölyesi Galleria AVM Ümitköy",
-  "lat": null,
-  "lng": null,
+  "lat": 39.89565,
+  "lng": 32.70361,
   "features": [
    "seramik",
    "heykel",
@@ -8947,7 +9023,8 @@
    "https://www.instagram.com/studiono24/",
    "https://www.no24studio.com/umitkoy"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Terra Point Art Studio (Seramik Sanatları Stüdyosu)",
@@ -9007,8 +9084,8 @@
   "phone": null,
   "website": null,
   "google_maps_query": "Kaptan Kebap Çukurambar Çankaya Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90745,
+  "lng": 32.80747,
   "features": [
    "çocuk oyun alanı",
    "kebap",
@@ -9026,7 +9103,8 @@
   "score_fiyat_performans": 3,
   "sources": [
    "https://cokgezencocuklar.com/2022/03/25/ankara-cocuk-oyun-alani-kafe-restoran/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "100. Yıl Cumhuriyet Millet Bahçesi (Mamak)",
@@ -9086,8 +9164,8 @@
   "phone": "+90 444 47 62",
   "website": "https://okuldisiogrenme.eba.gov.tr/mekan-detay/sincan-bilim-merkezi-7946",
   "google_maps_query": "Sincan Bilim Merkezi Sincan Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.98508,
+  "lng": 32.58335,
   "features": [
    "bilim sergileri",
    "planetaryum/astronomi atölyesi",
@@ -9108,7 +9186,8 @@
   "sources": [
    "https://okuldisiogrenme.eba.gov.tr/mekan-detay/sincan-bilim-merkezi-7946",
    "https://www.sincan.bel.tr/haberler/deneyap-teknoloji-atolyesi-bilim-sincanda-basladi"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Etimesgut Çocuk Trafik Eğitim Pisti (Eryaman)",
@@ -9127,8 +9206,8 @@
   "phone": null,
   "website": "https://www.etimesgut.bel.tr/merkez/sosyal-tesisler/eryaman-trafik-egitim-parki",
   "google_maps_query": "Etimesgut Çocuk Trafik Eğitim Pisti Eryaman Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.98209,
+  "lng": 32.64437,
   "features": [
    "trafik eğitim pisti",
    "elektrikli araçlar",
@@ -9148,7 +9227,8 @@
   "sources": [
    "https://www.etimesgut.bel.tr/merkez/sosyal-tesisler/eryaman-trafik-egitim-parki",
    "https://yandex.com.tr/maps/org/etimesgut_belediyesi_cocuk_trafik_egitim_pisti/21852239917/"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "TCMB Para Müzesi",
@@ -9245,8 +9325,8 @@
   "phone": null,
   "website": "https://muhyepaintball.com/",
   "google_maps_query": "Muhye Paintball Mühye Çankaya Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.86345,
+  "lng": 32.86994,
   "features": [
    "paintball",
    "speedball",
@@ -9266,7 +9346,8 @@
   "sources": [
    "https://muhyepaintball.com/",
    "https://www.paintballcularbirligi.com/tr/saha/detay/35/muhye-06-paintball"
-  ]
+  ],
+  "koordinat_kaynak": "google-geocode"
  },
  {
   "name": "Çayyolu Sanat Atölyesi",
