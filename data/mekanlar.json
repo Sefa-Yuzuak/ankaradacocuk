@@ -3744,8 +3744,8 @@
   "subcategory": "millet bahçesi",
   "district": "Çankaya",
   "address": "İmrahor Vadisi, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.83503,
+  "lng": 32.85119,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3786,7 +3786,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "Ankara Millet Bahçesi (Etimesgut)",
@@ -5455,8 +5456,8 @@
   "subcategory": "kafe",
   "district": "Çankaya",
   "address": "Söğütözü Mah., Dumlupınar Blv. (Eskişehir Yolu) No:122, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90934,
+  "lng": 32.79004,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -5510,7 +5511,8 @@
    "kaynak": "https://oxymenu.com/mekanlar/ankara-kahvalti-mekanlari",
    "kaynak_tarihi": "2026",
    "guven": "orta"
-  }
+  },
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "Yuba Cafe & Bistro",
@@ -8299,8 +8301,8 @@
   "phone": null,
   "website": "https://cocuketkinlikmerkezleri.ankara.bel.tr/",
   "google_maps_query": "Ankara Büyükşehir Belediyesi Çocuk Etkinlik Merkezi",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97112,
+  "lng": 32.73289,
   "features": [
    "erken çocukluk eğitimi",
    "kültür-sanat etkinlikleri",
@@ -8323,7 +8325,8 @@
    "https://cocuketkinlikmerkezleri.ankara.bel.tr/merkez",
    "https://www.ankara.bel.tr/projeler/detay/cocuk-etkinlik-merkezleri-146",
    "https://www.ankara.bel.tr/haberler/ankara-buyuksehir-belediyesi-cocuk-etkinlik-merkezlerine-basvurular-22-mayis-ta-basliyor-17269"
-  ]
+  ],
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "ABB Başkent Oyun Dünyası (Demetevler Parkı)",
@@ -8385,8 +8388,8 @@
   "phone": "0542 641 66 08",
   "website": "https://oyunodalari.ankara.bel.tr/",
   "google_maps_query": "Ankara Büyükşehir Belediyesi Çocuk Oyun Odası",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96695,
+  "lng": 32.79733,
   "features": [
    "ücretsiz",
    "erken çocukluk eğitimi",
@@ -8408,7 +8411,8 @@
   "sources": [
    "https://oyunodalari.ankara.bel.tr/",
    "https://s.ankara.bel.tr/files/2025/01/22/d8dba3c84d8f794907ea178d5f668809.pdf"
-  ]
+  ],
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "ABB Oyuncak Kütüphanesi",
@@ -8427,8 +8431,8 @@
   "phone": "(0312) 432 53 07",
   "website": "https://www.ankara.bel.tr/",
   "google_maps_query": "Ankara Büyükşehir Belediyesi Oyuncak Kütüphanesi",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97199,
+  "lng": 32.69893,
   "features": [
    "ücretsiz",
    "ödünç oyuncak",
@@ -8450,7 +8454,8 @@
   "sources": [
    "https://ankahaber.net/haber/detay/ankara_buyuksehir_belediyesinden_baskentli_cocuklar_icin_oyuncak_kutuphanesi_169860",
    "https://s.ankara.bel.tr/files/2025/01/22/d8dba3c84d8f794907ea178d5f668809.pdf"
-  ]
+  ],
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "Keçiören Belediyesi Çocuk Eğitim Merkezi",
@@ -9391,8 +9396,8 @@
   "phone": "+90 533 297 11 13",
   "website": "https://sites.google.com/view/adventurelandankara",
   "google_maps_query": "Adventure Land Ankara Macera Parkı Başkent Millet Bahçesi",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94788,
+  "lng": 32.83646,
   "features": [
    "zipline",
    "zipcoaster",
@@ -9414,7 +9419,8 @@
   "score_fiyat_performans": 3,
   "sources": [
    "https://sites.google.com/view/adventurelandankara"
-  ]
+  ],
+  "koordinat_kaynak": "places-new"
  },
  {
   "name": "Muhye Paintball",
