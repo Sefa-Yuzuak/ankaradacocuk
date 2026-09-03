@@ -3675,8 +3675,8 @@
   "subcategory": "millet bahçesi",
   "district": "Yenimahalle",
   "address": "Atatürk Kültür Merkezi alanı, Akköprü, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94441,
+  "lng": 32.83748,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3718,7 +3718,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "İmrahor Vadisi Millet Bahçesi",
@@ -3860,8 +3861,8 @@
   "subcategory": "kapalı oyun alanı / eğlence merkezi",
   "district": "Çankaya",
   "address": "Eskişehir Yolu 7. Km, Kentpark AVM No:164/75, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.90986,
+  "lng": 32.77627,
   "age_min": 0,
   "age_max": 13,
   "indoor": true,
@@ -3909,7 +3910,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
   "score_fiyat_performans": 2,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "JoyPort Eğlence Merkezi – Podium AVM",
@@ -3917,8 +3919,8 @@
   "subcategory": "kapalı eğlence merkezi (bowling + lazer + softplay)",
   "district": "Yenimahalle",
   "address": "Mehmet Akif Ersoy Mah. Bağdat Cad. No:60/B, Podium AVM 2. Kat, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.96265,
+  "lng": 32.77056,
   "age_min": 0,
   "age_max": 99,
   "indoor": true,
@@ -3963,7 +3965,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Joyland Oyun Parkı – Panora AVM",
@@ -4017,8 +4020,8 @@
   "subcategory": "AVM kapalı oyun alanı",
   "district": "Çankaya",
   "address": "Mustafa Kemal Mah. 2123. Cad. No:2, Cepa AVM 3. Kat No:3-75, Çankaya/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91055,
+  "lng": 32.77834,
   "age_min": 2,
   "age_max": 12,
   "indoor": true,
@@ -4058,7 +4061,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Arckids Eğlence Merkezi – Arcadium AVM",
@@ -4114,8 +4118,8 @@
   "subcategory": "kapalı lunapark",
   "district": "Keçiören",
   "address": "Yozgat Bulvarı No:99/102, Forum Ankara AVM, Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 40.01741,
+  "lng": 32.8235,
   "age_min": 1,
   "age_max": 12,
   "indoor": true,
@@ -4158,7 +4162,8 @@
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Open Play Trampoline Park – Antares AVM",
@@ -4166,8 +4171,8 @@
   "subcategory": "trambolin parkı",
   "district": "Keçiören",
   "address": "Ayvalı Mah., Antares AVM, 06010 Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97031,
+  "lng": 32.82112,
   "age_min": 3,
   "age_max": 99,
   "indoor": true,
@@ -4212,7 +4217,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
   "score_fiyat_performans": 2,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Arena Trambolin Park – Acity AVM",
@@ -4220,8 +4226,8 @@
   "subcategory": "trambolin parkı",
   "district": "Yenimahalle",
   "address": "Macun Mah., Acity AVM, Yenimahalle/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94578,
+  "lng": 32.76223,
   "age_min": 7,
   "age_max": 70,
   "indoor": true,
@@ -4262,7 +4268,8 @@
   "score_erisilebilirlik": 3,
   "score_guvenlik": 3,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "BelPa Buz Pateni Sarayı (Ankara Büyükşehir)",
@@ -4588,8 +4595,8 @@
   "subcategory": "bowling",
   "district": "Çankaya",
   "address": "Armada AVM, Söğütözü, Çankaya/Ankara (diğer şubeler: Antares AVM, Optimum AVM)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91266,
+  "lng": 32.80893,
   "age_min": 5,
   "age_max": 99,
   "indoor": true,
@@ -4627,7 +4634,8 @@
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Play Planet Bowling – ANKAmall",
@@ -4681,8 +4689,8 @@
   "subcategory": "bowling",
   "district": "Çankaya",
   "address": "Eskişehir Yolu 7. Km No:2, Cepa AVM, Çankaya/Ankara (diğer şubeler: Bilkent Center, Nata Vega)",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91055,
+  "lng": 32.77834,
   "age_min": 5,
   "age_max": 99,
   "indoor": true,
@@ -4718,7 +4726,8 @@
   "score_erisilebilirlik": 4,
   "score_guvenlik": 4,
   "score_fiyat_performans": 3,
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Waterpark Ankara (Keçiören)",
@@ -7517,8 +7526,8 @@
   "phone": null,
   "website": null,
   "google_maps_query": "Toru Entertainment Taurus AVM Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.88839,
+  "lng": 32.8112,
   "features": [
    "Bowling",
    "12D hareketli sinema",
@@ -7539,7 +7548,8 @@
   "sources": [
    "https://www.anneysen.com/carsi/1-6-yas-donemi-ihtiyaclari/cocuk-eglence-merkezi-toru-entertainment-taurus-alisveris-merkezi_657"
   ],
-  "dogum_gunu": true
+  "dogum_gunu": true,
+  "koordinat_kaynak": "nominatim-avm"
  },
  {
   "name": "Etimesgut Aile Yaşam Merkezi",
