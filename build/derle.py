@@ -544,10 +544,11 @@ def main():
             if len(uyeler) < 4:
                 continue
             url = f"/ilce/{i['slug']}/{k['slug']}/"
+            _sss = liste_sss(f"{i['ad']} {k['ad'].lower()}", uyeler)
             sayfa(url, "list.html", baslik=f"{i['ad']} {k['ad']}", alt=f"{i['ad']} ilçesinde {k['aciklama'].lower()}",
-                  ikon=k["ikon"], mekanlar=uyeler, canonical=url,
+                  ikon=k["ikon"], mekanlar=uyeler, canonical=url, sss=_sss,
                   meta_desc=f"Ankara {i['ad']} çocuklarla {k['ad'].lower()}: {len(uyeler)} mekân, yaşa göre puan, ücret ve aile ipuçları.",
-                  schema=[liste_schema(site, f"{i['ad']} {k['ad']}", url, uyeler),
+                  schema=[liste_schema(site, f"{i['ad']} {k['ad']}", url, uyeler), sss_schema(_sss),
                           kirintilar(site, (i["ad"], f"/ilce/{i['slug']}/"), (k["ad"], url))])
 
     # Yaş grubu
