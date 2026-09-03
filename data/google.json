@@ -30,7 +30,9 @@
   "count": 2353,
   "url": "https://maps.google.com/?cid=7655054695008299929"
  },
- "İnözü Vadisi ve Kelebekler Vadisi Tabiat Parkı": null,
+ "İnözü Vadisi ve Kelebekler Vadisi Tabiat Parkı": {
+  "place_id": "ChIJT_YT4zC30hQRvcODlYmxkmI"
+ },
  "Eğriova Tabiat Parkı": {
   "place_id": "ChIJxxFeF7e8gkAR_5_lmrpx4rA",
   "rating": 4.1,
@@ -49,7 +51,9 @@
   "count": 176,
   "url": "https://maps.google.com/?cid=16482048070720722479"
  },
- "Mavi Göl (Bayındır Barajı)": null,
+ "Mavi Göl (Bayındır Barajı)": {
+  "place_id": "ChIJQZt3mDlV0xQRkFs7NSSz9S4"
+ },
  "Çamlıdere Fosil Ormanı (Pelitçik)": {
   "place_id": "ChIJqVtL9nGSgkAR2gcDdmDemmc",
   "rating": 3.6,
@@ -131,8 +135,12 @@
   "url": "https://maps.google.com/?cid=15308984273128237354"
  },
  "Ankara Kültür Yolu Festivali": null,
- "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": null,
- "ABB Yarıyıl Çocuk Festivali (Altınpark)": null,
+ "Küçük Hanımlar Küçük Beyler Uluslararası Çocuk Tiyatroları Festivali": {
+  "place_id": "ChIJyU_2efVO0xQRpVgbjiCN1VA"
+ },
+ "ABB Yarıyıl Çocuk Festivali (Altınpark)": {
+  "place_id": "ChIJc5T5C-tN0xQR4An3GK1PcwQ"
+ },
  "Türkiye Binicilik Vakfı – Çocuklar İçin Pony ve Atlarla Tanışma (İncek)": {
   "place_id": "ChIJ41MIX89F0xQRfmtzo0a3TR0",
   "rating": 5,
@@ -164,16 +172,22 @@
   "count": 7922,
   "url": "https://maps.google.com/?cid=3035505426163650101"
  },
- "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)": null,
+ "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)": {
+  "place_id": "ChIJ_XQQAUdO0xQR1yDFWAueITU"
+ },
  "Anıtkabir ve Atatürk ve Kurtuluş Savaşı Müzesi": {
   "place_id": "ChIJseKU0x1P0xQRiQQ-JH62lZY",
   "rating": 4.8,
   "count": 909,
   "url": "https://maps.google.com/?cid=10850779530109256841"
  },
- "Ankara Etnografya Müzesi": null,
+ "Ankara Etnografya Müzesi": {
+  "place_id": "ChIJvwNfXlhO0xQR9swI8gR5VJY"
+ },
  "Ankara Resim ve Heykel Müzesi": null,
- "Kurtuluş Savaşı Müzesi (I. TBMM Binası)": null,
+ "Kurtuluş Savaşı Müzesi (I. TBMM Binası)": {
+  "place_id": "ChIJQ1SOxWFO0xQRU9MYRfTLmwY"
+ },
  "Cumhuriyet Müzesi (II. TBMM Binası)": null,
  "CerModern (CerÇocuk atölyeleri)": {
   "place_id": "ChIJtXHx6_lO0xQRrPnb4V4RjX8",
@@ -194,7 +208,9 @@
   "url": "https://maps.google.com/?cid=8999689016889405575"
  },
  "Türk Hava Kuvvetleri Müzesi": null,
- "ODTÜ Bilim ve Teknoloji Müzesi": null,
+ "ODTÜ Bilim ve Teknoloji Müzesi": {
+  "place_id": "ChIJw4Ao1S9G0xQRUGe9TMbteuo"
+ },
  "ODTÜ Toplum ve Bilim Merkezi Gökevi (Planetaryum)": null,
  "Ankara Üniversitesi Kreiken Rasathanesi (Halk Günleri)": null,
  "Ali Kuşçu Gökbilim Merkezi": {
@@ -297,29 +313,39 @@
   "count": 13655,
   "url": "https://maps.google.com/?cid=11901187940247231126"
  },
- "Botanik Parkı": null,
+ "Botanik Parkı": {
+  "place_id": "ChIJxWi_e4FP0xQRJ4Y2_tyjx_k"
+ },
  "Altınpark": {
   "place_id": "ChIJuRvc9ntN0xQRo_m17GJz5NM",
   "rating": 4.4,
   "count": 610,
   "url": "https://maps.google.com/?cid=15268455505408162211"
  },
- "Harikalar Diyarı": null,
+ "Harikalar Diyarı": {
+  "place_id": "ChIJS6S6Vo4w0xQRAPOhslXvxKQ"
+ },
  "Göksu Parkı": {
   "place_id": "ChIJw3OaqSM30xQRfLH7thiK0jk",
   "rating": 4.5,
   "count": 15859,
   "url": "https://maps.google.com/?cid=4166544444024926588"
  },
- "50. Yıl Parkı": null,
+ "50. Yıl Parkı": {
+  "place_id": "ChIJRaSQGDhO0xQRUYK-aZIRU4Y"
+ },
  "Dikmen Vadisi": {
   "place_id": "ChIJOeTTb31P0xQRW2nejVG8vwU",
   "rating": 4.5,
   "count": 9795,
   "url": "https://maps.google.com/?cid=414256749199911259"
  },
- "Kurtuluş Parkı": null,
- "Estergon Kalesi (Türk Kültür Merkezi)": null,
+ "Kurtuluş Parkı": {
+  "place_id": "ChIJRSh_PFBO0xQRgcjsVw-QklY"
+ },
+ "Estergon Kalesi (Türk Kültür Merkezi)": {
+  "place_id": "ChIJXXv7v7pN0xQRKbQiBa9LXbs"
+ },
  "Kartaltepe Kent Ormanı": {
   "place_id": "ChIJJfqYgoVM0xQRBvQjmnL5-XQ",
   "rating": 4.2,
@@ -344,7 +370,9 @@
   "count": 4431,
   "url": "https://maps.google.com/?cid=6134888006428813188"
  },
- "Keçiören (Bağlum) Millet Bahçesi": null,
+ "Keçiören (Bağlum) Millet Bahçesi": {
+  "place_id": "ChIJZagq744JgkARjgjPqMOqGJs"
+ },
  "Macera Adası – Kentpark AVM": {
   "place_id": "ChIJw94xkSdG0xQRL3Dto_qum5E",
   "rating": 3.7,
@@ -370,7 +398,9 @@
   "count": 100,
   "url": "https://maps.google.com/?cid=12251714315654612390"
  },
- "Funnivarium – Forum Ankara AVM": null,
+ "Funnivarium – Forum Ankara AVM": {
+  "place_id": "ChIJFVWVZpBM0xQRF2CjMj_mdqk"
+ },
  "Open Play Trampoline Park – Antares AVM": {
   "place_id": "ChIJS9r2XO9N0xQRDmE5WYaccGg",
   "rating": 3.7,
@@ -426,7 +456,9 @@
   "count": 48,
   "url": "https://maps.google.com/?cid=3581346084254622482"
  },
- "Play Planet Bowling – ANKAmall": null,
+ "Play Planet Bowling – ANKAmall": {
+  "place_id": "ChIJza4P971O0xQRifENPPjSXqI"
+ },
  "Rollhouse Bowling – Cepa AVM": {
   "place_id": "ChIJZdlZra5H0xQRVLPRAZMLnY8",
   "rating": 3.9,
@@ -775,7 +807,9 @@
   "count": 6,
   "url": "https://maps.google.com/?cid=12148139836645650368"
  },
- "CSO Ada Ankara Çocuk Atölyeleri": null,
+ "CSO Ada Ankara Çocuk Atölyeleri": {
+  "place_id": "ChIJKcLx159P0xQRk3d_wvbrcDY"
+ },
  "Da Vinci Board Game Cafe": {
   "place_id": "ChIJcaU6QSlJ0xQR3xnvn3fqbgU",
   "rating": 4.4,
@@ -788,15 +822,21 @@
   "count": 23,
   "url": "https://maps.google.com/?cid=11233889851562274827"
  },
- "Eğrekkaya Barajı": null,
- "Mini Sanat Çocukça Eğlenceler Atölyesi": null,
+ "Eğrekkaya Barajı": {
+  "place_id": "ChIJfSgj0eP2gkARNyokdbciR44"
+ },
+ "Mini Sanat Çocukça Eğlenceler Atölyesi": {
+  "place_id": "ChIJB8EXIIFH0xQRITTbXDQY-rA"
+ },
  "Nomi Oyun Evi": {
   "place_id": "ChIJ78d07tRH0xQRL1Woy0jLjLw",
   "rating": 4.8,
   "count": 31,
   "url": "https://maps.google.com/?cid=13586457689384834351"
  },
- "ABB Çocuk Etkinlik Merkezleri": null,
+ "ABB Çocuk Etkinlik Merkezleri": {
+  "place_id": "ChIJ4bO0vq1J0xQR4YLCSJz3F1A"
+ },
  "ABB Başkent Oyun Dünyası (Demetevler Parkı)": {
   "place_id": "ChIJY4URnMZJ0xQRMeM6nbpVynk",
   "rating": 4.1,
