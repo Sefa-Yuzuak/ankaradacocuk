@@ -241,7 +241,29 @@ def mekan_sss(m):
                     "cevap": f"Google'da {m['google']['rating']} puan"
                              + (f" ({m['google']['count']} değerlendirme)" if m['google'].get('count') else "")
                              + ". Yorumları Google haritalar sayfasından okuyabilirsiniz."})
-    return sss[:5]
+    bs = m.get("best_season")
+    if bs:
+        if bs == "her mevsim":
+            nzc = ("Her mevsim ziyaret edilebilir; kapalı alan olduğu için hava koşullarından etkilenmez."
+                   if m.get("indoor") else
+                   "Her mevsim gidilebilir; açık hava olduğu için en keyifli dönem ilkbahar ve sonbahar, "
+                   "yaz öğlenleri sıcak, kış rüzgârlı olabilir.")
+        else:
+            nzc = f"En uygun dönem: {bs}." + (" Kapalı alan olduğundan yağmur/soğukta da uygundur." if m.get("indoor") else "")
+        sss.append({"soru": f"{m['name']} ne zaman gidilir, en iyi mevsim hangisi?", "cevap": nzc})
+    er = m.get("score_erisilebilirlik")
+    if er is not None:
+        if er >= 4:
+            erc = (f"Erişim rahat ({er}/5): düz ve geniş alanlar; bebek arabası ile ve büyük ölçüde "
+                   "tekerlekli sandalye ile gezilebilir.")
+        elif er == 3:
+            erc = (f"Erişim orta düzeyde ({er}/5): bebek arabasıyla gezilebilir; kot farkı ve zemin durumu "
+                   "için gitmeden önce teyit etmeniz önerilir.")
+        else:
+            erc = (f"Erişim sınırlı olabilir ({er}/5): bebek arabası veya tekerlekli sandalye ile ziyaret "
+                   "öncesi mekândan bilgi almanız iyi olur.")
+        sss.append({"soru": f"{m['name']} bebek arabasıyla gezilir mi, erişim nasıl?", "cevap": erc})
+    return sss[:7]
 
 
 def _tarih(x):
