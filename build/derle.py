@@ -13,6 +13,7 @@ import shutil
 import statistics
 import unicodedata
 from datetime import date, timedelta, datetime, timezone
+from math import radians, sin, cos, asin, sqrt
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -317,6 +318,13 @@ def yaz(yol: str, icerik: str):
     hedef.write_text(icerik, encoding="utf-8")
 
 
+def _km(a_lat, a_lng, b_lat, b_lng):
+    """Iki koordinat arasi kus ucusu km (haversine)."""
+    dlat, dlng = radians(b_lat - a_lat), radians(b_lng - a_lng)
+    h = sin(dlat / 2) ** 2 + cos(radians(a_lat)) * cos(radians(b_lat)) * sin(dlng / 2) ** 2
+    return 2 * 6371 * asin(sqrt(h))
+
+
 def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
     k = r.get("kural", {})
     secilen = []
@@ -440,14 +448,24 @@ def main():
 
     # Mekân sayfaları
     for m in mekanlar:
-        benzer = [b for b in mekanlar if b["category"] == m["category"] and b is not m and b["status"] != "kapalı"][:4]
+        acik = [b for b in mekanlar if b is not m and b["status"] != "kapalı"]
+        gorulen = set()
         yakin = []
         if m.get("lat") and m.get("lng"):
-            def uzak(b):
-                return (b["lat"] - m["lat"]) ** 2 + (b["lng"] - m["lng"]) ** 2
-            yakin = sorted([b for b in mekanlar if b is not m and b.get("lat") and b.get("lng")], key=uzak)[:4]
+            aday = [(_km(m["lat"], m["lng"], b["lat"], b["lng"]), b)
+                    for b in acik if b.get("lat") and b.get("lng")]
+            aday = [t for t in sorted(aday, key=lambda t: t[0]) if t[0] <= 15][:5]
+            yakin = [(b, round(km, 1)) for km, b in aday]
+            gorulen |= {id(b) for b, _ in yakin}
+        benzer = [b for b in sorted([b for b in acik if b["category"] == m["category"]],
+                                    key=lambda b: -(b.get("puan") or 0)) if id(b) not in gorulen][:5]
+        gorulen |= {id(b) for b in benzer}
+        ilce_m = m.get("district")
+        ayni_ilce = ([b for b in sorted([b for b in acik if b.get("district") == ilce_m],
+                                        key=lambda b: -(b.get("puan") or 0)) if id(b) not in gorulen][:6]
+                     if ilce_m else [])
         m_sss = mekan_sss(m)
-        sayfa(m["url"], "place.html", m=m, benzer=benzer, yakin=yakin, sss=m_sss, schema=[
+        sayfa(m["url"], "place.html", m=m, benzer=benzer, yakin=yakin, ayni_ilce=ayni_ilce, sss=m_sss, schema=[
             schema_mekan(m, site),
             kirintilar(site, (m["kategori"]["ad"], f"/kategori/{m['category']}/"), (m["name"], m["url"])),
             sss_schema(m_sss),

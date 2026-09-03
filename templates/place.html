@@ -113,12 +113,12 @@
     <p class="kucuk">Yanlış veya eski bir bilgi mi gördünüz? <a href="/mekan-oner/">Düzeltme bildirin</a>. Bilgiler {{ site.guncelleme_tr }} tarihinde kaynaklarından derlendi.</p>
   </div>
   <aside class="mekan-sag">
-    {% if yakin %}<h3>Yakınındakiler</h3>
-    <ul class="mini-liste">{% for b in yakin %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ b.puan }}</span></li>{% endfor %}</ul>{% endif %}
+    {% if yakin %}<h3>Yakınındaki mekânlar</h3>
+    <ul class="mini-liste">{% for b, km in yakin %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ km }} km</span></li>{% endfor %}</ul>{% endif %}
     {% if benzer %}<h3>Benzer mekânlar</h3>
     <ul class="mini-liste">{% for b in benzer %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ b.puan }}</span></li>{% endfor %}</ul>{% endif %}
-    <h3>Rehberler</h3>
-    <ul class="mini-liste">{% for r in rehberler[:5] %}<li><a href="{{ r.url }}">{{ r.ikon }} {{ r.baslik }}</a></li>{% endfor %}</ul>
+    {% if ayni_ilce %}<h3>{{ m.district }}'de başka mekânlar</h3>
+    <ul class="mini-liste">{% for b in ayni_ilce %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ b.puan }}</span></li>{% endfor %}</ul>{% endif %}
   </aside>
 </section>
 {% endblock %}
