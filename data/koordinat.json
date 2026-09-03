@@ -32,7 +32,14 @@
   "eslesme": "Kesikköprü Barajı, Kesikköprü, Kesikköprü Mahallesi, Balâ, Ankara, İç Anadolu Bölgesi, Türkiye",
   "tur": "dam"
  },
- "Mavi Göl (Bayındır Barajı)": null,
+ "Mavi Göl (Bayındır Barajı)": {
+  "lat": 39.91458,
+  "lng": 32.99365,
+  "sorgu": "Mavi Göl, Mamak, Ankara",
+  "tur": "park",
+  "eslesme": "Mavi Göl Rekreasyon Alanı, Mamak, Ankara, İç Anadolu Bölgesi, Türkiye",
+  "guven": "yuksek"
+ },
  "Çamlıdere Fosil Ormanı (Pelitçik)": null,
  "Çamkoru Tabiat Parkı": {
   "lat": 40.58291,
@@ -41,7 +48,14 @@
   "eslesme": "Çamkoru Tabiat Parkı, Avdan Mahallesi, Çamlıdere, Ankara, İç Anadolu Bölgesi, Türkiye",
   "tur": "nature_reserve"
  },
- "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": null,
+ "Sakarya Meydan Muharebesi Tarihi Milli Parkı (Duatepe)": {
+  "lat": 39.58693,
+  "lng": 32.13314,
+  "sorgu": "Sakarya Meydan Muharebesi Tarihi Milli Parkı, Polatlı, Ankara",
+  "tur": "park",
+  "eslesme": "Sakarya Meydan Muharebesi Tarihî Millî Parkı, Şehitlik Mahallesi, Polatlı, Ankara, İç Anadolu Bölges",
+  "guven": "yuksek"
+ },
  "Çubuk Karagöl Tabiat Parkı": {
   "lat": 40.41033,
   "lng": 32.90964,
@@ -116,7 +130,14 @@
   "eslesme": "MTA Tabiat Tarihi Müzesi, Öğretmenler Caddesi, Çukurambar Mahallesi, Ankara, Çankaya, Ankara, İç Anadolu Bölgesi, 06530,",
   "tur": "museum"
  },
- "Rahmi M. Koç Müzesi Ankara (Çengelhan)": null,
+ "Rahmi M. Koç Müzesi Ankara (Çengelhan)": {
+  "lat": 39.93707,
+  "lng": 32.86343,
+  "sorgu": "Rahmi M. Koç Müzesi Ankara, Altındağ, Ankara",
+  "tur": "museum",
+  "eslesme": "Rahmi Mustafa Koç Müzesi, 1, Depo Sokağı, Samanpazarı, Kale Mahallesi, Altındağ, Ankara, İç Anadolu ",
+  "guven": "yuksek"
+ },
  "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)": null,
  "Ankara Etnografya Müzesi": {
   "lat": 39.93267,
@@ -139,7 +160,14 @@
   "eslesme": "Kurtuluş Savaşı Müzesi, 2/1, Cumhuriyet Caddesi, Ulus, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu Bölgesi, 0605",
   "tur": "museum"
  },
- "Cumhuriyet Müzesi (II. TBMM Binası)": null,
+ "Cumhuriyet Müzesi (II. TBMM Binası)": {
+  "lat": 39.94138,
+  "lng": 32.85162,
+  "sorgu": "Cumhuriyet Müzesi, Altındağ, Ankara",
+  "tur": "museum",
+  "eslesme": "Cumhuriyet Müzesi, 22, Cumhuriyet Caddesi, Ulus, Hacı Bayram Mahallesi, Altındağ, Ankara, İç Anadolu",
+  "guven": "yuksek"
+ },
  "CerModern (CerÇocuk atölyeleri)": {
   "lat": 39.93176,
   "lng": 32.85021,
@@ -215,7 +243,14 @@
  },
  "Ankara Devlet Tiyatrosu – Çocuk Oyunları": null,
  "ABB Başkent Tiyatroları – Çocuk Tiyatrosu (Gençlik Parkı)": null,
- "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)": null,
+ "Ankara Devlet Opera ve Balesi – Çocuk Programları (Opera Tur, çocuk oyunları)": {
+  "lat": 39.93549,
+  "lng": 32.85321,
+  "sorgu": "Ankara Devlet Opera ve Balesi, Altındağ, Ankara",
+  "tur": "theatre",
+  "eslesme": "Ankara Devlet Opera ve Balesi, Atatürk Bulvarı, Opera, Hacı Bayram Mahallesi, Altındağ, Ankara, İç A",
+  "guven": "yuksek"
+ },
  "PTT Pul Müzesi": {
   "lat": 39.93816,
   "lng": 32.85471,
@@ -313,7 +348,14 @@
  "Başkent Millet Bahçesi (AKM)": null,
  "İmrahor Vadisi Millet Bahçesi": null,
  "Ankara Millet Bahçesi (Etimesgut)": null,
- "Keçiören (Bağlum) Millet Bahçesi": null,
+ "Keçiören (Bağlum) Millet Bahçesi": {
+  "lat": 39.97863,
+  "lng": 32.86805,
+  "sorgu": "Keçiören, Keçiören, Ankara",
+  "tur": "townhall",
+  "eslesme": "Keçiören Belediyesi, İslahiye Sokağı, Güçlükaya Mahallesi, Keçiören, Ankara, İç Anadolu Bölgesi, 063",
+  "guven": "yuksek"
+ },
  "Kafes Fırın Söğütözü": null,
  "Yuba Cafe & Bistro": null,
  "AOÇ Kaşıbeyaz Ankara": null,

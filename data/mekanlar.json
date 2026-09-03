@@ -499,8 +499,8 @@
   "district": "Mamak",
   "distance_km": 12,
   "address": "Kayaş, Mamak, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.91458,
+  "lng": 32.99365,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -543,7 +543,8 @@
   "score_ergen": 3,
   "score_erisilebilirlik": 5,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "Çamlıdere Fosil Ormanı (Pelitçik)",
@@ -701,8 +702,8 @@
   "district": "Polatlı",
   "distance_km": 80,
   "address": "Duatepe / Kartaltepe, Polatlı, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.58693,
+  "lng": 32.13314,
   "age_min": 6,
   "age_max": 99,
   "indoor": false,
@@ -738,7 +739,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 4,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "Çubuk Karagöl Tabiat Parkı",
@@ -1691,8 +1693,8 @@
   "subcategory": "sanayi, ulaşım ve teknoloji müzesi",
   "district": "Altındağ",
   "address": "Kale Mah., Depo Sokak No:1, 06250 Altındağ/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93707,
+  "lng": 32.86343,
   "age_min": 3,
   "age_max": 99,
   "indoor": true,
@@ -1728,7 +1730,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 3,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "Ankara Üniversitesi Oyuncak Müzesi (ÇOKAUM)",
@@ -1953,8 +1956,8 @@
   "subcategory": "tarih müzesi (çocuk dostu müze)",
   "district": "Altındağ",
   "address": "Cumhuriyet Bulvarı, II. Meclis Binası No:22, Ulus/Altındağ, Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.94138,
+  "lng": 32.85162,
   "age_min": 6,
   "age_max": 99,
   "indoor": true,
@@ -1987,7 +1990,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 5
+  "score_fiyat_performans": 5,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "CerModern (CerÇocuk atölyeleri)",
@@ -2670,8 +2674,8 @@
   "subcategory": "opera/bale çocuk etkinlikleri",
   "district": "Altındağ",
   "address": "Ankara Opera Sahnesi, Atatürk Bulvarı, Opera/Ulus, Altındağ; ayrıca CSO Ada ve Resim-Heykel Müzesi sahnesi",
-  "lat": null,
-  "lng": null,
+  "lat": 39.93549,
+  "lng": 32.85321,
   "age_min": 5,
   "age_max": 16,
   "indoor": true,
@@ -2704,7 +2708,8 @@
   "score_ergen": 4,
   "score_erisilebilirlik": 4,
   "score_guvenlik": 5,
-  "score_fiyat_performans": 4
+  "score_fiyat_performans": 4,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "PTT Pul Müzesi",
@@ -3813,8 +3818,8 @@
   "subcategory": "millet bahçesi",
   "district": "Keçiören",
   "address": "Bağlum Karşıyaka Mah., Keçiören/Ankara",
-  "lat": null,
-  "lng": null,
+  "lat": 39.97863,
+  "lng": 32.86805,
   "age_min": 0,
   "age_max": 99,
   "indoor": false,
@@ -3846,7 +3851,8 @@
   "score_ergen": 1,
   "score_erisilebilirlik": 2,
   "score_guvenlik": 3,
-  "score_fiyat_performans": 2
+  "score_fiyat_performans": 2,
+  "koordinat_kaynak": "nominatim"
  },
  {
   "name": "Macera Adası – Kentpark AVM",
