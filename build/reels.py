@@ -100,27 +100,48 @@ def zemin(kr):
     return im
 
 
+def yildiz(d, cx, cy, r, kr):
+    pts = []
+    import math as _m
+    for i in range(10):
+        rr = r if i % 2 == 0 else r * 0.42
+        a = -_m.pi / 2 + i * _m.pi / 5
+        pts.append((cx + rr * _m.cos(a), cy + rr * _m.sin(a)))
+    d.polygon(pts, fill=kr)
+
+
 def intro_kare(baslik, emoji, kr):
     im = zemin(kr)
     d = ImageDraw.Draw(im)
-    ef = efont(240)
+    # emoji (renkli, üstte)
+    ef = efont(190)
     if ef:
-        el = Image.new("RGBA", (300, 300), (0, 0, 0, 0))
-        ImageDraw.Draw(el).text((150, 150), emoji, font=ef, anchor="mm", embedded_color=True)
-        im.paste(el, (W // 2 - 150, 360), el)
-    fnt = font(120)
-    sat = []
-    for parca in baslik.split("\n"):
-        sat += sar(d, parca, fnt, W - 140)
-    y = 760
-    for s in sat:
-        d.text((W // 2, y), s, font=fnt, fill=BEYAZ, anchor="mm")
-        y += 138
-    d.rounded_rectangle([W // 2 - 220, y + 30, W // 2 + 220, y + 128], radius=49, fill=BEYAZ)
-    d.text((W // 2, y + 79), "kaydır 👉", font=font(52), fill=TKOYU, anchor="mm")
+        el = Image.new("RGBA", (250, 250), (0, 0, 0, 0))
+        ImageDraw.Draw(el).text((125, 125), emoji, font=ef, anchor="mm", embedded_color=True)
+        im.paste(el, (W // 2 - 125, 300), el)
+    # başlık: üst satır küçük, vurgu satırı büyük
+    parts = baslik.split("\n")
+    ust = parts[0] if len(parts) > 1 else ""
+    vur = parts[-1]
+    y = 640
+    if ust:
+        fb = font(84)
+        for s in sar(d, ust, fb, W - 150):
+            d.text((W // 2, y), s, font=fb, fill=(255, 255, 255), anchor="mm")
+            y += 100
+    y += 26
+    fh = font(150)
+    for s in sar(d, vur, fh, W - 110):
+        d.text((W // 2, y), s, font=fh, fill=SARI, anchor="mm")
+        y += 168
+    # fayda şeridi (emoji yok — tofu olmasın)
+    y += 40
+    d.rounded_rectangle([W // 2 - 360, y, W // 2 + 360, y + 116], radius=58, fill=BEYAZ)
+    d.text((W // 2, y + 58), "PUANLI LİSTE · KAYDET", font=font(52), fill=TKOYU, anchor="mm")
+    # marka alt
     lg = marka()
-    im.paste(lg, (W // 2 - 150, H - 150), lg)
-    d.text((W // 2 - 70, H - 130), "ankaradaçocuk", font=font(46), fill=BEYAZ, anchor="lm")
+    im.paste(lg, (W // 2 - 158, H - 158), lg)
+    d.text((W // 2 - 74, H - 138), "ankaradaçocuk", font=font(48), fill=BEYAZ, anchor="lm")
     return im
 
 
@@ -149,11 +170,12 @@ def mekan_kare(m, sira):
     # sira rozeti
     d.ellipse([54, 60, 214, 220], fill=TURUNCU)
     d.text((134, 132), f"{sira}", font=font(104), fill=BEYAZ, anchor="mm")
-    # puan rozeti (sag ust)
+    # puan rozeti (sag ust) — çizili yıldız (emoji tofu olmasın)
     kr = tuple(int((m.get("renk") or "#ff7a59").lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
-    d.rounded_rectangle([W - 250, 70, W - 54, 176], radius=53, fill=(255, 255, 255, 235))
-    d.text((W - 152, 104), f"⭐ {m['puan']}", font=font(50), fill=koyult(kr, 0.7), anchor="mm")
-    d.text((W - 152, 150), "/10", font=font(30), fill=koyult(kr, 0.7), anchor="mm")
+    d.rounded_rectangle([W - 258, 64, W - 54, 182], radius=56, fill=(255, 255, 255, 238))
+    yildiz(d, W - 208, 110, 26, (245, 180, 60))
+    d.text((W - 172, 110), f"{m['puan']}", font=font(60), fill=koyult(kr, 0.62), anchor="lm")
+    d.text((W - 156, 158), "/10", font=font(30), fill=koyult(kr, 0.62), anchor="mm")
     # kategori cipi
     cip = (m.get("kat_ad") or "").upper()
     if cip:
@@ -168,11 +190,11 @@ def mekan_kare(m, sira):
     for s in sat:
         d.text((60, y), s, font=isf, fill=BEYAZ)
         y += 90
-    # bilgi satiri
+    # bilgi satiri (emoji yok — tofu olmasın; nokta ayraç)
     yas = en_iyi_yas(m)
-    ortam = "Kapalı" if m.get("indoor") else "Açık hava"
-    bilgi = f"📍 {m.get('district') or 'Ankara'}   👶 {yas} yaş   {'🏠' if m.get('indoor') else '☀️'} {ortam}"
-    d.text((60, y + 20), bilgi, font=font(46, False), fill=(220, 220, 230), anchor="lm")
+    ortam = "Kapalı alan" if m.get("indoor") else "Açık hava"
+    bilgi = f"{m.get('district') or 'Ankara'}   ·   {yas} yaş   ·   {ortam}"
+    d.text((60, y + 20), bilgi, font=font(46, False), fill=(228, 228, 238), anchor="lm")
     # aciklama (kisa)
     ac = (m.get("description") or "").strip().split(". ")[0].strip()
     if ac:
@@ -193,8 +215,9 @@ def outro_kare(toplam, kr):
     for i, s in enumerate([f"{toplam} mekân · yaşa göre puanlı",
                            "park · müze · oyun · etkinlik", "hepsi tek sitede"]):
         d.text((W // 2, 840 + i * 78), s, font=font(50, False), fill=(255, 245, 235), anchor="mm")
-    d.rounded_rectangle([W // 2 - 300, 1180, W // 2 + 300, 1300], radius=60, fill=BEYAZ)
-    d.text((W // 2, 1240), "Takip et 👉 @ankaradacocuk", font=font(46), fill=TKOYU, anchor="mm")
+    d.rounded_rectangle([W // 2 - 340, 1160, W // 2 + 340, 1284], radius=62, fill=SARI)
+    d.text((W // 2, 1222), "KAYDET · PAYLAŞ", font=font(54), fill=KOYU, anchor="mm")
+    d.text((W // 2, 1372), "Takip et  @ankaradacocuk", font=font(50), fill=BEYAZ, anchor="mm")
     return im
 
 
@@ -210,6 +233,53 @@ def klip(kare_yolu, mp4_yolu, sure, zoom_in=True):
     subprocess.run(["ffmpeg", "-y", "-loop", "1", "-i", str(kare_yolu), "-t", f"{sure}",
                     "-vf", vf, "-c:v", "libx264", "-preset", "medium", "-crf", "20",
                     "-r", "30", str(mp4_yolu)], check=True, capture_output=True)
+
+
+MUZIK = KOK / "muzik"
+
+
+def _synth_bed(sure, cikti):
+    """Orijinal, TELİFSİZ yumuşak akor pad'i (C-majör). Gerçek müzik yoksa yedek.
+    Instagram'da 'orijinal ses' olur, telif riski yok."""
+    dur = f"{sure:.2f}"
+    fout = f"{max(0.1, sure - 1.6):.2f}"
+    girisler = []
+    for frq in (261.63, 329.63, 392.00, 523.25):  # C4 E4 G4 C5
+        girisler += ["-f", "lavfi", "-i", f"sine=frequency={frq}:duration={dur}"]
+    fc = (f"[0][1][2][3]amix=inputs=4,tremolo=f=0.2:d=0.55,"
+          f"aecho=0.8:0.85:130:0.35,lowpass=f=1050,highpass=f=90,"
+          f"afade=t=in:st=0:d=1.2,afade=t=out:st={fout}:d=1.6,volume=1.5[a]")
+    subprocess.run(["ffmpeg", "-y", *girisler, "-filter_complex", fc,
+                    "-map", "[a]", "-c:a", "aac", "-b:a", "160k", str(cikti)],
+                   check=True, capture_output=True)
+
+
+def muzik_ekle(sessiz_mp4, cikti_mp4, idx, sure):
+    """Videoya ses göm. muzik/ içinde gerçek telifsiz parça varsa onu (döngü+fade);
+    yoksa orijinal synth pad. Sessiz reels Keşfet'te geri planda kalır — bunu çözer."""
+    parcalar = sorted(p for e in ("*.mp3", "*.m4a", "*.wav", "*.aac", "*.ogg")
+                      for p in MUZIK.glob(e)) if MUZIK.exists() else []
+    fout = f"{max(0.1, sure - 1.6):.2f}"
+    if parcalar:
+        trk = parcalar[idx % len(parcalar)]
+        fc = f"[1:a]afade=t=out:st={fout}:d=1.6,volume=0.85[a]"
+        subprocess.run(["ffmpeg", "-y", "-i", str(sessiz_mp4),
+                        "-stream_loop", "-1", "-i", str(trk),
+                        "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+                        "-t", f"{sure:.2f}", str(cikti_mp4)],
+                       check=True, capture_output=True)
+        return trk.name
+    # yedek: synth
+    import tempfile as _tf
+    with _tf.TemporaryDirectory() as _t:
+        bed = Path(_t) / "bed.m4a"
+        _synth_bed(sure, bed)
+        subprocess.run(["ffmpeg", "-y", "-i", str(sessiz_mp4), "-i", str(bed),
+                        "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                        "-c:a", "aac", "-b:a", "160k", "-shortest", str(cikti_mp4)],
+                       check=True, capture_output=True)
+    return "synth-pad (telifsiz)"
 
 
 def reel_yap(tema, mekanlar):
@@ -229,26 +299,35 @@ def reel_yap(tema, mekanlar):
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)
         klipler = []
-        # intro
+        S_INTRO, S_KART, S_OUTRO = 2.0, 2.5, 2.6
+        # intro (hızlı hook)
         intro_kare(tema["baslik"], tema["emoji"], kr).save(td / "k00.png")
-        klip(td / "k00.png", td / "c00.mp4", 2.6, True)
+        klip(td / "k00.png", td / "c00.mp4", S_INTRO, True)
         klipler.append(td / "c00.mp4")
         # mekanlar
         for i, m in enumerate(top, 1):
             mekan_kare(m, i).save(td / f"k{i:02d}.png")
-            klip(td / f"k{i:02d}.png", td / f"c{i:02d}.mp4", 3.0, i % 2 == 1)
+            klip(td / f"k{i:02d}.png", td / f"c{i:02d}.mp4", S_KART, i % 2 == 1)
             klipler.append(td / f"c{i:02d}.mp4")
         # outro
         outro_kare(TOPLAM, kr).save(td / "k99.png")
-        klip(td / "k99.png", td / "c99.mp4", 3.0, False)
+        klip(td / "k99.png", td / "c99.mp4", S_OUTRO, False)
         klipler.append(td / "c99.mp4")
-        # birlestir
+        toplam_sure = S_INTRO + len(top) * S_KART + S_OUTRO
+        # birlestir (sessiz)
         liste = td / "liste.txt"
         liste.write_text("".join(f"file '{c.as_posix()}'\n" for c in klipler), encoding="utf-8")
-        cikti = CIK / f"reel-{tema['slug']}.mp4"
+        sessiz = td / "sessiz.mp4"
         subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(liste),
-                        "-c", "copy", str(cikti)], check=True, capture_output=True)
-    print(f"  ✓ {tema['slug']}: {len(top)} mekân -> {cikti.name}  ({', '.join(m['name'][:18] for m in top)})")
+                        "-c", "copy", str(sessiz)], check=True, capture_output=True)
+        # ses göm
+        cikti = CIK / f"reel-{tema['slug']}.mp4"
+        try:
+            idx = TEMALAR.index(tema)
+        except ValueError:
+            idx = 0
+        ses = muzik_ekle(sessiz, cikti, idx, toplam_sure)
+    print(f"  ✓ {tema['slug']}: {len(top)} mekân, {toplam_sure:.1f}s, ses: {ses} -> {cikti.name}")
     return {"tema": tema, "mekanlar": top}
 
 
