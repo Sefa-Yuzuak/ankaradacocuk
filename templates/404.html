@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}Sayfa bulunamadı | {{ site.ad }}{% endblock %}
 {% block desc %}Aradığınız sayfa yok.{% endblock %}
-{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, follow">{% endblock %}
 {% block content %}
 <section class="kap metin-sayfa" style="text-align:center">
   <p style="font-size:4rem">🧭</p>

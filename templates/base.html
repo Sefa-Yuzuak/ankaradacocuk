@@ -6,7 +6,7 @@
 <title>{% block title %}{{ site.ad }}{% endblock %}</title>
 <meta name="description" content="{% block desc %}{{ site.aciklama }}{% endblock %}">
 <link rel="canonical" href="{{ site.url }}{{ canonical|default('/') }}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+{% block robots %}<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">{% endblock %}
 {% if site.gsc %}<meta name="google-site-verification" content="{{ site.gsc }}">{% endif %}
 <meta name="theme-color" content="#ff7a59">
 <meta name="geo.region" content="TR-06">
