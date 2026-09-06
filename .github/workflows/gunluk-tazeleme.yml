@@ -11,6 +11,8 @@ name: Günlük tazeleme
 #   COOLIFY_TOKEN      = Coolify API token (Keys & Tokens) — GEÇERLİ olmalı
 
 on:
+  push:
+    branches: [master]    # kod/içerik değişikliği elle tetikleme beklemeden yayına gitsin
   schedule:
     - cron: "0 3 * * *"   # her gün 03:00 UTC = 06:00 TR
   workflow_dispatch:
