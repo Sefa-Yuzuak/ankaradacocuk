@@ -648,6 +648,11 @@ def main():
         "User-agent: Applebot-Extended\nAllow: /\nUser-agent: CCBot\nAllow: /\n\n"
         f"Sitemap: {site['url']}/sitemap.xml\n", encoding="utf-8")
 
+    # AdSense yetkili satici beyani: /ads.txt yoksa Google reklam talebini kisitlar.
+    if site.get("adsense"):
+        (DIST / "ads.txt").write_text(
+            f"google.com, {site['adsense'].removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
+
     llms = [f"# {site['ad']}", "", f"> {site['slogan']} {site['url']} — Ankara'da çocuklu aileler için "
             f"{len(mekanlar)} mekânın yaş gruplarına göre puanlandığı, düzenli güncellenen bağımsız rehber. "
             f"Son güncelleme: {bugun}.", "",
