@@ -16,7 +16,11 @@
     <ol class="ilk-uc">{% for m in r.mekanlar[:5] %}<li><a href="{{ m.url }}">{{ m.name }}</a> <span>({{ m.district }}, {{ m.puan }}/10)</span></li>{% endfor %}</ol>
   </div>
 
-  <div class="tablo-kaydir">
+  {# 7 sütun 360px ekranda 640px yer istiyor ve yarısı görünmüyordu. Hemen
+     aşağıdaki kart ızgarası aynı mekânları aynı bilgilerle (ilçe, ortam,
+     ücret, yaş, puan) üstelik fotoğraf ve telefonla veriyor; bu yüzden dar
+     ekranda tablo gizleniyor — mobil kullanıcı hiçbir bilgiyi kaybetmiyor. #}
+  <div class="tablo-kaydir mekan-tablo-kap">
     <table class="karsilastirma">
       <thead><tr><th>#</th><th>Mekân</th><th>İlçe</th><th>Ortam</th><th>Ücret</th><th>En iyi yaş</th><th>Puan</th></tr></thead>
       <tbody>
@@ -43,7 +47,8 @@
       <div class="tablo-kaydir">
         <table class="karsilastirma">
           <thead><tr>{% for h in b.tablo.basliklar %}<th>{{ h }}</th>{% endfor %}</tr></thead>
-          <tbody>{% for satir in b.tablo.satirlar %}<tr>{% for c in satir %}<td>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+          {# data-etiket: dar ekranda satır karta dönüşüyor, sütun başlığı hücrenin önüne basılıyor #}
+          <tbody>{% for satir in b.tablo.satirlar %}<tr>{% for c in satir %}<td data-etiket="{{ b.tablo.basliklar[loop.index0] }}">{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
         </table>
       </div>
       {% endif %}
