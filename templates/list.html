@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ baslik }} ({{ mekanlar|length }}) | {{ site.ad }}{% endblock %}
-{% block desc %}{{ meta_desc }}{% endblock %}
+{% block title %}{{ [baslik ~ ' (' ~ mekanlar|length ~ ')', baslik] | unvan }}{% endblock %}
+{% block desc %}{{ meta_desc | kisalt }}{% endblock %}
 {% block content %}
 <nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>{{ baslik }}</span></nav>
 <section class="kap liste-bas">

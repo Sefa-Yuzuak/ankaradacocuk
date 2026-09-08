@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% set canonical = m.url %}
-{% block title %}{{ m.name }} — Çocukla Gidilir mi? Puan, Ücret, Ulaşım | {{ site.ad }}{% endblock %}
-{% block desc %}{{ m.name }} ({{ m.district or 'Ankara' }}): çocuklu aileler için {{ m.puan }}/10 puan. {{ (m.description or '')[:140] }}{% endblock %}
+{% block title %}{{ [m.name ~ ' — ' ~ (m.district or 'Ankara') ~ ', Ankara',
+                    m.name ~ ' — ' ~ (m.district or 'Ankara'),
+                    m.name] | unvan }}{% endblock %}
+{% block desc %}{{ (m.name ~ ' (' ~ (m.district or 'Ankara') ~ '): çocuklu aileler için '
+                    ~ m.puan ~ '/10 puan. ' ~ (m.description or '')) | kisalt }}{% endblock %}
 {% block ogtype %}place{% endblock %}
 {% set og_gorsel = site.url + '/static/img/mekan/' + (m.foto.lg if m.foto else m.kapak) if (m.foto or m.kapak) else site.url + '/static/og.png' %}
 {% block head %}

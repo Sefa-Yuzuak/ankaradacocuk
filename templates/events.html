@@ -1,6 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Ankara'da Çocuk Etkinlikleri — Yaklaşan Tiyatro, Konser ve Atölyeler | {{ site.ad }}{% endblock %}
-{% block desc %}{{ meta_desc }}{% endblock %}
+{% block title %}{{ ["Ankara'da Çocuk Etkinlikleri — Tiyatro, Konser, Atölye",
+                    "Ankara'da Çocuk Etkinlikleri"] | unvan }}{% endblock %}
+{% block desc %}{{ meta_desc | kisalt }}{% endblock %}
 {% block content %}
 <nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Etkinlikler</span></nav>
 <section class="kap liste-bas">

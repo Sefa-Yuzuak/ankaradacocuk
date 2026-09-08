@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set canonical = '/ara/' %}
-{% block title %}Mekân Ara & Öneri Sihirbazı | {{ site.ad }}{% endblock %}
-{% block desc %}Yaşa, ortama, bütçeye ve ilçeye göre Ankara'da çocukla gidilecek yer önerisi alın; isimle arayın.{% endblock %}
+{% block title %}{{ 'Mekân Ara & Öneri Sihirbazı' | unvan }}{% endblock %}
+{% block desc %}{{ "Yaşa, ortama, bütçeye ve ilçeye göre Ankara'da çocukla gidilecek yer önerisi alın; isimle arayın." | kisalt }}{% endblock %}
 {% block robots %}<meta name="robots" content="noindex, follow">{% endblock %}
 {% block content %}
 <section class="kap liste-bas">

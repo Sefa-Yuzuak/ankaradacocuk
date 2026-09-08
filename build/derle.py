@@ -463,6 +463,40 @@ def main():
                       trim_blocks=True, lstrip_blocks=True)
     env.filters["json"] = lambda v: json.dumps(v, ensure_ascii=False)
     env.filters["slug"] = slugify
+
+    # ÖLÇÜLDÜ (08.09.2026 denetimi): mekân sayfalarının başlığı
+    # "{ad} — Çocukla Gidilir mi? Puan, Ücret, Ulaşım | Ankarada Çocuk" kalıbındaydı.
+    # Yalnız sabit kısım 59 karakter, yani mekân adı ne olursa olsun başlık 62'yi
+    # aşıyordu; örneklenen 25 sayfanın 20'si uzundu, en uzunu 116 karakter.
+    # Google SERP'te ~62 karakterden sonrasını kırpıyor, dolayısıyla asıl ayırt
+    # edici bilgi (mekânın adı) görünürken geri kalanı boşa gidiyordu.
+    def unvan(adaylar) -> str:
+        """En bilgili biçimden başlar, 62 karaktere sığan ilkini seçer.
+
+        Mekân adı KIRPILMAZ: yarım bir ad SERP'te başka bir yeri işaret ediyor.
+        Onun yerine önce ", Ankara", sonra ilçe düşürülür. Site adı ancak toplam
+        60 karakteri geçmiyorsa eklenir.
+        """
+        if isinstance(adaylar, str):
+            adaylar = [adaylar]
+        adaylar = [" ".join(a.split()) for a in adaylar if a]
+        secilen = next((a for a in adaylar if len(a) <= 62), adaylar[-1])
+        ekli = f"{secilen} | {site['ad']}"
+        return ekli if len(ekli) <= 60 else secilen
+
+    def kisalt(metin, en: int = 158) -> str:
+        """Meta açıklamayı sözcük sınırında keser.
+
+        Aynı denetimde mekân açıklamaları 214-253 karakter ölçüldü; Google
+        ~160'tan sonrasını göstermiyor, yani cümlenin ortasında kesiliyordu.
+        """
+        m = " ".join((metin or "").split())
+        if len(m) <= en:
+            return m
+        return m[:en].rsplit(" ", 1)[0].rstrip(" ,;:–—-") + "…"
+
+    env.filters["unvan"] = unvan
+    env.filters["kisalt"] = kisalt
     _buyuk = {"festival", "muzikal", "konser", "gosteri"}
     one_etkinlik = [e for e in etkinlikler if e.get("type") in _buyuk][:6] or etkinlikler[:6]
     ortak = dict(site=site, kategoriler=kategoriler, ilceler=ilce_listesi, yas_gruplari=YAS_GRUPLARI,

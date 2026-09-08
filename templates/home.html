@@ -1,6 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Ankara'da Çocukla Gidilecek Yerler — {{ toplam }} Mekân, Yaşa Göre Puanlı | {{ site.ad }}{% endblock %}
-{% block desc %}Ankara'da çocuklu aileler için parklar, oyun alanlı kafeler, müzeler, bilim merkezleri ve günübirlik geziler. {{ toplam }} mekân yaş gruplarına göre puanlandı; ücret, ulaşım ve aile ipuçlarıyla.{% endblock %}
+{# Parantez ŞART: Jinja'da `|` filtresi `~` birleştirmesinden önce bağlanıyor.
+   Parantezsiz yazınca yalnız son parça filtreden geçip "196Yer" çıkıyordu. #}
+{% block title %}{{ ("Ankara'da Çocukla Gidilecek " ~ toplam ~ " Yer") | unvan }}{% endblock %}
+{% block desc %}{{ ("Ankara'da çocuklu aileler için park, oyun alanlı kafe, müze ve günübirlik gezi: "
+                    ~ toplam ~ " mekân yaş gruplarına göre puanlandı; ücret ve ulaşım bilgisiyle.") | kisalt }}{% endblock %}
 {% block bodyclass %}anasayfa{% endblock %}
 {% block content %}
 <section class="hero">

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% set canonical = '/harita/' %}
-{% block title %}Ankara Çocuk Mekânları Haritası — {{ mekanlar|length }} Mekân | {{ site.ad }}{% endblock %}
-{% block desc %}Ankara'da çocukla gidilecek park, kafe, müze ve oyun alanlarının tamamı tek haritada. Kategoriye ve yaşa göre filtreleyin, yol tarifi alın.{% endblock %}
+{% block title %}{{ ['Ankara Çocuk Mekânları Haritası — ' ~ mekanlar|length ~ ' Mekân',
+                    'Ankara Çocuk Mekânları Haritası'] | unvan }}{% endblock %}
+{% block desc %}{{ "Ankara'da çocukla gidilecek park, kafe, müze ve oyun alanlarının tamamı tek haritada. Kategoriye ve yaşa göre filtreleyin, yol tarifi alın." | kisalt }}{% endblock %}
 {% block head %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">{% endblock %}
 {% block content %}
 <section class="kap liste-bas">

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ r.baslik }} ({{ site.guncelleme[:4] }}) | {{ site.ad }}{% endblock %}
-{% block desc %}{{ r.meta }}{% endblock %}
+{% block title %}{{ [r.baslik ~ ' (' ~ site.guncelleme[:4] ~ ')', r.baslik] | unvan }}{% endblock %}
+{% block desc %}{{ r.meta | kisalt }}{% endblock %}
 {% block ogtype %}article{% endblock %}
 {% block content %}
 <nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Rehber</span> › <span>{{ r.baslik }}</span></nav>

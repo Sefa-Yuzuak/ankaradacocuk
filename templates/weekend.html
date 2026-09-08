@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ hs_baslik }} | {{ site.ad }}{% endblock %}
-{% block desc %}{{ meta_desc }}{% endblock %}
+{% block title %}{{ hs_baslik | unvan }}{% endblock %}
+{% block desc %}{{ meta_desc | kisalt }}{% endblock %}
 {% block content %}
 <nav class="kap kirinti" aria-label="Sayfa yolu"><a href="/">Ana sayfa</a> › <span>Bu hafta sonu</span></nav>
 <section class="kap liste-bas">
