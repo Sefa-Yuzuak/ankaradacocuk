@@ -7,6 +7,13 @@
   <h1>{{ ikon }} {{ baslik }}</h1>
   <p class="alt-metin">{{ alt }} <strong>{{ mekanlar|length }} mekân</strong>, puan sırasına göre.</p>
 </section>
+{% if alt_sayfalar %}
+<section class="kap">
+  <p class="alt-metin">Bu ilçede türe göre ayrılmış listeler:
+    {% for a in alt_sayfalar %}<a href="{{ a.url }}">{{ a.ad }} ({{ a.sayi }})</a>{% if not loop.last %} · {% endif %}{% endfor %}
+  </p>
+</section>
+{% endif %}
 {% if sss and mekanlar %}
 <section class="kap">
   <div class="kisa-cevap kutu">

@@ -562,12 +562,26 @@ def main():
               f"{len(k['mekanlar'])} mekân, yaşa göre puan, ücret, ulaşım ve aile ipuçları.",
               schema=[liste_schema(site, k["ad"], url, k["mekanlar"]), sss_schema(_sss), kirintilar(site, (k["ad"], url))])
 
+    # Ilce x kategori sayfalari ONCE hesaplanir: ilce sayfasi bunlara baglanti
+    # vermezse sayfalar oksuz kaliyor (build/denetle.py 13 oksuz sayfa buldu).
+    ilce_alt = {}
+    for i in ilce_listesi:
+        alt = []
+        for k in kategoriler:
+            uyeler = [m for m in i["mekanlar"] if m["category"] == k["slug"]]
+            if len(uyeler) >= 4:
+                alt.append({"url": f"/ilce/{i['slug']}/{k['slug']}/",
+                            "ad": k["ad"], "sayi": len(uyeler)})
+        if alt:
+            ilce_alt[i["slug"]] = alt
+
     # İlçe
     for i in ilce_listesi:
         url = f"/ilce/{i['slug']}/"
         _sss = liste_sss(f"{i['ad']} çocuk mekânları", i["mekanlar"])
         sayfa(url, "list.html", baslik=f"{i['ad']}'de Çocuklarla Gidilecek Yerler", alt=f"{i['ad']} ilçesinde çocuklu aileler için seçilmiş mekânlar.",
               ikon="📍", mekanlar=i["mekanlar"], canonical=url, sss=_sss,
+              alt_sayfalar=ilce_alt.get(i["slug"]),
               meta_desc=f"Ankara {i['ad']} çocukla gidilecek yerler: parklar, kafeler, müzeler ve oyun alanları — yaşa göre puanlanmış {len(i['mekanlar'])} öneri.",
               schema=[liste_schema(site, i["ad"], url, i["mekanlar"]), sss_schema(_sss), kirintilar(site, (i["ad"], url))])
 
