@@ -175,6 +175,20 @@ TEMALAR = [
      "alan": "puan", "rozet_ust": "PUAN", "tam": 10, "adet": 7,
      "filt": lambda m: m.get("indoor"),
      "caption": "Yağmurlu günde Ankara'da çocukla 7 kapalı mekân ☔ Islanmadan eğlence. Kaydet, lazım olur 👇"},
+    # --- 12.09.2026: sosyal kuyruk tukendi, uc yeni tema.
+    # Hepsi mevcut alanlardan suzuluyor; yeni veri uydurulmadi.
+    {"slug": "ilkokul-6-11", "ust": "Ankara'da 6-11 yaş", "vur": "EN İYİ 8 YER", "emoji": "🎒", "renk": "#7a4fd1",
+     "alan": "score_ilkokul", "rozet_ust": "6-11 yaş", "tam": 5, "adet": 8,
+     "filt": lambda m: (m.get("score_ilkokul") or 0) >= 4,
+     "caption": "Ankara'da 6-11 yaş çocukla en iyi 8 yer 🎒 Okul çağında sıkılmayacağı, öğrenerek eğleneceği yerler. Kaydet 👇"},
+    {"slug": "bilim-kesif", "ust": "Ankara'da bilim ve keşif", "vur": "7 MEKÂN", "emoji": "🔬", "renk": "#1f8a9c",
+     "alan": "puan", "rozet_ust": "PUAN", "tam": 10, "adet": 7,
+     "filt": lambda m: m.get("category") in ("bilim", "muze"),
+     "caption": "Ankara'da çocukla bilim ve keşif: 7 mekân 🔬 Müze ve bilim merkezleriyle hafta sonu hem gezi hem ders. Kaydet 👇"},
+    {"slug": "atolye-kurs", "ust": "Ankara'da çocuk atölyeleri", "vur": "7 MEKÂN", "emoji": "🎨", "renk": "#d1566e",
+     "alan": "puan", "rozet_ust": "PUAN", "tam": 10, "adet": 7,
+     "filt": lambda m: m.get("category") == "atolye",
+     "caption": "Ankara'da çocuk atölyeleri: 7 mekân 🎨 Seramik, resim, ahşap — ekran yerine elle üretme. Kaydet 👇"},
 ]
 
 

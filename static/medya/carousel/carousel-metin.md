@@ -76,3 +76,61 @@ Yağmurlu günde Ankara'da çocukla 7 kapalı mekân ☔ Islanmadan eğlence. Ka
 
 Hepsi 👉 ankaradacocuk.com
 ```
+
+## Ankara'da 6-11 yaş EN İYİ 8 YER
+
+10 kare · `static/medya/carousel/ilkokul-6-11/`
+
+**Açıklama:**
+```
+Ankara'da 6-11 yaş çocukla en iyi 8 yer 🎒 Okul çağında sıkılmayacağı, öğrenerek eğleneceği yerler. Kaydet 👇
+
+1. Gençlik Parkı (Altındağ)
+2. Eskişehir Sazova Bilim Sanat ve Kültür Parkı (Masal Şatosu) – YHT ile (Eskişehir)
+3. Göksu Parkı (Etimesgut)
+4. Altınköy Açık Hava Müzesi (Altındağ)
+5. Masabaşı Kebapçısı Balgat (Çankaya)
+6. Soğuksu Milli Parkı (Kızılcahamam)
+7. Aqua Vega Akvaryum (Nata Vega Outlet) (Mamak)
+8. MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi (Çankaya)
+
+Hepsi 👉 ankaradacocuk.com
+```
+
+## Ankara'da bilim ve keşif 7 MEKÂN
+
+9 kare · `static/medya/carousel/bilim-kesif/`
+
+**Açıklama:**
+```
+Ankara'da çocukla bilim ve keşif: 7 mekân 🔬 Müze ve bilim merkezleriyle hafta sonu hem gezi hem ders. Kaydet 👇
+
+1. MTA Şehit Cuma Dağ Tabiat Tarihi Müzesi (Çankaya)
+2. Anıtkabir ve Atatürk ve Kurtuluş Savaşı Müzesi (Çankaya)
+3. Erimtan Arkeoloji ve Sanat Müzesi (Altındağ)
+4. Türk Hava Kuvvetleri Müzesi (Etimesgut)
+5. Ali Kuşçu Gökbilim Merkezi (Mamak)
+6. Rahmi M. Koç Müzesi Ankara (Çengelhan) (Altındağ)
+7. Ankara Üniversitesi Çocuk Üniversitesi (Yenimahalle)
+
+Hepsi 👉 ankaradacocuk.com
+```
+
+## Ankara'da çocuk atölyeleri 7 MEKÂN
+
+9 kare · `static/medya/carousel/atolye-kurs/`
+
+**Açıklama:**
+```
+Ankara'da çocuk atölyeleri: 7 mekân 🎨 Seramik, resim, ahşap — ekran yerine elle üretme. Kaydet 👇
+
+1. Anıt Eğitim – Çocuk Pastacılık Kursu (Çankaya)
+2. ABB Çocuk Etkinlik Merkezleri (Çeşitli)
+3. Neriseramik – Çocuklar İçin Seramik Workshop (Çankaya)
+4. Keçiören Belediyesi Çocuk Hizmet Merkezi (Keçiören)
+5. Çankaya Belediyesi Çocuk Atölyeleri ve Gelişimsel Oyunevleri (Çankaya)
+6. Keçiören Belediyesi Çocuk Eğitim Merkezi (Keçiören)
+7. Studio No.24 Seramik Atölyesi (Ümitköy) (Çankaya)
+
+Hepsi 👉 ankaradacocuk.com
+```
