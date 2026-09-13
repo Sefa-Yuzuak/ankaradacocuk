@@ -356,6 +356,17 @@ TEMALAR = [
     {"slug": "hayvanat", "baslik": "HAYVANLARI SEVEN\nÇOCUKLARA 5 YER", "emoji": "🦁", "renk": "#d9822b",
      "filt": lambda m: m["category"] == "hayvanat",
      "caption": "Akvaryum, çiftlik, hayvan parkı… Hayvan seven çocuklara 5 adres 🦁🐠"},
+    # --- 13.09.2026: sosyal kuyruga video eklemek icin uc yeni tema.
+    # Fotolu mekan sayilari olculdu: ucretsiz 67, bebek>=4 28, atolye 15.
+    {"slug": "ucretsiz", "baslik": "ANKARA'DA ÇOCUKLA\nÜCRETSİZ 5 YER", "emoji": "🆓", "renk": "#2f9e6f",
+     "filt": lambda m: m.get("price") == "ücretsiz",
+     "caption": "Cebe dokunmadan koca bir gün: Ankara'da çocukla ücretsiz 5 yer 🆓 Kaydet, lazım olur 👇"},
+    {"slug": "bebek", "baslik": "0-3 YAŞ BEBEKLE\nANKARA'DA 5 YER", "emoji": "👶", "renk": "#e8739b",
+     "filt": lambda m: (m.get("score_bebek") or 0) >= 4,
+     "caption": "Bebek arabasıyla rahat, sakin ve güvenli: 0-3 yaş için Ankara'da 5 yer 👶"},
+    {"slug": "atolye", "baslik": "ÇOCUK ATÖLYELERİ\nANKARA'DA 5 ADRES", "emoji": "🎨", "renk": "#d1566e",
+     "filt": lambda m: m.get("category") == "atolye",
+     "caption": "Ekran yerine elle üretme: seramik, resim, ahşap 🎨 Ankara'da 5 çocuk atölyesi"},
 ]
 
 
