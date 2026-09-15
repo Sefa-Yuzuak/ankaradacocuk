@@ -205,3 +205,59 @@
   }
 
 })();
+
+/* Etkinlik filtreleri: gun / yas / tur tek secim, ucretsiz acik-kapali; secim URL'de.
+   Tarihsiz ("Surekli") etkinlik gun filtrelerinde her zaman gorunur. */
+(function () {
+  var form = document.getElementById('etk-filtre');
+  if (!form) return;
+  var kartlar = Array.prototype.slice.call(document.querySelectorAll('.etkinlik-kart'));
+  var sayac = document.getElementById('etk-sayac');
+  var secim = {};
+  function gun0(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function aralik(anahtar) {
+    var b = gun0(new Date()), s;
+    if (anahtar === 'bugun') return [b, b];
+    if (anahtar === 'hafta') { s = new Date(b); s.setDate(b.getDate() + 6); return [b, s]; }
+    var cmt = new Date(b); cmt.setDate(b.getDate() + ((6 - b.getDay() + 7) % 7));
+    var paz = new Date(cmt); paz.setDate(cmt.getDate() + 1);
+    return [b.getDay() === 0 ? b : cmt, paz];
+  }
+  function tarih(s) { var d = s ? new Date(s) : null; return d && !isNaN(d) ? gun0(d) : null; }
+  function uyar(k) {
+    if (secim.gun) {
+      var bas = tarih(k.dataset.bas), bit = tarih(k.dataset.bit) || bas, ar = aralik(secim.gun);
+      if (bas && (bit < ar[0] || bas > ar[1])) return false;
+    }
+    if (secim.yas) {
+      var p = secim.yas.split('-'), ymin = +k.dataset.ymin, ymax = +k.dataset.ymax;
+      if (ymax < +p[0] || ymin > +p[1]) return false;
+    }
+    if (secim.tip && k.dataset.tip !== secim.tip) return false;
+    if (secim.ucretsiz && k.dataset.ucretsiz !== '1') return false;
+    return true;
+  }
+  function uygula() {
+    var n = 0;
+    kartlar.forEach(function (k) { var g = uyar(k); k.classList.toggle('gizle', !g); if (g) n++; });
+    var acik = Object.keys(secim).filter(function (x) { return secim[x]; });
+    if (sayac) sayac.textContent = acik.length ? n + ' etkinlik gösteriliyor' : '';
+    form.querySelectorAll('.cip').forEach(function (b) {
+      var f = b.dataset.f.split(':');
+      b.setAttribute('aria-pressed', (f.length > 1 ? secim[f[0]] === f[1] : !!secim[f[0]]) ? 'true' : 'false');
+    });
+    var q = acik.map(function (x) { return x + '=' + encodeURIComponent(secim[x] === true ? '1' : secim[x]); }).join('&');
+    history.replaceState(null, '', location.pathname + (q ? '?' + q : ''));
+  }
+  form.addEventListener('click', function (ev) {
+    var b = ev.target.closest('.cip'); if (!b) return;
+    var f = b.dataset.f.split(':');
+    if (f.length > 1) secim[f[0]] = secim[f[0]] === f[1] ? '' : f[1];
+    else secim[f[0]] = !secim[f[0]];
+    uygula();
+  });
+  var p = new URLSearchParams(location.search);
+  ['gun', 'yas', 'tip'].forEach(function (x) { if (p.get(x)) secim[x] = p.get(x); });
+  if (p.get('ucretsiz') === '1') secim.ucretsiz = true;
+  if (Object.keys(secim).length) uygula();
+})();

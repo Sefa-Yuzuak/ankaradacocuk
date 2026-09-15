@@ -9,5 +9,7 @@
   "adsense": "ca-pub-5424881701309211",
   "instagram": "",
   "bulten_endpoint": "",
-  "onesignal_app_id": "62065875-b796-42c6-ae14-2a8538593e68"
+  "onesignal_app_id": "",
+  "onesignal_app_id_pasif": "62065875-b796-42c6-ae14-2a8538593e68",
+  "onesignal_not": "15.09.2026: OneSignal web push yapilandirilmamis (konsol: App not configured). Yapilandirinca kimligi onesignal_app_id'ye geri koy."
 }

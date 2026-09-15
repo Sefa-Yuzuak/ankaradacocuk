@@ -32,9 +32,7 @@
 <link rel="icon" href="/static/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/static/icon-192.png">
 <link rel="manifest" href="/static/manifest.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap">
+<link rel="preload" href="/static/font/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/style.css?v={{ site.guncelleme }}">
 {% block head %}{% endblock %}
 {% for s in schema|default([]) %}
@@ -50,7 +48,8 @@
 <a class="skip" href="#icerik">İçeriğe geç</a>
 <header class="ust">
   <div class="kap ust-ic">
-    <a class="logo" href="/" aria-label="{{ site.ad }} ana sayfa">
+    {# aria-label yok: erisilebilir ad gorunen adla ayni olmali (Lighthouse label-content-name-mismatch) #}
+    <a class="logo" href="/">
       <img src="/static/logo.svg" alt="" width="40" height="40"><span>ankarada<b>çocuk</b></span>
     </a>
     <nav class="menu" aria-label="Ana menü">
@@ -101,17 +100,17 @@
       <p class="kucuk">Son güncelleme: <time datetime="{{ site.guncelleme }}">{{ site.guncelleme_tr }}</time> · {{ toplam }} mekân</p>
     </div>
     <div>
-      <h4>Kategoriler</h4>
+      <h3>Kategoriler</h3>
       {% for k in kategoriler %}<a href="/kategori/{{ k.slug }}/">{{ k.ad }}</a>{% endfor %}
     </div>
     <div>
-      <h4>Rehberler</h4>
+      <h3>Rehberler</h3>
       {% for r in rehberler %}<a href="{{ r.url }}">{{ r.baslik }}</a>{% endfor %}
     </div>
     <div>
-      <h4>Yaşa göre</h4>
+      <h3>Yaşa göre</h3>
       {% for y in yas_gruplari %}<a href="/yas/{{ y.slug }}/">{{ y.ad }}</a>{% endfor %}
-      <h4>İlçeler</h4>
+      <h3>İlçeler</h3>
       {% for i in ilceler[:8] %}<a href="/ilce/{{ i.slug }}/">{{ i.ad }}</a>{% endfor %}
     </div>
     <div>

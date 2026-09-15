@@ -12,9 +12,22 @@
 </section>
 <section class="kap">
   {% if etkinlikler %}
+  {# Filtreler istemcide calisir (app.js); secim ?gun=&yas=&tip=&ucretsiz= ile paylasilabilir. #}
+  <form class="etk-filtre" id="etk-filtre" aria-label="Etkinlikleri filtrele" onsubmit="return false">
+    <fieldset><legend>Ne zaman</legend>
+      <button type="button" class="cip" data-f="gun:bugun" aria-pressed="false">Bugün</button>
+      <button type="button" class="cip" data-f="gun:haftasonu" aria-pressed="false">Bu hafta sonu</button>
+      <button type="button" class="cip" data-f="gun:hafta" aria-pressed="false">Bu hafta</button></fieldset>
+    <fieldset><legend>Yaş</legend>
+      {% for y in ["0-3", "3-6", "6-11", "11-16"] %}<button type="button" class="cip" data-f="yas:{{ y }}" aria-pressed="false">{{ y }}</button>{% endfor %}</fieldset>
+    <fieldset><legend>Tür</legend>
+      {% set gorulen = [] %}{% for e in etkinlikler %}{% if e.type not in gorulen %}{% set _ = gorulen.append(e.type) %}<button type="button" class="cip" data-f="tip:{{ e.type }}" aria-pressed="false">{{ e.tip.ikon }} {{ e.tip.ad }}</button>{% endif %}{% endfor %}</fieldset>
+    <fieldset><legend>Ücret</legend><button type="button" class="cip" data-f="ucretsiz" aria-pressed="false">🆓 Ücretsiz</button></fieldset>
+    <output id="etk-sayac" aria-live="polite"></output>
+  </form>
   <div class="etkinlik-izgara">
     {% for e in etkinlikler %}
-    <article class="etkinlik-kart" id="{{ e.slug }}">
+    <article class="etkinlik-kart" id="{{ e.slug }}" data-bas="{{ e._bas.isoformat() if e._bas else "" }}" data-bit="{{ e.endDate or "" }}" data-ymin="{{ e.age_min if e.age_min is not none else 0 }}" data-ymax="{{ e.age_max if e.age_max is not none else 16 }}" data-tip="{{ e.type }}" data-ucretsiz="{{ 1 if e.price_note and "cretsiz" in e.price_note else 0 }}">
       <div class="etk-tarih">
         {% if e._bas %}
         <span class="etk-gun">{{ e._bas.day }}</span>
@@ -35,6 +48,7 @@
         </div>
         <div class="etk-baglanti">
           {% if e.offers_url %}<a class="btn btn-birincil btn-kucuk" href="{{ e.offers_url }}" target="_blank" rel="noopener nofollow">Bilet / detay →</a>{% endif %}
+          {% if e.venue_name or e.address %}<a class="kaynak-link" href="https://www.google.com/maps/search/?api=1&query={{ ((e.venue_name or "") ~ " " ~ (e.address or "") ~ " Ankara")|trim|urlencode }}" target="_blank" rel="noopener nofollow">haritada gör</a>{% endif %}
           {% for s in e.sources[:1] %}<a class="kaynak-link" href="{{ s }}" target="_blank" rel="noopener nofollow">kaynak</a>{% endfor %}
         </div>
       </div>
