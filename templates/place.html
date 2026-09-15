@@ -120,12 +120,10 @@
     <ul class="mini-liste">{% for b, km in yakin %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ km }} km</span></li>{% endfor %}</ul>{% endif %}
     {% if benzer %}<h3>Benzer mekânlar</h3>
     <ul class="mini-liste">{% for b in benzer %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ b.puan }}</span></li>{% endfor %}</ul>{% endif %}
-    {% if ayni_ilce %}<h3>{{ m.district }}'de başka mekânlar</h3>
+    {% if ayni_ilce %}<h3>{{ m.district }} ilçesinde başka mekânlar</h3>
     <ul class="mini-liste">{% for b in ayni_ilce %}<li><a href="{{ b.url }}">{{ b.kategori.ikon }} {{ b.name }}</a><span>{{ b.puan }}</span></li>{% endfor %}</ul>{% endif %}
   </aside>
 </section>
-{% endblock %}
-{% block scripts %}{% if m.lat and m.lng %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endif %}
 
 {% if m.rehberler %}
 <section class="kap bolum">
@@ -143,4 +141,6 @@
   {% endfor %}
 </section>
 {% endif %}
+{% endblock %}
+{% block scripts %}{% if m.lat and m.lng %}<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>{% endif %}
 {% endblock %}

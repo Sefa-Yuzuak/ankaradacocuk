@@ -174,9 +174,12 @@ def schema_mekan(m: dict, site: dict) -> dict:
         "address": {"@type": "PostalAddress", "addressLocality": m.get("district") or "Ankara",
                     "addressRegion": "Ankara", "addressCountry": "TR",
                     **({"streetAddress": m["address"]} if m.get("address") else {})},
-        "isAccessibleForFree": m.get("price") == "ücretsiz",
         "publicAccess": True,
     }
+    # Ücret verisi YOKSA iddia da yok: 8 mekânda tabloda "Bilgi yok" yazarken
+    # şema kesin "ücretli" diyordu.
+    if m.get("price"):
+        s["isAccessibleForFree"] = m["price"] == "ücretsiz"
     if m.get("lat") and m.get("lng"):
         s["geo"] = {"@type": "GeoCoordinates", "latitude": m["lat"], "longitude": m["lng"]}
         s["hasMap"] = m["maps_url"]
@@ -184,14 +187,53 @@ def schema_mekan(m: dict, site: dict) -> dict:
         s["sameAs"] = m["website"]
     if m.get("phone"):
         s["telephone"] = m["phone"]
-    if m.get("hours"):
-        s["openingHours"] = m["hours"]
+    saatler = schema_saat(m.get("hours"))
+    if saatler:
+        s["openingHours"] = saatler if len(saatler) > 1 else saatler[0]
     if m.get("features"):
         s["amenityFeature"] = [{"@type": "LocationFeatureSpecification", "name": f, "value": True}
                                for f in m["features"]]
-    s["audience"] = {"@type": "PeopleAudience", "suggestedMinAge": m.get("age_min") or 0,
-                     "suggestedMaxAge": m.get("age_max") or 16, "audienceType": "Aileler ve çocuklar"}
+    # Yaş alanları yalnız VERİDE varsa yazılır. Varsayılanlar 10 sayfada 0,
+    # 14 sayfada 16 ve 117 sayfada 99 uyduruyordu; 99 sayfadaki "16+ yaş"
+    # rozetiyle de çelişiyordu.
+    s["audience"] = {"@type": "PeopleAudience", "audienceType": "Aileler ve çocuklar"}
+    if m.get("age_min") is not None:
+        s["audience"]["suggestedMinAge"] = m["age_min"]
+    if m.get("age_max") is not None:
+        s["audience"]["suggestedMaxAge"] = m["age_max"]
     return s
+
+
+# Ankara'nin 25 resmi ilcesi. district alani serbest metin oldugu icin
+# ("Çorum", "Çeşitli", "Ankara") buraya uymayan degere ilce sayfasi acilmaz:
+# 4 sayfa "Ankara Çorum çocukla gidilecek yerler" gibi meta ile indekse aciktı.
+ANKARA_ILCELERI = (
+    "Akyurt", "Altındağ", "Ayaş", "Bala", "Balâ", "Beypazarı", "Çamlıdere", "Çankaya",
+    "Çubuk", "Elmadağ", "Etimesgut", "Evren", "Gölbaşı", "Güdül", "Haymana", "Kahramankazan",
+    "Kalecik", "Keçiören", "Kızılcahamam", "Mamak", "Nallıhan", "Polatlı", "Pursaklar",
+    "Şereflikoçhisar", "Sincan", "Yenimahalle",
+)
+
+
+_SESLI = "aeıioöuü"
+_KALIN = "aıou"
+_SERT = "fstkçşhp"
+
+
+def bulunma(ad: str) -> str:
+    """Bulunma hâli: Çankaya'da, Mamak'ta, Beypazarı'nda, Ayaş'ta.
+    Ek f-string'e sabit yazılamaz; 25 ilçe sayfasının 19'u "Çankaya'de" gibi
+    yanlış çıkıyordu. Ünlüyle biten adda kaynaştırma n gelir."""
+    son = ad[-1].lower() if ad else "a"
+    kalin = "a"
+    for h in reversed(ad.lower()):
+        if h in _SESLI:
+            kalin = h
+            break
+    ek = "a" if kalin in _KALIN else "e"
+    if son in _SESLI:
+        return f"{ad}'nd{ek}"
+    return f"{ad}'{'t' if son in _SERT else 'd'}{ek}"
 
 
 def kirintilar(site, *parcalar):
@@ -284,9 +326,12 @@ def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
         bas, saat = _tarih(e.get("startDate"))
         bit, _ = _tarih(e.get("endDate"))
         son = bit or bas
-        # geçmiş tek seferlik etkinlikleri ele (yinelenenler kalır)
+        # Geçmiş tek seferlik etkinlikleri ele. Yinelenen etkinlik muaf AMA
+        # tarihi geçmişse Event şeması üretilmez (aşağıda sema_uygun=False):
+        # 10 şema geçmiş startDate ile "EventScheduled" iddia ediyordu.
         if not e.get("recurring") and son and son < bugun:
             continue
+        e["sema_uygun"] = bool(bas) and not (son and son < bugun)
         slug = slugify(e.get("name") or "etkinlik")
         if slug in goruldu:
             slug = f"{slug}-{slugify(e.get('venue_name') or e.get('district') or 'ankara')}"
@@ -332,6 +377,48 @@ def liste_sss(konu, mekanlar):
         sss.append({"soru": f"{konu} arasında 0-3 yaş bebeğe en uygunu hangisi?",
                     "cevap": "Bebekle en rahat gezilenler: " + ", ".join(m["name"] for m in bebek[:3]) + "."})
     return sss[:4]
+
+
+_GUN_KODU = {"pazartesi": "Mo", "salı": "Tu", "çarşamba": "We", "perşembe": "Th",
+             "cuma": "Fr", "cumartesi": "Sa", "pazar": "Su"}
+
+
+def schema_saat(metin: str | None) -> list[str] | None:
+    """Serbest Türkçe saat metnini schema.org openingHours biçimine çevirir.
+
+    Ham metin geçerli yapısal veri değil: "Randevu ile (pazartesi hariç)" gibi
+    111 değer Google için ayrıştırılamazdı. Çeviremediğimizde alan HİÇ
+    yayımlanmaz — yanlış işaretlemektense eksik bırakmak doğru. Gün bilgisi
+    olmayan saat aralığı da çevrilmez: "05:00-22:00" her gün anlamına gelmiyor.
+    """
+    if not metin:
+        return None
+    t = " " + metin.lower().replace("i̇", "i") + " "
+    ara = re.findall(r"(\d{1,2}[:.]\d{2})\s*[-–]\s*(\d{1,2}[:.]\d{2})", t)
+    ara = [(a.replace(".", ":"), b.replace(".", ":")) for a, b in ara]
+    if re.search(r"24\s*saat", t) and not ara:
+        return ["Mo-Su 00:00-23:59"]
+    if not ara:
+        return None
+    hafta_ici = re.search(r"hafta\s*ici", t)
+    hafta_sonu = re.search(r"hafta\s*sonu", t)
+    if hafta_ici and hafta_sonu and len(ara) >= 2:
+        return [f"Mo-Fr {ara[0][0]}-{ara[0][1]}", f"Sa-Su {ara[1][0]}-{ara[1][1]}"]
+    if len(ara) != 1:
+        return None                      # birden fazla aralık: yaz/kış gibi, çevirmeyiz
+    bas, bit = ara[0]
+    if re.search(r"her\s*gun", t) or re.search(r"yil\s*boyu", t):
+        return [f"Mo-Su {bas}-{bit}"]
+    if hafta_ici and not hafta_sonu:
+        return [f"Mo-Fr {bas}-{bit}"]
+    gunler = [g for g in _GUN_KODU if g in t]
+    m = re.search(r"(pazartesi|salı|çarşamba|perşembe|cuma|cumartesi|pazar)\s*[-–]\s*"
+                  r"(pazartesi|salı|çarşamba|perşembe|cuma|cumartesi|pazar)", t)
+    if m:
+        return [f"{_GUN_KODU[m.group(1)]}-{_GUN_KODU[m.group(2)]} {bas}-{bit}"]
+    if len(gunler) == 1 and "hariç" not in t:
+        return [f"{_GUN_KODU[gunler[0]]} {bas}-{bit}"]
+    return None
 
 
 def schema_etkinlik(e: dict, site: dict) -> dict:
@@ -413,9 +500,15 @@ def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
 def main():
     site = yukle("site.json")
     bugun = date.today()
-    site["guncelleme"] = date.today().isoformat()
+    # Gerçek veri değişim tarihi: günlük cron yalnız yeniden dağıtım
+    # tetikliyor, veri değişmiyor. date.today() yazmak 289 sitemap
+    # lastmod ve 196 dateModified değerini her gün sahte tazeliyordu.
+    _dz = DATA / "derleme_zamani.txt"
+    site["guncelleme"] = ((_dz.read_text(encoding="utf-8").strip()[:10]
+                           if _dz.exists() else "") or date.today().isoformat())
     site["derleme_zamani"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    site["guncelleme_tr"] = date.today().strftime("%d.%m.%Y")
+    _y, _a, _g = site["guncelleme"].split("-")
+    site["guncelleme_tr"] = f"{_g}.{_a}.{_y}"
     mekanlar = hazirla(yukle("mekanlar.json"))
     try:
         _foto = yukle("foto.json")
@@ -445,7 +538,12 @@ def main():
     for m in mekanlar:
         ilceler.setdefault(m["ilce_slug"], {"ad": m.get("district") or "Ankara", "slug": m["ilce_slug"], "mekanlar": []})
         ilceler[m["ilce_slug"]]["mekanlar"].append(m)
-    ilce_listesi = sorted(ilceler.values(), key=lambda i: -len(i["mekanlar"]))
+    # Ankara ilcesi OLMAYAN degerlere sayfa acilmaz (Çorum, Eskişehir, Çeşitli, Ankara).
+    ilce_disi = sorted({i["ad"] for i in ilceler.values() if i["ad"] not in ANKARA_ILCELERI})
+    ilce_listesi = sorted((i for i in ilceler.values() if i["ad"] in ANKARA_ILCELERI),
+                          key=lambda i: -len(i["mekanlar"]))
+    if ilce_disi:
+        print(f"  ilce sayfasi acilmayan district degeri: {', '.join(ilce_disi)}")
 
     kategoriler = []
     for slug, k in KATEGORILER.items():
@@ -579,7 +677,7 @@ def main():
     for i in ilce_listesi:
         url = f"/ilce/{i['slug']}/"
         _sss = liste_sss(f"{i['ad']} çocuk mekânları", i["mekanlar"])
-        sayfa(url, "list.html", baslik=f"{i['ad']}'de Çocuklarla Gidilecek Yerler", alt=f"{i['ad']} ilçesinde çocuklu aileler için seçilmiş mekânlar.",
+        sayfa(url, "list.html", baslik=f"{bulunma(i['ad'])} Çocuklarla Gidilecek Yerler", alt=f"{i['ad']} ilçesinde çocuklu aileler için seçilmiş mekânlar.",
               ikon="📍", mekanlar=i["mekanlar"], canonical=url, sss=_sss,
               alt_sayfalar=ilce_alt.get(i["slug"]),
               meta_desc=f"Ankara {i['ad']} çocukla gidilecek yerler: parklar, kafeler, müzeler ve oyun alanları — yaşa göre puanlanmış {len(i['mekanlar'])} öneri.",
@@ -647,7 +745,9 @@ def main():
           meta_desc=f"Ankara'da çocuklarla gidilecek {len(mekanlar)} mekânın tam listesi: yaş, ücret, kapalı/açık ve ilçe filtreleriyle.",
           schema=[liste_schema(site, "Tüm mekânlar", "/tum-mekanlar/", mekanlar)])
     # Etkinlikler (yaklaşan çocuk & aile etkinlikleri)
-    et_schema = [schema_etkinlik(e, site) for e in etkinlikler]
+    # Yalniz sema_uygun olanlar: gecmis tarihli ya da startDate'i olmayan
+    # etkinlik icin Event semasi uretmek yanlis iddia olur.
+    et_schema = [schema_etkinlik(e, site) for e in etkinlikler if e.get("sema_uygun")]
     et_schema.append(kirintilar(site, ("Etkinlikler", "/etkinlikler/")))
     sayfa("/etkinlikler/", "events.html", canonical="/etkinlikler/",
           meta_desc="Ankara'da çocuklar ve aileler için yaklaşan tiyatro, konser, atölye, festival ve "
@@ -691,7 +791,7 @@ def main():
     (DIST / "robots.txt").write_text(
         "User-agent: *\nAllow: /\n\n"
         "# Yapay zekâ tarayıcıları (GEO): içeriğin alıntılanmasına izin veriyoruz\n"
-        "User-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\n"
+        "User-agent: GPTBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\n"
         "User-agent: Claude-SearchBot\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n"
         "User-agent: Applebot-Extended\nAllow: /\nUser-agent: CCBot\nAllow: /\n\n"
         f"Sitemap: {site['url']}/sitemap.xml\n", encoding="utf-8")
