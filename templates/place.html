@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% set canonical = m.url %}
-{% block title %}{{ [m.name ~ ' — ' ~ (m.district or 'Ankara') ~ ', Ankara',
+{# Baslik 20.09.2026'ya kadar vaatsizdi: mekan sayfalari gosterimin %64'unu
+   alip %0,93 tikleniyordu. Adres/saat/telefon zaten Google'in isletme
+   kartinda; velinin sordugu "para odeyecek miyim" degil. Sitenin en iyi
+   donen sorgusu "ankara ucretsiz cocuk oyun alanlari" (%40 TO, konum 4,8).
+   Vaat yalniz price=="ucretsiz" olan 67 mekana, "giris ucretsiz" olarak
+   yaziliyor (notlarin cogu "giris ucretsiz; tekne turu ucretli" diyor). #}
+{% set bedava = ' · giriş ücretsiz' if m.price == 'ücretsiz' else '' %}
+{% block title %}{{ [m.name ~ ' — ' ~ (m.district or 'Ankara') ~ ', Ankara' ~ bedava,
+                    m.name ~ ' — ' ~ (m.district or 'Ankara') ~ bedava,
+                    m.name ~ ' — ' ~ (m.district or 'Ankara') ~ ', Ankara',
                     m.name ~ ' — ' ~ (m.district or 'Ankara'),
                     m.name] | unvan }}{% endblock %}
 {% block desc %}{{ (m.name ~ ' (' ~ (m.district or 'Ankara') ~ '): çocuklu aileler için '
