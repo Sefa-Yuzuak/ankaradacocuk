@@ -6,6 +6,7 @@ Girdi:     data/site.json, data/mekanlar.json, data/rehberler.json
 from __future__ import annotations
 
 import json
+import os
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 import re
@@ -322,15 +323,23 @@ def _tarih(x):
 
 def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
     sonuc, goruldu = [], set()
-    for e in etkinlikler:
+    for kaynak in etkinlikler:
+        e = dict(kaynak)
+        # Serbest metindeki "yinelenir" ifadesi yeni bir seansın kanıtı değildir.
+        # Ayrık seanslar occurrence_dates içinde kaynakla doğrulanmış ISO tarihleridir.
+        tarihler = sorted({g for x in e.get("occurrence_dates", [])
+                           if (g := _tarih(x)[0]) is not None and g >= bugun})
+        if "occurrence_dates" in e:
+            if not tarihler:
+                continue
+            e["startDate"] = tarihler[0].isoformat()
+            e["endDate"] = None
         bas, saat = _tarih(e.get("startDate"))
         bit, _ = _tarih(e.get("endDate"))
         son = bit or bas
-        # Geçmiş tek seferlik etkinlikleri ele. Yinelenen etkinlik muaf AMA
-        # tarihi geçmişse Event şeması üretilmez (aşağıda sema_uygun=False):
-        # 10 şema geçmiş startDate ile "EventScheduled" iddia ediyordu.
-        if not e.get("recurring") and son and son < bugun:
+        if son and son < bugun:
             continue
+        e["_tarihler"] = tarihler
         e["sema_uygun"] = bool(bas) and not (son and son < bugun)
         slug = slugify(e.get("name") or "etkinlik")
         if slug in goruldu:
@@ -351,6 +360,18 @@ def etkinlik_hazirla(etkinlikler: list[dict], bugun: date) -> list[dict]:
         sonuc.append(e)
     sonuc.sort(key=lambda e: (e["_bas"] is None, e["_bas"] or date.max))
     return sonuc
+
+
+def hafta_sonuna_denk(e: dict, cmt: date, pzr: date) -> bool:
+    if e.get("_tarihler"):
+        return any(cmt <= g <= pzr for g in e["_tarihler"])
+    bas, son = e.get("_bas"), e.get("_son")
+    if not bas:
+        return False
+    if e.get("recurring"):
+        # Eylül ve Kasım seansları arasındaki her hafta sonunu etkinlik sayma.
+        return cmt <= bas <= pzr
+    return bas <= pzr and (son or bas) >= cmt
 
 
 def liste_sss(konu, mekanlar):
@@ -499,7 +520,9 @@ def rehber_filtre(r: dict, mekanlar: list[dict]) -> list[dict]:
 
 def main():
     site = yukle("site.json")
-    bugun = date.today()
+    bugun = (date.fromisoformat(os.environ["SITE_TODAY"]) if os.environ.get("SITE_TODAY")
+             else datetime.now(timezone(timedelta(hours=3))).date())
+    site["takvim_tarihi"] = bugun.isoformat()
     # Gerçek veri değişim tarihi: günlük cron yalnız yeniden dağıtım
     # tetikliyor, veri değişmiyor. date.today() yazmak 289 sitemap
     # lastmod ve 196 dateModified değerini her gün sahte tazeliyordu.
@@ -530,7 +553,7 @@ def main():
         _m["google"] = _google.get(_m["name"])
     rehberler = yukle("rehberler.json")
     try:
-        etkinlikler = etkinlik_hazirla(yukle("etkinlikler.json"), date.today())
+        etkinlikler = etkinlik_hazirla(yukle("etkinlikler.json"), bugun)
     except FileNotFoundError:
         etkinlikler = []
 
@@ -724,8 +747,7 @@ def main():
     wd = bugun.weekday()
     cmt = bugun - timedelta(days=wd - 5) if wd >= 5 else bugun + timedelta(days=5 - wd)
     pzr = cmt + timedelta(days=1)
-    hs_etkinlik = [e for e in etkinlikler
-                   if e.get("recurring") or (e["_bas"] and e["_bas"] <= pzr and (e["_son"] or e["_bas"]) >= cmt)]
+    hs_etkinlik = [e for e in etkinlikler if hafta_sonuna_denk(e, cmt, pzr)]
     hs_acik = sorted([m for m in mekanlar if not m.get("indoor") and m["status"] != "kapalı"],
                      key=lambda m: -(m.get("puan") or 0))[:6]
     hs_kapali = sorted([m for m in mekanlar if m.get("indoor") and m["status"] != "kapalı"],
