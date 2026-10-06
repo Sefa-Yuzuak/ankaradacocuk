@@ -126,7 +126,7 @@ def cta(kr):
         d.text((CW // 2, 680 + i * 66), s, font=R.font(44, False), fill=(255, 246, 236), anchor="mm")
     d.rounded_rectangle([CW // 2 - 320, 940, CW // 2 + 320, 1060], radius=60, fill=SARI)
     d.text((CW // 2, 1000), "KAYDET · PAYLAŞ", font=R.font(50), fill=KOYU, anchor="mm")
-    d.text((CW // 2, 1150), "Takip et  @ankaradacocuk", font=R.font(46), fill=BEYAZ, anchor="mm")
+    d.text((CW // 2, 1150), "Takip et  @ankarada_cocuk", font=R.font(46), fill=BEYAZ, anchor="mm")
     return im
 
 

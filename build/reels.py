@@ -217,7 +217,7 @@ def outro_kare(toplam, kr):
         d.text((W // 2, 840 + i * 78), s, font=font(50, False), fill=(255, 245, 235), anchor="mm")
     d.rounded_rectangle([W // 2 - 340, 1160, W // 2 + 340, 1284], radius=62, fill=SARI)
     d.text((W // 2, 1222), "KAYDET · PAYLAŞ", font=font(54), fill=KOYU, anchor="mm")
-    d.text((W // 2, 1372), "Takip et  @ankaradacocuk", font=font(50), fill=BEYAZ, anchor="mm")
+    d.text((W // 2, 1372), "Takip et  @ankarada_cocuk", font=font(50), fill=BEYAZ, anchor="mm")
     return im
 
 
